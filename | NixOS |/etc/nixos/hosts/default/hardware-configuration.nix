@@ -8,16 +8,16 @@
 
 
   
-  imports = [ ( modulesPath + " " ) ];
+  imports = [ ( modulesPath + " * " ) ];
 
 
   
   boot = {
-      kernelModules = [ ];
-      extraModulePackages = [ ];
+      kernelModules = [ * ];
+      extraModulePackages = [ * ];
     initrd = {
-        availableKernelModules = [ ];
-        kernelModules = [ ];      }; 
+        availableKernelModules = [ * ];
+        kernelModules = [ * ];      }; 
           };
 
 
@@ -29,7 +29,7 @@
     "/boot" =
         { device = "/dev/disk/by-uuid/UUID";
           fsType = "vfat";
-          optiosn = [ "fmask=0077" "dmask=0077" ];      };
+          optiosn = [ "fmask= * " "dmask= * " ];      };
                  };
   swapDevices = [ ];
 
@@ -39,7 +39,7 @@
 
 
 
-  nixpkgs.hostPlatform = lib.mkDefault "*";
+  nixpkgs.hostPlatform = lib.mkDefault " * ";
 
 
 
