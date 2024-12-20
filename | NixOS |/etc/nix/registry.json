@@ -1,1 +1,16 @@
-{"flakes":[{"exact": * ,"from":{"id":" * ","type":" * "},"to":{"path":" * ","type":" * "}}],"version": * }
+{
+  "flakes":[
+    {
+      "exact": * ,
+      "from": {
+        "id":" * ",
+        "type":" * "
+      },
+      "to": {
+        "path":" * ",
+        "type":" * "
+      }
+    }
+  ],
+  "version": * 
+}
