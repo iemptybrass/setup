@@ -20,10 +20,8 @@ system.stateVersion = "24.11";
   boot = {
       tmp.cleanOnBoot = true;
     loader = {
-        timeout = 0;
       systemd-boot.enable = true;
-      efi = {
-        canTouchEfiVariables = true;      };      };
+      efi.canTouchEfiVariables = true;      };      };
           };
 
 
@@ -59,9 +57,7 @@ system.stateVersion = "24.11";
   programs = {
       zsh.enable = true;
     hyprland = {
-        enable = true;
-        systemd.setPath.enable = false;
-        xwayland.enable = true;      };
+        enable = true;      };
                };
 
   services.greetd = {
@@ -74,8 +70,10 @@ system.stateVersion = "24.11";
 
 
 
-        xdg.portal.enable = true;
-        xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+      enable = true;
+      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+                };
 
 
 
@@ -115,7 +113,7 @@ system.stateVersion = "24.11";
     jack.enable = true;
   };
 
-qt.enable = true;
+
 
   environment = {
       sessionVariables.NIXOS_OZONE_WL = "1";
@@ -131,10 +129,7 @@ qt.enable = true;
             starship
             yazi
         firefox
-
-        greetd.tuigreet
-        
-                                 ];
+        greetd.tuigreet      ];
                  };
 
 
