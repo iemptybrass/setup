@@ -4,6 +4,8 @@
 
 {
 
+system.stateVersion = "24.11";
+
 
 
 
@@ -47,8 +49,8 @@
         experimental-features = [ "nix-command" "flakes" ];      };
     gc = {
         automatic = true;
-        dates = "weekly";
-        options = "--delete-older-than 7d";     };
+        dates = "daily";
+        options = "--delete-older-than 3d";     };
          };
   nixpkgs.config.allowUnfree = true;
 
@@ -66,7 +68,7 @@
        enable = true;
     settings = rec {
       default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --asterisks --cmd Hyprland";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
           user = "user";      };      };
 };
 
@@ -118,35 +120,17 @@ qt.enable = true;
   environment = {
       sessionVariables.NIXOS_OZONE_WL = "1";
     systemPackages = with pkgs; [
-
-        vivaldi
-        mesa
-
         (pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];      }      )      )
-        hyprland
             wofi
-            swww
             dunst
-            upower
             networkmanagerapplet
             playerctl
             libnotify
-            pavucontrol
-
         kitty
             neofetch
             starship
-            nnn
-            wget
-
-        gimp
-
-        virt-manager
-
+            yazi
         firefox
-
-        kdePackages.kate
-        kdePackages.dolphin
 
         greetd.tuigreet
         
@@ -158,15 +142,11 @@ qt.enable = true;
   fonts = {
       packages = with pkgs; [
           twemoji-color-font
-                             ];
+          nerd-fonts._0xproto      ];
     fontconfig = {
       defaultFonts = {
           emoji = [ "twemoji color font" ];     };      };
            };
-
-
-
- system.stateVersion = "24.11";
 
 
 
