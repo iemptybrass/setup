@@ -1,17 +1,22 @@
-{ config, pkgs, ... }:
+ { config, pkgs, ... }:
+
+
 
 {
 
-
-
-
-
   home.stateVersion = "24.11"; 
+
+
+
+
 
   home.username = "user";
   home.homeDirectory = "/home/user";
 
+
+
   programs = {
+      home-manager.enable = true;
     firefox = {
         enable = true;
       profiles.user = {
@@ -22,11 +27,16 @@
              }      ];      };      };
               };
 
+
+
   home.packages = [];
   home.file = {};
   home.sessionVariables = {
     EDITOR = kitty;
   };
 
-  programs.home-manager.enable = true;
-}
+
+
+
+
+ }
