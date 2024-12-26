@@ -21,7 +21,7 @@ system.stateVersion = "24.11";
       tmp.cleanOnBoot = true;
     loader = {
       systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;      };      };
+      efi.canTouchEfiVariables = true;      };    
           };
 
 
