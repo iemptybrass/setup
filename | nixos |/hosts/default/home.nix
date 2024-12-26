@@ -15,20 +15,6 @@
 
 
 
-  programs = {
-      home-manager.enable = true;
-    firefox = {
-        enable = true;
-      profiles.user = {
-        bookmarks = [
-            {
-            name = "youtube";
-            url = "https://www.youtube.com";
-             }      ];      };      };
-              };
-
-
-
   home.packages = [];
   home.file = {};
   home.sessionVariables = {
