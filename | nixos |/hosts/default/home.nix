@@ -21,7 +21,7 @@
   home.packages = [];
   home.file = {};
   home.sessionVariables = {
-    EDITOR = kitty;
+    EDITOR = "kitty";
   };
 
 
