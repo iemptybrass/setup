@@ -13,7 +13,10 @@
   home.username = "user";
   home.homeDirectory = "/home/user";
 
-
+  wayland.windowManager.hyprland = {
+      enable = true;
+    settings = {};
+  };
 
   home.packages = [];
   home.file = {};
