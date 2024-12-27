@@ -1,3 +1,4 @@
+ { pkgs, lib, ... }:
 
 
 
@@ -11,16 +12,17 @@
       enable = true;
     settings = {
 
-  exec-once = waybar & nm-applet & dunst
 
-  monitor = eDP-1, 1920x1080@60, 0x0, 1
 
-  $terminal = kitty
-  $fileManager = 
-  $menu = wofi --show drun
+      exec-once = "waybar & nm-applet & dunst"
 
-  env = XCURSOR_SIZE,24
-  env = HYPRCURSOR_SIZE,24
+      monitor = "eDP-1, 1920x1080@60, 0x0, 1"
+
+      "$terminal" = "kitty"
+      "$fileManager" = 
+      "$menu" = "wofi --show drun"
+
+      env = "HYPRCURSOR_SIZE,24"
 
   general {
       gaps_in = 5
