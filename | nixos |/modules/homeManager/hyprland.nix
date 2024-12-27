@@ -60,66 +60,64 @@ decoration {
     }
 }
 
-animations {
-    enabled = yes, please :)
+  animations = {
+    enabled = "true";
+      bezier = [
+          "easeOutQuint,0.23,1,0.32,1"
+          "easeInOutCubic,0.65,0.05,0.36,1"
+          "linear,0,0,1,1"
+          "almostLinear,0.5,0.5,0.75,1.0"
+          "quick,0.15,0,0.1,1"      ];
+      animation = [
+          "global, 1, 10, default"
+          "border, 1, 5.39, easeOutQuint"
+          "windows, 1, 4.79, easeOutQuint"
+          "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
+          "windowsOut, 1, 1.49, linear, popin 87%"
+          "fadeIn, 1, 1.73, almostLinear"
+          "fadeOut, 1, 1.46, almostLinear"
+          "fade, 1, 3.03, quick"
+          "layers, 1, 3.81, easeOutQuint"
+          "layersIn, 1, 4, easeOutQuint, fade"
+          "layersOut, 1, 1.5, linear, fade"
+          "fadeLayersIn, 1, 1.79, almostLinear"
+          "fadeLayersOut, 1, 1.39, almostLinear"
+          "workspaces, 1, 1.94, almostLinear, fade"
+          "workspacesIn, 1, 1.21, almostLinear, fade"
+          "workspacesOut, 1, 1.94, almostLinear, fade"      ];
+                };
 
-    bezier = easeOutQuint,0.23,1,0.32,1
-    bezier = easeInOutCubic,0.65,0.05,0.36,1
-    bezier = linear,0,0,1,1
-    bezier = almostLinear,0.5,0.5,0.75,1.0
-    bezier = quick,0.15,0,0.1,1
 
-    animation = global, 1, 10, default
-    animation = border, 1, 5.39, easeOutQuint
-    animation = windows, 1, 4.79, easeOutQuint
-    animation = windowsIn, 1, 4.1, easeOutQuint, popin 87%
-    animation = windowsOut, 1, 1.49, linear, popin 87%
-    animation = fadeIn, 1, 1.73, almostLinear
-    animation = fadeOut, 1, 1.46, almostLinear
-    animation = fade, 1, 3.03, quick
-    animation = layers, 1, 3.81, easeOutQuint
-    animation = layersIn, 1, 4, easeOutQuint, fade
-    animation = layersOut, 1, 1.5, linear, fade
-    animation = fadeLayersIn, 1, 1.79, almostLinear
-    animation = fadeLayersOut, 1, 1.39, almostLinear
-    animation = workspaces, 1, 1.94, almostLinear, fade
-    animation = workspacesIn, 1, 1.21, almostLinear, fade
-    animation = workspacesOut, 1, 1.94, almostLinear, fade
-}
 
-dwindle {
-    pseudotile = true # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
-    preserve_split = true # You probably want this
-}
+  dwindle = {
+      pseudotile = "true";
+      preserve_split = "true";
+             };
 
-master {
-    new_status = master
-}
 
-misc {
-    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
-    disable_hyprland_logo = false # If true disables the random hyprland logo / anime girl background. :(
-}
 
-input {
-    kb_layout = us
-    kb_variant =
-    kb_model =
-    kb_options =
-    kb_rules =
+  master = {
+      new_status = "master";
+            };
 
-    follow_mouse = 1
 
-    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
 
-    touchpad {
-        natural_scroll = false
-    }
-}
+  misc = {
+      force_default_wallpaper = "-1";
+      disable_hyprland_logo = "false";
+          };
 
-gestures {
-    workspace_swipe = false
-}
+
+
+  input = {
+      kb_layout = "us";
+      follow_mouse = "1";
+      sensitivity = "0";
+      touchpad = {
+          natural_scroll = false;      };
+           };
+
+
 
   "$mainMod" = "SUPER";
 
@@ -164,13 +162,11 @@ gestures {
       "$mainMod SHIFT, S, movetoworkspace, special:magic"
 
       "$mainMod, mouse_down, workspace, e+1"
-      "$mainMod, mouse_up, workspace, e-1"
-          ];
+      "$mainMod, mouse_up, workspace, e-1"      ];
 
   bindm = [
       "$mainMod, mouse:272, movewindow"
-      "$mainMod, mouse:273, resizewindow"
-           ];
+      "$mainMod, mouse:273, resizewindow"      ];
 
   bindel = [
       ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
@@ -178,23 +174,21 @@ gestures {
       ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
       ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
       ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-      ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
-            ];
+      ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"      ];
 
   bindl = [
       ", XF86AudioNext, exec, playerctl next"
       ", XF86AudioPause, exec, playerctl play-pause"
       ", XF86AudioPlay, exec, playerctl play-pause"
-      ", XF86AudioPrev, exec, playerctl previous"
-           ];
+      ", XF86AudioPrev, exec, playerctl previous"      ];
 
-windowrulev2 = [
+  windowrulev2 = [
       "suppressevent maximize, class:.*"
-      "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-                ];
+      "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];
+  
+
 
 };
-  };
 
 
 
