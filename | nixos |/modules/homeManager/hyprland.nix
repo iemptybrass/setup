@@ -14,15 +14,14 @@
 
 
 
-      exec-once = "waybar & nm-applet & dunst"
+      exec-once = "waybar & nm-applet & dunst";
 
-      monitor = "eDP-1, 1920x1080@60, 0x0, 1"
+      monitor = "eDP-1, 1920x1080@60, 0x0, 1";
 
-      "$terminal" = "kitty"
-      "$fileManager" = 
-      "$menu" = "wofi --show drun"
+      "$terminal" = "kitty";
+      "$menu" = "wofi --show drun";
 
-      env = "HYPRCURSOR_SIZE,24"
+      env = "HYPRCURSOR_SIZE,24";
 
       general = {
           gaps_in = "5";
@@ -36,19 +35,19 @@
                  };
 
       decoration {
-          rounding = "10"
-          active_opacity = "1.0"
-          inactive_opacity = "1.0"
+          rounding = "10";
+          active_opacity = "1.0";
+          inactive_opacity = "1.0";
         shadow {
-            enabled = "true"
-            range = "4"
-            render_power = "3"
-            color = "rgba(1a1a1aee)"      };
+            enabled = "true";
+            range = "4";
+            render_power = "3";
+            color = "rgba(1a1a1aee)";      };
         blur {
-            enabled = "true"
-            size = "3"
-            passes = "1"
-            vibrancy = "0.1696"      };
+            enabled = "true";
+            size = "3";
+            passes = "1";
+            vibrancy = "0.1696";      };
                   };
 
 
