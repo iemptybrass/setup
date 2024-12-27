@@ -22,7 +22,7 @@
   home.file = {};
   home.sessionVariables = {
     EDITOR = "kitty";
-  };
+                           };
 
 
 
