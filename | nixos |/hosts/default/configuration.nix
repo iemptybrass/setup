@@ -13,6 +13,7 @@ system.stateVersion = "24.11";
  imports = [
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      inputs.xremap-flake.nixosModules.default #
              ];
 
 
