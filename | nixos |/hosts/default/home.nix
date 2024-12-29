@@ -12,6 +12,7 @@ home.stateVersion = "24.11";
 
   imports = [
       ./../../modules/homeManager/default.nix
+      inputs.xremap-flake.homeManagerModules.default #
              ];
 
 
