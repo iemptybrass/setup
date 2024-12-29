@@ -89,8 +89,8 @@ system.stateVersion = "24.11";
 
 
 hardware.uinput.enable = true; #
-users.groups.uinput.members = [user]; #
-users.groups.input.members = [user]; #
+users.groups.uinput.members = [ "user" ]; #
+users.groups.input.members = [ "user" ]; #
 
 
 
