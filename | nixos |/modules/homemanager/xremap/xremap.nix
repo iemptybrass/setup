@@ -13,7 +13,7 @@
       keymap = [
           {
               name = "main remaps";
-            remap = {      };      }      ];      };
+            remap = {      };      }      ];      };      };
 
 
 
