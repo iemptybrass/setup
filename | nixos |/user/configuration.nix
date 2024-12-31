@@ -12,8 +12,7 @@ system.stateVersion = "24.11";
 
  imports = [
       inputs.home-manager.nixosModules.default
-      ./hardware-configuration.nix
-      ./../modules/system.nix
+      ./../modules/configuration.nix
              ];
 
 

@@ -7,6 +7,12 @@
 
 
 
+  imports = [
+      inputs.xremap-flake.homeManagerModules.default
+             ];
+
+
+
   services.xremap = {
       withHypr = true;
     config = {
