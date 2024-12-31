@@ -8,16 +8,15 @@
 
 
   imports = [
-      ./dunst/dunst.nix
-      ./firefox/firefox.nix
-      ./hyprland/hyprland.nix
-      ./kitty/kitty.nix
-      ./nmapplet.nmapplet.nix
-      ./starship/starship.nix
-      ./waybar/waybar
-      ./wofi/wofi.nix
-      ./xremap/xremap.nix
-      ./yazi/yazi.nix
+      ./dunst/default.nix
+      ./firefox/default.nix
+      ./hyprland/default.nix
+      ./kitty/default.nix
+      ./nmapplet/default.nix
+      ./starship/default.nix
+      ./waybar/default.nix
+      ./wofi/default.nix
+      ./yazi/default.nix
              ];
 
 

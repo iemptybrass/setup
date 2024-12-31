@@ -15,7 +15,7 @@
       ./hardware/default.nix
       ./homemanager/default.nix
       ./localization/default.nix
-      ./networking/default.nix
+      ./network/default.nix
       ./nix/default.nix
       ./pkgs/default.nix
       ./portal/default.nix
