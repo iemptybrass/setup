@@ -1,0 +1,18 @@
+
+
+
+{
+
+
+
+
+
+  imports = [
+      ./core/default.nix
+             ];
+
+
+
+
+
+}

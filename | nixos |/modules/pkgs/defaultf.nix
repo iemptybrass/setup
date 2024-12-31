@@ -1,0 +1,18 @@
+
+
+
+{
+
+
+
+
+
+  imports = [
+      ./hyprland/flake.nix
+             ];
+
+
+
+
+
+ }
