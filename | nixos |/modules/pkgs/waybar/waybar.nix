@@ -1,4 +1,4 @@
- { ... }: 
+
 
 
 {
@@ -9,7 +9,7 @@
 
   programs.waybar = {
     enable = true;
-    style = builtins.readFile ./style.css;
+#    style = 
     settings = [{
       layer = "top";
       position = "top";

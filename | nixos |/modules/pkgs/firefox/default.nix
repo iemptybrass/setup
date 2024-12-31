@@ -1,0 +1,18 @@
+
+
+
+{
+
+
+
+
+
+  programs.firefox = {
+      enable = true;
+                      };
+
+
+
+
+
+}
