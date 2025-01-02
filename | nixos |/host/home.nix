@@ -11,7 +11,7 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./../modules/home.nix
+      ./../innercore/outercore/mantel/crust/default.nix
              ];
 
 
