@@ -11,7 +11,7 @@ system.stateVersion = "24.11";
 
 
  imports = [
-      ./../modules/configuration.nix
+      ./../default.nix
              ];
 
 
