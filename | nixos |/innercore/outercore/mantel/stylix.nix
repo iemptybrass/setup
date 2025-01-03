@@ -29,15 +29,20 @@
     cursor = {
         size = 32;
         package = pkgs.google-cursor;
-        name = "GoogleDot-black";      };
+        name = "GoogleDot-Black";      };
     fonts = {
       emoji = {
           package = pkgs.twemoji-color-font;
           name = "Twitter Color Emoji";      };
       monospace = {
-          pacakge = 
-      }
-    }
+          package = pkgs.nerd-fonts.override { fonts = ["0xproto"]; };
+          name = "0xproto Nerd Font Mono";      };
+      sansSerif = {
+          package = pkgs.dejavu_fonts;
+          name = "DejaVu Sans";      };
+      serif = {
+          package = pkgs.dejavu_fonts;
+          name = "DejaVu Serif";      };      };
             };
 
 
