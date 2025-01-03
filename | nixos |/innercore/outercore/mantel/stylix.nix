@@ -30,6 +30,14 @@
         size = 32;
         package = pkgs.google-cursor;
         name = "GoogleDot-black";      };
+    fonts = {
+      emoji = {
+          package = pkgs.twemoji-color-font;
+          name = "Twitter Color Emoji";      };
+      monospace = {
+          pacakge = 
+      }
+    }
             };
 
 
