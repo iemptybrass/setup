@@ -1,0 +1,18 @@
+
+
+
+{
+
+
+
+
+
+  home.sessionVariables = {
+    EDITOR = "kitty";
+                           };
+
+
+
+
+
+ }
