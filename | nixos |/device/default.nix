@@ -8,28 +8,28 @@
 
 
   
-  imports = [ ( modulesPath + " * " ) ];
+  imports = [ ( modulesPath + "/installer/scan/not-detected.nix" ) ];
 
 
   
   boot = {
-      kernelModules = [ * ];
-      extraModulePackages = [ * ];
+      kernelModules = [ "kvm-intel" ];
+      extraModulePackages = [ ];
     initrd = {
-        availableKernelModules = [ * ];
-        kernelModules = [ * ];      }; 
+        availableKernelModules = [ "xhci_pci" "nvme" ];
+        kernelModules = [ ];      }; 
           };
 
 
 
   fileSystems = {
     "/" = 
-        { device = "/dev/disk/by-uuid/UUID";
+        { device = "/dev/disk/by-uuid/375ca227-2f95-4f64-97da-e5bf86d8c956";
           fsType = "ext4";      };
     "/boot" =
-        { device = "/dev/disk/by-uuid/UUID";
+        { device = "/dev/disk/by-uuid/ACF8-8856";
           fsType = "vfat";
-          optiosn = [ "fmask= * " "dmask= * " ];      };
+          optiosn = [ "fmask= 0077 " "dmask= 0077 " ];      };
                  };
   swapDevices = [ ];
 
@@ -39,7 +39,7 @@
 
 
 
-  nixpkgs.hostPlatform = lib.mkDefault " * ";
+  nixpkgs.hostPlatform = lib.mkDefault " x86_64-linux ";
 
 
 
