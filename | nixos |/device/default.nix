@@ -29,7 +29,7 @@
     "/boot" =
         { device = "/dev/disk/by-uuid/ACF8-8856";
           fsType = "vfat";
-          optiosn = [ "fmask= 0077 " "dmask= 0077 " ];      };
+          options = [ "fmask= 0077 " "dmask= 0077 " ];      };
                  };
   swapDevices = [ ];
 
@@ -39,7 +39,7 @@
 
 
 
-  nixpkgs.hostPlatform = lib.mkDefault " x86_64-linux ";
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
 
 
