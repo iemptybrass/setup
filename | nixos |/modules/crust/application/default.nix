@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
       ./firefox.nix
             ];
 

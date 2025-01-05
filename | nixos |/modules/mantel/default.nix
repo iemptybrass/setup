@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
         ./appearance
         ./components
             ];

@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
       ./application
       ./graphical
       ./home

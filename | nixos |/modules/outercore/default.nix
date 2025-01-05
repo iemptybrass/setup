@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
       ./boot.nix
       ./greetd.nix
       ./home.nix

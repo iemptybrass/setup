@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
         ./mantel
         ./outercore
             ];

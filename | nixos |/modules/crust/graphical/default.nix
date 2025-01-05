@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
       ./dunst.nix
       ./hyprland.nix
       ./nmapplet.nix
