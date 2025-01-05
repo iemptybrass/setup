@@ -8,9 +8,8 @@
 
 
   import = [
-      ./application
-      ./graphical
-      ./terminal
+        ./audio.nix
+        ./network.nix
             ];
 
 

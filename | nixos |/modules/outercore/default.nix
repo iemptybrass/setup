@@ -8,6 +8,7 @@
 
 
   import = [
+      ./boot.nix
       ./greetd.nix
       ./home.nix
       ./nix.nix
