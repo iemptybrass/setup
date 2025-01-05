@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
         ./device
         ./modules
             ];
