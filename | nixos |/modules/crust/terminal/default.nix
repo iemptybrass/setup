@@ -8,7 +8,7 @@
 
 
   imports = [
-      ./kitty.nix
+      ./ghostty.nix
       ./starship.nix
       ./yazi.nix
             ];

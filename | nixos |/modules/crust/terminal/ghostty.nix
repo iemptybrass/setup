@@ -7,10 +7,8 @@
 
 
 
-  programs.kitty = {
+  programs.ghostty = {
       enable = true;
-#      style = 
-#      settings = 
                     };
 
 
