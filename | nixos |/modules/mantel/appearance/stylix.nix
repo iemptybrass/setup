@@ -26,6 +26,7 @@
         base0D = "5350b9";
         base0E = "0f7ddb";
         base0F = "ffffff";      };
+    image = ./wallpaper.png;
     cursor = {
         size = 32;
         package = pkgs.google-cursor;
@@ -35,7 +36,7 @@
           package = pkgs.twemoji-color-font;
           name = "Twitter Color Emoji";      };
       monospace = {
-          package = pkgs.nerd-fonts.override { fonts = ["0xproto"]; };
+          package = pkgs.nerd-fonts._0xproto;
           name = "0xproto Nerd Font Mono";      };
       sansSerif = {
           package = pkgs.dejavu_fonts;

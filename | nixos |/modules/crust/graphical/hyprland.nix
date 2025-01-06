@@ -21,14 +21,10 @@
       "$terminal" = "kitty";
       "$menu" = "wofi --show drun";
 
-      env = "HYPRCURSOR_SIZE,24";
-
       general = {
           gaps_in = "5";
           gaps_out = "20";
           border_size = "2";
-          "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-          "col.inactive_border" = "rgba(595959aa)";
           resize_on_border = "false";
           allow_tearing = "false";
           layout = "dwindle";
@@ -41,8 +37,7 @@
         shadow = {
             enabled = "true";
             range = "4";
-            render_power = "3";
-            color = "rgba(1a1a1aee)";      };
+            render_power = "3";      };
         blur = {
             enabled = "true";
             size = "3";
@@ -95,8 +90,8 @@
   
     
       misc = {
-          force_default_wallpaper = "-1";
-          disable_hyprland_logo = "false";
+          force_default_wallpaper = "0";
+          disable_hyprland_logo = "true";
               };
     
     
