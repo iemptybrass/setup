@@ -10,7 +10,7 @@
   imports = [
       ./application
       ./graphical
-      ./home
+#      ./home
       ./terminal
             ];
 
