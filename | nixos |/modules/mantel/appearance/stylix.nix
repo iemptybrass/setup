@@ -11,24 +11,26 @@
       enable = true;
     base16Scheme = {
         base00 = "1f1f1f";
-        base01 = "f81118";
-        base02 = "2dc55e";
-        base03 = "ecba0f";
-        base04 = "2a84d2";
-        base05 = "4e5ab7";
-        base06 = "1081d6";
-        base07 = "d6dbe5";
-        base08 = "d6dbe5";
-        base09 = "de352e";
-        base0A = "1dd361";
-        base0B = "f3bd09";
-        base0C = "1081d6";
-        base0D = "5350b9";
-        base0E = "0f7ddb";
-        base0F = "ffffff";      };
+    base16Scheme = {
+        base00 = "212121";
+        base01 = "303030";
+        base02 = "353535";
+        base03 = "4A4A4A";
+        base04 = "B2CCD6";
+        base05 = "EEFFFF";
+        base06 = "EEFFFF";
+        base07 = "FFFFFF";
+        base08 = "F07178";
+        base09 = "F78C6C";
+        base0A = "FFCB6B";
+        base0B = "C3E88D";
+        base0C = "89DDFF";
+        base0D = "82AAFF";
+        base0E = "C792EA";
+        base0F = "FF5370";      };
     image = ./wallpaper.png;
     cursor = {
-        size = 32;
+        size = 24;
         package = pkgs.google-cursor;
         name = "GoogleDot-Black";      };
     fonts = {
@@ -43,7 +45,7 @@
           name = "DejaVu Sans";      };
       serif = {
           package = pkgs.dejavu_fonts;
-          name = "DejaVu Serif";      };      };
+          name = "DejaVu Serif";      };      };      };
             };
 
 
