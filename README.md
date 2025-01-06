@@ -4,11 +4,11 @@
 .
 ├── device                   #
 ├─┬ modules                  #
-│ ├─┬ crust                  #
-│ │ ├── application          #
+│ ├─┬ crust                  # Home-manager modules
+│ │ ├── application          # 
 │ │ ├── graphical            #
-│ │ ├── home                 #
-│ │ └── terminal             #
+│ │ ├── home                 # 
+│ │ └── terminal             # Includes terminal and tools used by it
 │ ├─┬ mantel                 #
 │ │ ├── appearance           #
 │ │ └── services             #
