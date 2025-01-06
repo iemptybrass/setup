@@ -13,9 +13,9 @@
       { "layer" = "top";
         "position" = "top";
         "reload_style_on_change" = true;
-        "modules-left" = ["clock";"tray"];
+        "modules-left" = ["clock""tray"];
         "modules-center" = ["hyprland/workspaces"];
-        "modules-right" = ["group/expand";"bluetooth";"network";"battery"];
+        "modules-right" = ["group/expand""bluetooth""network""battery"];
       "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
@@ -23,7 +23,7 @@
               "default"= "";
               "empty"= "";      };
           "persistent-workspaces" = {
-                "*" = [ 1;2;3;4;5 ];      };      };
+                "*" = [ "1" "2" "3" "4" "5" ];      };      };
         "clock" = {
             "format" = "{=%I=%M=%S %p} ";
             "interval" = 1;   
@@ -65,13 +65,7 @@
             "format-charging"= "{capacity}% 󰂄";
             "format-plugged"= "{capacity}% 󰂄 ";
             "format-alt"= "{time} {icon}";
-            "format-icons"= [
-                "󰁻";
-                "󰁼";
-                "󰁾";
-                "󰂀";
-                "󰂂";
-                "󰁹";      ];      };
+            "format-icons"= [ "󰁻" "󰁼" "󰁾" "󰂀" "󰂂" "󰁹" ];      };
         "custom/expand"= {
             "format"= "";
             "tooltip"= false;      };
@@ -84,7 +78,7 @@
                 "transition-duration"= 600;
                 "transition-to-left"= true;
                 "click-to-reveal"= true;      };
-            "modules"= ["custom/expand";"cpu";"memory";"temperature";"custom/endpoint"];      };
+            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
         "cpu"= {
             "format"= "󰻠";
             "tooltip"= true;      };
@@ -95,7 +89,7 @@
             "format"= "";      };
         "tray"= {
             "icon-size"= 14;
-            "spacing"= 10;      };      };      ];      
+            "spacing"= 10;      };      }      ];      
                      };
 
 
