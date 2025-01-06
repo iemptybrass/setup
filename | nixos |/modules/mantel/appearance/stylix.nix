@@ -10,8 +10,6 @@
   stylix = {
       enable = true;
     base16Scheme = {
-        base00 = "1f1f1f";
-    base16Scheme = {
         base00 = "212121";
         base01 = "303030";
         base02 = "353535";
@@ -45,7 +43,7 @@
           name = "DejaVu Sans";      };
       serif = {
           package = pkgs.dejavu_fonts;
-          name = "DejaVu Serif";      };      };      };
+          name = "DejaVu Serif";      };      };
             };
 
 
