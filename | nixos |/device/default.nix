@@ -24,10 +24,10 @@
 
   fileSystems = {
     "/" = 
-        { device = "/dev/disk/by-uuid/375ca227-2f95-4f64-97da-e5bf86d8c956";
+        { device = "/dev/disk/by-uuid/ ";
           fsType = "ext4";      };
     "/boot" =
-        { device = "/dev/disk/by-uuid/ACF8-8856";
+        { device = "/dev/disk/by-uuid/ ";
           fsType = "vfat";
           options = [ "fmask=0077" "dmask=0077" ];      };
                  };
