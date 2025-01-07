@@ -10,7 +10,6 @@
 │   └── innercore            #
 ├── configuration.nix        #
 ├── default.nix              #
-├── flake.lock               #
 ├── flake.nix                #
 └── home.nix                 #
 ```
