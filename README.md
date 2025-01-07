@@ -4,7 +4,7 @@
 .
 ├── device                   #
 ├─┬ modules                  #
-│ ├── crust                  # Home-manager modules
+│ ├── crust                  # Home-manager 
 │ ├── mantel                 #
 │ └─┬ outercore              #
 │   └── innercore            #
