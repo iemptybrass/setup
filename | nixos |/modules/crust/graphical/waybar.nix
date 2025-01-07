@@ -130,12 +130,12 @@
             transition: all .3s ease;      }
               '';
     settings = [
-      { "layer" = "top";
+      { 
+        "layer" = "top";
         "position" = "top";
-        "reload_style_on_change" = true;
-        "modules-left" = ["clock""tray"];
-        "modules-center" = ["hyprland/workspaces"];
-        "modules-right" = ["group/expand""bluetooth""network""battery"];
+        "modules-left" = [ "clock" ];
+        "modules-center" = [ "hyprland/workspaces" ];
+        "modules-right" = [ "group/expand" "network" "battery" ];
 
 
 
@@ -147,7 +147,6 @@
 		      "3": "",
 		      "4": "󰲸",
 		      "5": "",
-              "active"= "";
               "default"= "";      };
           "persistent-workspaces" = {
                 "*" = 9;      };      };
@@ -155,46 +154,36 @@
 
 
         "clock" = {
-            "format" = "{=%I=%M=%S %p} ";
+
             "interval" = 1;   
-            "tooltip-format" = "<tt>{calendar}</tt>";
-            "calendar" = {
-                "format" = {
-                    "months" = "<span color='#000000'><b>{}</b></span>";
-                    "weekdays" = "<span color='#000000'><b>{}</b></span>";
-                    "today" = "<span color='#000000'><b>{}</b></span>";      };      };
-            "actions"= {
-                "on-click-right"= "shift_down";
-                "on-click"= "shift_up";      };      };
+
+            "format" = "{:%I:%M:%S} ";
+            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      };
+
 
 
         "network"= {
 
             "format-wifi"= "󱜠";
             "format-disconnected"= "󱜡";
-            "format-ethernet"="󰴽";
             
-
             "tooltip-format-disconnected"= "No Connection";
-            "tooltip-format-wifi"= "{essid}";
-            "tooltip-format-ethernet"= "{ifname}";
+            "tooltip-format-wifi"= "Connected to : {essid}";      };
 
 
 
         "battery"= {
 
-            "interval"=30;
+            "interval"=1;
 
             "states"= {
                 "good"= 95;
                 "warning"= 30;
                 "critical"= 20;      };
 
-            "format"= "{capacity}% {icon}";
+            "format"= "{icon} {capacity}%";
+            "format-charging"= "{icon} {capacity}%";
             "format-icons"= [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
-
-            "format-charging"= "{capacity}% {icon}";
-            "format-icons"= [ "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅" ];
 
             "format-plugged"= "󰂄";
 
@@ -216,7 +205,7 @@
                 "transition-duration"= 600;
                 "transition-to-left"= true;
                 "click-to-reveal"= true;      };
-            "modules"= ["custom/shrink" "cpu" "memory" "temperature" "custom/endpoint"];      };
+            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
 
         "cpu"= {
             "format"= "";
@@ -228,7 +217,7 @@
             "format"= "";      };
         "tray"= {
             "icon-size"= 14;
-            "spacing"= 10;      };      };      ];      
+            "spacing"= 10;      };      }      ];      
                      };
 
 
