@@ -15,6 +15,8 @@
             font-family: "0xproto Nerd Font Mono";      }
         window#waybar{
             all:unset;      }
+
+
         .modules-left {
             padding:7px;
             margin:5px;
@@ -33,11 +35,15 @@
             border-radius:10px;
             background: alpha(@background,.5);
             box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);      }
+
+
         tooltip {
             background:rgb(50,50,50)      }
-        #clock:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover {
+        #clock:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover {
             transition: all .3s ease;
             color:@color0;      }
+
+
         #clock{
             padding: 0px 5px;
             color:@color7;
@@ -70,29 +76,31 @@
             color: @color9;
             border: none;
             transition: all .5s ease;      }
-        #bluetooth{
-            padding: 0px 5px;
-            transition: all .3s ease;
-            color:@color7;      }
+
+
         #network{
             padding: 0px 5px;
             transition: all .3s ease;
             color:@color7;      }
+
+
         #battery{
             padding: 0px 5px;
             transition: all .3s ease;
             color:@color7;      }
-        #battery.charging {
-            color: #26A65B;      }
-        #battery.warning:not(.charging) {
-            color: #ffbe61;      }
-        #battery.critical:not(.charging) {
-            color: #f53c3c;
-            animation-name: blink;
-            animation-duration: 0.5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;    }
+          #battery.charging {
+              color: #26A65B;      }
+          #battery.warning:not(.charging) {
+              color: #ffbe61;      }
+          #battery.critical:not(.charging) {
+              color: #f53c3c;
+              animation-name: blink;
+              animation-duration: 0.5s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;    }
+
+
         #group-expand{
             padding: 0px 5px;
             transition: all .3s ease;      }
@@ -128,14 +136,24 @@
         "modules-left" = ["clock""tray"];
         "modules-center" = ["hyprland/workspaces"];
         "modules-right" = ["group/expand""bluetooth""network""battery"];
+
+
+
       "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
+              "1": "",
+		      "2": "󰖟",
+		      "3": "",
+		      "4": "󰲸",
+		      "5": "",
               "active"= "";
-              "default"= "";
-              "empty"= "";      };
+              "default"= "";      };
           "persistent-workspaces" = {
-                "*" = [ "1" "2" "3" "4" "5" ];      };      };
+                "*" = 9;      };      };
+
+
+
         "clock" = {
             "format" = "{=%I=%M=%S %p} ";
             "interval" = 1;   
@@ -148,51 +166,60 @@
             "actions"= {
                 "on-click-right"= "shift_down";
                 "on-click"= "shift_up";      };      };
+
+
         "network"= {
-            "format-wifi"= "";
-            "format-ethernet"="";
-            "format-disconnected"= "";
-            "tooltip-format-disconnected"= "Error";
-            "tooltip-format-wifi"= "{essid} ({signalStrength}%) ";
-            "tooltip-format-ethernet"= "{ifname} 🖧 ";
-            "on-click"= "kitty nmtui";      };
-        "bluetooth"= {
-            "format-on"= "󰂯";
-            "format-off"= "BT-off";
-            "format-disabled"= "󰂲";
-            "format-connected-battery"= "{device_battery_percentage}% 󰂯";
-            "format-alt"= "{device_alias} 󰂯";
-            "tooltip-format"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
-            "tooltip-format-connected"= "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
-            "tooltip-format-enumerate-connected"= "{device_alias}\n{device_address}";
-            "tooltip-format-enumerate-connected-battery"= "{device_alias}\n{device_address}\n{device_battery_percentage}%";
-            "on-click-right"= "blueman-manager";      }; 
+
+            "format-wifi"= "󱜠";
+            "format-disconnected"= "󱜡";
+            "format-ethernet"="󰴽";
+            
+
+            "tooltip-format-disconnected"= "No Connection";
+            "tooltip-format-wifi"= "{essid}";
+            "tooltip-format-ethernet"= "{ifname}";
+
+
+
         "battery"= {
-            "interval"=1;
+
+            "interval"=30;
+
             "states"= {
                 "good"= 95;
                 "warning"= 30;
                 "critical"= 20;      };
+
             "format"= "{capacity}% {icon}";
-            "format-charging"= "{capacity}% 󰂄";
-            "format-plugged"= "{capacity}% 󰂄 ";
-            "format-alt"= "{time} {icon}";
-            "format-icons"= [ "󰁻" "󰁼" "󰁾" "󰂀" "󰂂" "󰁹" ];      };
+            "format-icons"= [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
+
+            "format-charging"= "{capacity}% {icon}";
+            "format-icons"= [ "󰢜" "󰂆" "󰂇" "󰂈" "󰢝" "󰂉" "󰢞" "󰂊" "󰂋" "󰂅" ];
+
+            "format-plugged"= "󰂄";
+
+            "format-alt"= "{icon}";
+                  };
+
+
+
         "custom/expand"= {
             "format"= "";
-            "tooltip"= false;      };
+            "tooltip"= false;      }; 
         "custom/endpoint"={
             "format"= "|";
             "tooltip"= false;      };
+
         "group/expand"= {
             "orientation"= "horizontal";
             "drawer"= {
                 "transition-duration"= 600;
                 "transition-to-left"= true;
                 "click-to-reveal"= true;      };
-            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
+            "modules"= ["custom/shrink" "cpu" "memory" "temperature" "custom/endpoint"];      };
+
         "cpu"= {
-            "format"= "󰻠";
+            "format"= "";
             "tooltip"= true;      };
         "memory"= {
             "format"= "";      };
@@ -201,7 +228,7 @@
             "format"= "";      };
         "tray"= {
             "icon-size"= 14;
-            "spacing"= 10;      };      }      ];      
+            "spacing"= 10;      };      };      ];      
                      };
 
 
