@@ -4,14 +4,8 @@
 .
 ├── device                   #
 ├─┬ modules                  #
-│ ├─┬ crust                  # Home-manager modules
-│ │ ├── application          # 
-│ │ ├── graphical            #
-│ │ ├── home                 # 
-│ │ └── terminal             # Includes terminal and tools used by it
-│ ├─┬ mantel                 #
-│ │ ├── appearance           #
-│ │ └── services             #
+│ ├── crust                  # Home-manager modules
+│ ├── mantel                 #
 │ └─┬ outercore              #
 │   └── innercore            #
 ├── configuration.nix        #
