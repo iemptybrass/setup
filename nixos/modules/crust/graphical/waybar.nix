@@ -142,11 +142,11 @@
       "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
-              "1": "",
-		      "2": "󰖟",
-		      "3": "",
-		      "4": "󰲸",
-		      "5": "",
+              "1" = "";
+		      "2" = "󰖟";
+		      "3" = "";
+		      "4" = "󰲸";
+		      "5" = "";
               "default"= "";      };
           "persistent-workspaces" = {
                 "*" = 9;      };      };
