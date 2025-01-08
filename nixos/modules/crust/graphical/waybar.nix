@@ -139,6 +139,23 @@
 
 
 
+
+        "clock" = {
+
+            "interval" = 1;   
+
+            "format" = "{:%I:%M:%S} ";
+            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      };
+
+
+
+
+
+
+
+
+
+
       "hyprland/workspaces" = {
           "format" = "{icon}";
           "format-icons" = {
@@ -153,12 +170,40 @@
 
 
 
-        "clock" = {
 
-            "interval" = 1;   
 
-            "format" = "{:%I:%M:%S} ";
-            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      };
+
+
+
+
+
+      "custom/expand"= {
+            "format"= "";
+            "tooltip"= false;      }; 
+        "custom/endpoint"={
+            "format"= "|";
+            "tooltip"= false;      };
+
+        "group/expand"= {
+            "orientation"= "horizontal";
+            "drawer"= {
+                "transition-duration"= 600;
+                "transition-to-left"= true;
+                "click-to-reveal"= true;      };
+            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
+
+        "cpu"= {
+            "format"= "";
+            "tooltip"= true;      };
+        "memory"= {
+            "format"= "";      };
+        "temperature"= {
+            "critical-threshold"= 80;
+            "format"= "";      };
+        "tray"= {
+            "icon-size"= 14;
+            "spacing"= 10;      };      }      ];      
+                     };
 
 
 
@@ -192,33 +237,6 @@
 
 
 
-        "custom/expand"= {
-            "format"= "";
-            "tooltip"= false;      }; 
-        "custom/endpoint"={
-            "format"= "|";
-            "tooltip"= false;      };
-
-        "group/expand"= {
-            "orientation"= "horizontal";
-            "drawer"= {
-                "transition-duration"= 600;
-                "transition-to-left"= true;
-                "click-to-reveal"= true;      };
-            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
-
-        "cpu"= {
-            "format"= "";
-            "tooltip"= true;      };
-        "memory"= {
-            "format"= "";      };
-        "temperature"= {
-            "critical-threshold"= 80;
-            "format"= "";      };
-        "tray"= {
-            "icon-size"= 14;
-            "spacing"= 10;      };      }      ];      
-                     };
 
 
 
