@@ -133,7 +133,7 @@
 
 
       bindr = [
-          "$mainMod, W, exec, pkill $menu || $menu"
+          "$mainMod, W, exec, pkill wofi || wofi"
                ];
 
 
