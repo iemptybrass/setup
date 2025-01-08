@@ -12,14 +12,10 @@
       enable = true;
     settings = {
 
-
-
       exec-once = "waybar & nm-applet & dunst &";
-
 
       monitor = "eDP-1, 1920x1080@60, 0x0, 1";
 
-      "$terminal" = "kitty";
       "$menu" = "wofi --show drun";
 
       general = {
@@ -73,14 +69,6 @@
           preserve_split = "true";
                  };
 
-
-
-      master = {
-          new_status = "master";
-                };
-
-
-
       misc = {
           vfr = true;
           force_default_wallpaper = "0";
@@ -121,36 +109,38 @@
           "$mainMod SHIFT, 5, movetoworkspace, 5"
 
           "$mainMod, APOSTROPHE, togglespecialworkspace, toggle"
-          "$mainMod SHIFT, APOSTROPHE, movetoworkspace, special:toggle"      
+          "$mainMod SHIFT, APOSTROPHE, movetoworkspace, special:toggle"   
 
-          ", XF86AudioNext, exec, playerctl next"
+          ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+          ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"   
+
+          ", XF86AudioNext, exec, playerctl position +5"
           ", XF86AudioPause, exec, playerctl play-pause"
           ", XF86AudioPlay, exec, playerctl play-pause"
-          ", XF86AudioPrev, exec, playerctl previous"      ];
+          ", XF86AudioPrev, exec, playerctl position -5      ];
 
-bindo = [
+      bindo = [
+          ", XF86AudioNext, exec, playerctl next"
+          ", XF86AudioPrev, exec, playerctl previous"
+               ];
 
-                ]
+      binde = [
+          ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+          ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+          ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
+          ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"      ];
 
 
 
       bindr = [
-          "$mainMod, W, exec, pkill $menu|$menu"
+          "$mainMod, W, exec, pkill $menu || $menu"
                ];
+
 
 
       bindm = [
           "$mainMod, mouse:272, movewindow"
           "$mainMod, mouse:273, resizewindow"      ];
-
-      binde = [
-          ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-          ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-          ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-          ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-          ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-          ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"      ];
-
 
 
       workspace = [
