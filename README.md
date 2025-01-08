@@ -1,15 +1,11 @@
-## Structure
-
+## initializing flake
+```bash
+$ cd /etc/nixos
+$ sudo nix flake init --template github:iemptybrass/flake
 ```
-.
-├── device                   #
-├─┬ modules                  #
-│ ├── crust                  # Home-manager 
-│ ├── mantel                 #
-│ └─┬ outercore              #
-│   └── innercore            #
-├── configuration.nix        #
-├── default.nix              #
-├── flake.nix                #
-└── home.nix                 #
+
+## rebuilding with flakes enabled
+
+```bash
+$ sudo nixos-rebuild switch --flake /etc/nixos/#default
 ```
