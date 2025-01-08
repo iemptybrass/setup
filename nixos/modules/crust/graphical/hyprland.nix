@@ -10,6 +10,7 @@
 
   wayland.windowManager.hyprland = {
       enable = true;
+      systemd.enable = false;
     settings = {
 
 
@@ -23,27 +24,18 @@
 
       general = {
           gaps_in = "5";
-          gaps_out = "20";
+          gaps_out = "10";
           border_size = "2";
-          resize_on_border = "false";
+          resize_on_border = "true";
           allow_tearing = "false";
-          layout = "dwindle";
-                 };
+          layout = "dwindle";      };
 
       decoration = {
           rounding = "10";
           active_opacity = "1.0";
           inactive_opacity = "1.0";
-        shadow = {
-            enabled = "true";
-            range = "4";
-            render_power = "3";      };
-        blur = {
-            enabled = "true";
-            size = "3";
-            passes = "1";
-            vibrancy = "0.1696";      };
-                  };
+        shadow.enabled = "false";
+        blur.enabled = "false";      };
 
 
 
@@ -92,6 +84,7 @@
       misc = {
           force_default_wallpaper = "0";
           disable_hyprland_logo = "true";
+          disable_hyprland_qtutils_check = "true";
               };
     
     
