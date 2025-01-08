@@ -14,6 +14,12 @@
 
       exec-once = "waybar & nm-applet & dunst &";
 
+ 
+      exec-once = "waybar & nm-applet & dunst &";
+
+
+=======
+>>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
       monitor = "eDP-1, 1920x1080@60, 0x0, 1";
 
       "$menu" = "wofi --show drun";
@@ -69,6 +75,17 @@
           preserve_split = "true";
                  };
 
+<<<<<<< HEAD
+
+
+      master = {
+          new_status = "master";
+                };
+
+
+
+=======
+>>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
       misc = {
           vfr = true;
           force_default_wallpaper = "0";
@@ -106,6 +123,19 @@
           "$mainMod SHIFT, 2, movetoworkspace, 2"
           "$mainMod SHIFT, 3, movetoworkspace, 3"
           "$mainMod SHIFT, 4, movetoworkspace, 4"
+<<<<<<< HEAD
+          "$mainMod SHIFT, 5, movetoworkspace, 5"      ];
+
+      bindr = [
+          "$mainMod, SPACE, exec, pkill wofi || $menu"
+               ];
+
+      bindm = [
+          "$mainMod, mouse:272, movewindow"
+          "$mainMod, mouse:273, resizewindow"      ];
+
+      bindel = [
+=======
           "$mainMod SHIFT, 5, movetoworkspace, 5"
 
           "$mainMod, APOSTROPHE, togglespecialworkspace, toggle"
@@ -125,10 +155,26 @@
                ];
 
       binde = [
+>>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
           ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
           ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
           ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
           ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"      ];
+<<<<<<< HEAD
+
+      bindl = [
+          ", XF86AudioNext, exec, playerctl next"
+          ", XF86AudioPause, exec, playerctl play-pause"
+          ", XF86AudioPlay, exec, playerctl play-pause"
+          ", XF86AudioPrev, exec, playerctl previous"      ];
+
+
+
+      workspace = [
+          "3, monitor:eDP-1, default:true, persistent:true"
+                   ];
+
+=======
 
 
 
@@ -147,6 +193,7 @@
           "3, monitor:eDP-1, default:true, persistent:true"
                    ];
 
+>>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
       windowrulev2 = [
           "suppressevent maximize, class:.*"
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];

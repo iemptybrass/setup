@@ -13,6 +13,7 @@
         * {
             font-size:15px;
             font-family: "0xproto Nerd Font Mono";      }
+        
         window#waybar{
             all:unset;      }
 
@@ -48,6 +49,9 @@
             padding: 0px 5px;
             color:@color7;
             transition: all .3s ease;      }
+
+
+
         #workspaces {
             padding: 0px 5px;      }
         #workspaces button {
@@ -119,16 +123,13 @@
         #custom-endpoint{
             color:transparent;
             text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);    }
-        #tray{
-            padding: 0px 5px;
-            transition: all .3s ease;      }
-        #tray menu * {
-            padding: 0px 5px;
-            transition: all .3s ease;      }
-        #tray menu separator {
-            padding: 0px 5px;
-            transition: all .3s ease;      }
+
               '';
+
+
+
+
+
     settings = [
       { 
         "layer" = "top";
