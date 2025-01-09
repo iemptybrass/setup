@@ -26,7 +26,6 @@
           rounding = "10";
           active_opacity = "1.0";
           inactive_opacity = "1.0";
-          dim_inactive = true;
           shadow.enabled = "false";
           blur.enabled = "false";      };
 
