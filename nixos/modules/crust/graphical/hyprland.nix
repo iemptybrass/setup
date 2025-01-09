@@ -11,33 +11,24 @@
   wayland.windowManager.hyprland = {
       enable = true;
     settings = {
+        exec-once = "waybar & nm-applet & dunst &";
+        monitor = "eDP-1, 1920x1080@60, 0x0, 1";
 
-      exec-once = "waybar & nm-applet & dunst &";
-
- 
-      exec-once = "waybar & nm-applet & dunst &";
-
-
-=======
->>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
-      monitor = "eDP-1, 1920x1080@60, 0x0, 1";
-
-      "$menu" = "wofi --show drun";
+        "$emoji" = "wofi-emoji";
+        "$menu" = "wofi --show drun";
 
       general = {
           gaps_in = "5";
           gaps_out = "10";
-          border_size = "2";
-          resize_on_border = "true";
-          allow_tearing = "false";
-          layout = "dwindle";      };
+          border_size = "2";      };
 
       decoration = {
           rounding = "10";
           active_opacity = "1.0";
           inactive_opacity = "1.0";
-        shadow.enabled = "false";
-        blur.enabled = "false";      };
+          dim_inactive = true;
+          shadow.enabled = "false";
+          blur.enabled = "false";      };
 
 
 
@@ -75,7 +66,6 @@
           preserve_split = "true";
                  };
 
-<<<<<<< HEAD
 
 
       master = {
@@ -84,13 +74,13 @@
 
 
 
-=======
->>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
       misc = {
           vfr = true;
           force_default_wallpaper = "0";
           disable_hyprland_logo = "true";
           disable_hyprland_qtutils_check = "true";
+          middle_click_paste = false;
+
               };
 
 
@@ -99,17 +89,23 @@
           kb_layout = "us";
           follow_mouse = "1";
           sensitivity = "0";
-          touchpad = {
-              natural_scroll = false;      };
+        touchpad = {
+            disable_while_typing = false;
+            natural_scroll = false;
+            tap-to-click = true;
+            tap-and-drag = false;     };
                };
 
 
 
       "$mainMod" = "SUPER";
 
+
+      binds = "Control_L&Super_L&Alt_L&Shift_L, SPACE, exec, pkill wofi || $emoji";
+
       bind = [
-          "$mainMod, Q, killactive,"
-          "$mainMod, P, pseudo,"
+          "$mainMod, M, exec, pkill wofi || $menu"
+          "$mainMod, K, killactive,"
           "$mainMod, J, togglesplit,"
           "$mainMod, E, exit,"
 
@@ -123,44 +119,19 @@
           "$mainMod SHIFT, 2, movetoworkspace, 2"
           "$mainMod SHIFT, 3, movetoworkspace, 3"
           "$mainMod SHIFT, 4, movetoworkspace, 4"
-<<<<<<< HEAD
           "$mainMod SHIFT, 5, movetoworkspace, 5"      ];
-
-      bindr = [
-          "$mainMod, SPACE, exec, pkill wofi || $menu"
-               ];
 
       bindm = [
           "$mainMod, mouse:272, movewindow"
           "$mainMod, mouse:273, resizewindow"      ];
 
       bindel = [
-=======
-          "$mainMod SHIFT, 5, movetoworkspace, 5"
-
-          "$mainMod, APOSTROPHE, togglespecialworkspace, toggle"
-          "$mainMod SHIFT, APOSTROPHE, movetoworkspace, special:toggle"   
-
-          ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-          ", XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"   
-
-          ", XF86AudioNext, exec, playerctl position +5"
-          ", XF86AudioPause, exec, playerctl play-pause"
-          ", XF86AudioPlay, exec, playerctl play-pause"
-          ", XF86AudioPrev, exec, playerctl position -5      ];
-
-      bindo = [
-          ", XF86AudioNext, exec, playerctl next"
-          ", XF86AudioPrev, exec, playerctl previous"
-               ];
-
-      binde = [
->>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
           ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
           ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+          ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+          ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
           ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
           ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"      ];
-<<<<<<< HEAD
 
       bindl = [
           ", XF86AudioNext, exec, playerctl next"
@@ -174,26 +145,6 @@
           "3, monitor:eDP-1, default:true, persistent:true"
                    ];
 
-=======
-
-
-
-      bindr = [
-          "$mainMod, W, exec, pkill wofi || wofi"
-               ];
-
-
-
-      bindm = [
-          "$mainMod, mouse:272, movewindow"
-          "$mainMod, mouse:273, resizewindow"      ];
-
-
-      workspace = [
-          "3, monitor:eDP-1, default:true, persistent:true"
-                   ];
-
->>>>>>> 6659473141fcce749ae6ec5cbfa1bcbb9678d569
       windowrulev2 = [
           "suppressevent maximize, class:.*"
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];
