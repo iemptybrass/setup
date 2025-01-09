@@ -13,3 +13,7 @@
 ├── flake.nix               
 └── home.nix                 
 ```
+
+
+## To Do 
+switch to AGS
