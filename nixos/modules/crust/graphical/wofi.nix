@@ -17,7 +17,7 @@
     settings = {
         width = "25%";
         height = "50%";
-        prompt = "Search ";
+        prompt = "Search";
         allow_images = true;
         term = "ghostty";
         hide_scroll = true;
