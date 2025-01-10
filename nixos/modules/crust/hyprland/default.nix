@@ -15,6 +15,10 @@
 
   wayland.windowManager.hyprland = {
       enable = true;
+    systemd = {
+        enable = true;
+        enableXdgAutostart = true;
+        variables = ["--all"];      };
     settings = {
         exec-once = "waybar & nm-applet & dunst &";
 
