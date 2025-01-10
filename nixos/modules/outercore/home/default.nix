@@ -16,7 +16,7 @@
 
   home-manager = {
       extraSpecialArgs = { inherit inputs; };
-    users = { "user" = import ./../../home.nix; };
+    users = { "user" = import ./../../../home.nix; };
                   };
 
 

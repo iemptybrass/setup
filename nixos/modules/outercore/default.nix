@@ -8,14 +8,13 @@
 
 
   imports = [
-      ./boot.nix
-      ./greetd.nix
-      ./home.nix
-      ./nix.nix
-      ./packages.nix
-      ./portal.nix
-      ./users.nix
-            ];
+      ./audio
+      ./home
+      ./localization
+      ./network
+      ./nix
+      ./users
+             ];
 
 
 

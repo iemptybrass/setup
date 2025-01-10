@@ -10,7 +10,8 @@
   imports = [
         ./mantel
         ./outercore
-            ];
+        ./systemcore
+             ];
 
 
 

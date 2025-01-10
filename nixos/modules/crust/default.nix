@@ -17,7 +17,7 @@
       ./waybar
       ./wofi
       ./yazi
-            ];
+             ];
 
 
 
