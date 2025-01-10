@@ -13,6 +13,9 @@
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";      };
     stylix.url = "github:danth/stylix";
+    firefox-addons = {
+        url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+        inputs.nixpkgs.follows = "nixpkgs";      };
             };
 
   outputs = { self, nixpkgs, ... } @inputs: {
