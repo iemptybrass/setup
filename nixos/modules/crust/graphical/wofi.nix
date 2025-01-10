@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
       wofi-emoji
+      clipman
                    ];
 
   programs.wofi = {

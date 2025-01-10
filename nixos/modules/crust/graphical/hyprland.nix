@@ -8,14 +8,21 @@
 
 
 
+  home.packages = with pkgs; [
+      pkgs.playerctl
+      pkgs.brightnessctl
+                              ];
+
   wayland.windowManager.hyprland = {
       enable = true;
     settings = {
         exec-once = "waybar & nm-applet & dunst &";
+
         monitor = "eDP-1, 1920x1080@60, 0x0, 1";
 
         "$emoji" = "wofi-emoji";
         "$menu" = "wofi --show drun";
+        "$clipboard" = "clipman pick -t wofi";
 
       general = {
           gaps_in = "5";
@@ -103,6 +110,7 @@
       binds = "Control_L&Super_L&Alt_L&Shift_L, SPACE, exec, pkill wofi || $emoji";
 
       bind = [
+          ", XF86Launch2, exec, pkill wofi || $clipboard"
           "$mainMod, M, exec, pkill wofi || $menu"
           "$mainMod, K, killactive,"
           "$mainMod, J, togglesplit,"
