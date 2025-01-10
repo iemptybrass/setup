@@ -12,6 +12,7 @@
       ./firefox
       ./ghostty
       ./hyprland
+      ./neofetch
       ./starship
       ./waybar
       ./wofi

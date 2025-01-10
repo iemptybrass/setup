@@ -8,8 +8,7 @@
 
 
   imports = [
-        ./appearance
-        ./components
+        ./stylix
             ];
 
 

@@ -9,8 +9,8 @@
 
 
   home.packages = with pkgs; [
-      pkgs.playerctl
-      pkgs.brightnessctl
+      playerctl
+      brightnessctl
                               ];
 
   wayland.windowManager.hyprland = {
