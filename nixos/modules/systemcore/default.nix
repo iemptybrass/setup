@@ -11,6 +11,7 @@
         ./boot
         ./greetd
         ./nix
+        ./upgrade
              ];
 
 
