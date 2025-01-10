@@ -8,9 +8,14 @@
 
 
   imports = [
-      ./application
-      ./graphical
-      ./terminal
+      ./dunst
+      ./firefox
+      ./ghostty
+      ./hyprland
+      ./starship
+      ./waybar
+      ./wofi
+      ./yazi
             ];
 
 
