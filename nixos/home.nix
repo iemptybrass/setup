@@ -10,8 +10,12 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./modules/crust
+      ./modules
              ];
+
+
+
+  isHomeManager = true;
 
 
 
