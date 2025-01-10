@@ -12,7 +12,6 @@
       ./home
       ./localization
       ./network
-      ./nix
       ./users
              ];
 
