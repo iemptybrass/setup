@@ -7,11 +7,13 @@
 
 
 
-    settings = [
-      {
+  programs.waybar.settings = [
+    {
         "layer" = "top";
         "position" = "top";
-        "modules-left" = [ "clock" ];
+        "height" = 60;
+
+        "modules-left" = [  ];
         "modules-center" = [ "hyprland/workspaces" ];
         "modules-right" = [ "group/expand" "network" "battery" ];
 
@@ -19,24 +21,15 @@
 
       "hyprland/workspaces" = {
           "format" = "{icon}";
-          "format-icons" = {
-              "1" = "";
-                      "2" = "󰖟";
-                      "3" = "";
-                      "4" = "󰲸";
-                      "5" = "";
-              "default"= "";      };
-          "persistent-workspaces" = {
-                "*" = 9;      };      };
-
-
-
-        "clock" = {
-
-            "interval" = 1;
-
-            "format" = "{:%I:%M:%S} ";
-            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      };
+        "format-icons" = {
+            "1" = "";
+            "2" = "󰖟";
+            "3" = ";
+            "4" = "󰻞";
+            "5" = "󰲸";
+            "default"= "";      };
+        "persistent-workspaces" = {
+            "*" = 5;      };      };
 
 
 
@@ -95,7 +88,31 @@
             "format"= "";      };
         "tray"= {
             "icon-size"= 14;
-            "spacing"= 10;      };      }      ];
+            "spacing"= 10;      };      }
+
+
+
+
+    {
+        "layer" = "top";
+        "position" = "bottom";
+        "height" = 60;
+
+        "modules-left" = [ "clock" ];
+        "modules-center" = [ ];
+        "modules-right" = [  ];
+
+
+
+
+
+        "clock" = {
+            "interval" = 1;
+
+            "format" = "{:%I:%M:%S} ";
+            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      }; 
+    }            
+                              ];
 
 
 
