@@ -6,8 +6,8 @@
 ├── modules                  
 │    ├── crust                 
 │    ├── mantel              
-│    └── outercore           
-│           └── innercore    
+│    ├── outercore           
+│    └── systemcore    
 ├── configuration.nix        
 ├── default.nix              
 ├── flake.nix               
