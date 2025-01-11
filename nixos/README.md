@@ -9,9 +9,7 @@
 │    ├── outercore           
 │    └── systemcore    
 ├── configuration.nix        
-├── default.nix              
 ├── flake.nix               
-└── home.nix                 
 ```
 
 
