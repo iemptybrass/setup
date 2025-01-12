@@ -7,7 +7,7 @@
 
 
 
-  import = [
+  imports = [
       ./style.nix
       ./settings.nix
             ];
