@@ -8,13 +8,11 @@
 
 
   programs.waybar.style = ''
-        * {
-            font-size:15px;
-            font-family: "0xproto Nerd Font Mono";      }
-        window#waybar{
-            all:unset;      }
-
-
+    * {
+        font-size:15px;
+        font-family: "0xproto Nerd Font Mono";      }
+      window#waybar{
+          all:unset;      }
         .modules-left {
             padding:7px;
             margin:5px;
@@ -33,15 +31,11 @@
             border-radius:10px;
             background: alpha(@background,.5);
             box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);      }
-
-
         tooltip {
             background:rgb(50,50,50)      }
         #clock:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover {
             transition: all .3s ease;
             color:@color0;      }
-
-
         #clock{
             padding: 0px 5px;
             color:@color7;
@@ -74,14 +68,10 @@
             color: @color9;
             border: none;
             transition: all .5s ease;      }
-
-
         #network{
             padding: 0px 5px;
             transition: all .3s ease;
             color:@color7;      }
-
-
         #battery{
             padding: 0px 5px;
             transition: all .3s ease;
@@ -97,8 +87,6 @@
               animation-timing-function: linear;
               animation-iteration-count: infinite;
               animation-direction: alternate;    }
-
-
         #group-expand{
             padding: 0px 5px;
             transition: all .3s ease;      }
@@ -126,10 +114,10 @@
         #tray menu separator {
             padding: 0px 5px;
             transition: all .3s ease;      }
-              '';
+                          '';
 
 
 
 
 
- }
+}

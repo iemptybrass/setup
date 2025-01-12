@@ -9,8 +9,6 @@
         "layer" = "top";
         "position" = "bottom";
         "height" = 60;
-        "modules-left" = [ ];
-        "modules-center" = [ ];
         "modules-right" = [ "clock" ];
       "clock" = {
           "interval" = 1;
