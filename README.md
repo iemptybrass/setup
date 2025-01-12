@@ -9,3 +9,20 @@ $ sudo nix flake init --template github:iemptybrass/flake
 ```bash
 $ sudo nixos-rebuild switch --flake /etc/nixos/#default
 ```
+
+## Structure
+
+```
+.
+├── device                   
+├── modules                  
+│    ├── crust                 
+│    ├── mantel              
+│    ├── outercore           
+│    └── systemcore    
+├── configuration.nix        
+├── flake.nix               
+```
+
+
+## To Do 
