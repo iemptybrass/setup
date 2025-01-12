@@ -5,12 +5,12 @@
 
 
   imports = [
-      ./dependencies.nix
-      ./eyecandy.nix
-      ./keyboard.nix
+      ./keybind.nix
+      ./looks.nix
       ./misc.nix
+      ./pkgs.nix
       ./rules.nix
-      ./startup.nix
+      ./start.nix
       ./systemd.nix
             ];
 

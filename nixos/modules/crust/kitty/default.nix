@@ -4,7 +4,7 @@
 
 
 
-  programs.ghostty = {
+  programs.kitty = {
       enable = true;
                     };
 

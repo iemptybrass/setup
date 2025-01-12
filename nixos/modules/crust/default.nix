@@ -9,8 +9,8 @@ home.stateVersion = "24.11";
   imports = [
       ./dunst
       ./firefox
-      ./ghostty
       ./hyprland
+      ./kitty
       ./neofetch
       ./starship
       ./waybar
