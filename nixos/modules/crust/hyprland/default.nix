@@ -1,14 +1,19 @@
-{
+{ pkgs, ... }:{
 
 
 
 
+
+  home.packages = with pkgs; [
+      playerctl
+      brightnessctl
+      clipman
+                              ];
 
   imports = [
-      ./keybind.nix
+      ./keymap.nix
       ./looks.nix
       ./misc.nix
-      ./pkgs.nix
       ./rules.nix
       ./start.nix
       ./systemd.nix
