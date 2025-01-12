@@ -5,11 +5,10 @@
 
 
   imports = [
+      ./firstbar.nix
+      ./secondbar.nix
       ./style.nix
-      ./settings.nix
-            ];
-
-
+             ];
 
   programs.waybar.enable = true;
 
