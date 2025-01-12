@@ -1,6 +1,3 @@
-
-
-
 {
 
 
@@ -89,29 +86,6 @@
         "tray"= {
             "icon-size"= 14;
             "spacing"= 10;      };      }
-
-
-
-
-    {
-        "layer" = "top";
-        "position" = "bottom";
-        "height" = 60;
-
-        "modules-left" = [ "clock" ];
-        "modules-center" = [ ];
-        "modules-right" = [  ];
-
-
-
-
-
-        "clock" = {
-            "interval" = 1;
-
-            "format" = "{:%I:%M:%S} ";
-            "tooltip-format" = "{:%Y-%m-%d} 󰃮";      }; 
-    }            
                               ];
 
 
