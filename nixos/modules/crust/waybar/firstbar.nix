@@ -8,8 +8,8 @@
     {
         "layer" = "top";
         "position" = "top";
-        "height" = 60;
-        "margin" = "10px";
+        "height" = 50;
+        "margin" = "<10|10|0|10>";
         "modules-left" = [  ];
         "modules-center" = [ "hyprland/workspaces" ];
         "modules-right" = [ "group/expand" "network" "battery" ];
