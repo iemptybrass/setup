@@ -36,10 +36,9 @@
                 "warning"= 30;
                 "critical"= 20;      };
             "format"= "{icon} {capacity}%";
-            "format-charging"= "{icon} {capacity}%";
+            "format-charging"= "{icon}󱐋 {capacity}%";
             "format-icons"= [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
-            "format-plugged"= "󰂄";
-            "format-alt"= "{icon}";
+            "format-plugged"= "󰂄";
                   };      }
                               ];
 
