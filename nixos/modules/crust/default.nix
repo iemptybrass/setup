@@ -12,6 +12,7 @@ home.stateVersion = "24.11";
       ./hyprland
       ./kitty
       ./neofetch
+      ./portal
       ./starship
       ./waybar
       ./wofi
