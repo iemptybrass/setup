@@ -6,9 +6,9 @@
 
   programs.firefox = {
       enable = true;
-    policies = [   
+    policies = {   
         BlockAboutConfig = true;
-        DefaultDownloadDirectory = "\${home}/Downloads"; ];
+        DefaultDownloadDirectory = "\${home}/Downloads";      };
     profiles.user = {
         bookmarks = [
           {
