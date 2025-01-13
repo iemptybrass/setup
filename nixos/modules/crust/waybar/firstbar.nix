@@ -9,7 +9,7 @@
         "layer" = "top";
         "position" = "top";
         "height" = 50;
-        "margin" = "<10|10|0|10>";
+        "margin" = "10px";
         "modules-left" = [  ];
         "modules-center" = [ "hyprland/workspaces" ];
         "modules-right" = [ "group/expand" "network" "battery" ];

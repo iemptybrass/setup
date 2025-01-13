@@ -9,7 +9,7 @@
         "layer" = "top";
         "position" = "bottom";
         "height" = 50;
-        "margin" = "<0|10|10|10>";
+        "margin" = "10px";
         "modules-right" = [ "clock" ];
       "clock" = {
           "interval" = 1;
