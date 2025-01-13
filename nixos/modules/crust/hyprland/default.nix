@@ -7,7 +7,8 @@
   home.packages = with pkgs; [
       playerctl
       brightnessctl
-      clipman
+      cliphist
+      wl-clipboard
                               ];
 
   imports = [

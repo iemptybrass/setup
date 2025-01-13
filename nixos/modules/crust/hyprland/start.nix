@@ -6,7 +6,7 @@
 
   wayland.windowManager.hyprland.settings = {
     exec-once = [
-        " wl-paste -t text --watch clipman store --no-persist &"
+        "wl-paste --type text --watch cliphist store &"
         "waybar &"
         "nm-applet &"
         "dunst &"      ];

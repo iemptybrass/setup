@@ -8,15 +8,15 @@
       "$mainMod" = "SUPER";
       "$emoji" = "wofi-emoji";
       "$menu" = "wofi --show drun";
-      "$clipboard" = "clipman pick -t wofi";
+      "$clipboard" = "cliphist list | wofi --dmenu | cliphist decode | wl-copy";
     input.touchpad = {
           disable_while_typing = false;
           tap-to-click = true;
           tap-and-drag = false;     };
     binds = [
         "Control_L&Super_L&Alt_L&Shift_L, SPACE, exec, pkill wofi || $emoji"
-        "Control_L&Super_L, V, exec, pkill wofi || $clipboard"      ];
-    bindd = "$mainMod, W, , exec, pkill wofi || $menu";
+        "Control_L&Super_L, V, exec, pkill wofi || $clipboard"
+        "Super_L, W, exec, pkill wofi || $menu"      ];
     bind = [
         "$mainMod, K, killactive,"
         "$mainMod, J, togglesplit,"
