@@ -8,7 +8,7 @@
     {
         "layer" = "top";
         "position" = "top";
-        "height" = 50;
+        "height" = 40;
         "margin" = "10px";
         "modules-left" = [  ];
         "modules-center" = [ "hyprland/workspaces" ];

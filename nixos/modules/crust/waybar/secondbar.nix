@@ -8,7 +8,7 @@
     {
         "layer" = "top";
         "position" = "bottom";
-        "height" = 50;
+        "height" = 40;
         "margin" = "10px";
         "modules-right" = [ "clock" ];
       "clock" = {
