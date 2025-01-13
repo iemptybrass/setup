@@ -9,6 +9,7 @@
         "layer" = "top";
         "position" = "top";
         "height" = 60;
+        "margin" = "10px";
         "modules-left" = [  ];
         "modules-center" = [ "hyprland/workspaces" ];
         "modules-right" = [ "group/expand" "network" "battery" ];
@@ -39,31 +40,7 @@
             "format-icons"= [ "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
             "format-plugged"= "󰂄";
             "format-alt"= "{icon}";
-                  };
-        "custom/expand"= {
-            "format"= "";
-            "tooltip"= false;      };
-        "custom/endpoint"={
-            "format"= "|";
-            "tooltip"= false;      };
-        "group/expand"= {
-            "orientation"= "horizontal";
-            "drawer"= {
-                "transition-duration"= 600;
-                "transition-to-left"= true;
-                "click-to-reveal"= true;      };
-            "modules"= ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];      };
-        "cpu"= {
-            "format"= "";
-            "tooltip"= true;      };
-        "memory"= {
-            "format"= "";      };
-        "temperature"= {
-            "critical-threshold"= 80;
-            "format"= "";      };
-        "tray"= {
-            "icon-size"= 14;
-            "spacing"= 10;      };      }
+                  };      }
                               ];
 
 
