@@ -8,7 +8,7 @@
     log = {
         enabled = false;      };
     manager = {
-        ratio = [ 1, 2, 5 ];
+        ratio = [ "1, 2, 5" ];
         sort_by = "alphabetical";
         sort_sensitive = false;
         sort_reverse = false;
