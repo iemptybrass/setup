@@ -8,9 +8,8 @@
 
 
   imports = [
+      ./core
       ./mantel
-      ./outercore
-      ./systemcore
              ];
 
 
