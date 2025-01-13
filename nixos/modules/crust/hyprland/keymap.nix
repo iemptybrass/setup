@@ -14,9 +14,9 @@
           tap-to-click = true;
           tap-and-drag = false;     };
     binds = [
-        "Control_L&Super_L&Alt_L&Shift_L, SPACE, exec, pkill wofi || $emoji";
+        "Control_L&Super_L&Alt_L&Shift_L, SPACE, exec, pkill wofi || $emoji"
         "Control_L&Super_L, V, exec, pkill wofi || $clipboard"      ];
-    bind = "$mainMod, W, exec, pkill wofi || $menu";
+    bindd = "$mainMod, W, , exec, pkill wofi || $menu";
     bind = [
         "$mainMod, K, killactive,"
         "$mainMod, J, togglesplit,"
