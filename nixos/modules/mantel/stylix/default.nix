@@ -36,10 +36,10 @@
           name = "0xproto Nerd Font Mono";      };
       sansSerif = {
           package = pkgs.arkpandora_ttf;
-          name = "Arial";      };
+          name = "Aerial";      };
       serif = {
           package = pkgs.arkpandora_ttf;
-          name = "Times New Roman";      };      };
+          name = "Tymes";      };      };
             };
 
 
