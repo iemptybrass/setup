@@ -5,7 +5,7 @@
 
 
   wayland.windowManager.hyprland.systemd = {
-      enable = true;
+      enable = false;
       enableXdgAutostart = true;
       variables = ["--all"];
                                             };

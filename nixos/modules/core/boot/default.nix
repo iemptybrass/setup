@@ -11,6 +11,8 @@
       efi.canTouchEfiVariables = true;      };    
           };
 
+  programs.hyprland.withUWSM  = true;
+
 
 
 
