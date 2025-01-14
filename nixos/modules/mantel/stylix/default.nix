@@ -1,8 +1,4 @@
- { pkgs, ... }:
-
-
-
-{
+{ pkgs, ... }:{
 
 
 
@@ -39,15 +35,15 @@
           package = pkgs.nerd-fonts._0xproto;
           name = "0xproto Nerd Font Mono";      };
       sansSerif = {
-          package = pkgs.dejavu_fonts;
-          name = "DejaVu Sans";      };
+          package = pkgs.arkpandora_ttf;
+          name = "Arial";      };
       serif = {
-          package = pkgs.dejavu_fonts;
-          name = "DejaVu Serif";      };      };
+          package = pkgs.arkpandora_ttf;
+          name = "Times New Roman";      };      };
             };
 
 
 
 
 
- }
+}

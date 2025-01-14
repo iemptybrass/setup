@@ -1,8 +1,4 @@
- { inputs, ... }:
-
-
-
-{
+{ inputs, ... }:{
 
 
 
@@ -16,11 +12,11 @@
 
   home-manager = {
       extraSpecialArgs = { inherit inputs; };
-    users = { "user" = import ./../../crust; };
+    users = { "user" = import ./../../surface; };
                   };
 
 
 
 
 
- }
+}
