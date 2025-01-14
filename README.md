@@ -1,7 +1,8 @@
 ## initializing flake
+
 ```bash
 $ cd /etc/nixos
-$ sudo nix flake init --template github:iemptybrass/flake
+$ sudo nix flake init --template github:iemptybrass/setup
 ```
 
 ## rebuilding with flakes enabled
@@ -16,12 +17,11 @@ $ sudo nixos-rebuild switch --flake /etc/nixos/#default
 .
 ├── device                   
 ├── modules                  
-│    ├── crust                 
+│    ├── core
 │    ├── mantel              
-│    ├── outercore           
-│    └── systemcore    
+│    └── surface      
 ├── configuration.nix        
-├── flake.nix               
+└── flake.nix               
 ```
 
 
