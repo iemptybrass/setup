@@ -1,14 +1,10 @@
- { pkgs, ... }:
-
-
-
-{
+{ pkgs, ... }:{
 
 
 
 
 
-    environment.systemPackages = with pkgs; [ greetd.tuigreet ];
+  environment.systemPackages = with pkgs; [ greetd.tuigreet ];
 
 
 
@@ -18,7 +14,8 @@
       default_session = {
           command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
           user = "user";      };      };
-};
+                     };
+
 
 
   systemd.services.greetd.serviceConfig = {
@@ -30,10 +27,10 @@
     TTYReset = true;
     TTYVHangup = true;
     TTYVTDisallocate = true;
-  };
+                                           };
 
 
 
 
   
- }
+}
