@@ -21,9 +21,9 @@
       "rd.udev.log_level=3"
       "udev.log_priority=3"      ];  
           };
-
-    systemd = {
-        network.wait-online = true;
+  services.journald.extraConfig = "SystemMaxUse=1G";
+  systemd = {
+      network.wait-online = true;
     };
 
 
