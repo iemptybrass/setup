@@ -9,7 +9,7 @@
   boot = {
       bootspec.enable = true;
       tmp.cleanOnBoot = true;
-      consoleloglevel = 0;
+      consoleLogLevel = 0;
       initrd.verbose = false;
     loader = {
         systemd-boot.editor = false;
