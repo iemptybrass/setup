@@ -7,7 +7,6 @@
   boot = {
       bootspec.enable = true;
       tmp.cleanOnBoot = true;
-      kernelPackages = pkgs.linuxPackages_lts;
       consoleloglevel = 0;
       initrd.verbose = false;
     loader = {
