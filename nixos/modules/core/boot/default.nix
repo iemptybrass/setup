@@ -4,6 +4,8 @@
 
 
 
+    services.journald.extraConfig = "SystemMaxUse=1G";
+    systemd.network.wait-online.enable = false;
   boot = {
       bootspec.enable = true;
       tmp.cleanOnBoot = true;
@@ -21,10 +23,6 @@
       "rd.udev.log_level=3"
       "udev.log_priority=3"      ];  
           };
-  services.journald.extraConfig = "SystemMaxUse=1G";
-  systemd = {
-      network.wait-online = false;
-    };
 
 
 
