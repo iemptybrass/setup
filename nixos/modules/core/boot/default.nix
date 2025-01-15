@@ -23,7 +23,7 @@
           };
   services.journald.extraConfig = "SystemMaxUse=1G";
   systemd = {
-      network.wait-online = true;
+      network.wait-online = false;
     };
 
 
