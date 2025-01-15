@@ -22,6 +22,10 @@
       "udev.log_priority=3"      ];  
           };
 
+    systemd = {
+        network.wait-online = true;
+    };
+
 
 
 
