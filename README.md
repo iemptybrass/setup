@@ -39,3 +39,12 @@ sudo nixos-rebuild switch --flake /etc/nixos/#default
 
 
 
+
+
+
+
+
+Startup finished in 46.467s (firmware) + 5.429s (loader) + 1.556s (kernel) + 2.190s (userspace) = 55.645s 
+graphical.target reached after 2.190s in userspace.
+
+
