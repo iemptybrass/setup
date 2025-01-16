@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }:{
 
 
 
@@ -11,6 +11,7 @@
       tmp.cleanOnBoot = true;
       consoleLogLevel = 0;
       initrd.verbose = false;
+      kernelPackages = pkgs.linuxKernel.packages.linux_zen.hpuefi-mod;
     loader = {
         systemd-boot.editor = false;
         systemd-boot.enable = true;
