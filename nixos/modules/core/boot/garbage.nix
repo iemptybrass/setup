@@ -12,6 +12,11 @@
 
   boot.tmp.cleanOnBoot = true;
 
+  nix = {
+      settings.auto-optimise-store = true;
+      optimise.automatic = true;
+         };
+
 
 
 
