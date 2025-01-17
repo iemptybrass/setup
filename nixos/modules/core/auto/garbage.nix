@@ -10,6 +10,9 @@
         options = "--delete-older-than 3d";
             };
 
+  boot.tmp.cleanOnBoot = true;
+
+
 
 
 

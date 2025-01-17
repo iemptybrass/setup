@@ -6,7 +6,6 @@
 
   boot = {
       bootspec.enable = true;
-      tmp.cleanOnBoot = true;
       consoleLogLevel = 0;
     initrd = {
         verbose = false;
