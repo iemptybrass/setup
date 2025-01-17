@@ -6,7 +6,6 @@
 
   system.autoUpgrade = {
       enable = true;
-      allowReboot = true;
       flake = "/etc/nixos/#default";
     flags = [
       "--update-input"
@@ -14,11 +13,6 @@
       "--commit-lock-file"      ];
                         };
 
-  nix.gc = {
-      automatic = true;
-      dates = "daily";
-      options = "--delete-older-than 3d";     
-            };
 
 
 

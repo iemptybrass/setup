@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{
 
 
 
@@ -11,11 +11,14 @@
       tmp.cleanOnBoot = true;
       consoleLogLevel = 0;
       initrd.verbose = false;
-      kernelPackages = pkgs.linuxKernel.packages.linux_zen.hpuefi-mod;
+      postBootCommands = "nix-env --delete-generations +10";
     loader = {
-        systemd-boot.editor = false;
-        systemd-boot.enable = true;
-        efi.canTouchEfiVariables = true;      }; 
+        efi.canTouchEfiVariables = true;      
+      systemd-boot = {
+          enable = true;
+          editor = false;
+          configurationLimit = 5;
+          edk2-uefi-shell.enable = true;      };      }; 
     kernelParams = [
       "quiet"
       "splash"
