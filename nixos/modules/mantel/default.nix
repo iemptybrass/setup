@@ -7,7 +7,8 @@
   imports = [
       ./audio
       ./home
-      ./localization
+      ./local
+      ./login
       ./network
       ./stylix
       ./users
