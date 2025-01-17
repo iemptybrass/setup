@@ -4,17 +4,17 @@
 
 
 
-  environment.systemPackages = with pkgs; [ 
-      greetd.tuigreet 
-                                           ];
-
   services.greetd = {
-       enable = true;
+      enable = true;
     settings = rec {
       default_session = {
           command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
           user = "user";      };      };
                      };
+
+  programs.regreet = {
+      enable = true;
+                      };
 
   systemd.services.greetd.serviceConfig = {
       Type = "idle";
