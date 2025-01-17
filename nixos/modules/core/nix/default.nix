@@ -4,11 +4,10 @@
 
 
 
-  nix = {
-    settings = {
+  nix.settings = {
         allowed-users = [ "user" ];
-        experimental-features = [ "nix-command" "flakes" ];      };
-         };
+        experimental-features = [ "nix-command" "flakes" ];
+                  };
 
   nixpkgs.config.allowUnfree = true;
 
