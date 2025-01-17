@@ -8,7 +8,9 @@
       bootspec.enable = true;
       tmp.cleanOnBoot = true;
       consoleLogLevel = 0;
-      initrd.verbose = false;
+    initrd = {
+        verbose = false;
+        systemd.enable = true;      };
     loader = {
         efi.canTouchEfiVariables = true;      
       systemd-boot = {
@@ -18,7 +20,6 @@
           edk2-uefi-shell.enable = false;      };      }; 
     kernelParams = [
       "quiet"
-      "splash"
       "vga=current"
       "rd.systemd.show_status=false"
       "rd.udev.log_level=3"
@@ -27,7 +28,10 @@
 
   services.journald.extraConfig = "SystemMaxUse=1G";
 
-  systemd.network.wait-online.enable = false;
+  systemd = {
+      network.wait-online.enable = false;
+      watchdog.rebootTime = "0";
+             };
 
 
 
