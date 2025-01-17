@@ -7,7 +7,8 @@
   imports = [
         ./auto
         ./boot
-        ./greetd
+        ./hardware
+        ./login
         ./nix
              ];
 
