@@ -4,9 +4,9 @@
 
 
 
-  systemd = {
-      network.wait-online.enable = false;
-             };
+    services.journald.extraConfig = "SystemMaxUse=5M";
+
+    systemd.network.wait-online.enable = false;
 
   boot.loader = {
       efi.canTouchEfiVariables = true;      
@@ -15,8 +15,6 @@
         configurationLimit = 5;
         edk2-uefi-shell.enable = false;      };
                  };
-
-  services.journald.extraConfig = "SystemMaxUse=5M";
 
 
 
