@@ -4,6 +4,8 @@
 
 
 
+  environment.systemPackages = with pkgs; [ pavucontrol helvum ];
+
     security.rtkit.enable = true;
 
   services.pipewire = {
