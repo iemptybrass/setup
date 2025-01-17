@@ -5,6 +5,7 @@
 
   stylix = {
       enable = true;
+      image = ./wallpaper.png;
     base16Scheme = {
         base00 = "212121";
         base01 = "303030";
@@ -22,7 +23,6 @@
         base0D = "82AAFF";
         base0E = "C792EA";
         base0F = "FF5370";      };
-    image = ./wallpaper.png;
     cursor = {
         size = 24;
         package = pkgs.google-cursor;
