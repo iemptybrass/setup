@@ -4,8 +4,6 @@
 
 
 
-  description = "A simple flake with 1 template";
-
   outputs = { self }: {
     templates = {
       example = {
