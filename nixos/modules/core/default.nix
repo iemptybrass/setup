@@ -8,7 +8,6 @@
         ./boot
         ./hardware
         ./nix
-        ./secure
         ./silent
              ];
 
