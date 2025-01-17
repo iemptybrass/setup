@@ -5,7 +5,7 @@
 
 
   imports = [
-      ./silent.nix
+      ./systemd.nix
   ];
 
 

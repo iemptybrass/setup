@@ -6,6 +6,7 @@
 
   imports = [
       ./etc.nix
+      ./silent.nix
       ./stage-1.nix
       ./stage-2.nix
              ];
