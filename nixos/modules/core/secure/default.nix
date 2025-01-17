@@ -4,9 +4,8 @@
 
 
 
-  imports = [
+  boot.bootspec.enable = true;
 
-             ];
 
 
 
