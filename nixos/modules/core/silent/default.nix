@@ -7,8 +7,8 @@
   imports = [
       ./etc.nix
       ./silent.nix
-      ./stage-1.nix
-      ./stage-2.nix
+      ./stage1.nix
+      ./stage2.nix
              ];
 
   disabledModules = [
