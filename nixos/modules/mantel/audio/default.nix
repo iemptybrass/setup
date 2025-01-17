@@ -1,10 +1,13 @@
-{
+{ pkgs, ... }:{
 
 
 
 
 
-  environment.systemPackages = with pkgs; [ pavucontrol helvum ];
+  environment.systemPackages = with pkgs; [ 
+      pavucontrol 
+      helvum 
+                                           ];
 
     security.rtkit.enable = true;
 
