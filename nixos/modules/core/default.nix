@@ -10,6 +10,7 @@
         ./hardware
         ./login
         ./nix
+        ./silent
              ];
 
 
