@@ -4,11 +4,11 @@
 
 
 
-  services.dbus.implementation = lib.mkForce "dbus"
+    services.dbus.implementation = lib.mkForce "dbus"
 
-  networking.useDHCP = lib.mkDefault true;
+    networking.useDHCP = lib.mkDefault true;
 
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+    hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
 
 
