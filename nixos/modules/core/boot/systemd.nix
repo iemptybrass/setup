@@ -16,6 +16,8 @@
         edk2-uefi-shell.enable = false;      };
                  };
 
+  services.journald.extraConfig = "SystemMaxUse=5M";
+
 
 
 

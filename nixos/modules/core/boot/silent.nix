@@ -23,8 +23,6 @@
       "udev.log_priority=3"      ];  
           };
 
-  services.journald.extraConfig = "SystemMaxUse=1G";
-
   systemd = {
       watchdog.rebootTime = "0";
              };
