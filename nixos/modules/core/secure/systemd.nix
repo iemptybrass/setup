@@ -195,7 +195,7 @@
           "~@obsolete" 
           "~@cpu-emulation" 
           "ptrace"      ];      };
-          
+
 
     nix-daemon.serviceConfig = {
         NoNewPrivileges = true;
@@ -251,8 +251,304 @@
           "~@raw-io"      ];      };
 
 
+    nscd.serviceConfig = {
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true; 
+        ProtectProc = "invisible";
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        MemoryDenyWriteExecute = true;
+        LockPersonality = true;
+        SystemCallArchitectures = "native";
+      SystemCallFilter = [
+          "~@mount"
+          "~@swap"
+          "~@clock"
+          "~@obsolete"
+          "~@cpu-emulation"      ];
+     CapabilityBoundingSet= [
+          "~CAP_CHOWN"
+          "~CAP_FSETID"
+          "~CAP_SETFCAP"      ];      };
+
+
+    rescue.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "full";
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true; 
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateNetwork = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        LockPersonality = true;
+        SystemCallArchitectures = "native";
+      RestrictAddressFamilies = [ 
+          "~AF_INET6"  
+          "~AF_INET"
+          "~AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@swap"
+          "~@clock"
+          "~@obsolete"
+          "~@cpu-emulation"
+          "~@resources"      ];
+      CapabilityBoundingSet= [
+          "~CAP_CHOWN"
+          "~CAP_FSETID"
+          "~CAP_SETFCAP"      ];      };
+
+
+    systemd-rfkill.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateNetwork = true;
+        PrivateUsers = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictAddressFamilies = [ "AF_UNIX" ];
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        SystemCallArchitectures = "native";
+        LockPersonality = true;
+      SystemCallFilter = [
+          "~@swap"
+          "~@obsolete"
+          "~@cpu-emulation"
+          "~@privileged"      ];
+      CapabilityBoundingSet = [
+          "~CAP_SYS_PTRACE" 
+          "~CAP_SYS_PACCT"      ];      };
+
+
+    reload-systemd-vconsole-setup.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateMounts = true;
+        PrivateNetwork = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        DevicePolicy = "closed";
+        LockPersonality = true;
+        SystemCallArchitectures = "native";
+      RestrictAddressFamilies = [ 
+          "~AF_INET6"  
+          "~AF_INET"
+          "~AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@keyring"
+          "~@swap"
+          "~@obsolete" 
+          "~@cpu-emulation"      ];      };
+
+
+    rtkit-daemon.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true; 
+        PrivateTmp = true;
+        PrivateMounts = true;
+        PrivateDevices = true;
+        RestrictNamespaces = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        DevicePolicy = "closed";
+        LockPersonality = true;
+      RestrictAddressFamilies = [ 
+          "~AF_INET6"  
+          "~AF_INET"
+          "~AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@keyring"
+          "~@swap"
+          "~@clock"         
+          "~@module"
+          "~@obsolete"
+          "~@cpu-emulation"      ];      }; 
+
+
+    systemd-ask-password-console.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateMounts = true;
+        PrivateNetwork = true;
+        PrivateDevices = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        DevicePolicy = "closed";
+        LockPersonality = true;
+      RestrictAddressFamilies = [ 
+          "~AF_INET6"  
+          "~AF_INET"
+          "~AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@keyring"
+          "~@swap"
+          "~@clock"         
+          "~@module"
+          "~@obsolete"
+          "~@cpu-emulation"      ];      };
+
+
+    systemd-ask-password-wall.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateMounts = true;
+        PrivateNetwork = true;
+        PrivateDevices = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        DevicePolicy = "closed";
+        LockPersonality = true;
+      RestrictAddressFamilies = [ 
+          "~AF_INET6"  
+          "~AF_INET"
+          "~AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@keyring"
+          "~@swap"
+          "~@clock"         
+          "~@module"
+          "~@obsolete"
+          "~@cpu-emulation"      ];      };
+
+
+    systemd-udevd.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true;
+        ProtectClock = true; 
+        ProtectProc = "invisible";
+        RestrictNamespaces = true;
+        CapabilityBoundingSet = "~CAP_SYS_PTRACE ~CAP_SYS_PACCT";      };
+
+
+    "user@1000".serviceConfig = {
+        ProtectSystem = "strict";
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectKernelTunables = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateNetwork = true;
+        MemoryDenyWriteExecute = true;
+        RestrictNamespaces = true;
+        RestrictRealtime = true;
+        RestrictSUIDSGID = true;
+        SystemCallArchitectures = "native";
+      RestrictAddressFamilies = [ 
+          "AF_UNIX" 
+          "AF_NETLINK"
+          "AF_BLUETOOTH"      ];
+      SystemCallFilter = [
+          "~@keyring"
+          "~@swap"
+          "~@debug"
+          "~@module"
+          "~@obsolete" 
+          "~@cpu-emulation"      ];      };
+
+
+    wpa_supplicant.serviceConfig = {
+        NoNewPrivileges = true;
+        ProtectSystem = "strict";
+        ProtectHome = true;
+        ProtectKernelModules = true;
+        ProtectKernelLogs = true;
+        ProtectControlGroups = true;
+        ProtectClock = true; 
+        ProtectHostname = true;
+        ProtectProc = "invisible";
+        PrivateTmp = true;
+        PrivateMounts = true;
+        RestrictRealtime = true;
+        RestrictNamespaces = true;
+        RestrictSUIDSGID = true;
+        MemoryDenyWriteExecute = true;
+        SystemCallArchitectures = "native";
+        LockPersonality= true; 
+        CapabilityBoundingSet = "CAP_NET_ADMIN CAP_NET_RAW";
+      RestrictAddressFamilies = [ 
+          "AF_UNIX" 
+          "AF_NETLINK"
+          "AF_INET"
+          "AF_INET6"
+          "AF_PACKET"      ];
+      SystemCallFilter = [
+          "~@mount"
+          "~@raw-io"
+          "~@privileged"
+          "~@keyring"
+          "~@reboot"
+          "~@module"
+          "~@swap"
+          "~@resources" 
+          "~@obsolete" 
+          "~@cpu-emulation" 
+          "ptrace"      ];      };
+
+
 
                       };
+
 
 
 
