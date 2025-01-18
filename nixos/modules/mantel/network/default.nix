@@ -4,6 +4,8 @@
 
 
 
+    services.openssh.enable = true;
+
   networking = {
       hostName = "nixos";
       networkmanager.enable = true;
