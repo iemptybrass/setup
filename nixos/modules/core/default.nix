@@ -9,7 +9,6 @@
         ./hardware
         ./nix
         ./secure
-        ./silent
              ];
 
 
