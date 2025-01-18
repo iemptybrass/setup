@@ -4,10 +4,6 @@
 
 
 
-    services.journald.extraConfig = "SystemMaxUse=5M";
-
-    systemd.network.wait-online.enable = false;
-
   boot.loader = {
       efi.canTouchEfiVariables = true;      
     systemd-boot = {

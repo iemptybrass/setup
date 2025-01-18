@@ -5,9 +5,8 @@
 
 
   imports = [
-      ./garbage.nix
-      ./systemd.nix
-      ./secure.nix
+      ./sysd.nix
+      ./trash.nix
       ./upgrade.nix
              ];
 
