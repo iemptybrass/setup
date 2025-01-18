@@ -6,7 +6,7 @@
 
   boot.plymouth = {
       enable = true;
-      theme = "spinner";
+      theme = lib.mkDefault "spinner";
                    };
 
 
