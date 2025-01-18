@@ -1,0 +1,13 @@
+{
+
+
+
+
+
+  security.sudo.execWheelOnly = true;
+
+
+
+
+  
+}

@@ -4,7 +4,7 @@
 
 
 
-    services.dbus.implementation = lib.mkForce "dbus"
+    services.dbus.implementation = lib.mkForce "dbus";
 
     networking.useDHCP = lib.mkDefault true;
 
