@@ -8,7 +8,7 @@
       enable = true;
     settings = rec {
       default_session = {
-          command = "${greetd.regreet}/bin/regreet --cmd Hyprland";
+          command = "cage -s -mlast -- regreet";
           user = "user";      };      };
                      };
 
