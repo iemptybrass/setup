@@ -10,9 +10,7 @@
       bootspec.enable = true;
       consoleLogLevel = 0;
       loader.systemd-boot.editor = false;
-    initrd = {
-        verbose = false;
-        systemd.enable = true;      };
+      initrd.verbose = false;
     kernelParams = [
         "quiet"
         "vga=current"
