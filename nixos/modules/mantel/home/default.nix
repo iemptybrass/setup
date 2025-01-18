@@ -10,7 +10,7 @@
              
   home-manager = {
       extraSpecialArgs = { inherit inputs; };
-    users = { "user" = import ./../../surface; };
+    users = { "user" = import ../../surface; };
                   };
 
 
