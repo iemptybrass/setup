@@ -1,0 +1,13 @@
+{
+
+
+
+
+
+    security.rtkit.enable = true;
+
+
+
+
+
+}
