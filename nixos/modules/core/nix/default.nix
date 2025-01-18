@@ -5,8 +5,8 @@
 
 
   imports = [
-      ./settings.nix
-      ./toggle
+      ./opt.nix
+      ./set.nix
              ];
 
 

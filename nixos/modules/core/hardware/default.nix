@@ -5,9 +5,9 @@
 
 
   imports = [
-      ./device.nix
-      ./file.nix
-      ./modules.nix
+      ./dev.nix
+      ./fsys.nix
+      ./krnl.nix
              ];
 
 
