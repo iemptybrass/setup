@@ -168,7 +168,8 @@
 
 ##################################################
 
-    "getty@tty1".serviceConfig = {
+    "getty@tty1" = {
+      serviceConfig = {
         NoNewPrivileges = true;
         ProtectSystem = "stric";
         ProtectControlGroups = true;
@@ -188,17 +189,17 @@
         LockPersonality = true;
         IPAddressDeny = ["0.0.0.0/0" "::/0"];
         MemoryDenyWriteExecute = true;
-        UMask = 0077;
-      RestrictAddressFamilies = [ 
-          "AF_UNIX"
-          "AF_NETLINK"      ];
-      SystemCallFilter = [
-          "~@obsolete"
-          "~@debug"
-          "~@reboot"
-          "~@swap"
-         "~@clock"
-         "~@cpu-emulation"      ];      };
+          UMask = 0077;
+        RestrictAddressFamilies = [ 
+            "AF_UNIX"
+            "AF_NETLINK"      ];
+        SystemCallFilter = [
+            "~@obsolete"
+            "~@debug"
+            "~@reboot"
+            "~@swap"
+            "~@clock"
+            "~@cpu-emulation"      ];      };      };
 
 
     systemd-journald.serviceConfig = {
