@@ -100,7 +100,9 @@
           NoNewPrivileges = true;
           PrivateDevices = true;
           PrivateMounts = true;
+          PrivateNetwork = true;
           PrivateTmp = true;
+          PrivateUsers= true;
           ProcSubset = "pid";
           ProtectClock = true; 
           ProtectControlGroups = true;
@@ -110,9 +112,9 @@
           ProtectKernelModules = true;
           ProtectKernelTunables = true;
           ProtectProc = "invisible";
+          ProtectSystem = "full";
           RestrictNamespaces = true;
           RestrictRealtime = true;
-          RestrictSUIDSGID = true;
           SystemCallArchitectures = "native";
           SystemCallErrorNumber = "EPERM";
           UMask = "0077";
