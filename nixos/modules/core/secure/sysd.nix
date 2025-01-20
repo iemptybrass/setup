@@ -1,4 +1,4 @@
-{ lib, ... }:{
+{
 
 
 
@@ -6,7 +6,92 @@
 
   systemd.services = {
 
+##################################################
 
+    NetworkManager-dispatcher = {
+      serviceConfig = {
+          IPAddressDeny = "any";
+          LockPersonality= true; 
+          MemoryDenyWriteExecute = true;
+          NoNewPrivileges = true;
+          PrivateDevices = true;
+          PrivateMounts = true;
+          PrivateTmp = true;
+          PrivateUsers = true;
+          ProcSubset = "pid";
+          ProtectClock = true; 
+          ProtectControlGroups = true;
+          ProtectHome = true;
+          ProtectHostname = true;
+          ProtectKernelLogs = true;
+          ProtectKernelModules = true;
+          ProtectKernelTunables = true;
+          ProtectProc = "invisible";
+          ProtectSystem = "strict";
+          RestrictNamespaces = true;
+          RestrictRealtime = true;
+          RestrictSUIDSGID = true;
+          SystemCallArchitectures = "native";
+          UMask = "0077";
+        CapabilityBoundingSet = [
+            "CAP_NET_ADMIN"
+            "CAP_NET_RAW"      ];
+        RestrictAddressFamilies = [ 
+            "AF_PACKET"
+            "AF_NETLINK"
+            "AF_UNIX" 
+            "AF_INET"
+            "AF_INET6"      ];
+        SystemCallFilter = [
+            "~@cpu-emulation" 
+            "~@module" 
+            "~@mount"
+            "~@obsolete"
+            "ptrace"
+            "~@swap"      ];      };      };
+
+##################################################
+
+    NetworkManager = {
+      serviceConfig = {
+          IPAddressDeny = "any";
+          LockPersonality= true; 
+          MemoryDenyWriteExecute = true;
+          NoNewPrivileges = true;
+          PrivateDevices = true;
+          PrivateMounts = true;
+          PrivateTmp = true;
+          PrivateUsers = true;
+          ProcSubset = "pid";
+          ProtectClock = true; 
+          ProtectControlGroups = true;
+          ProtectHome = true;
+          ProtectHostname = true;
+          ProtectKernelLogs = true;
+          ProtectKernelModules = true;
+          ProtectKernelTunables = true;
+          ProtectProc = "invisible";
+          ProtectSystem = "strict";
+          RestrictNamespaces = true;
+          RestrictRealtime = true;
+          RestrictSUIDSGID = true;
+          SystemCallArchitectures = "native";
+          UMask = "0077";
+        RestrictAddressFamilies = [ 
+            "AF_UNIX" 
+            "AF_NETLINK"
+            "AF_INET"
+            "AF_INET6"
+            "AF_PACKET"      ];
+        SystemCallFilter = [
+            "~@mount"
+            "~@module"
+            "~@swap"
+            "~@obsolete" 
+            "~@cpu-emulation" 
+            "ptrace"      ];      };      };
+
+##################################################
 
     dbus.serviceConfig = {
         NoNewPrivileges = true;
@@ -41,6 +126,7 @@
           "~@swap"
           "~@cpu-emulation"      ];      };
 
+##################################################
 
     "getty@tty1".serviceConfig = {
         NoNewPrivileges = true;
@@ -132,69 +218,10 @@
           "CAP_CHOWN"      ];      };
 
 
-    NetworkManager.serviceConfig = {
-        NoNewPrivileges = true;
-        ProtectHome = true;
-        ProtectKernelModules = true;
-        ProtectKernelLogs = true;
-        ProtectControlGroups = true;
-        ProtectClock = true; 
-        ProtectHostname = true;
-        ProtectProc = "invisible";
-        PrivateTmp = true;
-        RestrictRealtime = true;
-        RestrictNamespaces = true;
-        RestrictSUIDSGID = true;
-        MemoryDenyWriteExecute = true;
-        SystemCallArchitectures = "native";
-        LockPersonality= true; 
-      RestrictAddressFamilies = [ 
-          "AF_UNIX" 
-          "AF_NETLINK"
-          "AF_INET"
-          "AF_INET6"
-          "AF_PACKET"      ];
-      SystemCallFilter = [
-          "~@mount"
-          "~@module"
-          "~@swap"
-          "~@obsolete" 
-          "~@cpu-emulation" 
-          "ptrace"      ];      };
 
 
-    NetworkManager-dispatcher.serviceConfig = {
-        NoNewPrivileges = true;
-        ProtectSystem = "strict";
-        ProtectHome = true;
-        ProtectKernelModules = true;
-        ProtectKernelLogs = true;
-        ProtectControlGroups = true;
-        ProtectClock = true; 
-        ProtectHostname = true;
-        ProtectProc = "invisible";
-        PrivateTmp = true;
-        PrivateMounts = true;
-        RestrictRealtime = true;
-        RestrictNamespaces = true;
-        RestrictSUIDSGID = true;
-        MemoryDenyWriteExecute = true;
-        SystemCallArchitectures = "native";
-        LockPersonality= true; 
-        CapabilityBoundingSet = "CAP_NET_ADMIN CAP_NET_RAW";
-      RestrictAddressFamilies = [ 
-          "AF_UNIX" 
-          "AF_NETLINK"
-          "AF_INET"
-          "AF_INET6"
-          "AF_PACKET"      ];
-      SystemCallFilter = [
-          "~@mount"
-          "~@module" 
-          "~@swap"
-          "~@obsolete" 
-          "~@cpu-emulation" 
-          "ptrace"      ];      };
+
+
 
 
     nix-daemon.serviceConfig = {
