@@ -4,6 +4,10 @@
 
 
 
+  imports = [
+      ( modulesPath + "/installer/scan/not-detected.nix" )
+             ];
+
     swapDevices = [ ];
 
   fileSystems = {
@@ -16,9 +20,7 @@
           options = [ "fmask=0077" "dmask=0077" ];      };
                  };
                  
-  imports = [
-      ( modulesPath + "/installer/scan/not-detected.nix" )
-             ];
+
 
   boot = {
       kernelModules = [ "kvm-intel" ];
