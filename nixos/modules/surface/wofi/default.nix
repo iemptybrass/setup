@@ -8,23 +8,17 @@
 
 
 
-  home.packages = with pkgs; [
-      wofi-emoji
-      cliphist
-      wl-clipboard
-                   ];
-
-  programs.wofi = {
+  programs.rofi = {
       enable = true;
-    settings = {
-        width = "25%";
-        height = "50%";
-        prompt = "Search";
-        allow_images = true;
-        term = "ghostty";
-        hide_scroll = true;
-        insensitive = true;
-                };
+      location = center;
+      terminal = "\${pkgs.kitty}/bin/kitty";
+    plugins = with pkgs; [
+        rofi-emoji
+        rofi-calc
+        rofi-screenshot
+        rofi-power-menu
+        rofi-pulse-select
+               ];
                    };
 
 
