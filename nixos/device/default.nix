@@ -8,8 +8,6 @@
       ( modulesPath + "/installer/scan/not-detected.nix" )
              ];
 
-    swapDevices = [ ];
-
   fileSystems = {
     "/" = 
         { device = "/dev/disk/by-uuid/";
@@ -19,8 +17,6 @@
           fsType = "vfat";
           options = [ "fmask=0077" "dmask=0077" ];      };
                  };
-                 
-
 
   boot = {
       kernelModules = [ "kvm-intel" ];
@@ -29,8 +25,6 @@
         availableKernelModules = [ "xhci_pci" "nvme" ];
         kernelModules = [ ];      }; 
           };
-
-    services.dbus.implementation = lib.mkForce "dbus";
 
     networking.useDHCP = lib.mkDefault true;
 
