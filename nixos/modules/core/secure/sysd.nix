@@ -103,7 +103,6 @@
           PrivateNetwork = true;
           PrivateTmp = true;
           PrivateUsers= true;
-          ProcSubset = "pid";
           ProtectClock = true; 
           ProtectControlGroups = true;
           ProtectHome = true;
@@ -111,8 +110,7 @@
           ProtectKernelLogs = true;
           ProtectKernelModules = true;
           ProtectKernelTunables = true;
-          ProtectProc = "invisible";
-          ProtectSystem = "full";
+          ProtectSystem = "strict";
           RestrictNamespaces = true;
           RestrictRealtime = true;
           SystemCallArchitectures = "native";
