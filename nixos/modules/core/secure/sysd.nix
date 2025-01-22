@@ -148,66 +148,7 @@
 
 ##################################################
 
-    greetd = {
-      serviceConfig = {
-          DeviceAllow = "/dev/tty1 rw";
-          DevicePolicy = "closed";
-          IPAddressDeny = ["0.0.0.0/0" "::/0"];
-          KeyringMode = lib.mkForce "private";
-          LockPersonality= true; 
-          LogLevelMax = "debug";
-          MemoryDenyWriteExecute = true;
-          NoNewPrivileges = true;
-          PrivateDevices = true;
-          PrivateIPC = true;
-          PrivateMounts = true;
-          PrivateTmp = true;
-          PrivateUsers = true;
-          ProcSubset = "pid";
-          ProtectClock = true; 
-          ProtectControlGroups = true;
-          ProtectHome = true;
-          ProtectHostname = true;
-          ProtectKernelLogs = true;
-          ProtectKernelModules = true;
-          ProtectKernelTunables = true;
-          ProtectProc = "invisible";
-          ProtectSystem = "full";
-          RestrictRealtime = true;
-          RestrictSUIDSGID = true;
-          SystemCallArchitectures = "native";
-          SystemCallErrorNumber = "EPERM";
-          UMask = "0077";
-          CapabilityBoundingSet = [
-            "CAP_SYS_ADMIN" 
-            "CAP_SETUID"
-            "CAP_SETGID"
-            "CAP_SETPCAP"
-            "CAP_KILL"
-            "CAP_SYS_TTY_CONFIG"
-            "CAP_DAC_OVERRIDE"
-            "CAP_DAC_READ_SEARCH"
-            "CAP_FOWNER"
-            "CAP_IPC_OWNER" 
-            "CAP_FSETID"
-            "CAP_SETFCAP"
-            "CAP_CHOWN"      ];
-          RestrictAddressFamilies = [ 
-            "AF_UNIX"
-            "AF_NETLINK"
-            "AF_INET"
-            "AF_INET6"      ];
-          SystemCallFilter = [
-            "~@obsolete"
-            "~@cpu-emulation"
-            "~@clock"
-            "~@swap"
-            "~@module"
-            "~@reboot"
-            "~@raw-io"
-            "~@debug"      ];
-          RestrictNamespaces = [ 
-            "~cgroup"      ];      };      };
+#greetd
 
 ##################################################
 
