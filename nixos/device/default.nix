@@ -32,6 +32,8 @@
 
     nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
+    services.fstrim.enable = lib.mkDefault true;
+
 
 
 
