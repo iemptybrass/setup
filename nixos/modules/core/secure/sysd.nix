@@ -47,19 +47,16 @@
             "~@module" 
             "~@mount"
             "~@obsolete"
-            "ptrace"
-            "~@swap"      ];      };      };
+            "~@swap"
+            "ptrace"      ];      };      };
 
 ##################################################
 
     NetworkManager = {
       serviceConfig = {
-          IPAddressDeny = "any";
           LockPersonality= true; 
           MemoryDenyWriteExecute = true;
           NoNewPrivileges = true;
-          PrivateDevices = true;
-          PrivateMounts = true;
           PrivateTmp = true;
           ProcSubset = "pid";
           ProtectClock = true; 
@@ -76,17 +73,17 @@
           SystemCallArchitectures = "native";
           UMask = "0077";
         RestrictAddressFamilies = [ 
-            "AF_UNIX" 
+            "AF_PACKET"
             "AF_NETLINK"
+            "AF_UNIX" 
             "AF_INET"
-            "AF_INET6"
-            "AF_PACKET"      ];
+            "AF_INET6"      ];
         SystemCallFilter = [
-            "~@mount"
-            "~@module"
-            "~@swap"
-            "~@obsolete" 
             "~@cpu-emulation" 
+            "~@module" 
+            "~@mount"
+            "~@obsolete"
+            "~@swap"
             "ptrace"      ];      };      };
 
 ##################################################
