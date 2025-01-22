@@ -1,4 +1,4 @@
-{ lib, ... }:{
+{
 
 
 
@@ -79,12 +79,12 @@
             "AF_INET"
             "AF_INET6"      ];
         SystemCallFilter = [
+            "ptrace"
             "~@cpu-emulation" 
             "~@module" 
             "~@mount"
             "~@obsolete"
-            "~@swap"
-            "ptrace"      ];      };      };
+            "~@swap"      ];      };      };
 
 ##################################################
 
@@ -120,31 +120,31 @@
           UMask = "0077";
         RestrictAddressFamilies = [
             "AF_INET"      ];
-        SystemCallFilter = [ 
-            "write" 
-            "read" 
-            "openat" 
-            "close" 
-            "brk" 
-            "fstat" 
-            "lseek" 
-            "mmap" 
-            "mprotect" 
-            "munmap" 
-            "rt_sigaction" 
-            "rt_sigprocmask" 
-            "ioctl" 
-            "nanosleep" 
-            "select" 
-            "access" 
+        SystemCallFilter = [
+            "access"
+            "arch_prctl"
+            "brk"
+            "close"
             "execve" 
-            "getuid" 
-            "arch_prctl" 
-            "set_tid_address" 
-            "set_robust_list" 
-            "prlimit64" 
-            "pread64" 
-            "getrandom"      ];      };      };
+            "fstat"
+            "getrandom"
+            "getuid"
+            "ioctl"
+            "lseek"
+            "mmap"
+            "mprotect"
+            "munmap"
+            "nanosleep"
+            "openat"
+            "pread64"
+            "prlimit64"
+            "read"
+            "rt_sigaction"
+            "rt_sigprocmask"
+            "select"
+            "set_robust_list"
+            "set_tid_address"
+            "write"      ];      };      };
 
 ##################################################
 
@@ -224,7 +224,48 @@
 
 ##################################################
 
-#wpa_supplicant
+    wpa_supplicant = {
+      serviceConfig = {
+          LockPersonality= true; 
+          MemoryDenyWriteExecute = true;
+          NoNewPrivileges = true;
+          PrivateMounts = true;
+          PrivateTmp = true;
+          ProtectClock = true; 
+          ProtectControlGroups = true;
+          ProtectHome = true;
+          ProtectHostname = true;
+          ProtectKernelLogs = true;
+          ProtectKernelModules = true;
+          ProtectKernelTunables = true;
+          ProtectProc = "invisible";
+          ProtectSystem = "strict";
+          RestrictNamespaces = true;
+          RestrictRealtime = true;
+          RestrictSUIDSGID = true;
+          SystemCallArchitectures = "native";
+          UMask = "0077";
+        CapabilityBoundingSet = [
+            "CAP_NET_ADMIN"
+            "CAP_NET_RAW"      ];
+        RestrictAddressFamilies = [ 
+            "AF_PACKET"
+            "AF_NETLINK"
+            "AF_UNIX" 
+            "AF_INET"
+            "AF_INET6"      ];
+        SystemCallFilter = [
+            "ptrace"
+            "~@cpu-emulation"
+            "~@keyring"
+            "~@module" 
+            "~@mount"
+            "~@obsolete"
+            "~@privileged"
+            "~@raw-io"
+            "~@swap"
+            "~@reboot"
+            "~@resources"      ];      };      };
 
 ##################################################
 
