@@ -5,11 +5,14 @@
 
 
   boot.loader = {
-      efi.canTouchEfiVariables = true;      
-    systemd-boot = {
+      systemd-boot.enable = true;
+    efi = {
+        efiSysMountPoint = "/boot";
+        canTouchEfiVariables = true;      };
+    grub = {
         enable = true;
-        configurationLimit = 5;
-        edk2-uefi-shell.enable = false;      };
+        efiSupport = true;
+        device = "nodev";      };
                  };
 
 
