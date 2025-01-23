@@ -11,12 +11,10 @@
     greetd = {
         enable = true;
       settings = rec {
-        default_session = {
-            command = "Hyprland";
-            user = "user";      };      };      };
+        default_session.user = "user";      };      };
               };
 
-  programs.regreet.enable = true;
+    programs.regreet.enable = true;
 
 
 
