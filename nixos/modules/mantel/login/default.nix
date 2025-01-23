@@ -16,7 +16,7 @@
 
     programs.regreet = {
         enable = true;
-      extraCss = "border-width:2px";      };
+      extraCss = "border-width:200px";      };
 
 
 
