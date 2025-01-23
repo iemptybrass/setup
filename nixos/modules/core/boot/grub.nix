@@ -13,7 +13,7 @@
         enable = true;
         efiSupport = true;
         device = "nodev";
-        gfxbootEfi = "1920x1080";
+        gfxmodeEfi = "1920x1080";
         gfxmodeBios = "1920x1080";      };
                  };
 
