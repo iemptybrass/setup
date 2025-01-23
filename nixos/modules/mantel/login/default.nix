@@ -12,7 +12,7 @@
         enable = true;
       settings = rec {
         default_session = {
-            command = "${hyprland}/bin/Hyprland";
+            command = "Hyprland";
             user = "user";      };      };      };
               };
 
