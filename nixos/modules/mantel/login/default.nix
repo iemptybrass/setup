@@ -14,7 +14,9 @@
         default_session.user = "user";      };      };
               };
 
-    programs.regreet.enable = true;
+    programs.regreet = {
+        enable = true;
+      extraCss = "border-width:2px";      };
 
 
 
