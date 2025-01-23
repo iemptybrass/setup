@@ -1,11 +1,13 @@
-{
+{ pkgs, ... }:{
 
 
 
 
 
   services = {
-      cage.enable = true;
+    cage = {
+        enable = true;
+        program = "${pkgs.greetd.regreet}/bin/regreet";      };
     greetd = {
         enable = true;
       settings = rec {
