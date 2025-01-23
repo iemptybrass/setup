@@ -1,18 +1,18 @@
-{ pkgs, ... }:{
+{
 
 
 
 
 
   services = {
-    cage = {
+    displayManager = {
         enable = true;
-        program = "${pkgs.greetd.regreet}/bin/regreet";      };
+        defaultSession = "regreet";      };
     greetd = {
         enable = true;
       settings = rec {
         default_session = {
-            command = "cage -s -mlast -- regreet";
+            command = "${hyprland}/bin/Hyprland";
             user = "user";      };      };      };
               };
 
