@@ -75,7 +75,6 @@
                 "workspaces, 1, 1.94, almostLinear, fade"
                 "workspacesIn, 1, 1.21, almostLinear, fade"
                 "workspacesOut, 1, 1.94, almostLinear, fade"      ];      };
-                                                };
 
 ####################################################################################################
 
@@ -131,7 +130,7 @@
           "3, monitor:eDP-1, default:true, persistent:true"      ];
       windowrulev2 = [
           "suppressevent maximize, class:.*"
-          "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];
+          "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];      };
 
 ####################################################################################################
 
