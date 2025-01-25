@@ -1,17 +1,17 @@
-{
+{ pkgs, ... }:{
 
 
 
 
 
-  services = {
-    displayManager = {
-        enable = true;
-        defaultSession = "Hyprland";      };
-      autoLogin = {
-          enable = true;
-          user = "user";      };
-              };
+  services.greetd = {
+      enable = true; 
+    settings = rec {
+        initial_session = {
+            command = "${pkgs.hyprland}/bin/Hyprland";
+            user = "user";      };
+        default_session = initial_session;      };
+                     };
 
 
 
