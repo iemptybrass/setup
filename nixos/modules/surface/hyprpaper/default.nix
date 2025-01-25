@@ -1,0 +1,15 @@
+{
+
+
+
+
+
+  programs.hyprpaper = {
+      enable = true;
+                       };
+
+
+
+
+
+}
