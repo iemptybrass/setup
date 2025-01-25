@@ -5,10 +5,10 @@
 
 
   imports = [
-      ./network.nix
-      ./pkgs.nix
-      ./processor.nix
-      ./ssd.nix
+      ./network
+      ./nix
+      ./processor
+      ./ssd
              ];
 
 
