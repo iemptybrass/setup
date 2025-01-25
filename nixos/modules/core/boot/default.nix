@@ -6,8 +6,8 @@
 
   imports = [
       ./grub
-      ./optional
       ./silent
+      ./systemd
       ./trash
       ./upgrade
              ];
