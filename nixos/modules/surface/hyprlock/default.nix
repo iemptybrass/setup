@@ -1,0 +1,15 @@
+{
+
+
+
+
+
+  programs.hyprlock = {
+      enable = true;
+                       };
+
+
+
+
+
+}
