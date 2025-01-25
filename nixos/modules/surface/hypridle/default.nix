@@ -1,0 +1,15 @@
+{
+
+
+
+
+
+  programs.hypridle = {
+      enable = true;
+                       };
+
+
+
+
+
+}
