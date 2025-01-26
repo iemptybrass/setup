@@ -5,8 +5,8 @@
 
 
   imports = [
-      ./core
-      ./mantel
+      ./inner
+      ./middle
              ];
 
 
