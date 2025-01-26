@@ -15,7 +15,7 @@
 ####################################################################################################
 
     systemd = {
-        enable = false;
+        enable = true;
         enableXdgAutostart = true;
         variables = ["--all"];      };
 
