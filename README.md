@@ -5,7 +5,7 @@
 ```
 .
 ├─ device                  
-├─ modules                  
+├┬ modules                  
 │├─ inner
 │├─ middle              
 │└─ outer      
