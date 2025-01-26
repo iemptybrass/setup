@@ -3,13 +3,14 @@
 ## Structure
 
 ```
-.                   
-├── modules                  
-│    ├── core
-│    ├── mantel              
-│    └── surface      
-├── configuration.nix        
-└── flake.nix               
+.
+├─ device                  
+├─ modules                  
+│├─ inner
+│├─ middle              
+│└─ outer      
+├─ configuration.nix        
+└─ flake.nix               
 ```
 
 ## To Do 
