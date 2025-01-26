@@ -10,7 +10,7 @@
 
   programs.rofi = {
       enable = true;
-      location = center;
+      location = "center";
       terminal = "\${pkgs.kitty}/bin/kitty";
     plugins = with pkgs; [
         rofi-emoji
