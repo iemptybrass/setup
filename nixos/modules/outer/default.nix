@@ -10,9 +10,7 @@ home.stateVersion = "24.11";
       ./firefox
              ];
 
-
-
-  programs.home-manager.enable = true;
+    programs.home-manager.enable = true;
 
 
 
