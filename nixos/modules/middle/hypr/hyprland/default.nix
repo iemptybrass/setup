@@ -12,18 +12,15 @@
   wayland.windowManager.hyprland = {
       enable = true;
 
-####################################################################################################
 
     systemd = {
         enable = true;
         enableXdgAutostart = true;
         variables = ["--all"];      };
 
-####################################################################################################
 
     settings = {
 
-####################################################################################################
 
       exec-once = [
           "wl-paste --type text --watch cliphist store &"
@@ -31,7 +28,6 @@
           "nm-applet &"
           "dunst &"      ];
 
-####################################################################################################
 
         monitor = "eDP-1, 1920x1080@60, 0x0, 1";
       misc = {
@@ -40,7 +36,6 @@
           disable_hyprland_qtutils_check = "true";
           middle_click_paste = false;      };
 
-####################################################################################################
 
       general = {
             gaps_in = "5";
@@ -76,7 +71,6 @@
                 "workspacesIn, 1, 1.21, almostLinear, fade"
                 "workspacesOut, 1, 1.94, almostLinear, fade"      ];      };
 
-####################################################################################################
 
 
         "$mainMod" = "SUPER";
@@ -124,7 +118,6 @@
           ", XF86AudioNext, exec, playerctl next"
           ", XF86AudioPrev, exec, playerctl previous"      ];
 
-####################################################################################################
 
       workspace = [
           "3, monitor:eDP-1, default:true, persistent:true"      ];
@@ -132,7 +125,6 @@
           "suppressevent maximize, class:.*"
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"      ];      };
 
-####################################################################################################
 
                                     }; 
 
