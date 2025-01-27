@@ -7,8 +7,8 @@
   home.packages = [ pkgs.ags ];
 
   xdg = {
-    configFile."hypr/hyprland.conf" = {
-        source = ./hyprland.conf;      };
+    configFile."ags/config.js" = {
+        source = ./config.js;      };
          };
 
 
