@@ -1,0 +1,20 @@
+add_newline = true
+command_timeout = 1000
+format = "$username $directory\n"
+
+[character]
+error_symbol = "[]"
+success_symbol = "[➜]"
+
+[directory]
+format = "at [$path]($style)[$read_only]($read_only_style) "
+home_symbol = "󰋞 ~"
+read_only = "  "
+read_only_style = "197"
+
+[username]
+disabled = false
+format = "[$user]($style)"
+show_always = true
+style_root = "white"
+style_user = "white"
