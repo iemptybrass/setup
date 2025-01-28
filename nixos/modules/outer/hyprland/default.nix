@@ -4,8 +4,8 @@
 
 
 
-  wayland.windowManager = {
-    hyprland.enable = true;      };
+  programs.hyprland = {
+      enable = true;      };
 
   xdg = {
     configFile."hypr/hyprland.conf" = {
