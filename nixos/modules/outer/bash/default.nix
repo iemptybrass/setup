@@ -5,7 +5,8 @@
 
   programs.bash = {
       enable = true;
-      historySize = 250;
+      historyFileSize = 250;
+    bashrcExtra = "eval "$(starship init bash)"";
     historyIgnore = [
       "ls"
       "cd"
