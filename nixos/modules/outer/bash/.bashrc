@@ -16,13 +16,13 @@ shopt -s checkjobs
 alias ..='cd ..'
 alias cdn='cd /etc/nixos'
 alias clean=nix-collect-garbage
-alias deep-clean='sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-c>
+alias deep-clean='sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d'
 alias lss=yazi
 alias switch='sudo nixos-rebuild --flake /etc/nixos#default switch'
 alias upgrade='sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade'
 
 if [[ ! -v BASH_COMPLETION_VERSINFO ]]; then
-  . "/nix/store/dwijrazpcn49yc8s9rv9q5f4vcjfipza-bash-completion-2.16.0/etc/profile.d/bash_completion.s>
+  . "/nix/store/dwijrazpcn49yc8s9rv9q5f4vcjfipza-bash-completion-2.16.0/etc/profile.d/bash_completion.sh'
 fi
 
 function yy() {
