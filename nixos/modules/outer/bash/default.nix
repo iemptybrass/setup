@@ -1,13 +1,8 @@
-{ pkgs, ... }:{
+{
 
 
 
 
-
-  home = {
-    packages = with pkgs; [
-        neofetch      ];
-          };
 
   programs = {
     bash = {
@@ -21,8 +16,7 @@
         source = ./.bashrc;      };
     configFile."starship.toml" = {
         source = ./prompt.toml;      };
-    configFile."kitty/kitty.conf" = {
-        source = ./info.conf;      };
+
          };  
 
 
