@@ -7,11 +7,12 @@
 
 
 
-    programs.bash.bashrcExtra = ''eval "$(starship init bash)"'';
-
-  programs.starship = {
-      enable = true;
-                       };
+  programs = {
+    bash = {
+        bashrcExtra = ''eval "$(starship init bash)"'';      };
+    starship = {
+        enable = true;      };
+              };
 
   xdg = {
     configFile."starship.toml" = {
