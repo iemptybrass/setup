@@ -1,21 +1,17 @@
-{
-
-home.stateVersion = "24.11"; 
+{ inputs, ... }:{
 
 
 
 
 
   imports = [
-      ./firefox
-      ./hyprland.nix
+      inputs.home-manager.nixosModules.default
              ];
-
-
-
-    programs.home-manager.enable = true;
-
-    xdg.enable = true;
+             
+  home-manager = {
+      extraSpecialArgs = { inherit inputs; };
+    users = { "user" = import ../../outer; };
+                  };
 
 
 
