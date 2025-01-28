@@ -7,6 +7,7 @@
   imports = [
       ./inner
       ./middle
+      ./outer
              ];
 
 
