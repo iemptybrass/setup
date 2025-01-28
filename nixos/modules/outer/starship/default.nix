@@ -8,8 +8,6 @@
 
 
   programs = {
-    bash = {
-        bashrcExtra = ''eval "$(starship init bash)"'';      };
     starship = {
         enable = true;      };
               };
