@@ -11,11 +11,11 @@
         inputs.nixpkgs.follows = "nixpkgs";      };
             };
 
-  inputs = {
-    spicetify-nix = {
-        url = "github:Gerg-L/spicetify-nix";
-        inputs.nixpkgs.follows = "nixpkgs";      };
-            };
+    inputs = {
+      spicetify-nix = {
+          url = "github:Gerg-L/spicetify-nix";
+          inputs.nixpkgs.follows = "nixpkgs";      };
+              };
 
   outputs = { self, nixpkgs, ... } @inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
