@@ -3,13 +3,19 @@
 
 
 
+
   programs.bash = {
       enable = true;
       historyFileSize = 250;
-    bashrcExtra = "eval "$(starship init bash)"";
+    bashrcExtra = ''eval "$(starship init bash)"'';
     historyIgnore = [
       "ls"
+      "lss"
       "cd"
+      "cdn"
+      ".."
+      "switch"
+      "upgrade"
       "pkill"
       "exit"
       "reset"
@@ -19,11 +25,16 @@
       "nano"
       "yazi"      ];
     shellAliases = {
-      "cds" = "yazi";
+      "lss" = "yazi";
+      "cdn" = "cd /etc/nixos";
       ".." = "cd ..";
-      "cd nixos" = "cd /etc/nixos";
       "switch" = "sudo nixos-rebuild --flake /etc/nixos#default switch";
-      "upgrade" = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade"
+      "upgrade" = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";
     };
                    };
+
+
+
+
+
 }
