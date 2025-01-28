@@ -14,8 +14,7 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
       modules = [ 
-          inputs.spicetify-nix.homeManagerModules.default
-                ];      };
+          inputs.spicetify-nix.homeManagerModules.default      ];      };
                                              };
 
 
