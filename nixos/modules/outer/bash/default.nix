@@ -21,6 +21,7 @@
     shellAliases = {
       "cds" = "yazi";
       ".." = "cd ..";
+      "cd nixos" = "cd /etc/nixos";
       "switch" = "sudo nixos-rebuild --flake /etc/nixos#default switch";
       "upgrade" = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade"
     };
