@@ -1,9 +1,26 @@
-{ pkgs, system, ... }: 
-let 
-  spotify = builtins.getFlake "github:Gerg-L/spicetify-nix";  
-in
-{
-  home.packages = [
-    spotify.packages.${builtins.currentSystem}.default
-  ];
+{ pkgs, system, ... }:{
+
+
+
+
+
+programs.spicetify =
+   let
+     spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+   in
+   {
+     enable = true;
+     enabledExtensions = with spicePkgs.extensions; [
+       betterGenres
+       skipOrPlayLikedSongs
+       hidePodcasts
+       shuffle 
+     ];
+     theme = spicePkgs.themes.text;
+    }
+
+
+
+
+
 }
