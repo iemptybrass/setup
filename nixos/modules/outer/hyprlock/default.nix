@@ -1,4 +1,4 @@
-{ lib, ... }:{
+{
 
 
 
@@ -10,7 +10,7 @@
 
   xdg = {
     configFile."hypr/hyprlock.conf" = {
-        source = ./hyprlock.conf;      };
+        source = ./default.conf;      };
          };
 
 
