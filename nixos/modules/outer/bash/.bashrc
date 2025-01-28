@@ -21,10 +21,6 @@ alias lss=yazi
 alias switch='sudo nixos-rebuild --flake /etc/nixos#default switch'
 alias upgrade='sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade'
 
-if [[ ! -v BASH_COMPLETION_VERSINFO ]]; then
-  . "/nix/store/dwijrazpcn49yc8s9rv9q5f4vcjfipza-bash-completion-2.16.0/etc/profile.d/bash_completion.sh'
-fi
-
 function yy() {
   local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
   yazi "$@" --cwd-file="$tmp"
