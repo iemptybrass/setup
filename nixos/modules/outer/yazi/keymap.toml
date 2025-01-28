@@ -10,7 +10,6 @@ keymap = [
 	# Hopping
 	{ on = "<Up>",    run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>",  run = "arrow 1",  desc = "Move cursor down" },
-
 	{ on = "<C-Up>", run = "arrow -100%", desc = "Move cursor up one page" },
 	{ on = "<C-Down>", run = "arrow 100%",  desc = "Move cursor down one page" },
 
@@ -123,9 +122,6 @@ keymap = [
 	# Tasks
 	{ on = "w", run = "tasks_show", desc = "Show task manager" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
 ]
 
 [tasks]
@@ -145,9 +141,6 @@ keymap = [
 	{ on = "<Enter>", run = "inspect", desc = "Inspect the task" },
 	{ on = "x",       run = "cancel",  desc = "Cancel the task" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
 ]
 
 [spot]
@@ -171,9 +164,6 @@ keymap = [
 	# Copy
 	{ on = [ "c", "c" ], run = "copy cell", desc = "Copy selected cell" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
 ]
 
 [pick]
@@ -190,9 +180,7 @@ keymap = [
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
+
 ]
 
 [input]
@@ -260,9 +248,7 @@ keymap = [
 	{ on = "u",     run = "undo", desc = "Undo the last operation" },
 	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
+
 ]
 
 [confirm]
@@ -282,9 +268,7 @@ keymap = [
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
+
 ]
 
 [completion]
@@ -303,25 +287,5 @@ keymap = [
 	{ on = "<C-p>", run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<C-n>", run = "arrow 1",  desc = "Move cursor down" },
 
-	# Help
-	{ on = "~",    run = "help", desc = "Open help" },
-	{ on = "<F1>", run = "help", desc = "Open help" },
-]
 
-[help]
-
-keymap = [
-	{ on = "<Esc>", run = "escape", desc = "Clear the filter, or hide the help" },
-	{ on = "<C-[>", run = "escape", desc = "Clear the filter, or hide the help" },
-	{ on = "<C-c>", run = "close",  desc = "Hide the help" },
-
-	# Navigation
-	{ on = "k", run = "arrow -1", desc = "Move cursor up" },
-	{ on = "j", run = "arrow 1",  desc = "Move cursor down" },
-
-	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
-
-	# Filtering
-	{ on = "f", run = "filter", desc = "Apply a filter for the help items" },
 ]
