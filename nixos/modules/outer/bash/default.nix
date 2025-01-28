@@ -16,7 +16,6 @@
         source = ./.bashrc;      };
     configFile."starship.toml" = {
         source = ./prompt.toml;      };
-
          };  
 
 
