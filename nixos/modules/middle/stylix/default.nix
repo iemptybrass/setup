@@ -6,8 +6,6 @@
   stylix = {
       enable = true;
       image = ./wallpaper.png;
-    base16Scheme = {
-      };
     cursor = {
         size = 24;
         package = pkgs.google-cursor;
