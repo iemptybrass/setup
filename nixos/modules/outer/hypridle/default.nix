@@ -4,7 +4,7 @@
 
 
 
-  programs.hypridle = {
+  services.hypridle = {
       enable = true;
                        };
 
