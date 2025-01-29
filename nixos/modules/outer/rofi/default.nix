@@ -10,9 +10,6 @@
     plugins = with pkgs; [
         rofi-emoji
         rofi-calc
-        rofi-screenshot
-        rofi-power-menu
-        rofi-pulse-select
                ];
                    };
 
