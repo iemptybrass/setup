@@ -10,7 +10,7 @@
               };
 
   xdg = {
-    configFile.".waybar/config" = {
+    configFile."waybar/config" = {
         source = ./default;      };
     configFile."waybar/style.css" = {
         source = ./default.css;      };
