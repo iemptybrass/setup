@@ -10,7 +10,7 @@
 
     xdg = {
     configFile."kitty/kitty.conf" = {
-        source = ./kitty.conf;      };
+        source = ./default.conf;      };
          };
 
 
