@@ -8,16 +8,16 @@ home.stateVersion = "24.11";
 
   imports = [
       ./bash
+      ./fetch
       ./firefox
       ./hypridle
       ./hyprland
       ./hyprlock
       ./hyprpaper
       ./kitty
-      ./neofetch
       ./portal
       ./rofi
-      ./starship
+      ./spotify
       ./waybar
       ./yazi
              ];
