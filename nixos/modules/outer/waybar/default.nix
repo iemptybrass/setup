@@ -11,9 +11,9 @@
 
   xdg = {
     configFile.".waybar/config" = {
-        source = ./config;      };
+        source = ./default;      };
     configFile."waybar/style.css" = {
-        source = ./style.css;      };
+        source = ./default.css;      };
          }; 
 
 
