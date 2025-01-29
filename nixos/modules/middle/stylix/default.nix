@@ -5,6 +5,7 @@
 
   stylix = {
       enable = true;
+      polarity = "dark";
     cursor = {
         size = 24;
         package = pkgs.google-cursor;
