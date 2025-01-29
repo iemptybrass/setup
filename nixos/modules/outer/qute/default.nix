@@ -4,7 +4,7 @@
 
 
 
-  programs.qutebroswer = {
+  programs.qutebrowser = {
       enable = true;
                     };
 
