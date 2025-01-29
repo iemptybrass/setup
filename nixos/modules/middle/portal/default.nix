@@ -10,9 +10,8 @@
       extraPortals = [ 
           pkgs.xdg-desktop-portal-gtk 
           pkgs.xdg-desktop-portal-hyprland      ];
+      config.common.default = "gtk";
                 };
-    configFile."xdg-desktop-portal/portals.conf" = {
-        source = ./default.conf;      };
          };
                                 
 

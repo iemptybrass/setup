@@ -12,7 +12,7 @@
 
   xdg = {
     configFile."neofetch/config.conf" = {
-        source = ./default.conf;      };
+        source = ./fetchneo.conf;      };
          };  
 
 
