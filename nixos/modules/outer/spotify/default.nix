@@ -1,4 +1,4 @@
-{ inputs, pkgs, system, ... }:{
+{ inputs, pkgs, system, lib, ... }:{
 
 
 
@@ -15,7 +15,7 @@
       in
           {
               enable = true;
-              theme = spicePkgs.themes.text;
+              theme = lib.mkForce spicePkgs.themes.text;
             enabledExtensions = with spicePkgs.extensions; [
               betterGenres
               skipOrPlayLikedSongs
