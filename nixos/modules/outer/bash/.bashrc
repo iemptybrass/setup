@@ -14,10 +14,10 @@ shopt -s globstar
 shopt -s checkjobs
 
 alias ..='cd ..'
-alias cdn='cd /etc/nixos'
+alias nixos='cd /etc/nixos'
 alias clean=nix-collect-garbage
 alias deep-clean='sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d'
-alias lss=yazi
+alias lf=yazi
 alias switch='sudo nixos-rebuild --flake /etc/nixos#default switch'
 alias upgrade='sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade'
 
