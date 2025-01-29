@@ -6,7 +6,7 @@
   stylix = {
       enable = true;
       polarity = "dark";
-      image = "./wallpaper.png";
+      image = ./wallpaper.png;
     cursor = {
         size = 24;
         package = pkgs.google-cursor;
