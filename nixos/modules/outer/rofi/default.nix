@@ -13,6 +13,12 @@
                ];
                    };
 
+  xdg = {
+    configFile."rofi/config.rasi" = {
+        source = ./default.rasi;      };
+         };  
+
+
 
 
 
