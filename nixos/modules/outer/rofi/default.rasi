@@ -1,0 +1,6 @@
+configuration {
+location: 0;
+terminal: "${pkgs.kitty}/bin/kitty";
+xoffset: 0;
+yoffset: 0;
+}
