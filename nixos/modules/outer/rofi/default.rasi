@@ -1,6 +1,14 @@
 configuration {
+modes: "drun,calc,emoji";
+display-drun: "Search:";
+display-emoji: "Search:";
 location: 0;
-terminal: "${pkgs.kitty}/bin/kitty";
 xoffset: 0;
 yoffset: 0;
+/*  fixed-num-lines: true;*/
+... cut ...
+/*  ml-row-down: "ScrollDown";*/                                                                                        
+/*  me-select-entry: "MousePrimary";*/                                                                                  
+/*  me-accept-entry: "MouseDPrimary";*/                                                                                 
+/*  me-accept-custom: "Control+MouseDPrimary";*/ 
 }
