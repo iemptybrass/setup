@@ -4,7 +4,7 @@ eval "$(starship init bash)"
 [[ $- == *i* ]] || return
 
 HISTFILESIZE=250
-HISTIGNORE=ls:lss:cd:cdn:..:switch:upgrade:pkill:exit:reset:reboot:nix-shell:clean:deep-clean
+HISTIGNORE=ls:lf:cd:nixos:..:switch:upgrade:pkill:exit:reset:reboot:nix-shell:clean:deep-clean:neofetch
 HISTSIZE=250
 
 shopt -s histappend
