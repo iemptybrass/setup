@@ -13,6 +13,8 @@ yoffset: 0;
 /*  me-accept-custom: "Control+MouseDPrimary";*/ 
 }
 
+@theme "/dev/null"
+
 * {
   bg0     : #1a1b26;
   bg1     : #1f2335;
@@ -30,7 +32,7 @@ yoffset: 0;
 
   accent: @red;
   urgent: @yellow;
-  
+
     text-color:         @fg0;
 
     margin:     0px;
