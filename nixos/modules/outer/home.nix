@@ -7,7 +7,6 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./bash
       ./fetch
       ./firefox
       ./hypridle
@@ -17,6 +16,7 @@ home.stateVersion = "24.11";
       ./kitty
       ./portal
       ./rofi
+      ./shell
       ./spotify
       ./waybar
       ./yazi
