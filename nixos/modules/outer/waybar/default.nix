@@ -1,4 +1,4 @@
-{
+{ lib, ... }:{
 
 
 
@@ -9,7 +9,7 @@
         enable = true;      };
               };
 
-  xdg = {
+  xdg = lib.mkForce {
     configFile."waybar/config" = {
         source = ./default;      };
     configFile."waybar/style.css" = {
