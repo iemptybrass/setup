@@ -14,6 +14,7 @@ home.stateVersion = "24.11";
       ./hyprlock
       ./hyprpaper
       ./kitty
+      ./qute
       ./portal
       ./rofi
       ./shell
