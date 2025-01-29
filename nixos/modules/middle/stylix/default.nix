@@ -5,7 +5,6 @@
 
   stylix = {
       enable = true;
-      image = ./wallpaper.png;
     cursor = {
         size = 24;
         package = pkgs.google-cursor;
