@@ -4,7 +4,7 @@
 
 
 
-  programs.hyprpaper = {
+  services.hyprpaper = {
       enable = true;
                        };
 
