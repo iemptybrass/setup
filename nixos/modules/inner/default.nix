@@ -5,9 +5,14 @@
 
 
   imports = [
-        ./boot
+        ./audio
+        ./local
+        ./login
+        ./network
         ./nix
         ./secure
+        ./start
+        ./users
              ];
 
 
