@@ -7,13 +7,13 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./fetch
       ./firefox
       ./hypridle
       ./hyprland
       ./hyprlock
       ./hyprpaper
       ./kitty
+      ./neofetch
       ./qute
       ./portal
       ./rofi
