@@ -9,8 +9,8 @@
                      };
 
 #  xdg = {
-#    configFile."rofi/config.rasi" = {
-#        source = ./default.rasi;      };
+#    configFile."" = {
+#        source = ./default.;      };
 #         };  
 
 
