@@ -4,9 +4,10 @@
 
 
 
-  programs.qutebrowser = {
-      enable = true;
-                    };
+  programs = {
+    qutebrowser = {
+        enable = true;      };
+              };
 
 #    xdg = {
 #    configFile."kitty/kitty.conf" = {

@@ -4,9 +4,10 @@
 
 
 
-  services.hypridle = {
-      enable = true;
-                       };
+  services = {
+    hypridle = {
+        enable = true;      };
+              };
 
   xdg = {
     configFile."hypr/hypridle.conf" = {

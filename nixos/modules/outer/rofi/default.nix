@@ -4,14 +4,9 @@
 
 
 
-  programs.rofi = {
+  programs.fuzzel = {
       enable = true;
-      location = "center";
-    plugins = with pkgs; [
-        rofi-emoji
-        rofi-calc
-               ];
-                   };
+                     };
 
   xdg = {
     configFile."rofi/config.rasi" = {

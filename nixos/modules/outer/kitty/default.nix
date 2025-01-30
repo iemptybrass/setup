@@ -4,9 +4,10 @@
 
 
 
-  programs.kitty = {
-      enable = true;
-                    };
+  programs = {
+    kitty = {
+        enable = true;      };
+              };
 
     xdg = {
     configFile."kitty/kitty.conf" = {

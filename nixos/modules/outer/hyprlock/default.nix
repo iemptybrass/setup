@@ -4,9 +4,10 @@
 
 
 
-  programs.hyprlock = {
-      enable = true;
-                       };
+  programs = {
+    hyprlock = {
+        enable = true;      };
+              };
 
   xdg = {
     configFile."hypr/hyprlock.conf" = {

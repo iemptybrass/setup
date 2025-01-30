@@ -4,9 +4,10 @@
 
 
 
-  programs.micro = {
-      enable = true;
-                    };
+  programs = {
+    micro = {
+        enable = true;      };
+              };
 
 #    xdg = {
 #    configFile."kitty/kitty.conf" = {
