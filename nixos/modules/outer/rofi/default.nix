@@ -1,4 +1,4 @@
-{ pkgs, ... }:{
+{
 
 
 
@@ -8,10 +8,10 @@
       enable = true;
                      };
 
-  xdg = {
-    configFile."rofi/config.rasi" = {
-        source = ./default.rasi;      };
-         };  
+#  xdg = {
+#    configFile."rofi/config.rasi" = {
+#        source = ./default.rasi;      };
+#         };  
 
 
 
