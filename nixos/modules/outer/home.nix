@@ -12,11 +12,11 @@ home.stateVersion = "24.11";
       ./hyprlock
       ./hyprpaper
       ./kitty
+      ./launcher
       ./micro
       ./neofetch
       ./qute
       ./portal
-      ./rofi
       ./shell
       ./spotify
       ./waybar
