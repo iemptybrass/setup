@@ -10,15 +10,14 @@ home.stateVersion = "24.11";
       ./hypridle
       ./hyprland
       ./hyprlock
-      ./hyprpaper
+        ./hyprpaper
       ./kitty
-      ./launcher
-      ./micro
+        ./launcher
+        ./micro
       ./neofetch
-      ./qute
-      ./portal
+        ./qute
       ./shell
-      ./spotify
+        ./spotify
       ./waybar
       ./yazi
              ];
