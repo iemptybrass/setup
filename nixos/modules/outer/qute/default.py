@@ -16,10 +16,10 @@ c.changelog_after_upgrade = 'never'
 
  #
 
-
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
 
+   #
 
 c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 c.statusbar.widgets = ['history', 'url', 'progress']
@@ -65,13 +65,8 @@ c.messages.timeout = 3000
 
  #
 
-
 c.tabs.position = 'top'
 c.tabs.show = 'always'
-
-c.colors.tabs.bar.bg = '#555555'
-
- #
 
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
 
@@ -80,6 +75,10 @@ c.tabs.width = '15%'
 c.tabs.min_width = -1
 
    #
+
+c.colors.tabs.bar.bg = '#555555'
+
+
 
 c.colors.tabs.selected.even.bg = 'white'
 c.colors.tabs.selected.even.fg = 'black'
@@ -93,7 +92,7 @@ c.colors.tabs.pinned.selected.even.fg = 'white'
 c.colors.tabs.pinned.selected.odd.bg = 'black'
 c.colors.tabs.pinned.selected.odd.fg = 'white'
 
-   #
+
 
 c.colors.tabs.even.bg = 'darkgrey'
 c.colors.tabs.even.fg = 'white'
