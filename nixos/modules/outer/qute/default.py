@@ -3,13 +3,11 @@ config.load_autoconfig(False)
 
 c.backend = 'webengine'
 
-
 c.auto_save.session = False
 
-
-c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save'}
-c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>', '<Ctrl-6>': '<Ctrl-^>', '<Ctrl-M>': '<Return>', '<Ctrl-J>': '<Return>', '<Ctrl-I>': '<Tab>', '<Shift-Return>': '<Return>', '<Enter>': '<Return>', '<Shift-Enter>': '<Return>', '<Ctrl-Enter>': '<Ctrl-Return>'}
 c.changelog_after_upgrade = 'never'
+
+c.confirm_quit = ['always']
 
 
 
@@ -252,9 +250,7 @@ c.colors.completion.category.border.bottom = 'black'
 c.colors.completion.even.bg = '#333333'
 c.colors.completion.odd.bg = '#444444'
 
-## Text color of the completion widget. May be a single color to use for
-## all columns or a list of three colors, one for each column.
-## Type: List of QtColor, or QtColor
+
 c.colors.completion.fg = ['white', 'white', 'white']
 
 
@@ -270,8 +266,7 @@ c.fonts.completion.entry = 'default_size default_family'
 
 c.colors.completion.item.selected.match.fg = '#ff4444'
 
-## Foreground color of the matched text in the completion.
-## Type: QtColor
+
 c.colors.completion.match.fg = '#ff4444'
 
 c.colors.completion.scrollbar.bg = '#333333'
@@ -407,33 +402,6 @@ c.colors.downloads.system.bg = 'rgb'
 c.colors.downloads.system.fg = 'rgb'
 
 
-
-
-
-## Background color for hints. Note that you can use a `rgba(...)` value
-## for transparency.
-## Type: QssColor
-c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
-
-## Font color for hints.
-## Type: QssColor
-c.colors.hints.fg = 'black'
-
-## Font color for the matched part of hints.
-## Type: QtColor
-c.colors.hints.match.fg = 'green'
-
-## Background color of the keyhint widget.
-## Type: QssColor
-c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
-
-## Text color for the keyhint widget.
-## Type: QssColor
-c.colors.keyhint.fg = '#FFFFFF'
-
-## Highlight color for keys to complete the current keychain.
-## Type: QssColor
-c.colors.keyhint.suffix.fg = '#FFFF00'
 
 
 
@@ -595,3 +563,215 @@ c.colors.webpage.darkmode.threshold.foreground = 256
 
 c.colors.webpage.preferred_color_scheme = 'dark'
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ##################################################
+
+
+
+ #
+
+c.bindings.default = {} 
+
+   #
+
+config.bind('+', 'zoom-in')
+config.bind('_', 'zoom-out')
+
+   #
+
+config.bind('<Alt-1>', 'tab-focus 1')
+config.bind('<Alt-2>', 'tab-focus 2')
+config.bind('<Alt-3>', 'tab-focus 3')
+config.bind('<Alt-4>', 'tab-focus 4')
+config.bind('<Alt-5>', 'tab-focus 5')
+config.bind('<Alt-6>', 'tab-focus 6')
+config.bind('<Alt-7>', 'tab-focus 7')
+config.bind('<Alt-8>', 'tab-focus 8')
+config.bind('<Alt-9>', 'tab-focus -1')
+
+config.bind('<', 'back')
+config.bind('>', 'forward')
+
+config.bind('J', 'tab-next')
+config.bind('K', 'tab-prev')
+
+config.bind('<Alt-m>', 'tab-mute')
+
+
+
+config.bind('<Ctrl-Shift-T>', 'undo')
+config.bind('<Ctrl-T>', 'open -t')
+config.bind('<Ctrl-V>', 'mode-enter passthrough')
+config.bind('<Ctrl-W>', 'tab-close')
+config.bind('<Ctrl-^>', 'tab-focus last')
+config.bind('<Ctrl-h>', 'home')
+config.bind('<Ctrl-p>', 'tab-pin')
+config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
+config.bind('<Return>', 'selection-follow')
+config.bind('<back>', 'back')
+config.bind('<forward>', 'forward')
+config.bind('G', 'scroll-to-perc')
+
+
+
+config.bind('M', 'bookmark-add')
+
+
+config.bind('N', 'search-prev')
+config.bind('n', 'search-next')
+
+
+config.bind('U', 'undo -w')
+config.bind('d', 'tab-close')
+config.bind('g$', 'tab-focus -1')
+config.bind('g0', 'tab-focus 1')
+config.bind('gJ', 'tab-move +')
+config.bind('gK', 'tab-move -')
+
+config.bind('gf', 'view-source')
+
+config.bind('gg', 'scroll-to-perc 0')
+config.bind('gm', 'tab-move')
+config.bind('go', 'cmd-set-text :open {url:pretty}')
+config.bind('gt', 'cmd-set-text -s :tab-select')
+config.bind('gu', 'navigate up')
+
+config.bind('i', 'mode-enter insert')
+
+config.bind('m', 'quickmark-save')
+config.bind('o', 'cmd-set-text -s :open')
+config.bind('r', 'reload')
+
+
+config.bind('u', 'undo')
+
+config.bind('wIf', 'devtools-focus')
+config.bind('wIh', 'devtools left')
+config.bind('wIj', 'devtools bottom')
+config.bind('wIk', 'devtools top')
+config.bind('wIl', 'devtools right')
+config.bind('wIw', 'devtools window')
+
+config.bind('wi', 'devtools')
+
+
+## Bindings for command mode
+config.bind('<Alt-B>', 'rl-backward-word', mode='command')
+config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='command')
+config.bind('<Alt-D>', 'rl-kill-word', mode='command')
+config.bind('<Alt-F>', 'rl-forward-word', mode='command')
+config.bind('<Ctrl-?>', 'rl-delete-char', mode='command')
+config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='command')
+config.bind('<Ctrl-B>', 'rl-backward-char', mode='command')
+config.bind('<Ctrl-C>', 'completion-item-yank', mode='command')
+config.bind('<Ctrl-D>', 'completion-item-del', mode='command')
+config.bind('<Ctrl-E>', 'rl-end-of-line', mode='command')
+config.bind('<Ctrl-F>', 'rl-forward-char', mode='command')
+config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='command')
+config.bind('<Ctrl-K>', 'rl-kill-line', mode='command')
+config.bind('<Ctrl-N>', 'command-history-next', mode='command')
+config.bind('<Ctrl-P>', 'command-history-prev', mode='command')
+config.bind('<Ctrl-Return>', 'command-accept --rapid', mode='command')
+config.bind('<Ctrl-Shift-C>', 'completion-item-yank --sel', mode='command')
+config.bind('<Ctrl-Shift-Tab>', 'completion-item-focus prev-category', mode='command')
+config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='command')
+config.bind('<Ctrl-Tab>', 'completion-item-focus next-category', mode='command')
+config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='command')
+config.bind('<Ctrl-W>', 'rl-rubout " "', mode='command')
+config.bind('<Ctrl-Y>', 'rl-yank', mode='command')
+config.bind('<Down>', 'completion-item-focus --history next', mode='command')
+config.bind('<Escape>', 'mode-leave', mode='command')
+config.bind('<PgDown>', 'completion-item-focus next-page', mode='command')
+config.bind('<PgUp>', 'completion-item-focus prev-page', mode='command')
+config.bind('<Return>', 'command-accept', mode='command')
+config.bind('<Shift-Delete>', 'completion-item-del', mode='command')
+config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
+config.bind('<Tab>', 'completion-item-focus next', mode='command')
+config.bind('<Up>', 'completion-item-focus --history prev', mode='command')
+
+## Bindings for insert mode
+config.bind('<Ctrl-E>', 'edit-text', mode='insert')
+config.bind('<Escape>', 'mode-leave', mode='insert')
+config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
+config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
+
+## Bindings for passthrough mode
+config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+
+## Bindings for prompt mode
+config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
+config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='prompt')
+config.bind('<Alt-D>', 'rl-kill-word', mode='prompt')
+config.bind('<Alt-E>', 'prompt-fileselect-external', mode='prompt')
+config.bind('<Alt-F>', 'rl-forward-word', mode='prompt')
+config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='prompt')
+config.bind('<Alt-Y>', 'prompt-yank', mode='prompt')
+config.bind('<Ctrl-?>', 'rl-delete-char', mode='prompt')
+config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='prompt')
+config.bind('<Ctrl-B>', 'rl-backward-char', mode='prompt')
+config.bind('<Ctrl-E>', 'rl-end-of-line', mode='prompt')
+config.bind('<Ctrl-F>', 'rl-forward-char', mode='prompt')
+config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='prompt')
+config.bind('<Ctrl-K>', 'rl-kill-line', mode='prompt')
+config.bind('<Ctrl-P>', 'prompt-open-download --pdfjs', mode='prompt')
+config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='prompt')
+config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='prompt')
+config.bind('<Ctrl-W>', 'rl-rubout " "', mode='prompt')
+config.bind('<Ctrl-X>', 'prompt-open-download', mode='prompt')
+config.bind('<Ctrl-Y>', 'rl-yank', mode='prompt')
+config.bind('<Down>', 'prompt-item-focus next', mode='prompt')
+config.bind('<Escape>', 'mode-leave', mode='prompt')
+config.bind('<Return>', 'prompt-accept', mode='prompt')
+config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
+config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
+config.bind('<Up>', 'prompt-item-focus prev', mode='prompt')
+
+## Bindings for register mode
+config.bind('<Escape>', 'mode-leave', mode='register')
+
+## Bindings for yesno mode
+config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
+config.bind('<Alt-Y>', 'prompt-yank', mode='yesno')
+config.bind('<Escape>', 'mode-leave', mode='yesno')
+config.bind('<Return>', 'prompt-accept', mode='yesno')
+config.bind('N', 'prompt-accept --save no', mode='yesno')
+config.bind('Y', 'prompt-accept --save yes', mode='yesno')
+config.bind('n', 'prompt-accept no', mode='yesno')
+config.bind('y', 'prompt-accept yes', mode='yesno')
