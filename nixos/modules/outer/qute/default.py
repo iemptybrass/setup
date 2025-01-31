@@ -245,69 +245,36 @@ c.completion.web_history.max_items = 500
 
 c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
 
-## Bottom border color of the completion widget category headers.
-## Type: QssColor
+c.colors.completion.category.border.top = 'black'
+c.colors.completion.category.fg = 'white'
 c.colors.completion.category.border.bottom = 'black'
 
-## Top border color of the completion widget category headers.
-## Type: QssColor
-c.colors.completion.category.border.top = 'black'
-
-## Foreground color of completion widget category headers.
-## Type: QtColor
-c.colors.completion.category.fg = 'white'
-
-## Background color of the completion widget for even rows.
-## Type: QssColor
 c.colors.completion.even.bg = '#333333'
+c.colors.completion.odd.bg = '#444444'
 
 ## Text color of the completion widget. May be a single color to use for
 ## all columns or a list of three colors, one for each column.
 ## Type: List of QtColor, or QtColor
 c.colors.completion.fg = ['white', 'white', 'white']
 
-## Background color of the selected completion item.
-## Type: QssColor
+
 c.colors.completion.item.selected.bg = '#e8c000'
-
-## Bottom border color of the selected completion item.
-## Type: QssColor
-c.colors.completion.item.selected.border.bottom = '#bbbb00'
-
-## Top border color of the selected completion item.
-## Type: QssColor
-c.colors.completion.item.selected.border.top = '#bbbb00'
-
-## Font used in the completion categories.
-## Type: Font
-c.fonts.completion.category = 'bold default_size default_family'
-
-## Font used in the completion widget.
-## Type: Font
-c.fonts.completion.entry = 'default_size default_family'
-
-## Foreground color of the selected completion item.
-## Type: QtColor
 c.colors.completion.item.selected.fg = 'black'
 
-## Foreground color of the matched text in the selected completion item.
-## Type: QtColor
+c.colors.completion.item.selected.border.top = '#bbbb00'
+c.colors.completion.item.selected.border.bottom = '#bbbb00'
+
+c.fonts.completion.category = 'bold default_size default_family'
+c.fonts.completion.entry = 'default_size default_family'
+
+
 c.colors.completion.item.selected.match.fg = '#ff4444'
 
 ## Foreground color of the matched text in the completion.
 ## Type: QtColor
 c.colors.completion.match.fg = '#ff4444'
 
-## Background color of the completion widget for odd rows.
-## Type: QssColor
-c.colors.completion.odd.bg = '#444444'
-
-## Color of the scrollbar in the completion view.
-## Type: QssColor
 c.colors.completion.scrollbar.bg = '#333333'
-
-## Color of the scrollbar handle in the completion view.
-## Type: QssColor
 c.colors.completion.scrollbar.fg = 'white'
 
  #
