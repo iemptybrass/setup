@@ -12,7 +12,10 @@ c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>', '<Ctrl-6>': '<Ctrl-^>', '<Ctr
 c.changelog_after_upgrade = 'never'
 
 
+
  ##################################################
+
+
 
  #
 
@@ -60,12 +63,13 @@ c.colors.statusbar.insert.fg = 'white'
 c.colors.statusbar.passthrough.bg = 'darkblue'
 c.colors.statusbar.passthrough.fg = 'white'
 
-
-
-
-
+ #
 
 c.messages.timeout = 3000
+
+ #
+
+
 
  ##################################################
 
