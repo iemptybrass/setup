@@ -165,16 +165,13 @@ c.tabs.close_mouse_button_on_bar = 'none'
 
 c.tabs.mousewheel_switching = False
 
+   #
 
-
-
-## Maximum stack size to remember for tab switches (-1 for no maximum).
-## Type: Int
 c.tabs.focus_stack_size = 10
 
 c.tabs.undo_stack_size = 20
 
-
+   #
 
 c.tabs.last_close = 'startpage'
 
@@ -185,18 +182,15 @@ c.tabs.new_position.unrelated = 'last'
 
 
 c.new_instance_open_target = 'tab'
-
 c.new_instance_open_target_window = 'last-focused'
-
-
-
-c.tabs.mode_on_change = 'normal'
 
 c.tabs.select_on_remove = 'last-used'
 
+c.tabs.mode_on_change = 'normal'
+
+   #
+
 c.tabs.tabs_are_windows = False
-
-
 
 c.tabs.wrap = True
 
