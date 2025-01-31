@@ -141,6 +141,12 @@ c.tabs.favicons.show = 'always'
 
 c.tabs.title.alignment = 'left'
 
+c.tabs.title.format = '{audio}{index}: {current_title}'
+
+c.tabs.title.format_pinned = '{index}'
+
+
+
 c.tabs.title.elide = 'right'
 
    #
@@ -166,10 +172,11 @@ c.tabs.mousewheel_switching = False
 ## Type: Int
 c.tabs.focus_stack_size = 10
 
+c.tabs.undo_stack_size = 20
+
+
 
 c.tabs.last_close = 'startpage'
-
-c.tabs.mode_on_change = 'normal'
 
 c.tabs.new_position.related = 'next'
 c.tabs.new_position.stacking = False
@@ -177,59 +184,25 @@ c.tabs.new_position.unrelated = 'last'
 
 
 
-c.tabs.select_on_remove = 'last-used'
-
-c.tabs.tabs_are_windows = False
-
 c.new_instance_open_target = 'tab'
-
-
-
-
-
-## Format to use for the tab title. The following placeholders are
-## defined:  * `{perc}`: Percentage as a string like `[10%]`. *
-## `{perc_raw}`: Raw percentage, e.g. `10`. * `{current_title}`: Title of
-## the current web page. * `{title_sep}`: The string `" - "` if a title
-## is set, empty otherwise. * `{index}`: Index of this tab. *
-## `{aligned_index}`: Index of this tab padded with spaces to have the
-## same   width. * `{relative_index}`: Index of this tab relative to the
-## current tab. * `{id}`: Internal tab ID of this tab. * `{scroll_pos}`:
-## Page scroll position. * `{host}`: Host of the current web page. *
-## `{backend}`: Either `webkit` or `webengine` * `{private}`: Indicates
-## when private mode is enabled. * `{current_url}`: URL of the current
-## web page. * `{protocol}`: Protocol (http/https/...) of the current web
-## page. * `{audio}`: Indicator for audio/mute status.
-## Type: FormatString
-c.tabs.title.format = '{audio}{index}: {current_title}'
-
-## Format to use for the tab title for pinned tabs. The same placeholders
-## like for `tabs.title.format` are defined.
-## Type: FormatString
-c.tabs.title.format_pinned = '{index}'
-
-
-
-## Number of closed tabs (per window) and closed windows to remember for
-## :undo (-1 for no maximum).
-## Type: Int
-c.tabs.undo_stack_size = 20
-
-## Wrap when changing tabs.
-## Type: Bool
-c.tabs.wrap = True
-
-## Automatically mute tabs. Note that if the `:tab-mute` command is used,
-## the mute status for the affected tab is now controlled manually, and
-## this setting doesn't have any effect.
-## Type: Bool
-c.content.mute = False
-
 
 c.new_instance_open_target_window = 'last-focused'
 
 
 
+c.tabs.mode_on_change = 'normal'
+
+c.tabs.select_on_remove = 'last-used'
+
+c.tabs.tabs_are_windows = False
+
+
+
+c.tabs.wrap = True
+
+c.content.mute = False
+
+ #
 
 
 
