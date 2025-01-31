@@ -40,6 +40,8 @@ c.colors.statusbar.private.fg = 'white'
 c.colors.statusbar.command.private.bg = 'darkslategray'
 c.colors.statusbar.command.private.fg = 'white'
 
+
+
 c.colors.statusbar.progress.bg = 'white'
 
 c.colors.statusbar.url.error.fg = 'orange'
@@ -127,7 +129,19 @@ c.tabs.tooltips = True
  #
 
 c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
+
 c.tabs.indicator.width = 3
+
+
+
+c.tabs.favicons.scale = 1.0
+c.tabs.favicons.show = 'always'
+
+
+
+c.tabs.title.alignment = 'left'
+
+c.tabs.title.elide = 'right'
 
    #
 
@@ -136,21 +150,10 @@ c.colors.tabs.indicator.start = '#0000aa'
 c.colors.tabs.indicator.stop = '#00aa00'
 c.colors.tabs.indicator.error = '#ff0000'
 
-   #
-
-c.tabs.favicons.scale = 1.0
-c.tabs.favicons.show = 'always'
-
-   #
-
-c.tabs.title.alignment = 'left'
-
-c.tabs.title.elide = 'right'
-
-
  #
 
 c.tabs.background = True
+
 c.tabs.close_mouse_button = 'none'
 c.tabs.close_mouse_button_on_bar = 'none'
 
