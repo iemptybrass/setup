@@ -638,7 +638,10 @@ config.bind('<Alt-m>', 'tab-mute')
 
 config.bind('<Ctrl-Shift-T>', 'undo')
 config.bind('<Ctrl-T>', 'open -t')
+
 config.bind('<Ctrl-V>', 'mode-enter passthrough')
+config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+
 config.bind('<Ctrl-W>', 'tab-close')
 config.bind('<Ctrl-^>', 'tab-focus last')
 config.bind('<Ctrl-h>', 'home')
@@ -669,9 +672,6 @@ config.bind('gf', 'view-source')
 
 config.bind('gg', 'scroll-to-perc 0')
 config.bind('gm', 'tab-move')
-config.bind('go', 'cmd-set-text :open {url:pretty}')
-config.bind('gt', 'cmd-set-text -s :tab-select')
-config.bind('gu', 'navigate up')
 
 config.bind('i', 'mode-enter insert')
 
@@ -691,49 +691,11 @@ config.bind('wIw', 'devtools window')
 
 config.bind('wi', 'devtools')
 
-
-## Bindings for command mode
-config.bind('<Alt-B>', 'rl-backward-word', mode='command')
-config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='command')
-config.bind('<Alt-D>', 'rl-kill-word', mode='command')
-config.bind('<Alt-F>', 'rl-forward-word', mode='command')
-config.bind('<Ctrl-?>', 'rl-delete-char', mode='command')
-config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='command')
-config.bind('<Ctrl-B>', 'rl-backward-char', mode='command')
-config.bind('<Ctrl-C>', 'completion-item-yank', mode='command')
-config.bind('<Ctrl-D>', 'completion-item-del', mode='command')
-config.bind('<Ctrl-E>', 'rl-end-of-line', mode='command')
-config.bind('<Ctrl-F>', 'rl-forward-char', mode='command')
-config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='command')
-config.bind('<Ctrl-K>', 'rl-kill-line', mode='command')
-config.bind('<Ctrl-N>', 'command-history-next', mode='command')
-config.bind('<Ctrl-P>', 'command-history-prev', mode='command')
-config.bind('<Ctrl-Return>', 'command-accept --rapid', mode='command')
-config.bind('<Ctrl-Shift-C>', 'completion-item-yank --sel', mode='command')
-config.bind('<Ctrl-Shift-Tab>', 'completion-item-focus prev-category', mode='command')
-config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='command')
-config.bind('<Ctrl-Tab>', 'completion-item-focus next-category', mode='command')
-config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='command')
-config.bind('<Ctrl-W>', 'rl-rubout " "', mode='command')
-config.bind('<Ctrl-Y>', 'rl-yank', mode='command')
-config.bind('<Down>', 'completion-item-focus --history next', mode='command')
-config.bind('<Escape>', 'mode-leave', mode='command')
-config.bind('<PgDown>', 'completion-item-focus next-page', mode='command')
-config.bind('<PgUp>', 'completion-item-focus prev-page', mode='command')
-config.bind('<Return>', 'command-accept', mode='command')
-config.bind('<Shift-Delete>', 'completion-item-del', mode='command')
-config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
-config.bind('<Tab>', 'completion-item-focus next', mode='command')
-config.bind('<Up>', 'completion-item-focus --history prev', mode='command')
-
 ## Bindings for insert mode
 config.bind('<Ctrl-E>', 'edit-text', mode='insert')
 config.bind('<Escape>', 'mode-leave', mode='insert')
 config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
-
-## Bindings for passthrough mode
-config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 ## Bindings for prompt mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
