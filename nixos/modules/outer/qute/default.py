@@ -640,7 +640,7 @@ config.bind('<Ctrl-Shift-Tab>', 'tab-prev')
 
 config.bind('<Ctrl-M>', 'tab-mute')
 
-config.bind('<Ctrl-Shift-Return>', 'open')
+config.bind('Ctrl-Shift-Return', 'cmd-set-text -s :open')
 
 
 
@@ -655,29 +655,20 @@ config.bind('<Return>', 'selection-follow')
 
 
 
-config.bind('M', 'bookmark-add')
 
 
 
 
 
 
-config.bind('gJ', 'tab-move +')
-config.bind('gK', 'tab-move -')
+config.bind('Ctrl-Shift-Right', 'tab-move +')
+config.bind('Ctrl-Shift-Left', 'tab-move -')
 
-config.bind('gf', 'view-source')
+config.bind('Ctrl-U', 'view-source')
 
 config.bind('m', 'quickmark-save')
-config.bind('o', 'cmd-set-text -s :open')
 
-config.bind('wIf', 'devtools-focus')
-config.bind('wIh', 'devtools left')
-config.bind('wIj', 'devtools bottom')
-config.bind('wIk', 'devtools top')
-config.bind('wIl', 'devtools right')
-config.bind('wIw', 'devtools window')
-
-config.bind('wi', 'devtools')
+config.bind('Ctrl-Shift-I', 'devtools window')
 
 ## Bindings for insert mode
 config.bind('<Ctrl-E>', 'edit-text', mode='insert')
