@@ -729,8 +729,6 @@ config.bind('<Up>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Escape>', 'mode-leave', mode='register')
 
 ## Bindings for yesno mode
-config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
-config.bind('<Alt-Y>', 'prompt-yank', mode='yesno')
 config.bind('<Escape>', 'mode-leave', mode='yesno')
 config.bind('<Return>', 'prompt-accept', mode='yesno')
 config.bind('N', 'prompt-accept --save no', mode='yesno')
