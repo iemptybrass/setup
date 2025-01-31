@@ -19,34 +19,23 @@ c.changelog_after_upgrade = 'never'
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
 
-   #
-
 c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
+
 c.statusbar.widgets = ['history', 'url', 'progress']
 
-c.colors.statusbar.caret.bg = 'purple'
-c.colors.statusbar.caret.fg = 'white'
-
-c.colors.statusbar.caret.selection.bg = '#a12dff'
-c.colors.statusbar.caret.selection.fg = 'white'
-
-c.colors.statusbar.command.bg = 'black'
-c.colors.statusbar.command.fg = 'white'
-
-c.colors.statusbar.command.private.bg = 'darkslategray'
-c.colors.statusbar.command.private.fg = 'white'
-
-c.colors.statusbar.insert.bg = 'darkgreen'
-c.colors.statusbar.insert.fg = 'white'
+   #
 
 c.colors.statusbar.normal.bg = 'black'
 c.colors.statusbar.normal.fg = 'white'
+c.colors.statusbar.command.bg = 'black'
+c.colors.statusbar.command.fg = 'white'
 
-c.colors.statusbar.passthrough.bg = 'darkblue'
-c.colors.statusbar.passthrough.fg = 'white'
+c.fonts.statusbar = 'default_size default_family'
 
 c.colors.statusbar.private.bg = '#666666'
 c.colors.statusbar.private.fg = 'white'
+c.colors.statusbar.command.private.bg = 'darkslategray'
+c.colors.statusbar.command.private.fg = 'white'
 
 c.colors.statusbar.progress.bg = 'white'
 
@@ -57,7 +46,24 @@ c.colors.statusbar.url.success.http.fg = 'white'
 c.colors.statusbar.url.success.https.fg = 'lime'
 c.colors.statusbar.url.warn.fg = 'yellow'
 
-c.fonts.statusbar = 'default_size default_family'
+
+
+c.colors.statusbar.caret.bg = 'purple'
+c.colors.statusbar.caret.fg = 'white'
+
+c.colors.statusbar.caret.selection.bg = '#a12dff'
+c.colors.statusbar.caret.selection.fg = 'white'
+
+c.colors.statusbar.insert.bg = 'darkgreen'
+c.colors.statusbar.insert.fg = 'white'
+
+c.colors.statusbar.passthrough.bg = 'darkblue'
+c.colors.statusbar.passthrough.fg = 'white'
+
+
+
+
+
 
 c.messages.timeout = 3000
 
