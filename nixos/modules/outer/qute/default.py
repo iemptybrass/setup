@@ -611,76 +611,64 @@ c.bindings.default = {}
 
    #
 
-config.bind('+', 'zoom-in')
-config.bind('_', 'zoom-out')
+config.bind('Alt-Left', 'back')
+config.bind('Alt-Right', 'forward')
+
+config.bind('Ctrl-R', 'reload')
 
    #
 
-config.bind('<Alt-1>', 'tab-focus 1')
-config.bind('<Alt-2>', 'tab-focus 2')
-config.bind('<Alt-3>', 'tab-focus 3')
-config.bind('<Alt-4>', 'tab-focus 4')
-config.bind('<Alt-5>', 'tab-focus 5')
-config.bind('<Alt-6>', 'tab-focus 6')
-config.bind('<Alt-7>', 'tab-focus 7')
-config.bind('<Alt-8>', 'tab-focus 8')
-config.bind('<Alt-9>', 'tab-focus -1')
+config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
+config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
+config.bind('<Escape>', 'mode-leave', mode='prompt')
+config.bind('<Return>', 'prompt-accept', mode='prompt')
 
-config.bind('<', 'back')
-config.bind('>', 'forward')
+config.bind('Ctrl-=', 'zoom-in')
+config.bind('Ctrl--', 'zoom-out')
 
-config.bind('J', 'tab-next')
-config.bind('K', 'tab-prev')
+   #
 
-config.bind('<Alt-m>', 'tab-mute')
-
-
-
-config.bind('<Ctrl-Shift-T>', 'undo')
-config.bind('<Ctrl-T>', 'open -t')
-
-config.bind('<Ctrl-V>', 'mode-enter passthrough')
-config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+config.bind('Ctrl-F', 'search')
+config.bind('Ctrl-G', 'search-next')
+config.bind('Ctrl-Shift-G', 'search-prev')
 
 config.bind('<Ctrl-W>', 'tab-close')
-config.bind('<Ctrl-^>', 'tab-focus last')
-config.bind('<Ctrl-h>', 'home')
-config.bind('<Ctrl-p>', 'tab-pin')
+config.bind('<Ctrl-T>', 'open -t')
+
+config.bind('<Ctrl-Tab>', 'tab-next')
+config.bind('<Ctrl-Shift-Tab>', 'tab-prev')
+
+config.bind('<Ctrl-M>', 'tab-mute')
+
+config.bind('<Ctrl-Shift-Return>', 'open')
+
+
+
+
+
+config.bind('<Ctrl-I>', 'mode-enter passthrough')
+config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
-config.bind('<back>', 'back')
-config.bind('<forward>', 'forward')
-config.bind('G', 'scroll-to-perc')
+
 
 
 
 config.bind('M', 'bookmark-add')
 
 
-config.bind('N', 'search-prev')
-config.bind('n', 'search-next')
 
 
-config.bind('U', 'undo -w')
-config.bind('d', 'tab-close')
-config.bind('g$', 'tab-focus -1')
-config.bind('g0', 'tab-focus 1')
+
+
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
 
 config.bind('gf', 'view-source')
 
-config.bind('gg', 'scroll-to-perc 0')
-config.bind('gm', 'tab-move')
-
-config.bind('i', 'mode-enter insert')
-
 config.bind('m', 'quickmark-save')
 config.bind('o', 'cmd-set-text -s :open')
-config.bind('r', 'reload')
-
-
-config.bind('u', 'undo')
 
 config.bind('wIf', 'devtools-focus')
 config.bind('wIh', 'devtools left')
@@ -697,33 +685,7 @@ config.bind('<Escape>', 'mode-leave', mode='insert')
 config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
 
-## Bindings for prompt mode
-config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
-config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='prompt')
-config.bind('<Alt-D>', 'rl-kill-word', mode='prompt')
-config.bind('<Alt-E>', 'prompt-fileselect-external', mode='prompt')
-config.bind('<Alt-F>', 'rl-forward-word', mode='prompt')
-config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='prompt')
-config.bind('<Alt-Y>', 'prompt-yank', mode='prompt')
-config.bind('<Ctrl-?>', 'rl-delete-char', mode='prompt')
-config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='prompt')
-config.bind('<Ctrl-B>', 'rl-backward-char', mode='prompt')
-config.bind('<Ctrl-E>', 'rl-end-of-line', mode='prompt')
-config.bind('<Ctrl-F>', 'rl-forward-char', mode='prompt')
-config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='prompt')
-config.bind('<Ctrl-K>', 'rl-kill-line', mode='prompt')
-config.bind('<Ctrl-P>', 'prompt-open-download --pdfjs', mode='prompt')
-config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='prompt')
-config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='prompt')
-config.bind('<Ctrl-W>', 'rl-rubout " "', mode='prompt')
-config.bind('<Ctrl-X>', 'prompt-open-download', mode='prompt')
-config.bind('<Ctrl-Y>', 'rl-yank', mode='prompt')
-config.bind('<Down>', 'prompt-item-focus next', mode='prompt')
-config.bind('<Escape>', 'mode-leave', mode='prompt')
-config.bind('<Return>', 'prompt-accept', mode='prompt')
-config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
-config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
-config.bind('<Up>', 'prompt-item-focus prev', mode='prompt')
+
 
 ## Bindings for register mode
 config.bind('<Escape>', 'mode-leave', mode='register')
