@@ -74,49 +74,67 @@ c.colors.tabs.bar.bg = '#555555'
  #
 
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+
 c.tabs.max_width = -1
 c.tabs.width = '15%'
 c.tabs.min_width = -1
 
-
+   #
 
 c.colors.tabs.selected.even.bg = 'white'
 c.colors.tabs.selected.even.fg = 'black'
 c.colors.tabs.selected.odd.bg = 'white'
 c.colors.tabs.selected.odd.fg = 'black'
 
-c.colors.tabs.even.bg = 'darkgrey'
-c.colors.tabs.even.fg = 'white'
-c.colors.tabs.odd.bg = 'grey'
-c.colors.tabs.odd.fg = 'white'
-
-
-
-c.tabs.pinned.frozen = True
-c.tabs.pinned.shrink = True
-
-c.colors.tabs.pinned.even.bg = 'darkseagreen'
-c.colors.tabs.pinned.even.fg = 'white'
-c.colors.tabs.pinned.odd.bg = 'seagreen'
-c.colors.tabs.pinned.odd.fg = 'white'
+c.fonts.tabs.selected = 'default_size default_family'
 
 c.colors.tabs.pinned.selected.even.bg = 'black'
 c.colors.tabs.pinned.selected.even.fg = 'white'
 c.colors.tabs.pinned.selected.odd.bg = 'black'
 c.colors.tabs.pinned.selected.odd.fg = 'white'
 
+   #
+
+c.colors.tabs.even.bg = 'darkgrey'
+c.colors.tabs.even.fg = 'white'
+c.colors.tabs.odd.bg = 'grey'
+c.colors.tabs.odd.fg = 'white'
+
+c.fonts.tabs.unselected = 'default_size default_family'
+
+c.colors.tabs.pinned.even.bg = 'darkseagreen'
+c.colors.tabs.pinned.even.fg = 'white'
+c.colors.tabs.pinned.odd.bg = 'seagreen'
+c.colors.tabs.pinned.odd.fg = 'white'
+
+   #
+
+c.tabs.pinned.frozen = True
+c.tabs.pinned.shrink = True
+c.tabs.tooltips = True
+
  #
 
 c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
 c.tabs.indicator.width = 3
+
+   #
 
 c.colors.tabs.indicator.system = 'rgb'
 c.colors.tabs.indicator.start = '#0000aa'
 c.colors.tabs.indicator.stop = '#00aa00'
 c.colors.tabs.indicator.error = '#ff0000'
 
+   #
+
 c.tabs.favicons.scale = 1.0
 c.tabs.favicons.show = 'always'
+
+   #
+
+c.tabs.title.alignment = 'left'
+
+c.tabs.title.elide = 'right'
 
 
  #
@@ -152,22 +170,8 @@ c.tabs.tabs_are_windows = False
 c.new_instance_open_target = 'tab'
 
 
-## Alignment of the text inside of tabs.
-## Type: TextAlignment
-## Valid values:
-##   - left
-##   - right
-##   - center
-c.tabs.title.alignment = 'left'
 
-## Position of ellipsis in truncated title of tabs.
-## Type: ElidePosition
-## Valid values:
-##   - left
-##   - right
-##   - middle
-##   - none
-c.tabs.title.elide = 'right'
+
 
 ## Format to use for the tab title. The following placeholders are
 ## defined:  * `{perc}`: Percentage as a string like `[10%]`. *
@@ -190,10 +194,7 @@ c.tabs.title.format = '{audio}{index}: {current_title}'
 ## Type: FormatString
 c.tabs.title.format_pinned = '{index}'
 
-## Show tooltips on tabs. Note this setting only affects windows opened
-## after it has been set.
-## Type: Bool
-c.tabs.tooltips = True
+
 
 ## Number of closed tabs (per window) and closed windows to remember for
 ## :undo (-1 for no maximum).
@@ -210,13 +211,6 @@ c.tabs.wrap = True
 ## Type: Bool
 c.content.mute = False
 
-## Font used for selected tabs.
-## Type: Font
-c.fonts.tabs.selected = 'default_size default_family'
-
-## Font used for unselected tabs.
-## Type: Font
-c.fonts.tabs.unselected = 'default_size default_family'
 
 c.new_instance_open_target_window = 'last-focused'
 
