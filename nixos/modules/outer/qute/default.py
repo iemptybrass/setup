@@ -202,6 +202,47 @@ c.content.mute = False
 
  ##################################################
 
+
+
+ #
+
+c.completion.height = '50%'
+c.completion.shrink = True
+
+c.completion.show = 'always'
+
+c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks']
+
+
+
+c.completion.scrollbar.padding = 2
+
+c.completion.scrollbar.width = 12
+
+
+
+c.completion.cmd_history_max_items = 0
+
+c.completion.delay = 0
+
+c.completion.min_chars = 1
+
+c.completion.favorite_paths = []
+
+c.completion.quick = False
+
+c.completion.timestamp_format = '%m-%d-%Y %H:%M'
+
+c.completion.use_best_match = False
+
+c.completion.web_history.exclude = []
+
+c.completion.web_history.max_items = 500
+
+
+
+
+
 c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
 
 ## Bottom border color of the completion widget category headers.
@@ -237,6 +278,14 @@ c.colors.completion.item.selected.border.bottom = '#bbbb00'
 ## Type: QssColor
 c.colors.completion.item.selected.border.top = '#bbbb00'
 
+## Font used in the completion categories.
+## Type: Font
+c.fonts.completion.category = 'bold default_size default_family'
+
+## Font used in the completion widget.
+## Type: Font
+c.fonts.completion.entry = 'default_size default_family'
+
 ## Foreground color of the selected completion item.
 ## Type: QtColor
 c.colors.completion.item.selected.fg = 'black'
@@ -260,6 +309,52 @@ c.colors.completion.scrollbar.bg = '#333333'
 ## Color of the scrollbar handle in the completion view.
 ## Type: QssColor
 c.colors.completion.scrollbar.fg = 'white'
+
+ #
+
+
+
+ ##################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
