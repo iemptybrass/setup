@@ -645,24 +645,13 @@ config.bind('<Ctrl-M>', 'tab-mute')
 
 config.bind('Ctrl-Shift-Return', 'cmd-set-text -s :open')
 
-
-
-
+   #
 
 config.bind('<Ctrl-I>', 'mode-enter passthrough')
 config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
-
-
-
-
-
-
-
-
-
 
 config.bind('Ctrl-Shift-Right', 'tab-move +')
 config.bind('Ctrl-Shift-Left', 'tab-move -')
@@ -678,8 +667,6 @@ config.bind('<Ctrl-E>', 'edit-text', mode='insert')
 config.bind('<Escape>', 'mode-leave', mode='insert')
 config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
 config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
-
-
 
 ## Bindings for register mode
 config.bind('<Escape>', 'mode-leave', mode='register')
