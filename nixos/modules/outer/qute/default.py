@@ -623,14 +623,17 @@ config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Escape>', 'mode-leave', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
 
+config.bind('Ctrl-Up', 'scroll-to-perc 0')
+config.bind('Ctrl-Down', 'scroll-to-perc 100')
+
 config.bind('Ctrl-=', 'zoom-in')
 config.bind('Ctrl--', 'zoom-out')
 
    #
 
 config.bind('Ctrl-F', 'search')
-config.bind('Ctrl-G', 'search-next')
-config.bind('Ctrl-Shift-G', 'search-prev')
+config.bind('Ctrl-N', 'search-next')
+config.bind('Ctrl-Shift-N', 'search-prev')
 
 config.bind('<Ctrl-W>', 'tab-close')
 config.bind('<Ctrl-T>', 'open -t')
