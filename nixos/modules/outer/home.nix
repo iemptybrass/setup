@@ -17,7 +17,6 @@ home.stateVersion = "24.11";
       ./neofetch
         ./qute
       ./shell
-        ./spotify
       ./waybar
       ./yazi
              ];
