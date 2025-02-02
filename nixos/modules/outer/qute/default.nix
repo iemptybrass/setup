@@ -9,10 +9,10 @@
         enable = true;      };
               };
 
-#    xdg = {
-#    configFile."" = {
-#        source = ./default.;      };
-#         };
+  xdg = {
+    configFile."qutebrowser/config.py" = {
+        source = ./default.py;      };
+         };
 
 
 
