@@ -8,7 +8,7 @@
     user = {
         isNormalUser = true;
         description = "user";
-      extraGroups = [ "wheel" ];      };
+        extraGroups = [ "wheel" ];      };
                  };
 
 
