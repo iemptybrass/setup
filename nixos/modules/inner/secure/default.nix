@@ -6,9 +6,8 @@
 
   imports = [
       ./network
-      ./rtkit
       ./sudo
-#      ./systemd
+      ./systemd
              ];
 
 
