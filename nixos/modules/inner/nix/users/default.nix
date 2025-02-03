@@ -4,11 +4,12 @@
 
 
 
-  users.users.user = {
-      isNormalUser = true;
-      description = "user";
-    extraGroups = [ "wheel" ];
-                      };
+  users.users = {
+    user = {
+        isNormalUser = true;
+        description = "user";
+      extraGroups = [ "wheel" ];      };
+                 };
 
 
 
