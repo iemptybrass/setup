@@ -6,7 +6,11 @@
 
   networking = {
       hostName = "nixos";
-      networkmanager.enable = true;
+    networkmanager = {
+        enable = true;
+      wifi = {
+          macAddress = "preserve";
+          backend = "iwd";      };      };
                 };
 
 
