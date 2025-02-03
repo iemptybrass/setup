@@ -11,7 +11,7 @@
 
   xdg = {
     configFile."waybar/config" = {
-        source = ./default;      };
+        source = ./default.jsonc;      };
     configFile."waybar/style.css" = {
         source = ./default.css;      };
          }; 
