@@ -23,7 +23,7 @@
 │├─ #CCCCCC > Text Alternative
 │├─ #ADADAD > Focused
 │└─ #525252 > UnFocused
-├┬ Primary / Secondary
+├┬ Primary - Secondary
 │├─ #FF6961 > Red
 │├─ #FFB347 > Orange
 │├─ #FDFD96 > Yellow
