@@ -4,8 +4,6 @@
 
 
 
-    systemd.watchdog.rebootTime = "0";
-
   boot = {
       bootspec.enable = true;
       consoleLogLevel = 0;
