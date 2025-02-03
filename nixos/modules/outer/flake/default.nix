@@ -1,0 +1,17 @@
+{
+
+
+
+
+
+  imports = [
+      ./firefox
+      ./nixcord
+      ./spotify
+             ];
+
+
+
+
+
+}
