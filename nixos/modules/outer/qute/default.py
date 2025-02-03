@@ -647,8 +647,6 @@ config.bind('Ctrl-Shift-Return', 'cmd-set-text -s :open')
 
    #
 
-config.bind('<Ctrl-I>', 'mode-enter passthrough')
-config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
@@ -656,25 +654,33 @@ config.bind('<Return>', 'selection-follow')
 config.bind('Ctrl-Shift-Right', 'tab-move +')
 config.bind('Ctrl-Shift-Left', 'tab-move -')
 
-config.bind('Ctrl-U', 'view-source')
-
 config.bind('m', 'quickmark-save')
+
+   #
+
+config.bind('Ctrl-U', 'view-source')
 
 config.bind('Ctrl-Shift-I', 'devtools window')
 
-## Bindings for insert mode
-config.bind('<Ctrl-E>', 'edit-text', mode='insert')
+   #
+
+config.bind('<Ctrl-I>', 'mode-enter passthrough')
+config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+
 config.bind('<Escape>', 'mode-leave', mode='insert')
 config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
-config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
 
-## Bindings for register mode
-config.bind('<Escape>', 'mode-leave', mode='register')
+   #
 
-## Bindings for yesno mode
 config.bind('<Escape>', 'mode-leave', mode='yesno')
 config.bind('<Return>', 'prompt-accept', mode='yesno')
 config.bind('N', 'prompt-accept --save no', mode='yesno')
 config.bind('Y', 'prompt-accept --save yes', mode='yesno')
 config.bind('n', 'prompt-accept no', mode='yesno')
 config.bind('y', 'prompt-accept yes', mode='yesno')
+
+ #
+
+
+
+ ##################################################
