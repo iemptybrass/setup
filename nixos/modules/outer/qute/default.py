@@ -101,7 +101,6 @@ c.tabs.show = 'always'
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
 
 c.tabs.max_width = -1
-c.tabs.width = '15%'
 c.tabs.min_width = -1
 
    #
