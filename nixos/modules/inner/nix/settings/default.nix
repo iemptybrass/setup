@@ -4,10 +4,13 @@
 
 
 
-  nix.settings = {
+  nix = {
+    settings = {
       allowed-users = [ "@wheel" ];
-      experimental-features = [ "nix-command" "flakes" ];
-                  };
+    experimental-features = [ \
+        "nix-command" 
+        "flakes" ];      };
+         };
 
 
 
