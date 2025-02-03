@@ -19,8 +19,6 @@ https://linux-audit.com/
 
 https://github.com/CISOfy/lynis
 
-https://wiki.nixos.org/wiki/Iwd
-
 ## colors
 
         base00 = #212121
