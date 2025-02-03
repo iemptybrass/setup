@@ -17,6 +17,24 @@ c.confirm_quit = ['always']
 
  #
 
+c.content.autoplay = False
+
+   #
+
+c.content.blocking.enabled = True
+c.content.blocking.method = both
+
+
+ #
+
+
+
+ ##################################################
+
+
+
+ #
+
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
 
@@ -99,13 +117,6 @@ c.colors.tabs.selected.odd.fg = 'black'
 
 c.fonts.tabs.selected = 'default_size default_family'
 
-c.colors.tabs.pinned.selected.even.bg = 'black'
-c.colors.tabs.pinned.selected.even.fg = 'white'
-c.colors.tabs.pinned.selected.odd.bg = 'black'
-c.colors.tabs.pinned.selected.odd.fg = 'white'
-
-
-
 c.colors.tabs.even.bg = 'darkgrey'
 c.colors.tabs.even.fg = 'white'
 c.colors.tabs.odd.bg = 'grey'
@@ -113,15 +124,8 @@ c.colors.tabs.odd.fg = 'white'
 
 c.fonts.tabs.unselected = 'default_size default_family'
 
-c.colors.tabs.pinned.even.bg = 'darkseagreen'
-c.colors.tabs.pinned.even.fg = 'white'
-c.colors.tabs.pinned.odd.bg = 'seagreen'
-c.colors.tabs.pinned.odd.fg = 'white'
-
    #
 
-c.tabs.pinned.frozen = True
-c.tabs.pinned.shrink = True
 c.tabs.tooltips = True
 
  #
@@ -140,9 +144,6 @@ c.tabs.favicons.show = 'always'
 c.tabs.title.alignment = 'left'
 
 c.tabs.title.format = '{audio}{index}: {current_title}'
-
-c.tabs.title.format_pinned = '{index}'
-
 
 
 c.tabs.title.elide = 'right'
