@@ -7,18 +7,8 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./hypridle
-      ./hyprland
-      ./hyprlock
-        ./hyprpaper
-      ./kitty
-        ./launcher
-        ./micro
-      ./neofetch
-        ./qute
-      ./shell
-      ./waybar
-      ./yazi
+      ./flake
+      ./home
              ];
 
 
