@@ -22,17 +22,22 @@ https://github.com/CISOfy/lynis
 ## colors
 
 .
-├┬
-│├─
-│└─
-├┬ colors
+├┬ Main
+│├─ #212121 > Background
+│├─ #FFFFFF > Text Main
+│├─ #CCCCCC > Text Alternative
+│├─ #ADADAD > Focused
+│└─ #525252 > UnFocused
+├┬ Primary / Secondary
 │├─ #FF6961 > Red
 │├─ #FFB347 > Orange
 │├─ #FDFD96 > Yellow
 │├─ #77DD77 > Green
 │├─ #AEC6CF > Blue
 │└─ #B39EB5 > Purple
- 
+├─ Warning > Yellow
+├─ Urgent > Yellow
+└─ Error > Red
 
         Background = #212121
         base01 = #525252
