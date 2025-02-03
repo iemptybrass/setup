@@ -39,24 +39,6 @@ https://github.com/CISOfy/lynis
 ├─ Urgent > Yellow
 └─ Error > Red
 
-        Background = #212121
-        base01 = #525252
-        base02 = #ADADAD
-        base03 = #525252
-        base04 = #CCCCCC
-        base05 = #FFFFFF
-        base06 = #212121
-        base07 = #FFB3BA
-        base08 = #ADADAD
-        base09 = #FFDFBA
-        base0A = #ADADAD
-        base0B = #FFFFFF
-        base0C = #BAE1FF
-        base0D = #ADADAD
-        base0E = #FFB3BA
-        base0F = #212121
-
-
 ## notes
 
 sudo nix-visualize /nix/store/<package> -c config.cfg -s nix -o <name>.png
