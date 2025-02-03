@@ -4,7 +4,6 @@
 
 
 
-  networking.firewall.enable = true;
 
 
 
