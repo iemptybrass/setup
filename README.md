@@ -13,14 +13,9 @@
 └─ flake.nix               
 ```
 
-## To Do 
-
-https://linux-audit.com/
-
-https://github.com/CISOfy/lynis
-
 ## colors
 
+```
 .
 ├┬ Main
 │├─ #212121 > Background
@@ -38,6 +33,13 @@ https://github.com/CISOfy/lynis
 ├─ Warning > Yellow
 ├─ Urgent > Yellow
 └─ Error > Red
+```
+
+## To Do 
+
+https://linux-audit.com/
+
+https://github.com/CISOfy/lynis
 
 ## notes
 
