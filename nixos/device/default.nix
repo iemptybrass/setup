@@ -6,8 +6,11 @@
 
   imports = [
       ./filesystem
-      ./hardware
       ./kernel
+      ./network
+      ./platform
+      ./processor
+      ./ssd
              ];
 
 
