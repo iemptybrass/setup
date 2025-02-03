@@ -6,8 +6,6 @@
 
     security.rtkit.enable = true;
 
-    networking.firewall.enable = true;
-
   systemd.services = {
 
  ##################################################
