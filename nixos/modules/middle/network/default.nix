@@ -14,13 +14,6 @@
           AutoConnect = true;      };      };
                              };
 
-  services.connman = {
-      enable = true;
-      enableVPN = false;
-    wifi = {
-        backend = "iwd";      };
-                      };
-
 
 
 
