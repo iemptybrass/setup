@@ -46,13 +46,11 @@
         InstallAddonsPermission = {
             Default = false;      };
         ManagedBookmarks = [
-            { Locked = Bookmarks Locked For Me };
+            { "Locked" = "Bookmarks Locked For Me"; }
             { url = "https://github.com/"; name = "Github";      }
             { url = "https://search.nixos.org/packages?"; name = "Nix Pkgs";      }
             { url = "https://search.nixos.org/options?"; name = "Nix Options";      }
             { url = "https://home-manager-options.extranix.com/?query=&release=master"; name = "Home Manager Options";      }      ];
-        SearchEngines = {
-            Default = Google      };
         UserMessaging = {
             ExtensionRecommendations =  false;
             FeatureRecommendations =  false;
