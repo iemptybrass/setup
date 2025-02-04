@@ -1,4 +1,8 @@
-{ inputs, pkgs, system, ... }:{
+{ inputs, pkgs, system, ... }:
+let
+    spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+in
+{
 
 
 
@@ -9,18 +13,14 @@
              ];
 
 
-  programs.spicetify =
-      let
-          spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
-      in
-          {
-              enable = true;
-              theme = spicePkgs.themes.text;
-            enabledExtensions = with spicePkgs.extensions; [
-              betterGenres
-              skipOrPlayLikedSongs
-              shuffle 
-            ];
+  programs = {
+    spicetify = {
+        enable = true;
+        theme = spicePkgs.themes.text;
+      enabledExtensions = with spicePkgs.extensions; [
+          betterGenres
+          skipOrPlayLikedSongs
+          shuffle      ];      };
            };
 
 
