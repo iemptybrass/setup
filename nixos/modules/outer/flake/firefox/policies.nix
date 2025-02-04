@@ -43,10 +43,6 @@
             SponsoredSuggestions = false;
             ImproveSuggest = false;
             Locked = true;      };
-        Homepage = {
-            URL = "";
-            Locked = true;
-            StartPage = "homepage";      };
         InstallAddonsPermission = {
             Default = false;      };
         ManagedBookmarks = [
