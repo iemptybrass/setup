@@ -8,6 +8,8 @@
 
     documentation.nixos.enable = false;
 
+    environment.defaultPackages = [];
+
 
 
 
