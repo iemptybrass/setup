@@ -5,9 +5,9 @@
 
 
   imports = [
-      ./extensions
-      ./policies
-      ./settings
+      ./extensions.nix
+      ./policies.nix
+      ./settings.nix
              ];
 
   programs = {
