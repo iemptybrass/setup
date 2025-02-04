@@ -29,6 +29,9 @@
           OfferToSaveLoginsDefault = false;
           PasswordManagerEnabled = false;
           PrintingEnabled = false;
+          SearchBar = "unified";
+          SearchSuggestEnabled = true;
+          TranslateEnabled = true;
         FirefoxHome = {
             Search = true;
             TopSites = false;
@@ -51,6 +54,16 @@
             { url = "https://search.nixos.org/packages?"; name = "Nix Pkgs";      }
             { url = "https://search.nixos.org/options?"; name = "Nix Options";      }
             { url = "https://home-manager-options.extranix.com/?query=&release=master"; name = "Home Manager Options";      }      ];
+        SanitizeOnShutdown = {
+            Cache = true;
+            Cookies = false;
+            History = true;
+            Sessions = false;
+            SiteSettings = false;
+            Locked = true;      };
+        SearchEngines = {
+            PreventIntalls = true;
+          Remove = [ "Bing" "DuckDuckGo" "Wikipedia" "Bookmarks" "Tabs" "History" "Actions" ];
         UserMessaging = {
             ExtensionRecommendations =  false;
             FeatureRecommendations =  false;
