@@ -10,13 +10,9 @@
         historyFileSize = 250;
         historySize = 250;
       shellAliases = {
-
           edit = "sudo micro";
-
           lf = "yazi";
-
           ".." = "cd ..";
-
           nixos = "cd /etc/nixos";
           modules = "cd /etc/nixos/modules";
           inner = "cd /etc/nixos/modules/inner";
@@ -25,13 +21,10 @@
           flake = "cd /etc/nixos/modules/outer/flake";
           home = "cd /etc/nixos/modules/outer/home";
           "~" = "cd ~";
-
           clean = "nix-collect-garbage";
           deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
-
           switch = "sudo nixos-rebuild --flake /etc/nixos#default switch" ;
           upgrade = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";      };
-
       historyIgnore = [
             "edit"
             "lf"
