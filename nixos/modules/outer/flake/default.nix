@@ -5,8 +5,8 @@
 
 
   imports = [
+      ./discord
       ./firefox
-      ./nixcord
       ./spotify
              ];
 
