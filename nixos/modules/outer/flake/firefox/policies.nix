@@ -9,16 +9,12 @@
       policies = {
           AutofillAddressEnabled = false;
           AutofillCreditCardEnabled = false;
-          BlockAboutConfig = true;
-          BlockAboutSupport = true;
           DisableAppUpdate = true;
           DisableFeedbackCommands = true;
           DisableFirefoxAccounts = true;
           DisableFirefoxScreenshots = true;
           DisableFirefoxStudies = true;
-          DisableForgetButton = true;
           DisableMasterPasswordCreation = true;
-          DisablePasswordReveal = true;
           DisablePocket = true;
           DisablePrivateBrowsing = true;
           DisableProfileImport = true;
@@ -26,26 +22,13 @@
           DisableSafeMode = true;
           DisableSetDesktopBackground = true;
           DisableTelemetry = true;
-          DisplayBookmarksToolbar = "always";
           DisplayMenuBar = "never";
           DontCheckDefaultBrowser = true;
-          ExtensionUpdate = false;
-          HardwareAcceleration = true;
           NoDefaultBookmarks = true;
           OfferToSaveLogins = false;
           OfferToSaveLoginsDefault = false;
-          OverrideFirstRunPage = "";
-          OverridePostUpdatePage = "";
           PasswordManagerEnabled = false;
           PrintingEnabled = false;
-          RequestedLocales = en-US;
-          SearchBar = unified;
-          TranslateEnabled = true;
-        EnableTrackingProtection = {
-            Value = true;
-            Locked = true;
-            Cryptomining = true;
-            Fingerprinting = true;      };
         FirefoxHome = {
             Search = true;
             TopSites = false;
@@ -75,13 +58,13 @@
         SearchEngines = {
             Default = Google      };
         UserMessaging = {
-            ExtensionRecommendations =  false ;
-            FeatureRecommendations =  false ;
-            UrlbarInterventions =  false ;
-            SkipOnboarding =  false ;
-            MoreFromMozilla =  false ;
-            FirefoxLabs =  false ;
-            Locked = false;      };      };      };
+            ExtensionRecommendations =  false;
+            FeatureRecommendations =  false;
+            UrlbarInterventions =  false;
+            SkipOnboarding =  true;
+            MoreFromMozilla =  false;
+            FirefoxLabs =  false;
+            Locked = true;      };      };      };
               };
 
 
