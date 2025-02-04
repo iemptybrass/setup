@@ -34,10 +34,9 @@
           NoDefaultBookmarks = true;
           OfferToSaveLogins = false;
           OfferToSaveLoginsDefault = false;
-          OverrideFirstRunPage = http =//example.org
-          OverridePostUpdatePage = http =//example.org
+          OverrideFirstRunPage = "";
+          OverridePostUpdatePage = "";
           PasswordManagerEnabled = false;
-          preferences;
           PrintingEnabled = false;
           RequestedLocales = en-US;
           SearchBar = unified;
@@ -46,7 +45,7 @@
             Value = true;
             Locked = true;
             Cryptomining = true;
-            Fingerprinting = true;
+            Fingerprinting = true;      };
         FirefoxHome = {
             Search = true;
             TopSites = false;
@@ -55,12 +54,12 @@
             Pocket = false;
             SponsoredPocket = false;
             Snippets = false;
-            Locked = true;
+            Locked = true;      };
         FirefoxSuggest = {
             WebSuggestions = true;
             SponsoredSuggestions = false;
             ImproveSuggest = false;
-            Locked = true;
+            Locked = true;      };
         Homepage = {
             URL = "";
             Locked = true;
@@ -82,7 +81,7 @@
             SkipOnboarding =  false ;
             MoreFromMozilla =  false ;
             FirefoxLabs =  false ;
-            Locked = false;      };      };
+            Locked = false;      };      };      };
               };
 
 
