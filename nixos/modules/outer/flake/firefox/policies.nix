@@ -133,15 +133,35 @@
 
  ##################################################
 
-             "app.normandy.enabled" = {
+            "app.update.auto" = {
                 Value = false;
                 Type = "boolean";
                 Status = "locked";      };
-             "app.shield.optoutstudies.enabled" = {
-                Value = true;
+            "app.update.checkInstallTime" = {
+                Value = false;
                 Type = "boolean";
                 Status = "locked";      };
-            "app.update.auto" = {
+            "app.update.download.maxAttempts" = {
+                Value = 0;
+                Type = "number";
+                Status = "locked";      };
+            "app.update.elevate.maxAttempts" = {
+                Value = 0;
+                Type = "number";
+                Status = "locked";      };
+            "app.update.langpack.enabled" = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            "app.update.log" = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            "app.update.log.file" = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            "app.update.notifyDuringDownload" = {
                 Value = false;
                 Type = "boolean";
                 Status = "locked";      };
@@ -149,9 +169,13 @@
                 Value = false;
                 Type = "boolean";
                 Status = "locked";      };
-            "app.update.langpack.enabled" = {
-                Value = false;
-                Type = "boolean";
+            "app.update.url.details" = {
+                Value = "";
+                Type = "string";
+                Status = "locked";      };
+            "app.update.url.manual" = {
+                Value = "";
+                Type = "string";
                 Status = "locked";      };
 
  ##################################################
