@@ -8,9 +8,6 @@
     firefox = {
       policies = {
         Preferences = {
-
- ##################################################
-
             "accessibility.AOM.enabled" = {
                 Value = false;
                 Type = "boolean";
@@ -118,100 +115,7 @@
             "accessibility.windows.suppress-for-snap-layout" = {
                 Value = 0;
                 Type = "number";
-                Status = "locked";      };      
-                
- ##################################################
-
-            "alerts.showFavicons" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "alerts.useSystemBackend" = {
-                Value = true;
-                Type = "boolean";
-                Status = "locked";      };
-
- ##################################################
-
-            "app.update.auto" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.checkInstallTime" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.download.maxAttempts" = {
-                Value = 0;
-                Type = "number";
-                Status = "locked";      };
-            "app.update.elevate.maxAttempts" = {
-                Value = 0;
-                Type = "number";
-                Status = "locked";      };
-            "app.update.langpack.enabled" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.log" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.log.file" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.notifyDuringDownload" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.staging.enabled" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "app.update.url.details" = {
-                Value = "";
-                Type = "string";
-                Status = "locked";      };
-            "app.update.url.manual" = {
-                Value = "";
-                Type = "string";
-                Status = "locked";      };
-
- ##################################################
-
- ##################################################
-
-
-            "bidi.browser.ui" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "bidi.direction" = {
-                Value = 1;
-                Type = "number";
-                Status = "locked";      };
-            "bidi.edit.caret_movement_style" = {
-                Value = 2;
-                Type = "number";
-                Status = "locked";      };
-            "bidi.edit.delete_immediately" = {
-                Value = false;
-                Type = "boolean";
-                Status = "locked";      };
-            "bidi.numeral" = {
-                Value = 0;
-                Type = "number";
-                Status = "locked";      };
-            "bidi.texttype" = {
-                Value = 1;
-                Type = "number";
-                Status = "locked";      };
-
- ##################################################
-
-
-                };      };      };
+                Status = "locked";      };      };      };      };
               };
 
 

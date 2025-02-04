@@ -9,6 +9,11 @@
       policies = {
           AutofillAddressEnabled = false;
           AutofillCreditCardEnabled = false;
+          BlockAboutAddons = true;
+          BlockAboutConfig = true;
+          BlockAboutProfiles = true;
+          BlockAboutSupport = true;
+          CaptivePortal = false;
           DisableAppUpdate = true;
           DisableFeedbackCommands = true;
           DisableFirefoxAccounts = true;
@@ -24,6 +29,7 @@
           DisableTelemetry = true;
           DisplayMenuBar = "never";
           DontCheckDefaultBrowser = true;
+          HardwareAcceleration = true;
           NoDefaultBookmarks = true;
           OfferToSaveLogins = false;
           OfferToSaveLoginsDefault = false;
@@ -33,6 +39,11 @@
           SearchBar = "unified";
           SearchSuggestEnabled = true;
           TranslateEnabled = true;
+        ManagedBookmarks = [
+            { url = "https://github.com/"; name = "Github";      }
+            { url = "https://search.nixos.org/packages?"; name = "Nix Pkgs";      }
+            { url = "https://search.nixos.org/options?"; name = "Nix Options";      }
+            { url = "https://home-manager-options.extranix.com/?query=&release=master"; name = "Home Manager Options";      }      ];
         FirefoxHome = {
             Search = true;
             TopSites = false;
@@ -47,25 +58,13 @@
             SponsoredSuggestions = false;
             ImproveSuggest = false;
             Locked = true;      };
-        InstallAddonsPermission = {
-            Default = false;      };
-        ManagedBookmarks = [
-            { "Locked" = "Bookmarks Locked For Me"; }
-            { url = "https://github.com/"; name = "Github";      }
-            { url = "https://search.nixos.org/packages?"; name = "Nix Pkgs";      }
-            { url = "https://search.nixos.org/options?"; name = "Nix Options";      }
-            { url = "https://home-manager-options.extranix.com/?query=&release=master"; name = "Home Manager Options";      }      ];
         SanitizeOnShutdown = {
-            Cache = true;
+            Cache = false;
             Cookies = false;
             History = true;
             Sessions = false;
             SiteSettings = false;
             Locked = true;      };
-        SearchEngines = {
-            PreventIntalls = true;
-            Default = "Google";
-          Remove = [ "Bing" "DuckDuckGo" "Wikipedia" "Bookmarks" "Tabs" "History" "Actions" ];
         UserMessaging = {
             ExtensionRecommendations =  false;
             FeatureRecommendations =  false;
