@@ -22,7 +22,7 @@
 
             "apz.overscroll.enabled" = true;
             "general.smoothScroll" = true;
-            "mousewheel.default.delta_multiplier_y" = 275;
+            "mousewheel.default.delta_multiplier_y" = 200;
 
             "browser.download.start_downloads_in_tmp_dir" = true;
             "browser.helperApps.deleteTempFileOnExit" = true;
