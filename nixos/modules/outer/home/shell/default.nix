@@ -11,6 +11,8 @@
         historySize = 250;
       shellAliases = {
 
+          edit = "sudo micro";
+
           lf = "yazi";
 
           ".." = "cd ..";
@@ -27,27 +29,32 @@
           clean = "nix-collect-garbage";
           deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
 
-          edit = "sudo micro";
-
           switch = "sudo nixos-rebuild --flake /etc/nixos#default switch" ;
           upgrade = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";      };
 
-        historyIgnore = [
+      historyIgnore = [
             "edit"
-            "ls"
             "lf"
-            "cd"
-            "nixos"
             ".."
+            "nixos"
+            "modules"
+            "inner"
+            "middle"
+            "outer"
+            "flake"
+            "home"
+            "~"
+            "clean"
+            "deep-clean"
             "switch"
             "upgrade"
+            "cd"
+            "ls"
             "pkill"
             "exit"
             "reset"
             "reboot"
             "nix-shell"
-            "clean"
-            "deep-clean"
             "neofetch"      ];      };
     starship = {
         enable = true;      };
