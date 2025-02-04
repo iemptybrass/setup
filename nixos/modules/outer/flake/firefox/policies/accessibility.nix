@@ -115,4 +115,11 @@
             accessibility.windows.suppress-for-snap-layout = {
                 Value = 0;
                 Type = "number";
-                Status = "locked";      };
+                Status = "locked";      };      };      };      };
+              };
+
+
+
+
+
+}
