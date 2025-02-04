@@ -16,9 +16,7 @@
             sponsorblock
             stylus
             ublock-origin
-            unpaywall      ];
-      };
-    };
+            unpaywall      ];      };      };
               };
 
 
