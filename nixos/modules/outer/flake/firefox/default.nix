@@ -6,6 +6,8 @@
 
   imports = [
       ./extensions
+      ./policies
+      ./settings
              ];
 
   programs = {
