@@ -29,6 +29,7 @@
           OfferToSaveLoginsDefault = false;
           PasswordManagerEnabled = false;
           PrintingEnabled = false;
+          RequestedLocales = [ "en-US" ];
           SearchBar = "unified";
           SearchSuggestEnabled = true;
           TranslateEnabled = true;
@@ -63,6 +64,7 @@
             Locked = true;      };
         SearchEngines = {
             PreventIntalls = true;
+            Default = "Google";
           Remove = [ "Bing" "DuckDuckGo" "Wikipedia" "Bookmarks" "Tabs" "History" "Actions" ];
         UserMessaging = {
             ExtensionRecommendations =  false;
