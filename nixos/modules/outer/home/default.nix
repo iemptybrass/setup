@@ -5,7 +5,7 @@
 
 
   imports = [
-      ./fuzzel
+        ./fuzzel
       ./hypridle
       ./hyprland
       ./hyprlock
@@ -13,7 +13,6 @@
       ./kitty
         ./micro
       ./neofetch
-        ./qute
       ./shell
       ./waybar
       ./yazi
