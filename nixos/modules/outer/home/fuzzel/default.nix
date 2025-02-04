@@ -8,10 +8,10 @@
       enable = true;
                      };
 
-#  xdg = {
-#    configFile."" = {
-#        source = ./default.;      };
-#         };  
+  xdg = {
+    configFile."fuzzel/fuzzel.ini" = {
+        source = ./default.ini;      };
+         };  
 
 
 
