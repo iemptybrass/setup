@@ -8,6 +8,9 @@
     firefox = {
       policies = {
         Preferences = {
+
+ ##################################################
+
             accessibility.AOM.enabled = {
                 Value = false;
                 Type = "boolean";
@@ -115,7 +118,76 @@
             accessibility.windows.suppress-for-snap-layout = {
                 Value = 0;
                 Type = "number";
-                Status = "locked";      };      };      };      };
+                Status = "locked";      };      
+                
+ ##################################################
+
+            alerts.showFavicons = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            alerts.useSystemBackend = {
+                Value = true;
+                Type = "boolean";
+                Status = "locked";      };
+
+ ##################################################
+
+             app.normandy.enabled = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+             app.shield.optoutstudies.enabled = {
+                Value = true;
+                Type = "boolean";
+                Status = "locked";      };
+            app.update.auto = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            app.update.staging.enabled = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            app.update.langpack.enabled = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+
+ ##################################################
+
+ ##################################################
+
+
+            bidi.browser.ui = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            bidi.direction = {
+                Value = 1;
+                Type = "number";
+                Status = "locked";      };
+            bidi.edit.caret_movement_style = {
+                Value = 2;
+                Type = "number";
+                Status = "locked";      };
+            bidi.edit.delete_immediately = {
+                Value = false;
+                Type = "boolean";
+                Status = "locked";      };
+            bidi.numeral = {
+                Value = 0;
+                Type = "number";
+                Status = "locked";      };
+            bidi.texttype = {
+                Value = 1;
+                Type = "number";
+                Status = "locked";      };
+
+ ##################################################
+
+
+                };      };      };
               };
 
 
