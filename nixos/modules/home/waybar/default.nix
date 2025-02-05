@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     waybar = {
         enable = true;      };
@@ -15,9 +13,6 @@
     configFile."waybar/style.css" = {
         source = ./default.css;      };
          }; 
-
-
-
 
 
 
