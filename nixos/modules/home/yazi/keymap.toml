@@ -1,4 +1,7 @@
 
+
+
+
 [manager]
 
 keymap = [
@@ -102,6 +105,8 @@ keymap = [
 
 ]
 
+
+
 [tasks]
 
 keymap = [
@@ -119,6 +124,8 @@ keymap = [
 	{ on = "x",       run = "cancel",  desc = "Cancel the task" },
 
 ]
+
+
 
 [spot]
 
@@ -142,6 +149,8 @@ keymap = [
 
 ]
 
+
+
 [pick]
 
 keymap = [
@@ -153,6 +162,8 @@ keymap = [
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
 
 ]
+
+
 
 [input]
 
@@ -207,23 +218,22 @@ keymap = [
 	{ on = "P", run = "paste --before",                            desc = "Paste the copied characters before the cursor" },
 
 	# Undo/Redo
-	{ on = "u",     run = "undo", desc = "Undo the last operation" },
-	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
+	{ on = "<C-z>",     run = "undo", desc = "Undo the last operation" },
+	{ on = "<C-Z>", run = "redo", desc = "Redo the last operation" },
 
 ]
+
+
 
 [confirm]
 
 keymap = [
+
 	{ on = "<Esc>",   run = "close",          desc = "Cancel the confirm" },
-	{ on = "<C-[>",   run = "close",          desc = "Cancel the confirm" },
 	{ on = "<Enter>", run = "close --submit", desc = "Submit the confirm" },
 
 	{ on = "n", run = "close",          desc = "Cancel the confirm" },
 	{ on = "y", run = "close --submit", desc = "Submit the confirm" },
-
-	{ on = "k", run = "arrow -1", desc = "Move cursor up" },
-	{ on = "j", run = "arrow 1",  desc = "Move cursor down" },
 
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
@@ -233,16 +243,11 @@ keymap = [
 [completion]
 
 keymap = [
+
 	{ on = "<Tab>",   run = "close --submit",                             desc = "Submit the completion" },
 	{ on = "<Enter>", run = [ "close --submit", "close_input --submit" ], desc = "Submit the completion and input" },
 
-	{ on = "<A-k>", run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<A-j>", run = "arrow 1",  desc = "Move cursor down" },
-
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
-
-	{ on = "<C-p>", run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<C-n>", run = "arrow 1",  desc = "Move cursor down" },
 
 ]
