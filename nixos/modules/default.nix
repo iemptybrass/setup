@@ -3,8 +3,6 @@ let
 
 
 
-
-
   home = { 
 home.stateVersion = "24.11"; 
     imports = [ 
@@ -18,12 +16,8 @@ home.stateVersion = "24.11";
 
 
 
-
-
 in
 {
-
-
 
 
 
@@ -37,8 +31,6 @@ in
       extraSpecialArgs = { inherit inputs; };
     users = { "user" = home; };
                   };
-
-
 
 
 
