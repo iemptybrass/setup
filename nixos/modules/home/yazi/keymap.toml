@@ -11,6 +11,10 @@ keymap = [
 	# Hopping
 	{ on = "<Up>",       run = "arrow -1",      desc = "Move cursor up" },
 	{ on = "<Down>",     run = "arrow 1",       desc = "Move cursor down" },
+
+	{ on = "<S-Up>",     run = "seek -5",   desc = "Seek up 5 units in the preview" },
+	{ on = "<S-Down>",   run = "seek 5",    desc = "Seek down 5 units in the preview" },
+
 	{ on = "<C-Up>",     run = "arrow -100%",   desc = "Move cursor up one page" },
 	{ on = "<C-Down>",   run = "arrow 100%",    desc = "Move cursor down one page" },
 
@@ -18,57 +22,48 @@ keymap = [
 	{ on = "<Left>",    run = "leave",   desc = "Go back to the parent directory" },
 	{ on = "<Right>",   run = "enter",   desc = "Enter the child directory" },
 
-	# Toggle
-	{ on = "<Space>",   run = [ "toggle", "arrow 1" ],   desc = "Toggle the current selection state" },
+  { on = [ "<C-g>", "/" ],   run = "cd --interactive",   desc = "Goto Directory" },
+	{ on = [ "<C-g>", "n" ],   run = "cd /etc/nixos",      desc = "Goto Nixos" },
+  { on = [ "<C-g>", "h" ],   run = "cd ~",               desc = "Go Home" },
 
-	# Seeking
-	{ on = "<S-Up>",     run = "seek -5",   desc = "Seek up 5 units in the preview" },
-	{ on = "<S-Down>",   run = "seek 5",    desc = "Seek down 5 units in the preview" },
-
-	# Spotting
+	# Details
 	{ on = "<Tab>",   run = "spot",   desc = "Information" },
 
 	# Operation
 	{ on = "<Enter>",   run = "open",                         desc = "Open selected files" },
-	{ on = "<C-d>",     run = "remove --permanently",         desc = "Permanently delete selected files" },
-	{ on = "<C-a>",     run = "create",                       desc = "Create a file (ends with / for directories)" },
-	{ on = "<C-r>",     run = "rename --cursor=before_ext",   desc = "Rename selected file(s)" },
-	{ on = "<C-h>",     run = "hidden toggle",                desc = "Toggle the visibility of hidden files" },
+	{ on = [ "<C-o>", "d" ],     run = "remove --permanently",         desc = "Permanently delete selected files" },
+	{ on = [ "<C-o>", "c" ],     run = "create",                       desc = "Create a file (ends with / for directories)" },
+	{ on = [ "<C-o>", "r" ],     run = "rename --cursor=before_ext",   desc = "Rename selected file(s)" },
 
 	# Linemode
-	{ on = [ "<C-m>", "s" ],   run = "linemode size",          desc = "Size / Content" },
-	{ on = [ "<C-m>", "p" ],   run = "linemode permissions",   desc = "Permissions" },
-	{ on = [ "<C-m>", "c" ],   run = "linemode btime",         desc = "Creation Time" },
-	{ on = [ "<C-m>", "m" ],   run = "linemode mtime",         desc = "Modify Time" },
-	{ on = [ "<C-m>", "o" ],   run = "linemode owner",         desc = "Owner" },
+	{ on = [ "<C-m>", "c" ],   run = "linemode btime",         desc = "Show Creation Time" },
+	{ on = [ "<C-m>", "m" ],   run = "linemode mtime",         desc = "Show Modified Time" },
 	{ on = [ "<C-m>", "n" ],   run = "linemode none",          desc = "None" },
+	{ on = [ "<C-m>", "o" ],   run = "linemode owner",         desc = "Show Owner" },
+	{ on = [ "<C-m>", "p" ],   run = "linemode permissions",   desc = "Show Permissions" },
+	{ on = [ "<C-m>", "s" ],   run = "linemode size",          desc = "Show Size" },
+	{ on = [ "<C-m>", "h" ],   run = "hidden toggle",          desc = "Show Hidden" },
 
 	# Copy
 	{ on = [ "<C-c>", "p" ],   run = "copy path",       desc = "Path To File" },
-	{ on = [ "<C-c>", "d" ],   run = "copy dirname",    desc = "Directory Holding File" },
+	{ on = [ "<C-c>", "d" ],   run = "copy dirname",    desc = "Directory Containing File" },
 	{ on = [ "<C-c>", "f" ],   run = "copy filename",   desc = "Filename" },
 
 	# Search
-  { on = [ "<C-s>", "s" ],   run = "search --via=fd",   desc = "Search File By Name" },
-	{ on = [ "<C-s>", "f" ],   run = "filter --smart",    desc = "Search By Filtering By Contains" },
-
-	# Find
-	{ on = "<C-f>",     run = "find --smart",            desc = "Find next file" },
-	{ on = "<Right>",   run = "find_arrow",              desc = "Goto the next found" },
-	{ on = "<Left>",    run = "find_arrow --previous",   desc = "Goto the previous found" },
+  { on = [ "<C-s>", "s" ],   run = "search --via=fd",         desc = "Search" },
+	{ on = [ "<C-s>", "f" ],   run = "find --smart",            desc = "Find" },
+	{ on = "<Right>",          run = "find_arrow",              desc = "Find Next" },
+	{ on = "<Left>",           run = "find_arrow --previous",   desc = "Find Previous" },
 
 	# Sorting
-	{ on = [ ",", "m" ],   run = [ "sort mtime --reverse=no", "linemode mtime" ],   desc = "Sort by modified time" },
-	{ on = [ ",", "b" ],   run = [ "sort btime --reverse=no", "linemode btime" ],   desc = "Sort by birth time" },
-	{ on = [ ",", "e" ],   run = "sort extension --reverse=no",                     desc = "Sort by extension" },
-	{ on = [ ",", "a" ],   run = "sort alphabetical --reverse=no",                  desc = "Sort alphabetically" },
-	{ on = [ ",", "n" ],   run = "sort natural --reverse=no",                       desc = "Sort naturally" },
-	{ on = [ ",", "s" ],   run = [ "sort size --reverse=no", "linemode size" ],     desc = "Sort by size" },
+	{ on = [ "<C-f>", "c" ],   run = [ "sort btime --reverse=no", "linemode btime" ],   desc = "Sort By Creation Time" },
+	{ on = [ "<C-f>", "m" ],   run = [ "sort mtime --reverse=no", "linemode mtime" ],   desc = "Sort By Modified time" },
+  { on = [ "<C-f>", "s" ],   run = [ "sort size --reverse=no", "linemode size" ],     desc = "Sort By Size" },
 
-	# Goto
-	{ on = [ "<C-g>", "h" ],         run = "cd ~",               desc = "Go home" },
-	{ on = [ "<C-g>", "n" ],         run = "cd /etc/nixos",      desc = "Goto Nixos" },
-	{ on = [ "<C-g>", "<Space>" ],   run = "cd --interactive",   desc = "Define Directory" },
+	{ on = [ "<C-f>", "." ],   run = "sort extension --reverse=no",   desc = "Sort By File Type" },
+
+	{ on = [ "<C-f>", "a" ],   run = "sort alphabetical --reverse=no",   desc = "Sort Alphabetically" },
+	{ on = [ "<C-f>", "n" ],   run = "sort natural --reverse=no",        desc = "Sort Naturally" },
 
 ]
 
@@ -78,12 +73,11 @@ keymap = [
 
 keymap = [
 
-	{ on = "<Esc>", run = "close", desc = "Close the spot" },
-
-	{ on = "<Up>",    run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<Down>",  run = "arrow 1",  desc = "Move cursor down" },
-	{ on = "<Left>",  run = "swipe -1", desc = "Swipe to the next file" },
-	{ on = "<Right>", run = "swipe 1",  desc = "Swipe to the previous file" },
+	{ on = "<Esc>",     run = "close",      desc = "Close the spot" },
+	{ on = "<Up>",      run = "arrow -1",   desc = "Move cursor up" },
+	{ on = "<Down>",    run = "arrow 1",    desc = "Move cursor down" },
+	{ on = "<Left>",    run = "swipe -1",   desc = "Swipe to the next file" },
+	{ on = "<Right>",   run = "swipe 1",    desc = "Swipe to the previous file" },
 
 ]
 
@@ -93,11 +87,11 @@ keymap = [
 
 keymap = [
 
-	{ on = "<Esc>",   run = "close",          desc = "Cancel pick" },
-	{ on = "<Enter>", run = "close --submit", desc = "Submit the pick" },
+	{ on = "<Esc>",     run = "close",            desc = "Cancel pick" },
+	{ on = "<Enter>",   run = "close --submit",   desc = "Submit the pick" },
 
-	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
+	{ on = "<Up>",     run = "arrow -1",   desc = "Move cursor up" },
+	{ on = "<Down>",   run = "arrow 1",    desc = "Move cursor down" },
 
 ]
 
@@ -106,28 +100,13 @@ keymap = [
 [input]
 
 keymap = [
-	{ on = "<Enter>", run = "close --submit", desc = "Submit input" },
-	{ on = "<Esc>",   run = "escape",         desc = "Go back the normal mode, or cancel input" },
 
-	# Mode
-	{ on = "i", run = "insert",                              desc = "Enter insert mode" },
-	{ on = "a", run = "insert --append",                     desc = "Enter append mode" },
-	{ on = "v", run = "visual",                              desc = "Enter visual mode" },
-
-	# Word-wise movement
-	{ on = "b",     run = "backward",              desc = "Move back to the start of the current or previous word" },
-	{ on = "w",     run = "forward",               desc = "Move forward to the start of the next word" },
-	{ on = "e",     run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
-	{ on = "<A-b>", run = "backward",              desc = "Move back to the start of the current or previous word" },
-	{ on = "<A-f>", run = "forward --end-of-word", desc = "Move forward to the end of the current or next word" },
-
-	# Delete
-	{ on = "<Backspace>", run = "backspace",         desc = "Delete the character before the cursor" },
-	{ on = "<Delete>",    run = "backspace --under", desc = "Delete the character under the cursor" },
+	{ on = "<Enter>",   run = "close --submit",   desc = "Submit input" },
+	{ on = "<Esc>",     run = "escape",           desc = "Go back the normal mode, or cancel input" },
 
 	# Undo/Redo
-	{ on = "<C-z>",     run = "undo", desc = "Undo the last operation" },
-	{ on = "<C-Z>", run = "redo", desc = "Redo the last operation" },
+	{ on = "<C-z>",   run = "undo",   desc = "Undo" },
+	{ on = "<C-Z>",   run = "redo",   desc = "Redo" },
 
 ]
 
@@ -137,14 +116,14 @@ keymap = [
 
 keymap = [
 
-	{ on = "<Esc>",   run = "close",          desc = "Cancel the confirm" },
-	{ on = "<Enter>", run = "close --submit", desc = "Submit the confirm" },
+	{ on = "<Esc>",     run = "close",            desc = "Cancel the confirm" },
+	{ on = "<Enter>",   run = "close --submit",   desc = "Submit the confirm" },
 
-	{ on = "n", run = "close",          desc = "Cancel the confirm" },
-	{ on = "y", run = "close --submit", desc = "Submit the confirm" },
+	{ on = "n",   run = "close",            desc = "Cancel the confirm" },
+	{ on = "y",   run = "close --submit",   desc = "Submit the confirm" },
 
-	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
+	{ on = "<Up>",     run = "arrow -1",   desc = "Move cursor up" },
+	{ on = "<Down>",   run = "arrow 1",    desc = "Move cursor down" },
 
 ]
 
@@ -152,11 +131,11 @@ keymap = [
 
 keymap = [
 
-	{ on = "<Tab>",   run = "close --submit",                             desc = "Submit the completion" },
-	{ on = "<Enter>", run = [ "close --submit", "close_input --submit" ], desc = "Submit the completion and input" },
+	{ on = "<Tab>",     run = "close --submit",                               desc = "Submit the completion" },
+	{ on = "<Enter>",   run = [ "close --submit", "close_input --submit" ],   desc = "Submit the completion and input" },
 
-	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
-	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
+	{ on = "<Up>",     run = "arrow -1",   desc = "Move cursor up" },
+	{ on = "<Down>",   run = "arrow 1",    desc = "Move cursor down" },
 
 ]
 
