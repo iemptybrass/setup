@@ -7,7 +7,7 @@ c.auto_save.session = False
 
 c.changelog_after_upgrade = 'never'
 
-c.confirm_quit = ['always']
+c.confirm_quit = ['never']
 
 
 
