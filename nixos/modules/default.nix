@@ -1,5 +1,5 @@
 { inputs, ... }:
-let home = 
+let x = 
 { 
 
 home.stateVersion = "24.11";
@@ -33,7 +33,7 @@ in
              
   home-manager = {
       extraSpecialArgs = { inherit inputs; };
-    users = { "user" = home; };
+    users = { "user" = x; };
                   };
 
 
