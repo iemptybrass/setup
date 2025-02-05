@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     hyprlock = {
         enable = true;      };
@@ -13,8 +11,6 @@
     configFile."hypr/hyprlock.conf" = {
         source = ./default.conf;      };
          };
-
-
 
 
 

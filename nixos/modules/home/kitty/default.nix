@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     kitty = {
         enable = true;      };
@@ -13,8 +11,6 @@
     configFile."kitty/kitty.conf" = {
         source = ./default.conf;      };
          };
-
-
 
 
 
