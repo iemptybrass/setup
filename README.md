@@ -4,11 +4,12 @@
 
 ```
 .
-├─ device                  
-├┬ modules                  
+├─ device
+├┬ modules
+│├─ flake
+│├─ home
 │├─ inner
-│├─ middle              
-│└─ outer      
+│└─ outer
 ├─ configuration.nix        
 └─ flake.nix               
 ```
