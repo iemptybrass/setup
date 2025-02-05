@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     qutebrowser = {
         enable = true;      };
@@ -13,8 +11,6 @@
     configFile."qutebrowser/config.py" = {
         source = ./default.py;      };
          };
-
-
 
 
 
