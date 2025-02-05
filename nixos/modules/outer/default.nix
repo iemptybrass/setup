@@ -1,4 +1,8 @@
-{ inputs, ... }:{
+{ inputs, ... }:
+let
+    home = { home.stateVersion = "24.11"; imports = [ ./flake ./home ]; programs.home-manager.enable = true; xdg.enable = true; nixpkgs.config.allowUnfree = true; };
+in
+{
 
 
 
@@ -10,7 +14,7 @@
              
   home-manager = {
       extraSpecialArgs = { inherit inputs; };
-    users = { "user" = import ./home.nix; };
+    users = { "user" = home; };
                   };
 
 
