@@ -61,10 +61,10 @@ c.statusbar.widgets = ['history', 'url', 'progress']
 
    #
 
-c.colors.statusbar.normal.bg = 'black'
-c.colors.statusbar.normal.fg = 'white'
-c.colors.statusbar.command.bg = 'black'
-c.colors.statusbar.command.fg = 'white'
+c.colors.statusbar.normal.bg = bg
+c.colors.statusbar.normal.fg = text
+c.colors.statusbar.command.bg = bg
+c.colors.statusbar.command.fg = text
 
 c.fonts.statusbar = 'default_size default_family'
 
@@ -74,17 +74,17 @@ c.fonts.statusbar = 'default_size default_family'
 c.colors.statusbar.progress.bg = 'white'
 
 c.colors.statusbar.url.error.fg = 'orange'
-c.colors.statusbar.url.fg = 'white'
-c.colors.statusbar.url.hover.fg = 'aqua'
-c.colors.statusbar.url.success.http.fg = 'white'
-c.colors.statusbar.url.success.https.fg = 'lime'
+c.colors.statusbar.url.fg = text
+c.colors.statusbar.url.hover.fg = text
+c.colors.statusbar.url.success.http.fg = text
+c.colors.statusbar.url.success.https.fg = text
 c.colors.statusbar.url.warn.fg = 'yellow'
 
-c.colors.statusbar.insert.bg = 'darkgreen'
-c.colors.statusbar.insert.fg = 'white'
+c.colors.statusbar.insert.bg = bg
+c.colors.statusbar.insert.fg = text
 
-c.colors.statusbar.passthrough.bg = 'darkblue'
-c.colors.statusbar.passthrough.fg = 'white'
+c.colors.statusbar.passthrough.bg = bg
+c.colors.statusbar.passthrough.fg = text
 
  #
 
@@ -110,21 +110,21 @@ c.tabs.min_width = -1
 
    #
 
-c.colors.tabs.bar.bg = '#555555'
+c.colors.tabs.bar.bg = bg
 
 
 
-c.colors.tabs.selected.even.bg = 'white'
-c.colors.tabs.selected.even.fg = 'black'
-c.colors.tabs.selected.odd.bg = 'white'
-c.colors.tabs.selected.odd.fg = 'black'
+c.colors.tabs.selected.even.bg = focus
+c.colors.tabs.selected.even.fg = text
+c.colors.tabs.selected.odd.bg = focus
+c.colors.tabs.selected.odd.fg = text
 
 c.fonts.tabs.selected = 'default_size default_family'
 
-c.colors.tabs.even.bg = 'darkgrey'
-c.colors.tabs.even.fg = 'white'
-c.colors.tabs.odd.bg = 'grey'
-c.colors.tabs.odd.fg = 'white'
+c.colors.tabs.even.bg = unfocus
+c.colors.tabs.even.fg = alt
+c.colors.tabs.odd.bg = unfocus
+c.colors.tabs.odd.fg = alt
 
 c.fonts.tabs.unselected = 'default_size default_family'
 
@@ -155,9 +155,9 @@ c.tabs.title.elide = 'right'
    #
 
 c.colors.tabs.indicator.system = 'rgb'
-c.colors.tabs.indicator.start = '#0000aa'
-c.colors.tabs.indicator.stop = '#00aa00'
-c.colors.tabs.indicator.error = '#ff0000'
+c.colors.tabs.indicator.start = 'white'
+c.colors.tabs.indicator.stop = 'green'
+c.colors.tabs.indicator.error = 'yellow'
 
  #
 
@@ -246,36 +246,36 @@ c.completion.web_history.max_items = 500
 
 
 
-c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
+c.colors.completion.category.bg = bg
 
 c.colors.completion.category.border.top = 'black'
-c.colors.completion.category.fg = 'white'
+c.colors.completion.category.fg = text
 c.colors.completion.category.border.bottom = 'black'
 
-c.colors.completion.even.bg = '#333333'
-c.colors.completion.odd.bg = '#444444'
+c.colors.completion.even.bg = bg
+c.colors.completion.odd.bg = bg
 
 
 c.colors.completion.fg = ['white', 'white', 'white']
 
 
-c.colors.completion.item.selected.bg = '#e8c000'
-c.colors.completion.item.selected.fg = 'black'
+c.colors.completion.item.selected.bg = focus
+c.colors.completion.item.selected.fg = text
 
-c.colors.completion.item.selected.border.top = '#bbbb00'
-c.colors.completion.item.selected.border.bottom = '#bbbb00'
+c.colors.completion.item.selected.border.top = focus
+c.colors.completion.item.selected.border.bottom = focus
 
 c.fonts.completion.category = 'bold default_size default_family'
 c.fonts.completion.entry = 'default_size default_family'
 
 
-c.colors.completion.item.selected.match.fg = '#ff4444'
+c.colors.completion.item.selected.match.fg = 'red'
 
 
-c.colors.completion.match.fg = '#ff4444'
+c.colors.completion.match.fg = 'red'
 
-c.colors.completion.scrollbar.bg = '#333333'
-c.colors.completion.scrollbar.fg = 'white'
+c.colors.completion.scrollbar.bg = unfocus
+c.colors.completion.scrollbar.fg = 'red'
 
  #
 
