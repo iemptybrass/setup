@@ -826,7 +826,6 @@ exts = [
 	{ name = "zst", text = "", fg = "#eca517" },
 	{ name = "🔥", text = "", fg = "#ff4c1f" },
 ]
-
 conds = [
 	# Special files
 	{ if = "orphan", text = "" },
