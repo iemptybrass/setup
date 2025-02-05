@@ -2,8 +2,6 @@
 
 
 
-
-
   imports = [
         ./fuzzel
       ./hypridle
@@ -17,8 +15,6 @@
       ./waybar
       ./yazi
              ];
-
-
 
 
 
