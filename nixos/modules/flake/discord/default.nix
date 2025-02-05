@@ -2,8 +2,6 @@
 
 
 
-
-
     imports = [
     inputs.nixcord.homeManagerModules.nixcord
                ];
@@ -17,8 +15,6 @@
       plugins = { };      };
     extraConfig = { };
                       };
-
-
 
 
 

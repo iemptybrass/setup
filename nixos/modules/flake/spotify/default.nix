@@ -1,10 +1,16 @@
 { inputs, pkgs, system, ... }:
-let
-    spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
-in
+let x = 
 {
 
 
+
+inputs.spicetify-nix.legacyPackages.${pkgs.system};
+
+
+
+};
+in
+{
 
 
 
@@ -12,18 +18,15 @@ in
       inputs.spicetify-nix.homeManagerModules.default
              ];
 
-
   programs = {
     spicetify = {
         enable = true;
-        theme = spicePkgs.themes.text;
+        theme = x.themes.text;
       enabledExtensions = with spicePkgs.extensions; [
           betterGenres
           skipOrPlayLikedSongs
           shuffle      ];      };
            };
-
-
 
 
 
