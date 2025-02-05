@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     yazi = {
         enable = true;      };
@@ -15,8 +13,6 @@
     configFile."yazi/yazi.toml" = {
         source = ./default.toml;      };
          }; 
-
-
 
 
 

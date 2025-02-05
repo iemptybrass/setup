@@ -180,7 +180,6 @@ keymap = [
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
 
-
 ]
 
 [input]
@@ -248,7 +247,6 @@ keymap = [
 	{ on = "u",     run = "undo", desc = "Undo the last operation" },
 	{ on = "<C-r>", run = "redo", desc = "Redo the last operation" },
 
-
 ]
 
 [confirm]
@@ -268,7 +266,6 @@ keymap = [
 	{ on = "<Up>",   run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<Down>", run = "arrow 1",  desc = "Move cursor down" },
 
-
 ]
 
 [completion]
@@ -286,6 +283,5 @@ keymap = [
 
 	{ on = "<C-p>", run = "arrow -1", desc = "Move cursor up" },
 	{ on = "<C-n>", run = "arrow 1",  desc = "Move cursor down" },
-
 
 ]
