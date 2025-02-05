@@ -2,8 +2,6 @@
 
 
 
-
-
   nix = {
     settings = {
         allowed-users = [ "@wheel" ];
@@ -11,8 +9,6 @@
           "nix-command" 
           "flakes" ];      };
          };
-
-
 
 
 
