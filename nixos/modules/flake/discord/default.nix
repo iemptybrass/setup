@@ -2,9 +2,9 @@
 
 
 
-    imports = [
-    inputs.nixcord.homeManagerModules.nixcord
-               ];
+  imports = [
+      inputs.nixcord.homeManagerModules.nixcord
+             ];
 
   programs.nixcord = {
       enable = true;

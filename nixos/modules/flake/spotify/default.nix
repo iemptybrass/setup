@@ -22,7 +22,7 @@ in
     spicetify = {
         enable = true;
         theme = x.themes.text;
-      enabledExtensions = with spicePkgs.extensions; [
+      enabledExtensions = with x.extensions; [
           betterGenres
           skipOrPlayLikedSongs
           shuffle      ];      };
