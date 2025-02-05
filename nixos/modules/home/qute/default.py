@@ -610,11 +610,19 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 
 
- #
+ # General
 
 c.bindings.default = {} 
 
+config.bind('u', 'undo')
+
+
+config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
+config.bind('<Return>', 'selection-follow')
+
  # Navigation
+
+   # Search
 
 config.bind('<Ctrl-Shift-Return>', 'cmd-set-text -s :open')
 
@@ -648,17 +656,13 @@ config.bind('<Return>', 'prompt-accept', mode='prompt')
 config.bind('Ctrl-Up', 'scroll-to-perc 0')
 config.bind('Ctrl-Down', 'scroll-to-perc 100')
 
-   # Search
+   # Search Page
 
 config.bind('Ctrl-F', 'search')
 config.bind('Ctrl-N', 'search-next')
 config.bind('Ctrl-Shift-N', 'search-prev')
 
- #
-
-
-
-
+   # Zoom Page
 
 config.bind('Ctrl-=', 'zoom-in')
 config.bind('Ctrl--', 'zoom-out')
@@ -676,8 +680,7 @@ config.bind('Ctrl--', 'zoom-out')
    #
 
 
-config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
-config.bind('<Return>', 'selection-follow')
+
 
 
 
@@ -800,7 +803,7 @@ config.bind('gC', 'tab-clone')
 config.bind('gD', 'tab-give')
 config.bind('gJ', 'tab-move +')
 config.bind('gK', 'tab-move -')
-config.bind('gO', 'cmd-set-text :open -t -r {url:pretty}')
+
 config.bind('gU', 'navigate up -t')
 config.bind('g^', 'tab-focus 1')
 config.bind('ga', 'open -t')
@@ -810,7 +813,7 @@ config.bind('gf', 'view-source')
 config.bind('gg', 'scroll-to-perc 0')
 config.bind('gi', 'hint inputs --first')
 config.bind('gm', 'tab-move')
-config.bind('go', 'cmd-set-text :open {url:pretty}')
+
 config.bind('gt', 'cmd-set-text -s :tab-select')
 config.bind('gu', 'navigate up')
 config.bind('h', 'scroll left')
@@ -829,33 +832,7 @@ config.bind('sf', 'save')
 config.bind('sk', 'cmd-set-text -s :bind')
 config.bind('sl', 'cmd-set-text -s :set -t')
 config.bind('ss', 'cmd-set-text -s :set')
-config.bind('tCH', 'config-cycle -p -u *://*.{url:host}/* content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('tCh', 'config-cycle -p -u *://{url:host}/* content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('tCu', 'config-cycle -p -u {url} content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('tIH', 'config-cycle -p -u *://*.{url:host}/* content.images ;; reload')
-config.bind('tIh', 'config-cycle -p -u *://{url:host}/* content.images ;; reload')
-config.bind('tIu', 'config-cycle -p -u {url} content.images ;; reload')
-config.bind('tPH', 'config-cycle -p -u *://*.{url:host}/* content.plugins ;; reload')
-config.bind('tPh', 'config-cycle -p -u *://{url:host}/* content.plugins ;; reload')
-config.bind('tPu', 'config-cycle -p -u {url} content.plugins ;; reload')
-config.bind('tSH', 'config-cycle -p -u *://*.{url:host}/* content.javascript.enabled ;; reload')
-config.bind('tSh', 'config-cycle -p -u *://{url:host}/* content.javascript.enabled ;; reload')
-config.bind('tSu', 'config-cycle -p -u {url} content.javascript.enabled ;; reload')
-config.bind('tcH', 'config-cycle -p -t -u *://*.{url:host}/* content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('tch', 'config-cycle -p -t -u *://{url:host}/* content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('tcu', 'config-cycle -p -t -u {url} content.cookies.accept all no-3rdparty never ;; reload')
-config.bind('th', 'back -t')
-config.bind('tiH', 'config-cycle -p -t -u *://*.{url:host}/* content.images ;; reload')
-config.bind('tih', 'config-cycle -p -t -u *://{url:host}/* content.images ;; reload')
-config.bind('tiu', 'config-cycle -p -t -u {url} content.images ;; reload')
-config.bind('tl', 'forward -t')
-config.bind('tpH', 'config-cycle -p -t -u *://*.{url:host}/* content.plugins ;; reload')
-config.bind('tph', 'config-cycle -p -t -u *://{url:host}/* content.plugins ;; reload')
-config.bind('tpu', 'config-cycle -p -t -u {url} content.plugins ;; reload')
-config.bind('tsH', 'config-cycle -p -t -u *://*.{url:host}/* content.javascript.enabled ;; reload')
-config.bind('tsh', 'config-cycle -p -t -u *://{url:host}/* content.javascript.enabled ;; reload')
-config.bind('tsu', 'config-cycle -p -t -u {url} content.javascript.enabled ;; reload')
-config.bind('u', 'undo')
+
 config.bind('v', 'mode-enter caret')
 config.bind('wB', 'cmd-set-text -s :bookmark-load -w')
 config.bind('wIf', 'devtools-focus')
@@ -887,37 +864,6 @@ config.bind('yt', 'yank title')
 config.bind('yy', 'yank')
 config.bind('{{', 'navigate prev -t')
 config.bind('}}', 'navigate next -t')
-
-## Bindings for caret mode
-config.bind('$', 'move-to-end-of-line', mode='caret')
-config.bind('0', 'move-to-start-of-line', mode='caret')
-config.bind('<Ctrl-Space>', 'selection-drop', mode='caret')
-config.bind('<Escape>', 'mode-leave', mode='caret')
-config.bind('<Return>', 'yank selection', mode='caret')
-config.bind('<Space>', 'selection-toggle', mode='caret')
-config.bind('G', 'move-to-end-of-document', mode='caret')
-config.bind('H', 'scroll left', mode='caret')
-config.bind('J', 'scroll down', mode='caret')
-config.bind('K', 'scroll up', mode='caret')
-config.bind('L', 'scroll right', mode='caret')
-config.bind('V', 'selection-toggle --line', mode='caret')
-config.bind('Y', 'yank selection -s', mode='caret')
-config.bind('[', 'move-to-start-of-prev-block', mode='caret')
-config.bind(']', 'move-to-start-of-next-block', mode='caret')
-config.bind('b', 'move-to-prev-word', mode='caret')
-config.bind('c', 'mode-enter normal', mode='caret')
-config.bind('e', 'move-to-end-of-word', mode='caret')
-config.bind('gg', 'move-to-start-of-document', mode='caret')
-config.bind('h', 'move-to-prev-char', mode='caret')
-config.bind('j', 'move-to-next-line', mode='caret')
-config.bind('k', 'move-to-prev-line', mode='caret')
-config.bind('l', 'move-to-next-char', mode='caret')
-config.bind('o', 'selection-reverse', mode='caret')
-config.bind('v', 'selection-toggle', mode='caret')
-config.bind('w', 'move-to-next-word', mode='caret')
-config.bind('y', 'yank selection', mode='caret')
-config.bind('{', 'move-to-end-of-prev-block', mode='caret')
-config.bind('}', 'move-to-end-of-next-block', mode='caret')
 
 ## Bindings for command mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='command')
