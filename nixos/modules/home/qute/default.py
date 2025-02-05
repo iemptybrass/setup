@@ -568,41 +568,7 @@ c.colors.webpage.darkmode.threshold.foreground = 256
 
 c.colors.webpage.preferred_color_scheme = 'dark'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ #
 
 
 
@@ -667,40 +633,24 @@ config.bind('Ctrl-Shift-N', 'search-prev')
 config.bind('Ctrl-=', 'zoom-in')
 config.bind('Ctrl--', 'zoom-out')
 
-   #
-
-
-
-
-
-
-
-
-
-   #
-
-
-
-
-
+   # Pagemarks
 
 config.bind('m', 'quickmark-save')
 
-   #
+   # Developer
 
-config.bind('Ctrl-U', 'view-source')
+config.bind('<Alt-S>', 'view-source')
 
-config.bind('Ctrl-Shift-I', 'devtools window')
+config.bind('<Alt-I>', 'devtools window')
 
-   #
+   # Edit Mode
 
 config.bind('<Ctrl-I>', 'mode-enter passthrough')
 config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 config.bind('<Escape>', 'mode-leave', mode='insert')
-config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
 
-   #
+   # Prompt
 
 config.bind('<Escape>', 'mode-leave', mode='yesno')
 config.bind('<Return>', 'prompt-accept', mode='yesno')
@@ -733,137 +683,9 @@ config.bind('y', 'prompt-accept yes', mode='yesno')
 
 
 
- ## Bindings for normal mode
-config.bind("'", 'mode-enter jump_mark')
-
 config.bind('.', 'cmd-repeat-last')
 config.bind('/', 'cmd-set-text /')
 config.bind(':', 'cmd-set-text :')
-
-config.bind('<Ctrl-PgDown>', 'tab-next')
-config.bind('<Ctrl-PgUp>', 'tab-prev')
-config.bind('<Ctrl-Q>', 'quit')
-config.bind('<Ctrl-Return>', 'selection-follow -t')
-config.bind('<Ctrl-Shift-N>', 'open -p')
-config.bind('<Ctrl-Shift-T>', 'undo')
-config.bind('<Ctrl-Tab>', 'tab-focus last')
-config.bind('<Ctrl-U>', 'scroll-page 0 -0.5')
-config.bind('<Ctrl-V>', 'mode-enter passthrough')
-config.bind('<Ctrl-W>', 'tab-close')
-config.bind('<Ctrl-X>', 'navigate decrement')
-config.bind('<Ctrl-^>', 'tab-focus last')
-config.bind('<Ctrl-h>', 'home')
-config.bind('<Ctrl-p>', 'tab-pin')
-config.bind('<Ctrl-s>', 'stop')
-config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
-config.bind('<F11>', 'fullscreen')
-config.bind('<F5>', 'reload')
-config.bind('<Return>', 'selection-follow')
-config.bind('<back>', 'back')
-config.bind('<forward>', 'forward')
-config.bind('=', 'zoom')
-config.bind('?', 'cmd-set-text ?')
-config.bind('@', 'macro-run')
-config.bind('B', 'cmd-set-text -s :quickmark-load -t')
-config.bind('D', 'tab-close -o')
-config.bind('F', 'hint all tab')
-config.bind('G', 'scroll-to-perc')
-config.bind('H', 'back')
-config.bind('J', 'tab-next')
-config.bind('K', 'tab-prev')
-config.bind('L', 'forward')
-config.bind('M', 'bookmark-add')
-config.bind('N', 'search-prev')
-config.bind('O', 'cmd-set-text -s :open -t')
-config.bind('PP', 'open -t -- {primary}')
-config.bind('Pp', 'open -t -- {clipboard}')
-config.bind('R', 'reload -f')
-config.bind('Sb', 'bookmark-list --jump')
-config.bind('Sh', 'history')
-config.bind('Sq', 'bookmark-list')
-config.bind('Ss', 'set')
-config.bind('T', 'cmd-set-text -sr :tab-focus')
-config.bind('U', 'undo -w')
-config.bind('V', 'mode-enter caret ;; selection-toggle --line')
-config.bind('ZQ', 'quit')
-config.bind('ZZ', 'quit --save')
-config.bind('[[', 'navigate prev')
-config.bind(']]', 'navigate next')
-config.bind('`', 'mode-enter set_mark')
-config.bind('ad', 'download-cancel')
-config.bind('b', 'cmd-set-text -s :quickmark-load')
-config.bind('cd', 'download-clear')
-config.bind('co', 'tab-only')
-config.bind('d', 'tab-close')
-config.bind('f', 'hint')
-config.bind('g$', 'tab-focus -1')
-config.bind('g0', 'tab-focus 1')
-config.bind('gB', 'cmd-set-text -s :bookmark-load -t')
-config.bind('gC', 'tab-clone')
-config.bind('gD', 'tab-give')
-config.bind('gJ', 'tab-move +')
-config.bind('gK', 'tab-move -')
-
-config.bind('gU', 'navigate up -t')
-config.bind('g^', 'tab-focus 1')
-config.bind('ga', 'open -t')
-config.bind('gb', 'cmd-set-text -s :bookmark-load')
-config.bind('gd', 'download')
-config.bind('gf', 'view-source')
-config.bind('gg', 'scroll-to-perc 0')
-config.bind('gi', 'hint inputs --first')
-config.bind('gm', 'tab-move')
-
-config.bind('gt', 'cmd-set-text -s :tab-select')
-config.bind('gu', 'navigate up')
-config.bind('h', 'scroll left')
-config.bind('i', 'mode-enter insert')
-config.bind('j', 'scroll down')
-config.bind('k', 'scroll up')
-config.bind('l', 'scroll right')
-config.bind('m', 'quickmark-save')
-config.bind('n', 'search-next')
-config.bind('o', 'cmd-set-text -s :open')
-config.bind('pP', 'open -- {primary}')
-config.bind('pp', 'open -- {clipboard}')
-config.bind('q', 'macro-record')
-config.bind('r', 'reload')
-config.bind('sf', 'save')
-config.bind('sk', 'cmd-set-text -s :bind')
-config.bind('sl', 'cmd-set-text -s :set -t')
-config.bind('ss', 'cmd-set-text -s :set')
-
-config.bind('v', 'mode-enter caret')
-config.bind('wB', 'cmd-set-text -s :bookmark-load -w')
-config.bind('wIf', 'devtools-focus')
-config.bind('wIh', 'devtools left')
-config.bind('wIj', 'devtools bottom')
-config.bind('wIk', 'devtools top')
-config.bind('wIl', 'devtools right')
-config.bind('wIw', 'devtools window')
-config.bind('wO', 'cmd-set-text :open -w {url:pretty}')
-config.bind('wP', 'open -w -- {primary}')
-config.bind('wb', 'cmd-set-text -s :quickmark-load -w')
-config.bind('wf', 'hint all window')
-config.bind('wh', 'back -w')
-config.bind('wi', 'devtools')
-config.bind('wl', 'forward -w')
-config.bind('wo', 'cmd-set-text -s :open -w')
-config.bind('wp', 'open -w -- {clipboard}')
-config.bind('xO', 'cmd-set-text :open -b -r {url:pretty}')
-config.bind('xo', 'cmd-set-text -s :open -b')
-config.bind('yD', 'yank domain -s')
-config.bind('yM', 'yank inline [{title}]({url:yank}) -s')
-config.bind('yP', 'yank pretty-url -s')
-config.bind('yT', 'yank title -s')
-config.bind('yY', 'yank -s')
-config.bind('yd', 'yank domain')
-config.bind('ym', 'yank inline [{title}]({url:yank})')
-config.bind('yp', 'yank pretty-url')
-config.bind('yt', 'yank title')
-config.bind('yy', 'yank')
-config.bind('{{', 'navigate prev -t')
-config.bind('}}', 'navigate next -t')
 
 ## Bindings for command mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='command')
@@ -899,22 +721,6 @@ config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
 config.bind('<Tab>', 'completion-item-focus next', mode='command')
 config.bind('<Up>', 'completion-item-focus --history prev', mode='command')
 
-## Bindings for hint mode
-config.bind('<Ctrl-B>', 'hint all tab-bg', mode='hint')
-config.bind('<Ctrl-F>', 'hint links', mode='hint')
-config.bind('<Ctrl-R>', 'hint --rapid links tab-bg', mode='hint')
-config.bind('<Escape>', 'mode-leave', mode='hint')
-config.bind('<Return>', 'hint-follow', mode='hint')
-
-## Bindings for insert mode
-config.bind('<Ctrl-E>', 'edit-text', mode='insert')
-config.bind('<Escape>', 'mode-leave', mode='insert')
-config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
-config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
-
-## Bindings for passthrough mode
-config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
-
 ## Bindings for prompt mode
 config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
 config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='prompt')
@@ -941,9 +747,6 @@ config.bind('<Escape>', 'mode-leave', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
 config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Up>', 'prompt-item-focus prev', mode='prompt')
-
-## Bindings for register mode
-config.bind('<Escape>', 'mode-leave', mode='register')
 
 ## Bindings for yesno mode
 config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
