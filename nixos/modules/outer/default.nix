@@ -1,7 +1,3 @@
-{ inputs, ... }:
-let
-    home = { home.stateVersion = "24.11"; imports = [ ./flake ./home ]; programs.home-manager.enable = true; xdg.enable = true; nixpkgs.config.allowUnfree = true; };
-in
 {
 
 
@@ -9,13 +5,18 @@ in
 
 
   imports = [
-      inputs.home-manager.nixosModules.default
+        ./fuzzel
+      ./hypridle
+      ./hyprland
+      ./hyprlock
+        ./hyprpaper
+      ./kitty
+        ./micro
+      ./neofetch
+      ./shell
+      ./waybar
+      ./yazi
              ];
-             
-  home-manager = {
-      extraSpecialArgs = { inherit inputs; };
-    users = { "user" = home; };
-                  };
 
 
 
