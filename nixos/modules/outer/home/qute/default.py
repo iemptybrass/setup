@@ -22,7 +22,6 @@ c.content.autoplay = False
    #
 
 c.content.blocking.enabled = True
-c.content.blocking.method = both
 
 
  #
