@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     bash = {
         enable = true;
@@ -57,8 +55,6 @@
     configFile."starship.toml" = {
         source = ./prompt.toml;      };
          };  
-
-
 
 
 
