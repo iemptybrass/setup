@@ -2,8 +2,6 @@
 
 
 
-
-
   programs = {
     micro = {
         enable = true;      };
@@ -13,8 +11,6 @@
 #    configFile."" = {
 #        source = ./default.;      };
 #         };
-
-
 
 
 

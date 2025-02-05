@@ -2,8 +2,6 @@
 
 
 
-
-
   home = {
     packages = with pkgs; [
         neofetch      ];
@@ -13,8 +11,6 @@
     configFile."neofetch/config.conf" = {
         source = ./default.conf;      };
          };  
-
-
 
 
 
