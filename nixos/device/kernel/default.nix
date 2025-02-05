@@ -2,8 +2,6 @@
 
 
 
-
-
   imports = [
       ( modulesPath + "/installer/scan/not-detected.nix" )
              ];
@@ -15,8 +13,6 @@
         availableKernelModules = [ "xhci_pci" "nvme" ];
         kernelModules = [ ];      }; 
           };
-
-
 
 
 
