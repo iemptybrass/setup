@@ -2,8 +2,6 @@
 
 
 
-
-
   xdg = {
     portal = {
         enable = true;
@@ -14,8 +12,6 @@
                 };
          };
                                 
-
-
 
 
 

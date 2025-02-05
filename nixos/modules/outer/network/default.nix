@@ -2,8 +2,6 @@
 
 
 
-
-
   networking = {
     firewall = {
         enable = true;      };
@@ -16,8 +14,6 @@
         Settings = {
             AutoConnect = true;      };      };      };
                 };
-
-
 
 
 
