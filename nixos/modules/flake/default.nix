@@ -6,7 +6,6 @@
 
   imports = [
       ./discord
-      ./firefox
       ./spotify
              ];
 
