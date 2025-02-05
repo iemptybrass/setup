@@ -11,6 +11,24 @@ c.confirm_quit = ['never']
 
 
 
+
+ ##################################################
+
+
+
+ #
+
+bg = #212121
+text = #FFFFFF
+alt = #CCCCCC
+focus = #ADADAD
+unfocus = #525252
+
+
+ #
+
+
+
  ##################################################
 
 
@@ -50,10 +68,6 @@ c.colors.statusbar.command.fg = 'white'
 
 c.fonts.statusbar = 'default_size default_family'
 
-c.colors.statusbar.private.bg = '#666666'
-c.colors.statusbar.private.fg = 'white'
-c.colors.statusbar.command.private.bg = 'darkslategray'
-c.colors.statusbar.command.private.fg = 'white'
 
 
 
@@ -65,14 +79,6 @@ c.colors.statusbar.url.hover.fg = 'aqua'
 c.colors.statusbar.url.success.http.fg = 'white'
 c.colors.statusbar.url.success.https.fg = 'lime'
 c.colors.statusbar.url.warn.fg = 'yellow'
-
-
-
-c.colors.statusbar.caret.bg = 'purple'
-c.colors.statusbar.caret.fg = 'white'
-
-c.colors.statusbar.caret.selection.bg = '#a12dff'
-c.colors.statusbar.caret.selection.fg = 'white'
 
 c.colors.statusbar.insert.bg = 'darkgreen'
 c.colors.statusbar.insert.fg = 'white'
