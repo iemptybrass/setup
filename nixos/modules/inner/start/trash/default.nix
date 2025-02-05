@@ -2,8 +2,6 @@
 
 
 
-
-
     boot.tmp.cleanOnBoot = true;
 
   nix = {
@@ -14,11 +12,6 @@
         dates = "daily";
         options = "--delete-older-than 3d";      };
          };
-
-
-
-
-
 
 
 

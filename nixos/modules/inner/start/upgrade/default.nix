@@ -2,8 +2,6 @@
 
 
 
-
-
   system.autoUpgrade = {
       enable = true;
       flake = "/etc/nixos/#default";
@@ -12,8 +10,6 @@
         "nixpkgs"
         "--commit-lock-file"      ];
                         };
-
-
 
 
 

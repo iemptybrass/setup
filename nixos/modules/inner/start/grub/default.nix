@@ -2,8 +2,6 @@
 
 
 
-
-
   boot.loader = {
       systemd-boot.enable = false;
     efi = {
@@ -16,8 +14,6 @@
         gfxmodeEfi = "1920x1080";
         gfxmodeBios = "1920x1080";      };
                  };
-
-
 
 
 

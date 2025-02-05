@@ -2,11 +2,7 @@
 
 
 
-
-
     security.sudo.execWheelOnly = true;
-
-
 
 
 

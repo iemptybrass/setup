@@ -2,8 +2,6 @@
 
 
 
-
-
   boot = {
       bootspec.enable = true;
       consoleLogLevel = 0;
@@ -16,8 +14,6 @@
         "rd.udev.log_level=3"
         "udev.log_priority=3"      ];  
           };
-
-
 
 
 
