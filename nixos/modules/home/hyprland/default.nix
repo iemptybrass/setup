@@ -2,8 +2,6 @@
 
 
 
-
-
   wayland.windowManager = {
       hyprland = {
           enable = true;
@@ -17,8 +15,6 @@
     configFile."hypr/hyprland.conf" = {
         source = ./default.conf;      };
          };
-
-
 
 
 

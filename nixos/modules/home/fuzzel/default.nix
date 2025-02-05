@@ -2,8 +2,6 @@
 
 
 
-
-
   programs.fuzzel = {
       enable = true;
                      };
@@ -12,9 +10,6 @@
     configFile."fuzzel/fuzzel.ini" = {
         source = ./default.ini;      };
          };  
-
-
-
 
 
 
