@@ -164,7 +164,7 @@ c.content.blocking.enabled = True
  # Statusbar
 
 
- #
+ # General
 
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
@@ -177,17 +177,17 @@ c.statusbar.widgets = [
 'search_match',
 'text:                                                                                                                                                                                                                                                                                                                                                     ',
 ]
-   #
+
+ # Color
+
+   # Normal
 
 c.colors.statusbar.normal.bg = bg
 c.colors.statusbar.normal.fg = text
-c.colors.statusbar.command.bg = bg
-c.colors.statusbar.command.fg = text
-
-
-
 
 c.colors.statusbar.progress.bg = 'white'
+
+   # Url
 
 c.colors.statusbar.url.error.fg = 'orange'
 c.colors.statusbar.url.fg = text
@@ -195,6 +195,11 @@ c.colors.statusbar.url.hover.fg = text
 c.colors.statusbar.url.success.http.fg = text
 c.colors.statusbar.url.success.https.fg = text
 c.colors.statusbar.url.warn.fg = 'yellow'
+
+   # Command
+
+c.colors.statusbar.command.bg = bg
+c.colors.statusbar.command.fg = text
 
 c.colors.statusbar.insert.bg = bg
 c.colors.statusbar.insert.fg = text
