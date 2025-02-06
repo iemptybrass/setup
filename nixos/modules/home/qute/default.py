@@ -691,8 +691,8 @@ config.bind('<Ctrl-shift-Left>', 'tab-prev')
 config.bind('<Ctrl-Alt-Right>', 'tab-move +')
 config.bind('<Ctrl-Alt-Left>', 'tab-move -')
 
-config.bind('<Ctrl-X>', 'tab-close')
-config.bind('<Ctrl-T>', 'open -t')
+config.bind('<Alt-X>', 'tab-close')
+config.bind('<Ctrl-Tab>', 'open -t')
 
 config.bind('<Ctrl-M>', 'tab-mute')
 
@@ -759,7 +759,6 @@ config.bind('<Down>', 'completion-item-focus next', mode='command')
 
  # Unbind
 
-config.bind('<Ctrl-Tab>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Ctrl-Shift-Tab>', 'clear-keychain ;; search ;; fullscreen --leave')
 
  #
