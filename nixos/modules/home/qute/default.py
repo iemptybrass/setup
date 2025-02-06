@@ -13,16 +13,16 @@ c.confirm_quit = ['never']
 
 
  ##################################################
-
+ # Variables
 
 
  #
 
-bg = #212121
-text = #FFFFFF
-alt = #CCCCCC
-focus = #ADADAD
-unfocus = #525252
+bg = '#212121'
+text = '#FFFFFF'
+alt = '#CCCCCC'
+focus = '#ADADAD'
+unfocus = '#525252'
 
 
  #
@@ -30,7 +30,7 @@ unfocus = #525252
 
 
  ##################################################
-
+ # Content
 
 
  #
@@ -47,7 +47,7 @@ c.content.blocking.enabled = True
 
 
  ##################################################
-
+ # Statusbar
 
 
  #
@@ -95,7 +95,7 @@ c.messages.timeout = 3000
 
 
  ##################################################
-
+ # Tabs
 
 
  #
@@ -130,7 +130,6 @@ c.fonts.tabs.unselected = 'default_size default_family'
 
    #
 
-c.tabs.tooltips = True
 
  #
 
@@ -204,7 +203,7 @@ c.content.mute = False
 
 
  ##################################################
-
+ # Completion
 
 
  #
@@ -282,49 +281,7 @@ c.colors.completion.scrollbar.fg = 'red'
 
 
  ##################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ # Context Menu
 
 ## Background color of disabled items in the context menu. If set to
 ## null, the Qt default is used.
@@ -356,9 +313,55 @@ c.colors.contextmenu.selected.bg = None
 ## Type: QssColor
 c.colors.contextmenu.selected.fg = None
 
+ ##################################################
+ # Downloads
 
+## Directory to save downloads to. If unset, a sensible OS-specific
+## default is used.
+## Type: Directory
+c.downloads.location.directory = None
 
+## Prompt the user for the download location. If set to false,
+## `downloads.location.directory` will be used.
+## Type: Bool
+c.downloads.location.prompt = True
 
+## Remember the last used download directory.
+## Type: Bool
+c.downloads.location.remember = True
+
+## What to display in the download filename input.
+## Type: String
+## Valid values:
+##   - path: Show only the download path.
+##   - filename: Show only download filename.
+##   - both: Show download path and filename.
+c.downloads.location.suggestion = 'path'
+
+## Default program used to open downloads. If null, the default internal
+## handler is used. Any `{}` in the string will be expanded to the
+## filename, else the filename will be appended.
+## Type: String
+c.downloads.open_dispatcher = None
+
+## Where to show the downloaded files.
+## Type: VerticalPosition
+## Valid values:
+##   - top
+##   - bottom
+c.downloads.position = 'top'
+
+## Automatically abort insecure (HTTP) downloads originating from secure
+## (HTTPS) pages. For per-domain settings, the relevant URL is the URL
+## initiating the download, not the URL the download itself is coming
+## from. It's not recommended to set this setting to false globally.
+## Type: Bool
+c.downloads.prevent_mixed_content = True
+
+## Duration (in milliseconds) to wait before removing finished downloads.
+## If set to -1, downloads are never removed.
+## Type: Int
+c.downloads.remove_finished = -1
 
 ## Background color for the download bar.
 ## Type: QssColor
@@ -408,9 +411,31 @@ c.colors.downloads.system.fg = 'rgb'
 
 
 
+ ##################################################
+ # Messages
 
+## Duration (in milliseconds) to show messages in the statusbar for. Set
+## to 0 to never clear messages.
+## Type: Int
+c.messages.timeout = 3000
 
-
+## What notification presenter to use for web notifications. Note that
+## not all implementations support all features of notifications: - The
+## `qt` and `systray` options only support showing one notification at
+## the time   and ignore the `tag` option to replace existing
+## notifications. - The `herbe` option only supports showing one
+## notification at the time and doesn't   show icons. - The `messages`
+## option doesn't show icons and doesn't support the `click` and
+## `close` events.
+## Type: String
+## Valid values:
+##   - auto: Tries `libnotify`, `systray` and `messages`, uses the first one available without showing error messages.
+##   - qt: Use Qt's native notification presenter, based on a system tray icon. Switching from or to this value requires a restart of qutebrowser.
+##   - libnotify: Shows messages via DBus in a libnotify-compatible way. If DBus isn't available, falls back to `systray` or `messages`, but shows an error message.
+##   - systray: Use a notification presenter based on a systray icon. Falls back to `libnotify` or `messages` if not systray is available. This is a reimplementation of the `qt` setting value, but with the possibility to switch to it at runtime.
+##   - messages: Show notifications as qutebrowser messages. Most notification features aren't available.
+##   - herbe: (experimental!) Show notifications using herbe (github.com/dudik/herbe). Most notification features aren't available.
+c.content.notifications.presenter = 'auto'
 
 ## Background color of an error message.
 ## Type: QssColor
@@ -449,8 +474,16 @@ c.colors.messages.warning.border = '#d47300'
 c.colors.messages.warning.fg = 'black'
 
 
+ ##################################################
+ # Prompts
 
+## Show a filebrowser in download prompts.
+## Type: Bool
+c.prompt.filebrowser = True
 
+## Rounding radius (in pixels) for the edges of prompts.
+## Type: Int
+c.prompt.radius = 8
 
 ## Background color for prompts.
 ## Type: QssColor
@@ -458,7 +491,7 @@ c.colors.prompts.bg = '#444444'
 
 ## Border used around UI elements in prompts.
 ## Type: String
-c.colors.prompts.border = '1px solid gray'
+c.colors.prompts.border = '2px #525252'
 
 ## Foreground color for prompts.
 ## Type: QssColor
@@ -472,68 +505,17 @@ c.colors.prompts.selected.bg = 'grey'
 ## Type: QssColor
 c.colors.prompts.selected.fg = 'white'
 
+ ##################################################
+ # Tooltips
 
+c.tabs.tooltips = False
 
+c.colors.tooltip.bg = 'rgba(0, 0, 0, 0%)'
 
+c.colors.tooltip.fg = 'rgba(0, 0, 0, 0%)'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Background color of tooltips. If set to null, the Qt default is used.
-## Type: QssColor
-c.colors.tooltip.bg = None
-
-## Foreground color of tooltips. If set to null, the Qt default is used.
-## Type: QssColor
-c.colors.tooltip.fg = None
-
-
-
-
+ ##################################################
+ # Webpage
 
 c.colors.webpage.bg = 'black'
 
@@ -573,6 +555,7 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 
  ##################################################
+ # Keybinds
 
 
 
@@ -587,7 +570,7 @@ config.bind(':', 'cmd-set-text :')
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
 
- # Navigation
+ # 
 
    # Search
 
@@ -672,4 +655,3 @@ config.bind('<Down>', 'completion-item-focus next', mode='command')
 
 
  ##################################################
- 

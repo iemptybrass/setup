@@ -22,8 +22,8 @@
 │├─ #212121 > Background
 │├─ #FFFFFF > Text Main
 │├─ #CCCCCC > Text Alternative
-│├─ #ADADAD > Focused
-│└─ #525252 > UnFocused
+│├─ #ADADAD > UnFocused
+│└─ #525252 > Focused
 ├┬ Primary - Secondary
 │├─ #FF6961 > Red
 │├─ #FFB347 > Orange
