@@ -15,6 +15,15 @@ c.confirm_quit = ['never']
 c.new_instance_open_target = 'tab'
 c.new_instance_open_target_window = 'last-focused'
 
+
+
+
+ ########################
+
+c.url.searchengines = {'DEFAULT': 'https://www.google.com/search?q={}'}
+
+c.url.start_pages = ['https://www.google.com/']
+
  ##################################################
  # Variables
 
