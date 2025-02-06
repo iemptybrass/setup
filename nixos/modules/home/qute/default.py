@@ -716,7 +716,7 @@ config.bind('<Ctrl-Down>', 'scroll-to-perc 100')
    # Search Page
 
 config.bind('<Ctrl-F>', 'search')
-config.bind('<Ctrl-Right>', 'search-next')
+config.bind('<Shift-Right>', 'search-next')
 config.bind('<Shift-Left>', 'search-prev')
 
    # Zoom Page
@@ -756,6 +756,11 @@ config.bind('<Escape>', 'mode-leave', mode='command')
 config.bind('<Return>', 'command-accept', mode='command')
 config.bind('<Up>', 'completion-item-focus prev', mode='command')
 config.bind('<Down>', 'completion-item-focus next', mode='command')
+
+ # Unbind
+
+config.bind('<Ctrl-Tab>', 'clear-keychain ;; search ;; fullscreen --leave')
+config.bind('<Ctrl-Shift-Tab>', 'clear-keychain ;; search ;; fullscreen --leave')
 
  #
 
