@@ -231,6 +231,8 @@ c.tabs.title.alignment = 'middle'
 c.tabs.max_width = 300
 c.tabs.min_width = 300
 
+ #
+
    #
 
 c.colors.tabs.bar.bg = bg
@@ -244,21 +246,6 @@ c.colors.tabs.even.bg = unfocus
 c.colors.tabs.even.fg = alt
 c.colors.tabs.odd.bg = unfocus
 c.colors.tabs.odd.fg = alt
-
-
-   #
-
-
- #
-
-
-
-
-
-
-
-
-c.tabs.title.elide = 'right'
 
    #
 
