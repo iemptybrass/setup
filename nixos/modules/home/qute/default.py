@@ -158,11 +158,341 @@ c.content.autoplay = False
    #
 
 c.content.blocking.enabled = True
+c.content.blocking.method = 'both'
+
+c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
+c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
+
+c.content.blocking.hosts.block_subdomains = True
+
+   #
+
+c.content.cache.appcache = True
+
+c.content.cache.maximum_pages = 0
+
+c.content.cache.size = None
+
+   #
+
+c.content.canvas_reading = True
+
+   #
+
+c.content.cookies.accept = 'all'
+
+c.content.cookies.store = True
+
+   #
 
 
- #
+c.content.desktop_capture = 'ask'
+c.content.geolocation = 'ask'
+c.content.javascript.clipboard = 'ask'
+c.content.media.audio_capture = 'ask'
+c.content.media.audio_video_capture = 'ask'
+c.content.media.video_capture = 'ask'
+c.content.mouse_lock = 'ask'
+c.content.notifications.enabled = 'ask'
+c.content.persistent_storage = 'ask'
+
+   #
+
+c.content.default_encoding = 'iso-8859-1'
+
+   #
 
 
+## Try to pre-fetch DNS entries to speed up browsing.
+## Type: Bool
+c.content.dns_prefetch = True
+
+## Expand each subframe to its contents. This will flatten all the frames
+## to become one scrollable page.
+## Type: Bool
+c.content.frame_flattening = False
+
+
+## Value to send in the `Accept-Language` header. Note that the value
+## read from JavaScript is always the global value.
+## Type: String
+c.content.headers.accept_language = 'en-US,en;q=0.9'
+
+## Custom headers for qutebrowser HTTP requests.
+## Type: Dict
+c.content.headers.custom = {}
+
+## Value to send in the `DNT` header. When this is set to true,
+## qutebrowser asks websites to not track your identity. If set to null,
+## the DNT header is not sent at all.
+## Type: Bool
+c.content.headers.do_not_track = True
+
+## When to send the Referer header. The Referer header tells websites
+## from which website you were coming from when visiting them. Note that
+## with QtWebEngine, websites can override this preference by setting the
+## `Referrer-Policy:` header, so that any websites visited from them get
+## the full referer. No restart is needed with QtWebKit.
+## Type: String
+## Valid values:
+##   - always: Always send the Referer. With QtWebEngine 6.2+, this value is unavailable and will act like `same-domain`.
+##   - never: Never send the Referer. This is not recommended, as some sites may break.
+##   - same-domain: Only send the Referer for the same domain. This will still protect your privacy, but shouldn't break any sites. With QtWebEngine, the referer will still be sent for other domains, but with stripped path information.
+c.content.headers.referer = 'same-domain'
+
+## User agent to send.  The following placeholders are defined:  *
+## `{os_info}`: Something like "X11; Linux x86_64". * `{webkit_version}`:
+## The underlying WebKit version (set to a fixed value   with
+## QtWebEngine). * `{qt_key}`: "Qt" for QtWebKit, "QtWebEngine" for
+## QtWebEngine. * `{qt_version}`: The underlying Qt version. *
+## `{upstream_browser_key}`: "Version" for QtWebKit, "Chrome" for
+## QtWebEngine. * `{upstream_browser_version}`: The corresponding
+## Safari/Chrome version. * `{qutebrowser_version}`: The currently
+## running qutebrowser version.  The default value is equal to the
+## unchanged user agent of QtWebKit/QtWebEngine.  Note that the value
+## read from JavaScript is always the global value. With QtWebEngine
+## between 5.12 and 5.14 (inclusive), changing the value exposed to
+## JavaScript requires a restart.
+## Type: FormatString
+c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}'
+
+## Enable hyperlink auditing (`<a ping>`).
+## Type: Bool
+c.content.hyperlink_auditing = False
+
+## Load images automatically in web pages.
+## Type: Bool
+c.content.images = True
+
+## Show javascript alerts.
+## Type: Bool
+c.content.javascript.alert = True
+
+## Allow JavaScript to close tabs.
+## Type: Bool
+c.content.javascript.can_close_tabs = False
+
+## Allow JavaScript to open new tabs without user interaction.
+## Type: Bool
+c.content.javascript.can_open_tabs_automatically = False
+
+## Enable JavaScript.
+## Type: Bool
+c.content.javascript.enabled = True
+
+## Enables the legacy touch event feature. This affects JS APIs such as:
+## - ontouch* members on window, document, Element -
+## document.createTouch, document.createTouchList -
+## document.createEvent("TouchEvent") Newer Chromium versions have those
+## disabled by default:
+## https://bugs.chromium.org/p/chromium/issues/detail?id=392584
+## https://groups.google.com/a/chromium.org/g/blink-dev/c/KV6kqDJpYiE
+## Type: String
+## Valid values:
+##   - always: Legacy touch events are always enabled. This might cause some websites to assume a mobile device.
+##   - auto: Legacy touch events are only enabled if a touch screen was detected on startup.
+##   - never: Legacy touch events are always disabled.
+c.content.javascript.legacy_touch_events = 'never'
+
+## Log levels to use for JavaScript console logging messages. When a
+## JavaScript message with the level given in the dictionary key is
+## logged, the corresponding dictionary value selects the qutebrowser
+## logger to use. On QtWebKit, the "unknown" setting is always used. The
+## following levels are valid: `none`, `debug`, `info`, `warning`,
+## `error`.
+## Type: Dict
+c.content.javascript.log = {'unknown': 'debug', 'info': 'debug', 'warning': 'debug', 'error': 'debug'}
+
+## Javascript messages to *not* show in the UI, despite a corresponding
+## `content.javascript.log_message.levels` setting. Both keys and values
+## are glob patterns, with the key matching the location of the error,
+## and the value matching the error message. By default, the
+## https://web.dev/csp/[Content security policy] violations triggered by
+## qutebrowser's stylesheet handling are excluded, as those errors are to
+## be expected and can't be easily handled by the underlying code.
+## Type: Dict
+c.content.javascript.log_message.excludes = {'userscript:_qute_stylesheet': ['*Refused to apply inline style because it violates the following Content Security Policy directive: *']}
+
+## Javascript message sources/levels to show in the qutebrowser UI. When
+## a JavaScript message is logged from a location matching the glob
+## pattern given in the key, and is from one of the levels listed as
+## value, it's surfaced as a message in the qutebrowser UI. By default,
+## errors happening in qutebrowser internally are shown to the user.
+## Type: Dict
+c.content.javascript.log_message.levels = {'qute:*': ['error'], 'userscript:GM-*': [], 'userscript:*': ['error']}
+
+## Use the standard JavaScript modal dialog for `alert()` and
+## `confirm()`.
+## Type: Bool
+c.content.javascript.modal_dialog = False
+
+## Show javascript prompts.
+## Type: Bool
+c.content.javascript.prompt = True
+
+## Allow locally loaded documents to access other local URLs.
+## Type: Bool
+c.content.local_content_can_access_file_urls = True
+
+## Allow locally loaded documents to access remote URLs.
+## Type: Bool
+c.content.local_content_can_access_remote_urls = False
+
+## Enable support for HTML 5 local storage and Web SQL.
+## Type: Bool
+c.content.local_storage = True
+
+
+
+## Automatically mute tabs. Note that if the `:tab-mute` command is used,
+## the mute status for the affected tab is now controlled manually, and
+## this setting doesn't have any effect.
+## Type: Bool
+c.content.mute = False
+
+## Netrc-file for HTTP authentication. If unset, `~/.netrc` is used.
+## Type: File
+c.content.netrc_file = None
+
+## What notification presenter to use for web notifications. Note that
+## not all implementations support all features of notifications: - The
+## `qt` and `systray` options only support showing one notification at
+## the time   and ignore the `tag` option to replace existing
+## notifications. - The `herbe` option only supports showing one
+## notification at the time and doesn't   show icons. - The `messages`
+## option doesn't show icons and doesn't support the `click` and
+## `close` events.
+## Type: String
+## Valid values:
+##   - auto: Tries `libnotify`, `systray` and `messages`, uses the first one available without showing error messages.
+##   - qt: Use Qt's native notification presenter, based on a system tray icon. Switching from or to this value requires a restart of qutebrowser.
+##   - libnotify: Shows messages via DBus in a libnotify-compatible way. If DBus isn't available, falls back to `systray` or `messages`, but shows an error message.
+##   - systray: Use a notification presenter based on a systray icon. Falls back to `libnotify` or `messages` if not systray is available. This is a reimplementation of the `qt` setting value, but with the possibility to switch to it at runtime.
+##   - messages: Show notifications as qutebrowser messages. Most notification features aren't available.
+##   - herbe: (experimental!) Show notifications using herbe (github.com/dudik/herbe). Most notification features aren't available.
+c.content.notifications.presenter = 'auto'
+
+## Whether to show the origin URL for notifications. Note that URL
+## patterns with this setting only get matched against the origin part of
+## the URL, so e.g. paths in patterns will never match. Note that with
+## the `qt` presenter, origins are never shown.
+## Type: Bool
+c.content.notifications.show_origin = True
+
+## Display PDF files via PDF.js in the browser without showing a download
+## prompt. Note that the files can still be downloaded by clicking the
+## download button in the pdf.js viewer. With this set to `false`, the
+## `:prompt-open-download --pdfjs` command (bound to `<Ctrl-p>` by
+## default) can be used in the download prompt.
+## Type: Bool
+c.content.pdfjs = False
+
+## Enable plugins in Web pages.
+## Type: Bool
+c.content.plugins = False
+
+## Request websites to minimize non-essentials animations and motion.
+## This results in the `prefers-reduced-motion` CSS media query to
+## evaluate to `reduce` (rather than `no-preference`). On Windows, if
+## this setting is set to False, the system-wide animation setting is
+## considered.
+## Type: Bool
+c.content.prefers_reduced_motion = False
+
+## Draw the background color and images also when the page is printed.
+## Type: Bool
+c.content.print_element_backgrounds = True
+
+## Open new windows in private browsing mode which does not record
+## visited pages.
+## Type: Bool
+c.content.private_browsing = False
+
+## Proxy to use. In addition to the listed values, you can use a
+## `socks://...` or `http://...` URL. Note that with QtWebEngine, it will
+## take a couple of seconds until the change is applied, if this value is
+## changed at runtime. Authentication for SOCKS proxies isn't supported
+## due to Chromium limitations.
+## Type: Proxy
+## Valid values:
+##   - system: Use the system wide proxy.
+##   - none: Don't use any proxy
+c.content.proxy = 'system'
+
+## Send DNS requests over the configured proxy.
+## Type: Bool
+c.content.proxy_dns_requests = True
+
+## Allow websites to register protocol handlers via
+## `navigator.registerProtocolHandler`.
+## Type: BoolAsk
+## Valid values:
+##   - true
+##   - false
+##   - ask
+c.content.register_protocol_handler = 'ask'
+
+## Enable quirks (such as faked user agent headers) needed to get
+## specific sites to work properly.
+## Type: Bool
+c.content.site_specific_quirks.enabled = True
+
+## Disable a list of named quirks.
+## Type: FlagList
+## Valid values:
+##   - ua-whatsapp
+##   - ua-google
+##   - ua-slack
+##   - ua-googledocs
+##   - js-whatsapp-web
+##   - js-discord
+##   - js-string-replaceall
+##   - js-array-at
+##   - misc-krunker
+##   - misc-mathml-darkmode
+c.content.site_specific_quirks.skip = []
+
+## How to proceed on TLS certificate errors.
+## Type: String
+## Valid values:
+##   - ask: Ask how to proceed for every certificate error (unless non-overridable due to HSTS).
+##   - ask-block-thirdparty: Ask how to proceed for normal page loads, but silently block resource loads.
+##   - block: Automatically block loading on certificate errors.
+##   - load-insecurely: Force loading pages despite certificate errors. This is *insecure* and should be avoided. Instead of using this, consider fixing the underlying issue or importing a self-signed certificate via `certutil` (or Chromium) instead.
+c.content.tls.certificate_errors = 'ask'
+
+## How navigation requests to URLs with unknown schemes are handled.
+## Type: String
+## Valid values:
+##   - disallow: Disallows all navigation requests to URLs with unknown schemes.
+##   - allow-from-user-interaction: Allows navigation requests to URLs with unknown schemes that are issued from user-interaction (like a mouse-click), whereas other navigation requests (for example from JavaScript) are suppressed.
+##   - allow-all: Allows all navigation requests to URLs with unknown schemes.
+c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
+
+## List of user stylesheet filenames to use.
+## Type: List of File, or File
+c.content.user_stylesheets = []
+
+## Enable WebGL.
+## Type: Bool
+c.content.webgl = True
+
+## Which interfaces to expose via WebRTC.
+## Type: String
+## Valid values:
+##   - all-interfaces: WebRTC has the right to enumerate all interfaces and bind them to discover public interfaces.
+##   - default-public-and-private-interfaces: WebRTC should only use the default route used by http. This also exposes the associated default private address. Default route is the route chosen by the OS on a multi-homed endpoint.
+##   - default-public-interface-only: WebRTC should only use the default route used by http. This doesn't expose any local addresses.
+##   - disable-non-proxied-udp: WebRTC should only use TCP to contact peers or servers unless the proxy server supports UDP. This doesn't expose any local addresses either.
+c.content.webrtc_ip_handling_policy = 'all-interfaces'
+
+## Monitor load requests for cross-site scripting attempts. Suspicious
+## scripts will be blocked and reported in the devtools JavaScript
+## console. Note that bypasses for the XSS auditor are widely known and
+## it can be abused for cross-site info leaks in some scenarios, see:
+## https://www.chromium.org/developers/design-documents/xss-auditor
+## Type: Bool
+c.content.xss_auditing = False
 
  ##################################################
 
