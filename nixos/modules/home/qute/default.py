@@ -265,7 +265,7 @@ c.tabs.new_position.unrelated = 'last'
 
 c.tabs.background = False
 c.tabs.close_mouse_button = 'none'
-c.tabs.close_mouse_button_on_bar = 'none'
+c.tabs.close_mouse_button_on_bar = 'ignore'
 
 c.tabs.mousewheel_switching = False
 
