@@ -12,6 +12,9 @@ c.confirm_quit = ['never']
 
 
 
+c.new_instance_open_target = 'tab'
+c.new_instance_open_target_window = 'last-focused'
+
  ##################################################
  # Variables
 
@@ -165,16 +168,24 @@ c.content.blocking.enabled = True
 
  #
 
+   #
+
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
 
+   #
+
 c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
+
+   #
 
 c.statusbar.widgets = [
 'history',
 'text:[','url','text:]',
 'text:                                                                                                                                                                                                                                                                                                                                                     ',
 'search_match'      ]
+
+   #
 
  #
 
@@ -212,30 +223,81 @@ c.colors.statusbar.passthrough.fg = text
 
 
  ##################################################
- # Tabs
+
 
 
  #
 
+   #
+
 c.tabs.position = 'top'
 c.tabs.show = 'always'
 
+   #
+
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
 c.tabs.indicator.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
+
+   #
+
 c.tabs.indicator.width = 10
 
-c.tabs.favicons.show = 'never'
-c.tabs.title.format = '{audio}{current_url}'
-c.tabs.title.alignment = 'middle'
+   #
 
-c.tabs.max_width = 300
-c.tabs.min_width = 300
+c.tabs.title.format = '{audio}{current_url}'
+c.tabs.title.alignment = 'center'
+
+c.tabs.favicons.show = 'never'
+
+   #
+
+ #
+
+   #
+
+c.tabs.last_close = 'startpage'
+
+c.tabs.new_position.related = 'next'
+c.tabs.new_position.stacking = False
+c.tabs.new_position.unrelated = 'last'
+
+   #
+
+c.tabs.background = False
+c.tabs.close_mouse_button = 'none'
+c.tabs.close_mouse_button_on_bar = 'none'
+
+c.tabs.mousewheel_switching = False
+
+   #
+
+c.tabs.focus_stack_size = 10
+c.tabs.undo_stack_size = 20
+
+   #
+
+c.tabs.select_on_remove = 'last-used'
+c.tabs.mode_on_change = 'normal'
+
+c.tabs.tabs_are_windows = False
+
+   #
+
+c.tabs.wrap = True
+
+   #
+
+c.content.mute = False
+
+   #
 
  #
 
    #
 
 c.colors.tabs.bar.bg = bg
+
+   #
 
 c.colors.tabs.selected.even.bg = focus
 c.colors.tabs.selected.even.fg = text
@@ -254,64 +316,32 @@ c.colors.tabs.indicator.start = c.colors.tabs.bar.bg
 c.colors.tabs.indicator.stop = c.colors.tabs.bar.bg
 c.colors.tabs.indicator.error = c.colors.tabs.bar.bg
 
- #
-
-c.tabs.background = True
-
-c.tabs.close_mouse_button = 'none'
-c.tabs.close_mouse_button_on_bar = 'none'
-
-c.tabs.mousewheel_switching = False
-
    #
-
-c.tabs.focus_stack_size = 10
-
-c.tabs.undo_stack_size = 20
-
-   #
-
-c.tabs.last_close = 'startpage'
-
-c.tabs.new_position.related = 'next'
-c.tabs.new_position.stacking = False
-c.tabs.new_position.unrelated = 'last'
-
-
-
-c.new_instance_open_target = 'tab'
-c.new_instance_open_target_window = 'last-focused'
-
-c.tabs.select_on_remove = 'last-used'
-
-c.tabs.mode_on_change = 'normal'
-
-   #
-
-c.tabs.tabs_are_windows = False
-
-c.tabs.wrap = True
-
-c.content.mute = False
 
  #
 
 
 
  ##################################################
- # Completion
+
 
 
  #
 
-c.completion.height = '50%'
-c.completion.shrink = True
+   #
 
 c.completion.show = 'always'
 
+   #
+
+c.completion.height = '30%'
+c.completion.shrink = True
+
+   #
+
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks']
 
-
+   #
 
 c.completion.scrollbar.padding = 2
 
@@ -319,7 +349,7 @@ c.completion.scrollbar.width = 12
 
 
 
-c.completion.cmd_history_max_items = 0
+c.completion.cmd_history_max_items = 10
 
 c.completion.delay = 0
 
@@ -337,9 +367,11 @@ c.completion.web_history.exclude = []
 
 c.completion.web_history.max_items = 500
 
+   #
 
+ #
 
-
+   #
 
 c.colors.completion.category.bg = bg
 
@@ -347,12 +379,13 @@ c.colors.completion.category.border.top = 'black'
 c.colors.completion.category.fg = text
 c.colors.completion.category.border.bottom = 'black'
 
+   #
+
 c.colors.completion.even.bg = bg
 c.colors.completion.odd.bg = bg
-
-
 c.colors.completion.fg = ['white', 'white', 'white']
 
+   #
 
 c.colors.completion.item.selected.bg = focus
 c.colors.completion.item.selected.fg = text
@@ -360,15 +393,17 @@ c.colors.completion.item.selected.fg = text
 c.colors.completion.item.selected.border.top = focus
 c.colors.completion.item.selected.border.bottom = focus
 
-
+   #
 
 c.colors.completion.item.selected.match.fg = 'red'
-
-
 c.colors.completion.match.fg = 'red'
+
+   #
 
 c.colors.completion.scrollbar.bg = unfocus
 c.colors.completion.scrollbar.fg = 'red'
+
+   #
 
  #
 
