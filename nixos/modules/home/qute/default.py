@@ -241,6 +241,8 @@ c.tabs.indicator.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
 
    #
 
+c.tabs.max_width = 200
+c.tabs.min_width = 200
 c.tabs.indicator.width = 10
 
    #
