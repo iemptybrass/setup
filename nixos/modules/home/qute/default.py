@@ -440,190 +440,111 @@ c.colors.contextmenu.selected.fg = None
 
  ##################################################
 
-## Directory to save downloads to. If unset, a sensible OS-specific
-## default is used.
-## Type: Directory
-c.downloads.location.directory = None
 
-## Prompt the user for the download location. If set to false,
-## `downloads.location.directory` will be used.
-## Type: Bool
-c.downloads.location.prompt = True
 
-## Remember the last used download directory.
-## Type: Bool
-c.downloads.location.remember = True
+ #
 
-## What to display in the download filename input.
-## Type: String
-## Valid values:
-##   - path: Show only the download path.
-##   - filename: Show only download filename.
-##   - both: Show download path and filename.
-c.downloads.location.suggestion = 'path'
+   #
 
-## Default program used to open downloads. If null, the default internal
-## handler is used. Any `{}` in the string will be expanded to the
-## filename, else the filename will be appended.
-## Type: String
-c.downloads.open_dispatcher = None
-
-## Where to show the downloaded files.
-## Type: VerticalPosition
-## Valid values:
-##   - top
-##   - bottom
 c.downloads.position = 'top'
 
-## Automatically abort insecure (HTTP) downloads originating from secure
-## (HTTPS) pages. For per-domain settings, the relevant URL is the URL
-## initiating the download, not the URL the download itself is coming
-## from. It's not recommended to set this setting to false globally.
-## Type: Bool
-c.downloads.prevent_mixed_content = True
-
-## Duration (in milliseconds) to wait before removing finished downloads.
-## If set to -1, downloads are never removed.
-## Type: Int
 c.downloads.remove_finished = -1
 
-## Background color for the download bar.
-## Type: QssColor
+   #
+
+c.downloads.location.directory = None
+
+c.downloads.location.prompt = True
+
+c.downloads.location.remember = True
+
+c.downloads.location.suggestion = 'path'
+
+   #
+
+c.downloads.open_dispatcher = None
+
+   #
+
+c.downloads.prevent_mixed_content = True
+
+   #
+
+ #
+
+   #
+
 c.colors.downloads.bar.bg = 'black'
 
-## Background color for downloads with errors.
-## Type: QtColor
 c.colors.downloads.error.bg = 'red'
-
-## Foreground color for downloads with errors.
-## Type: QtColor
 c.colors.downloads.error.fg = 'white'
 
-## Color gradient start for download backgrounds.
-## Type: QtColor
 c.colors.downloads.start.bg = '#0000aa'
-
-## Color gradient start for download text.
-## Type: QtColor
 c.colors.downloads.start.fg = 'white'
 
-## Color gradient stop for download backgrounds.
-## Type: QtColor
 c.colors.downloads.stop.bg = '#00aa00'
-
-## Color gradient end for download text.
-## Type: QtColor
 c.colors.downloads.stop.fg = 'white'
 
-## Color gradient interpolation system for download backgrounds.
-## Type: ColorSystem
-## Valid values:
-##   - rgb: Interpolate in the RGB color system.
-##   - hsv: Interpolate in the HSV color system.
-##   - hsl: Interpolate in the HSL color system.
-##   - none: Don't show a gradient.
-c.colors.downloads.system.bg = 'rgb'
+c.colors.downloads.system.bg = 'none'
+c.colors.downloads.system.fg = 'none'
 
-## Color gradient interpolation system for download text.
-## Type: ColorSystem
-## Valid values:
-##   - rgb: Interpolate in the RGB color system.
-##   - hsv: Interpolate in the HSV color system.
-##   - hsl: Interpolate in the HSL color system.
-##   - none: Don't show a gradient.
-c.colors.downloads.system.fg = 'rgb'
+   #
+
+ #
 
 
 
  ##################################################
- # Messages
 
-## Duration (in milliseconds) to show messages in the statusbar for. Set
-## to 0 to never clear messages.
-## Type: Int
+
+
+ #
+
+   #
+
+c.content.notifications.presenter = 'messages'
+
 c.messages.timeout = 3000
 
-## What notification presenter to use for web notifications. Note that
-## not all implementations support all features of notifications: - The
-## `qt` and `systray` options only support showing one notification at
-## the time   and ignore the `tag` option to replace existing
-## notifications. - The `herbe` option only supports showing one
-## notification at the time and doesn't   show icons. - The `messages`
-## option doesn't show icons and doesn't support the `click` and
-## `close` events.
-## Type: String
-## Valid values:
-##   - auto: Tries `libnotify`, `systray` and `messages`, uses the first one available without showing error messages.
-##   - qt: Use Qt's native notification presenter, based on a system tray icon. Switching from or to this value requires a restart of qutebrowser.
-##   - libnotify: Shows messages via DBus in a libnotify-compatible way. If DBus isn't available, falls back to `systray` or `messages`, but shows an error message.
-##   - systray: Use a notification presenter based on a systray icon. Falls back to `libnotify` or `messages` if not systray is available. This is a reimplementation of the `qt` setting value, but with the possibility to switch to it at runtime.
-##   - messages: Show notifications as qutebrowser messages. Most notification features aren't available.
-##   - herbe: (experimental!) Show notifications using herbe (github.com/dudik/herbe). Most notification features aren't available.
-c.content.notifications.presenter = 'auto'
+   #
 
-## Background color of an error message.
-## Type: QssColor
+ #
+
+   #
+
 c.colors.messages.error.bg = 'red'
-
-## Border color of an error message.
-## Type: QssColor
 c.colors.messages.error.border = '#bb0000'
-
-## Foreground color of an error message.
-## Type: QssColor
 c.colors.messages.error.fg = 'white'
 
-## Background color of an info message.
-## Type: QssColor
 c.colors.messages.info.bg = 'black'
-
-## Border color of an info message.
-## Type: QssColor
 c.colors.messages.info.border = '#333333'
-
-## Foreground color of an info message.
-## Type: QssColor
 c.colors.messages.info.fg = 'white'
 
-## Background color of a warning message.
-## Type: QssColor
 c.colors.messages.warning.bg = 'darkorange'
-
-## Border color of a warning message.
-## Type: QssColor
 c.colors.messages.warning.border = '#d47300'
-
-## Foreground color of a warning message.
-## Type: QssColor
 c.colors.messages.warning.fg = 'black'
+
+   #
+
+ #
+
 
 
  ##################################################
- # Prompts
 
-## Show a filebrowser in download prompts.
-## Type: Bool
-c.prompt.filebrowser = True
 
-c.prompt.radius = 10
 
-c.colors.prompts.bg = '#444444'
+#
 
-## Border used around UI elements in prompts.
-## Type: String
-c.colors.prompts.border = '2px #525252'
+   #
+ 
+c.prompt.filebrowser = False
 
-## Foreground color for prompts.
-## Type: QssColor
-c.colors.prompts.fg = 'white'
+   #
 
-## Background color for the selected item in filename prompts.
-## Type: QssColor
-c.colors.prompts.selected.bg = bg
+ #
 
-## Foreground color for the selected item in filename prompts.
-## Type: QssColor
-c.colors.prompts.selected.fg = 'white'
+
 
  ##################################################
 
