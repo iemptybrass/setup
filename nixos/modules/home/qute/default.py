@@ -171,7 +171,7 @@ c.statusbar.show = 'always'
 
 c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 
-c.statusbar.widgets = ['history', 'url', 'progress']
+c.statusbar.widgets = ['search_match','','url']
 
    #
 
@@ -197,10 +197,6 @@ c.colors.statusbar.insert.fg = text
 
 c.colors.statusbar.passthrough.bg = bg
 c.colors.statusbar.passthrough.fg = text
-
- #
-
-c.messages.timeout = 3000
 
  #
 
