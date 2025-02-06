@@ -339,7 +339,7 @@ c.completion.shrink = True
 
    #
 
-c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks']
+c.completion.open_categories = [ 'quickmarks', 'bookmarks', 'history' ]
 
    #
 
@@ -347,25 +347,24 @@ c.completion.scrollbar.padding = 2
 
 c.completion.scrollbar.width = 12
 
-
+   #
 
 c.completion.cmd_history_max_items = 10
+c.completion.web_history.max_items = 500
+
+  #
 
 c.completion.delay = 0
-
 c.completion.min_chars = 1
 
-c.completion.favorite_paths = []
-
-c.completion.quick = False
+   #
 
 c.completion.timestamp_format = '%m-%d-%Y %H:%M'
 
+   #
+
+c.completion.quick = False
 c.completion.use_best_match = False
-
-c.completion.web_history.exclude = []
-
-c.completion.web_history.max_items = 500
 
    #
 
