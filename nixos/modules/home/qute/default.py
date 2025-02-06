@@ -221,8 +221,8 @@ c.tabs.show = 'always'
 
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
 
-c.tabs.max_width = -1
-c.tabs.min_width = -1
+c.tabs.max_width = 200
+c.tabs.min_width = 200
 
    #
 
@@ -260,17 +260,17 @@ c.tabs.favicons.show = 'always'
 
 c.tabs.title.alignment = 'left'
 
-c.tabs.title.format = '{audio}{index}: {current_title}'
+c.tabs.title.format = '{audio}{index}'
 
 
 c.tabs.title.elide = 'right'
 
    #
 
-c.colors.tabs.indicator.system = 'rgb'
-c.colors.tabs.indicator.start = bg
-c.colors.tabs.indicator.stop = bg
-c.colors.tabs.indicator.error = bg
+c.colors.tabs.indicator.system = 'none'
+c.colors.tabs.indicator.start = c.colors.tabs.bar.bg
+c.colors.tabs.indicator.stop = c.colors.tabs.bar.bg
+c.colors.tabs.indicator.error = c.colors.tabs.bar.bg
 
  #
 
