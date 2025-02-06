@@ -418,7 +418,7 @@ c.colors.completion.scrollbar.fg = 'red'
    #
 
 c.colors.contextmenu.disabled.bg = None
-c.colors.contextmenu.disabled.fg = clear
+c.colors.contextmenu.disabled.fg = None
 
    #
 
@@ -617,7 +617,7 @@ c.colors.prompts.fg = 'white'
 
 ## Background color for the selected item in filename prompts.
 ## Type: QssColor
-c.colors.prompts.selected.bg = 'grey'
+c.colors.prompts.selected.bg = bg
 
 ## Foreground color for the selected item in filename prompts.
 ## Type: QssColor
@@ -710,7 +710,7 @@ config.bind('<Ctrl-Alt-Right>', 'tab-move +')
 config.bind('<Ctrl-Alt-Left>', 'tab-move -')
 
 config.bind('<Alt-X>', 'tab-close')
-config.bind('<Ctrl-Tab>', 'open -t')
+config.bind('<Alt-Tab>', 'open -t')
 
 config.bind('<Ctrl-M>', 'tab-mute')
 
@@ -779,6 +779,7 @@ config.bind('<Down>', 'completion-item-focus next', mode='command')
  #
 
 config.bind('<Ctrl-Shift-Tab>', 'search')
+config.bind('<Ctrl-Tab>', 'search')
 config.bind('<Ctrl-Right>', 'search')
 config.bind('<Ctrl-X>', 'search')
 config.bind('<Ctrl-T>', 'search')
