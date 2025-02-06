@@ -261,47 +261,28 @@ c.content.plugins = False
 
 c.content.private_browsing = False
 
+   #
 
-
-
-
-## Enable quirks (such as faked user agent headers) needed to get
-## specific sites to work properly.
-## Type: Bool
 c.content.site_specific_quirks.enabled = True
 
-## How navigation requests to URLs with unknown schemes are handled.
-## Type: String
-## Valid values:
-##   - disallow: Disallows all navigation requests to URLs with unknown schemes.
-##   - allow-from-user-interaction: Allows navigation requests to URLs with unknown schemes that are issued from user-interaction (like a mouse-click), whereas other navigation requests (for example from JavaScript) are suppressed.
-##   - allow-all: Allows all navigation requests to URLs with unknown schemes.
 c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
 
-## List of user stylesheet filenames to use.
-## Type: List of File, or File
+   #
+
 c.content.user_stylesheets = []
 
-## Enable WebGL.
-## Type: Bool
 c.content.webgl = True
 
-## Which interfaces to expose via WebRTC.
-## Type: String
-## Valid values:
-##   - all-interfaces: WebRTC has the right to enumerate all interfaces and bind them to discover public interfaces.
-##   - default-public-and-private-interfaces: WebRTC should only use the default route used by http. This also exposes the associated default private address. Default route is the route chosen by the OS on a multi-homed endpoint.
-##   - default-public-interface-only: WebRTC should only use the default route used by http. This doesn't expose any local addresses.
-##   - disable-non-proxied-udp: WebRTC should only use TCP to contact peers or servers unless the proxy server supports UDP. This doesn't expose any local addresses either.
-c.content.webrtc_ip_handling_policy = 'all-interfaces'
+   #
 
-## Monitor load requests for cross-site scripting attempts. Suspicious
-## scripts will be blocked and reported in the devtools JavaScript
-## console. Note that bypasses for the XSS auditor are widely known and
-## it can be abused for cross-site info leaks in some scenarios, see:
-## https://www.chromium.org/developers/design-documents/xss-auditor
-## Type: Bool
+c.content.webrtc_ip_handling_policy = 'all-interfaces'
 c.content.xss_auditing = False
+
+   #
+
+ #
+
+
 
  ##################################################
 
