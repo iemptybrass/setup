@@ -219,7 +219,7 @@ c.colors.statusbar.passthrough.fg = text
 c.tabs.position = 'top'
 c.tabs.show = 'always'
 
-c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
 
 c.tabs.max_width = -1
 c.tabs.min_width = -1
@@ -268,9 +268,9 @@ c.tabs.title.elide = 'right'
    #
 
 c.colors.tabs.indicator.system = 'rgb'
-c.colors.tabs.indicator.start = 'white'
-c.colors.tabs.indicator.stop = 'green'
-c.colors.tabs.indicator.error = 'yellow'
+c.colors.tabs.indicator.start = bg
+c.colors.tabs.indicator.stop = bg
+c.colors.tabs.indicator.error = bg
 
  #
 
