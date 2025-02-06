@@ -220,6 +220,12 @@ c.tabs.position = 'top'
 c.tabs.show = 'always'
 
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
+c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
+c.tabs.indicator.width = 5
+
+c.tabs.favicons.show = 'never'
+c.tabs.title.format = '{audio}{index}'
+c.tabs.title.alignment = 'middle'
 
 c.tabs.max_width = 200
 c.tabs.min_width = 200
@@ -247,20 +253,11 @@ c.colors.tabs.odd.fg = alt
 
  #
 
-c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
-
-c.tabs.indicator.width = 3
 
 
 
-c.tabs.favicons.scale = 1.0
-c.tabs.favicons.show = 'always'
 
 
-
-c.tabs.title.alignment = 'left'
-
-c.tabs.title.format = '{audio}{index}'
 
 
 c.tabs.title.elide = 'right'
