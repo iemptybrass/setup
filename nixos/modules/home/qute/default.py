@@ -29,7 +29,7 @@ c.url.auto_search = 'naive'
 ## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 ## for a blank page.
 ## Type: FuzzyUrl
-c.url.default_page = 'https://start.duckduckgo.com/'
+c.url.default_page = 'https://www.google.com/'
 
 ## URL segments where `:navigate increment/decrement` will search for a
 ## number.
