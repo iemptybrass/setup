@@ -24,6 +24,29 @@ c.url.searchengines = {'DEFAULT': 'https://www.google.com/search?q={}'}
 
 c.url.start_pages = ['https://www.google.com/']
 
+c.url.auto_search = 'naive'
+
+## Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
+## for a blank page.
+## Type: FuzzyUrl
+c.url.default_page = 'https://start.duckduckgo.com/'
+
+## URL segments where `:navigate increment/decrement` will search for a
+## number.
+## Type: FlagList
+## Valid values:
+##   - host
+##   - port
+##   - path
+##   - query
+##   - anchor
+c.url.incdec_segments = ['path', 'query']
+
+## Open base URL of the searchengine if a searchengine shortcut is
+## invoked without parameters.
+## Type: Bool
+c.url.open_base_url = False
+
  ##################################################
  # Variables
 
