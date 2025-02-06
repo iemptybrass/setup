@@ -173,7 +173,7 @@ c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 
 c.statusbar.widgets = [
 'history',
-'text:(','url','text:)',
+'text:[','url','text:]',
 'search_match',
 'text:                                                                                                                                                                                                                                                                                                                                                     ',
 ]
@@ -688,7 +688,7 @@ config.bind('<Ctrl-shift-Left>', 'tab-prev')
 config.bind('<Ctrl-Alt-Right>', 'tab-move +')
 config.bind('<Ctrl-Alt-Left>', 'tab-move -')
 
-config.bind('<Ctrl-W>', 'tab-close')
+config.bind('<Ctrl-X>', 'tab-close')
 config.bind('<Ctrl-T>', 'open -t')
 
 config.bind('<Ctrl-M>', 'tab-mute')
