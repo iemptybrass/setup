@@ -26,6 +26,7 @@ text = '#FFFFFF'
 alt = '#CCCCCC'
 focus = '#ADADAD'
 unfocus = '#525252'
+clear = 'rgba(0, 0, 0, 0%)'
 
 
  #
@@ -409,40 +410,33 @@ c.colors.completion.scrollbar.fg = 'red'
 
 
  ##################################################
- # Context Menu
 
-## Background color of disabled items in the context menu. If set to
-## null, the Qt default is used.
-## Type: QssColor
+
+
+ #
+
+   #
+
 c.colors.contextmenu.disabled.bg = None
+c.colors.contextmenu.disabled.fg = clear
 
-## Foreground color of disabled items in the context menu. If set to
-## null, the Qt default is used.
-## Type: QssColor
-c.colors.contextmenu.disabled.fg = None
+   #
 
-## Background color of the context menu. If set to null, the Qt default
-## is used.
-## Type: QssColor
 c.colors.contextmenu.menu.bg = None
-
-## Foreground color of the context menu. If set to null, the Qt default
-## is used.
-## Type: QssColor
 c.colors.contextmenu.menu.fg = None
 
-## Background color of the context menu's selected item. If set to null,
-## the Qt default is used.
-## Type: QssColor
-c.colors.contextmenu.selected.bg = None
+   #
 
-## Foreground color of the context menu's selected item. If set to null,
-## the Qt default is used.
-## Type: QssColor
+c.colors.contextmenu.selected.bg = None
 c.colors.contextmenu.selected.fg = None
 
+   #
+
+ #
+
+
+
  ##################################################
- # Downloads
 
 ## Directory to save downloads to. If unset, a sensible OS-specific
 ## default is used.
@@ -639,9 +633,8 @@ c.tabs.tooltips = False
 
    #
 
-c.colors.tooltip.bg = 'rgba(0, 0, 0, 0%)'
-
-c.colors.tooltip.fg = 'rgba(0, 0, 0, 0%)'
+c.colors.tooltip.bg = clear
+c.colors.tooltip.fg = clear
 
    #
 
