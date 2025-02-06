@@ -672,9 +672,9 @@ c.colors.webpage.darkmode.policy.page = 'smart'
 ## behavior is the opposite of
 ## `colors.webpage.darkmode.threshold.foreground`!
 ## Type: Int
-c.colors.webpage.darkmode.threshold.background = 0
+c.colors.webpage.darkmode.threshold.background = 128
 
-c.colors.webpage.darkmode.threshold.foreground = 256
+c.colors.webpage.darkmode.threshold.foreground = 128
 
 c.colors.webpage.preferred_color_scheme = 'dark'
 
@@ -687,6 +687,8 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 
  #
+
+   #
 
 c.bindings.default = {} 
 
