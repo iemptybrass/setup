@@ -609,13 +609,24 @@ c.colors.prompts.selected.bg = 'grey'
 c.colors.prompts.selected.fg = 'white'
 
  ##################################################
- # Tooltips
+
+
+
+ #
 
 c.tabs.tooltips = False
+
+   #
 
 c.colors.tooltip.bg = 'rgba(0, 0, 0, 0%)'
 
 c.colors.tooltip.fg = 'rgba(0, 0, 0, 0%)'
+
+   #
+
+ #
+
+
 
  ##################################################
  # Webpage
@@ -658,11 +669,10 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 
  ##################################################
- # Keybinds
 
 
 
- # General
+ #
 
 c.bindings.default = {} 
 
@@ -673,11 +683,11 @@ config.bind('<Ctrl-Z>', 'undo')
 config.bind('<Escape>', 'clear-keychain ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
 
-   # Search
+   #
 
 config.bind('<Ctrl-Shift-Return>', 'cmd-set-text -s :open')
 
-   # Tab
+   #
 
 config.bind('<Ctrl-Shift-Right>', 'tab-next')
 config.bind('<Ctrl-shift-Left>', 'tab-prev')
@@ -690,14 +700,14 @@ config.bind('<Ctrl-Tab>', 'open -t')
 
 config.bind('<Ctrl-M>', 'tab-mute')
 
-   # History
+   #
 
 config.bind('<Ctrl-R>', 'reload')
 
 config.bind('<Alt-Left>', 'back')
 config.bind('<Alt-Right>', 'forward')
 
-   # Page
+   #
 
 config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
 config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
@@ -707,36 +717,36 @@ config.bind('<Return>', 'prompt-accept', mode='prompt')
 config.bind('<Ctrl-Up>', 'scroll-to-perc 0')
 config.bind('<Ctrl-Down>', 'scroll-to-perc 100')
 
-   # Search Page
+   #
 
 config.bind('<Ctrl-F>', 'cmd-set-text -s :search')
 config.bind('<Shift-Right>', 'search-next')
 config.bind('<Shift-Left>', 'search-prev')
 
-   # Zoom Page
+   #
 
 config.bind('<Ctrl-0>', 'zoom 100')
 config.bind('<Ctrl-=>', 'zoom-in')
 config.bind('<Ctrl-->', 'zoom-out')
 
-   # Pagemarks
+   #
 
 config.bind('<M>', 'quickmark-save')
 
-   # Developer
+   #
 
 config.bind('<Alt-S>', 'view-source')
 
 config.bind('<Alt-I>', 'devtools window')
 
-   # Edit Mode
+   #
 
 config.bind('<Ctrl-I>', 'mode-enter passthrough')
 config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
 
 config.bind('<Escape>', 'mode-leave', mode='insert')
 
-   # Prompt
+   #
 
 config.bind('<Escape>', 'mode-leave', mode='yesno')
 config.bind('<Return>', 'prompt-accept', mode='yesno')
@@ -745,14 +755,14 @@ config.bind('Y', 'prompt-accept --save yes', mode='yesno')
 config.bind('n', 'prompt-accept no', mode='yesno')
 config.bind('y', 'prompt-accept yes', mode='yesno')
 
-   # Command
+   #
 
 config.bind('<Escape>', 'mode-leave', mode='command')
 config.bind('<Return>', 'command-accept', mode='command')
 config.bind('<Up>', 'completion-item-focus prev', mode='command')
 config.bind('<Down>', 'completion-item-focus next', mode='command')
 
- # Unbind
+ #
 
 config.bind('<Ctrl-Shift-Tab>', 'search')
 config.bind('<Ctrl-Right>', 'search')
