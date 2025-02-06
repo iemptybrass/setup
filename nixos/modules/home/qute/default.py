@@ -789,6 +789,7 @@ config.bind('<Down>', 'completion-item-focus next', mode='command')
 config.bind('<Ctrl-Shift-Tab>', 'search')
 config.bind('<Ctrl-Right>', 'search')
 config.bind('<Ctrl-X>', 'search')
+config.bind('<Ctrl-T>', 'search')
 config.bind('<U>', 'search')
 
  #
