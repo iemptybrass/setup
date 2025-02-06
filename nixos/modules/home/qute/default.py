@@ -171,8 +171,12 @@ c.statusbar.show = 'always'
 
 c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 
-c.statusbar.widgets = ['search_match','','url']
-
+c.statusbar.widgets = [
+'history',
+'text:(','url','text:)',
+'search_match',
+'text:                                                                                                 >
+]
    #
 
 c.colors.statusbar.normal.bg = bg
