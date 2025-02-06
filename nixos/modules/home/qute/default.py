@@ -174,9 +174,8 @@ c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 c.statusbar.widgets = [
 'history',
 'text:[','url','text:]',
-'search_match',
 'text:                                                                                                                                                                                                                                                                                                                                                     ',
-]
+'search_match'      ]
 
  # Color
 
@@ -672,11 +671,11 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 c.bindings.default = {} 
 
-config.bind('<U>', 'undo')
-
 config.bind(':', 'cmd-set-text :')
 
-config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
+config.bind('<Ctrl-Z>', 'undo')
+
+config.bind('<Escape>', 'clear-keychain ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
 
    # Search
@@ -715,12 +714,13 @@ config.bind('<Ctrl-Down>', 'scroll-to-perc 100')
 
    # Search Page
 
-config.bind('<Ctrl-F>', 'search')
+config.bind('<Ctrl-F>', 'cmd-set-text -s :search')
 config.bind('<Shift-Right>', 'search-next')
 config.bind('<Shift-Left>', 'search-prev')
 
    # Zoom Page
 
+config.bind('<Ctrl-0>', 'zoom 100')
 config.bind('<Ctrl-=>', 'zoom-in')
 config.bind('<Ctrl-->', 'zoom-out')
 
@@ -759,7 +759,9 @@ config.bind('<Down>', 'completion-item-focus next', mode='command')
 
  # Unbind
 
-config.bind('<Ctrl-Shift-Tab>', 'clear-keychain ;; search ;; fullscreen --leave')
+config.bind('<Ctrl-Shift-Tab>', 'search')
+config.bind('<Ctrl-Right>', 'search')
+config.bind('<Ctrl-X>', 'search')
 
  #
 
