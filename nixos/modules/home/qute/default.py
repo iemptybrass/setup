@@ -667,14 +667,12 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 
 c.bindings.default = {} 
 
-config.bind('u', 'undo')
+config.bind('<U>', 'undo')
 
 config.bind(':', 'cmd-set-text :')
 
 config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
-
- # 
 
    # Search
 
@@ -695,10 +693,10 @@ config.bind('<Ctrl-M>', 'tab-mute')
 
    # History
 
-config.bind('Ctrl-R', 'reload')
+config.bind('<Ctrl-R>', 'reload')
 
-config.bind('Alt-Left', 'back')
-config.bind('Alt-Right', 'forward')
+config.bind('<Alt-Left>', 'back')
+config.bind('<Alt-Right>', 'forward')
 
    # Page
 
@@ -707,23 +705,23 @@ config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Escape>', 'mode-leave', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
 
-config.bind('Ctrl-Up', 'scroll-to-perc 0')
-config.bind('Ctrl-Down', 'scroll-to-perc 100')
+config.bind('<Ctrl-Up>', 'scroll-to-perc 0')
+config.bind('<Ctrl-Down>', 'scroll-to-perc 100')
 
    # Search Page
 
-config.bind('Ctrl-F', 'search')
-config.bind('Ctrl-N', 'search-next')
-config.bind('Ctrl-Shift-N', 'search-prev')
+config.bind('<Ctrl-F>', 'search')
+config.bind('<Ctrl-Right>', 'search-next')
+config.bind('<Shift-Left>', 'search-prev')
 
    # Zoom Page
 
-config.bind('Ctrl-=', 'zoom-in')
-config.bind('Ctrl--', 'zoom-out')
+config.bind('<Ctrl-=>', 'zoom-in')
+config.bind('<Ctrl-->', 'zoom-out')
 
    # Pagemarks
 
-config.bind('m', 'quickmark-save')
+config.bind('<M>', 'quickmark-save')
 
    # Developer
 
