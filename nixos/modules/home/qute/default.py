@@ -175,7 +175,7 @@ c.statusbar.widgets = [
 'history',
 'text:(','url','text:)',
 'search_match',
-'text:                                                                                                                                                                                                  ',
+'text:                                                                                                                                                                                                                                                                                                                                                     ',
 ]
    #
 
