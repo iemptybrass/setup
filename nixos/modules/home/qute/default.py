@@ -161,10 +161,9 @@ c.content.blocking.enabled = True
 
 
  ##################################################
- # Statusbar
 
 
- # General
+ #
 
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
@@ -177,16 +176,16 @@ c.statusbar.widgets = [
 'text:                                                                                                                                                                                                                                                                                                                                                     ',
 'search_match'      ]
 
- # Color
+ #
 
-   # Normal
+   #
 
 c.colors.statusbar.normal.bg = bg
 c.colors.statusbar.normal.fg = text
 
 c.colors.statusbar.progress.bg = 'white'
 
-   # Url
+   # 
 
 c.colors.statusbar.url.error.fg = 'orange'
 c.colors.statusbar.url.fg = text
@@ -195,7 +194,7 @@ c.colors.statusbar.url.success.http.fg = text
 c.colors.statusbar.url.success.https.fg = text
 c.colors.statusbar.url.warn.fg = 'yellow'
 
-   # Command
+   # 
 
 c.colors.statusbar.command.bg = bg
 c.colors.statusbar.command.fg = text
@@ -205,6 +204,8 @@ c.colors.statusbar.insert.fg = text
 
 c.colors.statusbar.passthrough.bg = bg
 c.colors.statusbar.passthrough.fg = text
+
+   #
 
  #
 
@@ -220,27 +221,24 @@ c.tabs.position = 'top'
 c.tabs.show = 'always'
 
 c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
-c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
-c.tabs.indicator.width = 5
+c.tabs.indicator.padding = {'top': 0, 'bottom': 0, 'left': 0, 'right': 5}
+c.tabs.indicator.width = 10
 
 c.tabs.favicons.show = 'never'
-c.tabs.title.format = '{audio}{index}'
+c.tabs.title.format = '{audio}{current_url}'
 c.tabs.title.alignment = 'middle'
 
-c.tabs.max_width = 200
-c.tabs.min_width = 200
+c.tabs.max_width = 300
+c.tabs.min_width = 300
 
    #
 
 c.colors.tabs.bar.bg = bg
 
-
-
 c.colors.tabs.selected.even.bg = focus
 c.colors.tabs.selected.even.fg = text
 c.colors.tabs.selected.odd.bg = focus
 c.colors.tabs.selected.odd.fg = text
-
 
 c.colors.tabs.even.bg = unfocus
 c.colors.tabs.even.fg = alt
