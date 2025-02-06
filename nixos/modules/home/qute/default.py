@@ -645,40 +645,36 @@ c.colors.tooltip.fg = clear
 
 
  ##################################################
- # Webpage
+
+
+
+ #
+
+   #
 
 c.colors.webpage.bg = 'black'
 
-## Which algorithm to use for modifying how colors are rendered with dark
-## mode. The `lightness-cielab` value was added with QtWebEngine 5.14 and
-## is treated like `lightness-hsl` with older QtWebEngine versions.
-## Type: String
-## Valid values:
-##   - lightness-cielab: Modify colors by converting them to CIELAB color space and inverting the L value. Not available with Qt < 5.14.
-##   - lightness-hsl: Modify colors by converting them to the HSL color space and inverting the lightness (i.e. the "L" in HSL).
-##   - brightness-rgb: Modify colors by subtracting each of r, g, and b from their maximum value.
-c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
+c.colors.webpage.preferred_color_scheme = 'dark'
 
-c.colors.webpage.darkmode.contrast = 0.0
+   #
 
 c.colors.webpage.darkmode.enabled = True
 
-c.colors.webpage.darkmode.policy.images = 'never'
+c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 
+   #
+
+c.colors.webpage.darkmode.policy.images = 'never'
 c.colors.webpage.darkmode.policy.page = 'smart'
 
-## Threshold for inverting background elements with dark mode. Background
-## elements with brightness above this threshold will be inverted, and
-## below it will be left as in the original, non-dark-mode page. Set to
-## 256 to never invert the color or to 0 to always invert it. Note: This
-## behavior is the opposite of
-## `colors.webpage.darkmode.threshold.foreground`!
-## Type: Int
-c.colors.webpage.darkmode.threshold.background = 128
+   #
 
+c.colors.webpage.darkmode.contrast = 0.0
+
+c.colors.webpage.darkmode.threshold.background = 128
 c.colors.webpage.darkmode.threshold.foreground = 128
 
-c.colors.webpage.preferred_color_scheme = 'dark'
+   #
 
  #
 
