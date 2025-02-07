@@ -184,32 +184,46 @@ c.confirm_quit = ['never']
 
 
 c.content.autoplay = True
+
 c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
 c.content.blocking.enabled = True
 c.content.blocking.hosts.block_subdomains = True
 c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
 c.content.blocking.method = 'auto'
 c.content.blocking.whitelist = []
+
 c.content.cache.appcache = True
 c.content.cache.maximum_pages = 0
 c.content.cache.size = None
+
 c.content.canvas_reading = True
+
 c.content.cookies.accept = 'all'
 c.content.cookies.store = True
+
 c.content.default_encoding = 'iso-8859-1'
+
 c.content.desktop_capture = 'ask'
+
 c.content.dns_prefetch = True
+
 c.content.frame_flattening = False
+
 c.content.fullscreen.overlay_timeout = 3000
 c.content.fullscreen.window = False
+
 c.content.geolocation = 'ask'
+
 c.content.headers.accept_language = 'en-US,en;q=0.9'
 c.content.headers.custom = {}
 c.content.headers.do_not_track = True
 c.content.headers.referer = 'same-domain'
 c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}'
+
 c.content.hyperlink_auditing = False
+
 c.content.images = True
+
 c.content.javascript.alert = True
 c.content.javascript.can_close_tabs = False
 c.content.javascript.can_open_tabs_automatically = False
@@ -221,34 +235,54 @@ c.content.javascript.log_message.excludes = {'userscript:_qute_stylesheet': ['*R
 c.content.javascript.log_message.levels = {'qute:*': ['error'], 'userscript:GM-*': [], 'userscript:*': ['error']}
 c.content.javascript.modal_dialog = False
 c.content.javascript.prompt = True
+
 c.content.local_content_can_access_file_urls = True
 c.content.local_content_can_access_remote_urls = False
 c.content.local_storage = True
+
 c.content.media.audio_capture = 'ask'
 c.content.media.audio_video_capture = 'ask'
 c.content.media.video_capture = 'ask'
 c.content.mouse_lock = 'ask'
+
 c.content.mute = False
+
 c.content.netrc_file = None
+
 c.content.notifications.enabled = 'ask'
 c.content.notifications.presenter = 'auto'
 c.content.notifications.show_origin = True
+
 c.content.pdfjs = False
+
 c.content.persistent_storage = 'ask'
+
 c.content.plugins = False
+
 c.content.prefers_reduced_motion = False
+
 c.content.print_element_backgrounds = True
+
 c.content.private_browsing = False
+
 c.content.proxy = 'system'
 c.content.proxy_dns_requests = True
+
 c.content.register_protocol_handler = 'ask'
+
 c.content.site_specific_quirks.enabled = True
 c.content.site_specific_quirks.skip = []
+
 c.content.tls.certificate_errors = 'ask'
+
 c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
+
 c.content.user_stylesheets = []
+
 c.content.webgl = True
+
 c.content.webrtc_ip_handling_policy = 'all-interfaces'
+
 c.content.xss_auditing = False
 
 
