@@ -51,22 +51,10 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-    c.fonts.default_family = []
-    c.fonts.default_size = '10pt'
-    c.fonts.debug_console = 'default_size default_family'
-
-
-
-  c.colors.prompts.bg = '#444444'
-  c.colors.prompts.border = '1px solid gray'
-  c.colors.prompts.fg = 'white'
-  c.colors.prompts.selected.bg = 'grey'
-  c.colors.prompts.selected.fg = 'white'
-      c.fonts.prompts = 'default_size sans-serif'
-
-
-
   c.window.transparent = False
+  c.fonts.default_family = []
+  c.fonts.default_size = '10pt'
+  c.fonts.debug_console = 'default_size default_family'
 
       c.colors.tabs.bar.bg = '#555555'
       c.colors.tabs.even.bg = 'darkgrey'
@@ -91,6 +79,10 @@ c.changelog_after_upgrade = 'minor'
       c.colors.tabs.selected.odd.fg = 'white'
       c.fonts.tabs.selected = 'default_size default_family'
       c.fonts.tabs.unselected = 'default_size default_family'
+
+      c.colors.tooltip.bg = None
+      c.colors.tooltip.fg = None
+      c.fonts.tooltip = None
 
 
 
@@ -161,11 +153,12 @@ c.changelog_after_upgrade = 'minor'
         c.fonts.messages.info = 'default_size default_family'
         c.fonts.messages.warning = 'default_size default_family'
 
-
-
-    c.colors.tooltip.bg = None
-    c.colors.tooltip.fg = None
-        c.fonts.tooltip = None
+        c.colors.prompts.bg = '#444444'
+        c.colors.prompts.border = '1px solid gray'
+        c.colors.prompts.fg = 'white'
+        c.colors.prompts.selected.bg = 'grey'
+        c.colors.prompts.selected.fg = 'white'
+        c.fonts.prompts = 'default_size sans-serif'
 
 
 
@@ -178,37 +171,33 @@ c.changelog_after_upgrade = 'minor'
     c.colors.webpage.darkmode.threshold.background = 0
     c.colors.webpage.darkmode.threshold.foreground = 256
     c.colors.webpage.preferred_color_scheme = 'auto'
-        c.fonts.web.family.cursive = ''
-        c.fonts.web.family.fantasy = ''
-        c.fonts.web.family.fixed = ''
-        c.fonts.web.family.sans_serif = ''
-        c.fonts.web.family.serif = ''
-        c.fonts.web.family.standard = ''
-        c.fonts.web.size.default = 16
-        c.fonts.web.size.default_fixed = 13
-        c.fonts.web.size.minimum = 0
-        c.fonts.web.size.minimum_logical = 6
+    c.fonts.web.family.cursive = ''
+    c.fonts.web.family.fantasy = ''
+    c.fonts.web.family.fixed = ''
+    c.fonts.web.family.sans_serif = ''
+    c.fonts.web.family.serif = ''
+    c.fonts.web.family.standard = ''
+    c.fonts.web.size.default = 16
+    c.fonts.web.size.default_fixed = 13
+    c.fonts.web.size.minimum = 0
+    c.fonts.web.size.minimum_logical = 6
 
-      c.colors.contextmenu.disabled.bg = None
-      c.colors.contextmenu.disabled.fg = None
-      c.colors.contextmenu.menu.bg = None
-      c.colors.contextmenu.menu.fg = None
-      c.colors.contextmenu.selected.bg = None
-      c.colors.contextmenu.selected.fg = None
-          c.fonts.contextmenu = None
+        c.colors.contextmenu.disabled.bg = None
+        c.colors.contextmenu.disabled.fg = None
+        c.colors.contextmenu.menu.bg = None
+        c.colors.contextmenu.menu.fg = None
+        c.colors.contextmenu.selected.bg = None
+        c.colors.contextmenu.selected.fg = None
+        c.fonts.contextmenu = None
 
-
-
-    c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
-    c.colors.hints.fg = 'black'
-    c.colors.hints.match.fg = 'green'
+        c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
+        c.colors.hints.fg = 'black'
+        c.colors.hints.match.fg = 'green'
         c.fonts.hints = 'bold default_size default_family'
 
-
-
-    c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
-    c.colors.keyhint.fg = '#FFFFFF'
-    c.colors.keyhint.suffix.fg = '#FFFF00'
+        c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
+        c.colors.keyhint.fg = '#FFFFFF'
+        c.colors.keyhint.suffix.fg = '#FFFF00'
         c.fonts.keyhint = 'default_size default_family'
 
 
@@ -399,8 +388,6 @@ c.changelog_after_upgrade = 'minor'
         c.search.incremental = True
         c.search.wrap = True
         c.search.wrap_messages = True
-
-
 
       c.prompt.filebrowser = True
       c.prompt.radius = 8
