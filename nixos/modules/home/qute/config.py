@@ -193,6 +193,9 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+    c.logging.level.console = 'info'
+    c.logging.level.ram = 'debug'
+
   c.window.hide_decoration = False
   c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
   c.window.transparent = False
@@ -202,67 +205,80 @@ c.changelog_after_upgrade = 'minor'
     c.statusbar.show = 'always'
     c.statusbar.widgets = ['keypress', 'search_match', 'url', 'scroll', 'history', 'tabs', 'progress']
 
-      c.messages.timeout = 3000
+        c.url.auto_search = 'naive'
+        c.url.default_page = 'https://start.duckduckgo.com/'
+        c.url.incdec_segments = ['path', 'query']
+        c.url.open_base_url = False
+        c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
+        c.url.start_pages = ['https://start.duckduckgo.com']
+        c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name']
 
-      c.completion.cmd_history_max_items = 100
-      c.completion.delay = 0
-      c.completion.favorite_paths = []
-      c.completion.height = '50%'
-      c.completion.min_chars = 1
-      c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
-      c.completion.quick = True
-      c.completion.scrollbar.padding = 2
-      c.completion.scrollbar.width = 12
-      c.completion.show = 'always'
-      c.completion.shrink = False
-      c.completion.timestamp_format = '%Y-%m-%d %H:%M'
-      c.completion.use_best_match = False
-      c.completion.web_history.exclude = []
-      c.completion.web_history.max_items = -1
+        c.messages.timeout = 3000
 
-      c.downloads.location.directory = None
-      c.downloads.location.prompt = True
-      c.downloads.location.remember = True
-      c.downloads.location.suggestion = 'path'
-      c.downloads.open_dispatcher = None
-      c.downloads.position = 'top'
-      c.downloads.prevent_mixed_content = True
-      c.downloads.remove_finished = -1
+        c.completion.cmd_history_max_items = 100
+        c.completion.delay = 0
+        c.completion.favorite_paths = []
+        c.completion.height = '50%'
+        c.completion.min_chars = 1
+        c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
+        c.completion.quick = True
+        c.completion.scrollbar.padding = 2
+        c.completion.scrollbar.width = 12
+        c.completion.show = 'always'
+        c.completion.shrink = False
+        c.completion.timestamp_format = '%Y-%m-%d %H:%M'
+        c.completion.use_best_match = False
+        c.completion.web_history.exclude = []
+        c.completion.web_history.max_items = -1
+
+        c.downloads.location.directory = None
+        c.downloads.location.prompt = True
+        c.downloads.location.remember = True
+        c.downloads.location.suggestion = 'path'
+        c.downloads.open_dispatcher = None
+        c.downloads.position = 'top'
+        c.downloads.prevent_mixed_content = True
+        c.downloads.remove_finished = -1
+
+        c.search.ignore_case = 'smart'
+        c.search.incremental = True
+        c.search.wrap = True
+        c.search.wrap_messages = True
 
 
 
-    c.tabs.background = True
-    c.tabs.close_mouse_button = 'middle'
-    c.tabs.close_mouse_button_on_bar = 'new-tab'
-    c.tabs.favicons.scale = 1.0
-    c.tabs.favicons.show = 'always'
-    c.tabs.focus_stack_size = 10
-    c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
-    c.tabs.indicator.width = 3
-    c.tabs.last_close = 'ignore'
-    c.tabs.max_width = -1
-    c.tabs.min_width = -1
-    c.tabs.mode_on_change = 'normal'
-    c.tabs.mousewheel_switching = True
-    c.tabs.new_position.related = 'next'
-    c.tabs.new_position.stacking = True
-    c.tabs.new_position.unrelated = 'last'
-    c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
-    c.tabs.pinned.frozen = True
-    c.tabs.pinned.shrink = True
-    c.tabs.position = 'top'
-    c.tabs.select_on_remove = 'next'
-    c.tabs.show = 'always'
-    c.tabs.show_switching_delay = 800
-    c.tabs.tabs_are_windows = False
-    c.tabs.title.alignment = 'left'
-    c.tabs.title.elide = 'right'
-    c.tabs.title.format = '{audio}{index}: {current_title}'
-    c.tabs.title.format_pinned = '{index}'
-    c.tabs.tooltips = True
-    c.tabs.undo_stack_size = 100
-    c.tabs.width = '15%'
-    c.tabs.wrap = True
+      c.tabs.background = True
+      c.tabs.close_mouse_button = 'middle'
+      c.tabs.close_mouse_button_on_bar = 'new-tab'
+      c.tabs.favicons.scale = 1.0
+      c.tabs.favicons.show = 'always'
+      c.tabs.focus_stack_size = 10
+      c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
+      c.tabs.indicator.width = 3
+      c.tabs.last_close = 'ignore'
+      c.tabs.max_width = -1
+      c.tabs.min_width = -1
+      c.tabs.mode_on_change = 'normal'
+      c.tabs.mousewheel_switching = True
+      c.tabs.new_position.related = 'next'
+      c.tabs.new_position.stacking = True
+      c.tabs.new_position.unrelated = 'last'
+      c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+      c.tabs.pinned.frozen = True
+      c.tabs.pinned.shrink = True
+      c.tabs.position = 'top'
+      c.tabs.select_on_remove = 'next'
+      c.tabs.show = 'always'
+      c.tabs.show_switching_delay = 800
+      c.tabs.tabs_are_windows = False
+      c.tabs.title.alignment = 'left'
+      c.tabs.title.elide = 'right'
+      c.tabs.title.format = '{audio}{index}: {current_title}'
+      c.tabs.title.format_pinned = '{index}'
+      c.tabs.tooltips = True
+      c.tabs.undo_stack_size = 100
+      c.tabs.width = '15%'
+      c.tabs.wrap = True
 
 
 
@@ -334,7 +350,30 @@ c.changelog_after_upgrade = 'minor'
   c.content.webrtc_ip_handling_policy = 'all-interfaces'
   c.content.xss_auditing = False
 
+      c.scrolling.bar = 'overlay'
+      c.scrolling.smooth = False
 
+      c.hints.auto_follow = 'unique-match'
+      c.hints.auto_follow_timeout = 0
+      c.hints.border = '1px solid #E3BE23'
+      c.hints.chars = 'asdfghjkl'
+      c.hints.dictionary = '/usr/share/dict/words'
+      c.hints.find_implementation = 'python'
+      c.hints.hide_unmatched_rapid_hints = True
+      c.hints.leave_on_load = False
+      c.hints.min_chars = 1
+      c.hints.mode = 'letter'
+      c.hints.next_regexes = ['\\bnext\\b', '\\bmore\\b', '\\bnewer\\b', '\\b[>→≫]\\b', '\\b(>>|»)\\b', '\\bcontinue\\b']
+      c.hints.padding = {'top': 0, 'bottom': 0, 'left': 3, 'right': 3}
+      c.hints.prev_regexes = ['\\bprev(ious)?\\b', '\\bback\\b', '\\bolder\\b', '\\b[<←≪]\\b', '\\b(<<|«)\\b']
+      c.hints.radius = 3
+      c.hints.scatter = True
+      c.hints.selectors = {'all': ['a', 'area', 'textarea', 'select', 'input:not([type="hidden"])', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[contenteditable]:not([contenteditable="false"])', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[role="tab"]', '[role="checkbox"]', '[role="switch"]', '[role="menuitem"]', '[role="menuitemcheckbox"]', '[role="menuitemradio"]', '[role="treeitem"]', '[aria-haspopup]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]:not([tabindex="-1"])'], 'links': ['a[href]', 'area[href]', 'link[href]', '[role="link"][href]'], 'images': ['img'], 'media': ['audio', 'img', 'video'], 'url': ['[src]', '[href]'], 'inputs': ['input[type="text"]', 'input[type="date"]', 'input[type="datetime-local"]', 'input[type="email"]', 'input[type="month"]', 'input[type="number"]', 'input[type="password"]', 'input[type="search"]', 'input[type="tel"]', 'input[type="time"]', 'input[type="url"]', 'input[type="week"]', 'input:not([type])', '[contenteditable]:not([contenteditable="false"])', 'textarea']}
+      c.hints.uppercase = False
+
+      c.keyhint.blacklist = []
+      c.keyhint.delay = 500
+      c.keyhint.radius = 6
 
 
 
@@ -353,50 +392,7 @@ c.fileselect.single_file.command = ['xterm', '-e', 'ranger', '--choosefile={}']
 
 
 
-
-
-
-
-c.hints.auto_follow = 'unique-match'
-c.hints.auto_follow_timeout = 0
-c.hints.border = '1px solid #E3BE23'
-c.hints.chars = 'asdfghjkl'
-c.hints.dictionary = '/usr/share/dict/words'
-c.hints.find_implementation = 'python'
-c.hints.hide_unmatched_rapid_hints = True
-c.hints.leave_on_load = False
-c.hints.min_chars = 1
-c.hints.mode = 'letter'
-c.hints.next_regexes = ['\\bnext\\b', '\\bmore\\b', '\\bnewer\\b', '\\b[>→≫]\\b', '\\b(>>|»)\\b', '\\bcontinue\\b']
-c.hints.padding = {'top': 0, 'bottom': 0, 'left': 3, 'right': 3}
-c.hints.prev_regexes = ['\\bprev(ious)?\\b', '\\bback\\b', '\\bolder\\b', '\\b[<←≪]\\b', '\\b(<<|«)\\b']
-c.hints.radius = 3
-c.hints.scatter = True
-c.hints.selectors = {'all': ['a', 'area', 'textarea', 'select', 'input:not([type="hidden"])', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[contenteditable]:not([contenteditable="false"])', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[role="tab"]', '[role="checkbox"]', '[role="switch"]', '[role="menuitem"]', '[role="menuitemcheckbox"]', '[role="menuitemradio"]', '[role="treeitem"]', '[aria-haspopup]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]:not([tabindex="-1"])'], 'links': ['a[href]', 'area[href]', 'link[href]', '[role="link"][href]'], 'images': ['img'], 'media': ['audio', 'img', 'video'], 'url': ['[src]', '[href]'], 'inputs': ['input[type="text"]', 'input[type="date"]', 'input[type="datetime-local"]', 'input[type="email"]', 'input[type="month"]', 'input[type="number"]', 'input[type="password"]', 'input[type="search"]', 'input[type="tel"]', 'input[type="time"]', 'input[type="url"]', 'input[type="week"]', 'input:not([type])', '[contenteditable]:not([contenteditable="false"])', 'textarea']}
-c.hints.uppercase = False
-
-
-
 c.history_gap_interval = 30
-
-
-
-
-
-
-
-c.keyhint.blacklist = []
-c.keyhint.delay = 500
-c.keyhint.radius = 6
-
-
-
-
-c.logging.level.console = 'info'
-c.logging.level.ram = 'debug'
-
-
-
 
 
 
@@ -427,47 +423,12 @@ c.qt.workarounds.remove_service_workers = False
 
 
 
-c.scrolling.bar = 'overlay'
-c.scrolling.smooth = False
-
-
-
-c.search.ignore_case = 'smart'
-c.search.incremental = True
-c.search.wrap = True
-c.search.wrap_messages = True
-
-
-
 c.session.default_name = None
 c.session.lazy_restore = False
 
 
 
 c.spellcheck.languages = []
-
-
-
-
-
-
-
-
-
-
-
-c.url.auto_search = 'naive'
-c.url.default_page = 'https://start.duckduckgo.com/'
-c.url.incdec_segments = ['path', 'query']
-c.url.open_base_url = False
-c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
-c.url.start_pages = ['https://start.duckduckgo.com']
-c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name']
-
-
-
-
-
 
 
 
