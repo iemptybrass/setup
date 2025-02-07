@@ -21,68 +21,114 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+  c.colors.statusbar.caret.bg = 'purple'
+  c.colors.statusbar.caret.fg = 'white'
+  c.colors.statusbar.caret.selection.bg = '#a12dff'
+  c.colors.statusbar.caret.selection.fg = 'white'
+  c.colors.statusbar.command.bg = 'black'
+  c.colors.statusbar.command.fg = 'white'
+  c.colors.statusbar.command.private.bg = 'darkslategray'
+  c.colors.statusbar.command.private.fg = 'white'
+  c.colors.statusbar.insert.bg = 'darkgreen'
+  c.colors.statusbar.insert.fg = 'white'
+  c.colors.statusbar.normal.bg = 'black'
+  c.colors.statusbar.normal.fg = 'white'
+  c.colors.statusbar.passthrough.bg = 'darkblue'
+  c.colors.statusbar.passthrough.fg = 'white'
+  c.colors.statusbar.private.bg = '#666666'
+  c.colors.statusbar.private.fg = 'white'
+  c.colors.statusbar.progress.bg = 'white'
+  c.colors.statusbar.url.error.fg = 'orange'
+  c.colors.statusbar.url.fg = 'white'
+  c.colors.statusbar.url.hover.fg = 'aqua'
+  c.colors.statusbar.url.success.http.fg = 'white'
+  c.colors.statusbar.url.success.https.fg = 'lime'
+  c.colors.statusbar.url.warn.fg = 'yellow'
 
-c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
-c.colors.completion.category.border.bottom = 'black'
-c.colors.completion.category.border.top = 'black'
-c.colors.completion.category.fg = 'white'
-c.colors.completion.even.bg = '#333333'
-c.colors.completion.fg = ['white', 'white', 'white']
-c.colors.completion.item.selected.bg = '#e8c000'
-c.colors.completion.item.selected.border.bottom = '#bbbb00'
-c.colors.completion.item.selected.border.top = '#bbbb00'
-c.colors.completion.item.selected.fg = 'black'
-c.colors.completion.item.selected.match.fg = '#ff4444'
-c.colors.completion.match.fg = '#ff4444'
-c.colors.completion.odd.bg = '#444444'
+    c.colors.messages.error.bg = 'red'
+    c.colors.messages.error.border = '#bb0000'
+    c.colors.messages.error.fg = 'white'
+    c.colors.messages.info.bg = 'black'
+    c.colors.messages.info.border = '#333333'
+    c.colors.messages.info.fg = 'white'
+    c.colors.messages.warning.bg = 'darkorange'
+    c.colors.messages.warning.border = '#d47300'
+    c.colors.messages.warning.fg = 'black'
+
+    c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
+    c.colors.completion.category.border.bottom = 'black'
+    c.colors.completion.category.border.top = 'black'
+    c.colors.completion.category.fg = 'white'
+    c.colors.completion.even.bg = '#333333'
+    c.colors.completion.fg = ['white', 'white', 'white']
+    c.colors.completion.item.selected.bg = '#e8c000'
+    c.colors.completion.item.selected.border.bottom = '#bbbb00'
+    c.colors.completion.item.selected.border.top = '#bbbb00'
+    c.colors.completion.item.selected.fg = 'black'
+    c.colors.completion.item.selected.match.fg = '#ff4444'
+    c.colors.completion.match.fg = '#ff4444'
+    c.colors.completion.odd.bg = '#444444'
+    c.colors.completion.scrollbar.bg = '#333333'
+    c.colors.completion.scrollbar.fg = 'white'
+
+    c.colors.downloads.bar.bg = 'black'
+    c.colors.downloads.error.bg = 'red'
+    c.colors.downloads.error.fg = 'white'
+    c.colors.downloads.start.bg = '#0000aa'
+    c.colors.downloads.start.fg = 'white'
+    c.colors.downloads.stop.bg = '#00aa00'
+    c.colors.downloads.stop.fg = 'white'
+    c.colors.downloads.system.bg = 'rgb'
+    c.colors.downloads.system.fg = 'rgb'
 
 
 
-c.colors.completion.scrollbar.bg = '#333333'
-c.colors.completion.scrollbar.fg = 'white'
+  c.colors.tabs.bar.bg = '#555555'
+  c.colors.tabs.even.bg = 'darkgrey'
+  c.colors.tabs.even.fg = 'white'
+  c.colors.tabs.indicator.error = '#ff0000'
+  c.colors.tabs.indicator.start = '#0000aa'
+  c.colors.tabs.indicator.stop = '#00aa00'
+  c.colors.tabs.indicator.system = 'rgb'
+  c.colors.tabs.odd.bg = 'grey'
+  c.colors.tabs.odd.fg = 'white'
+  c.colors.tabs.pinned.even.bg = 'darkseagreen'
+  c.colors.tabs.pinned.even.fg = 'white'
+  c.colors.tabs.pinned.odd.bg = 'seagreen'
+  c.colors.tabs.pinned.odd.fg = 'white'
+  c.colors.tabs.pinned.selected.even.bg = 'black'
+  c.colors.tabs.pinned.selected.even.fg = 'white'
+  c.colors.tabs.pinned.selected.odd.bg = 'black'
+  c.colors.tabs.pinned.selected.odd.fg = 'white'
+  c.colors.tabs.selected.even.bg = 'black'
+  c.colors.tabs.selected.even.fg = 'white'
+  c.colors.tabs.selected.odd.bg = 'black'
+  c.colors.tabs.selected.odd.fg = 'white'
 
+  c.colors.webpage.bg = 'white'
+  c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
+  c.colors.webpage.darkmode.contrast = 0.0
+  c.colors.webpage.darkmode.enabled = False
+  c.colors.webpage.darkmode.policy.images = 'smart'
+  c.colors.webpage.darkmode.policy.page = 'smart'
+  c.colors.webpage.darkmode.threshold.background = 0
+  c.colors.webpage.darkmode.threshold.foreground = 256
+  c.colors.webpage.preferred_color_scheme = 'auto'
 
+    c.colors.contextmenu.disabled.bg = None
+    c.colors.contextmenu.disabled.fg = None
+    c.colors.contextmenu.menu.bg = None
+    c.colors.contextmenu.menu.fg = None
+    c.colors.contextmenu.selected.bg = None
+    c.colors.contextmenu.selected.fg = None
 
-c.colors.contextmenu.disabled.bg = None
-c.colors.contextmenu.disabled.fg = None
-c.colors.contextmenu.menu.bg = None
-c.colors.contextmenu.menu.fg = None
-c.colors.contextmenu.selected.bg = None
-c.colors.contextmenu.selected.fg = None
+    c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
+    c.colors.hints.fg = 'black'
+    c.colors.hints.match.fg = 'green'
 
-
-
-c.colors.downloads.bar.bg = 'black'
-c.colors.downloads.error.bg = 'red'
-c.colors.downloads.error.fg = 'white'
-c.colors.downloads.start.bg = '#0000aa'
-c.colors.downloads.start.fg = 'white'
-c.colors.downloads.stop.bg = '#00aa00'
-c.colors.downloads.stop.fg = 'white'
-c.colors.downloads.system.bg = 'rgb'
-c.colors.downloads.system.fg = 'rgb'
-
-
-
-c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
-c.colors.hints.fg = 'black'
-c.colors.hints.match.fg = 'green'
-
-c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
-c.colors.keyhint.fg = '#FFFFFF'
-c.colors.keyhint.suffix.fg = '#FFFF00'
-
-
-
-c.colors.messages.error.bg = 'red'
-c.colors.messages.error.border = '#bb0000'
-c.colors.messages.error.fg = 'white'
-c.colors.messages.info.bg = 'black'
-c.colors.messages.info.border = '#333333'
-c.colors.messages.info.fg = 'white'
-c.colors.messages.warning.bg = 'darkorange'
-c.colors.messages.warning.border = '#d47300'
-c.colors.messages.warning.fg = 'black'
+    c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
+    c.colors.keyhint.fg = '#FFFFFF'
+    c.colors.keyhint.suffix.fg = '#FFFF00'
 
 
 
@@ -94,53 +140,11 @@ c.colors.prompts.selected.fg = 'white'
 
 
 
-c.colors.statusbar.caret.bg = 'purple'
-c.colors.statusbar.caret.fg = 'white'
-c.colors.statusbar.caret.selection.bg = '#a12dff'
-c.colors.statusbar.caret.selection.fg = 'white'
-c.colors.statusbar.command.bg = 'black'
-c.colors.statusbar.command.fg = 'white'
-c.colors.statusbar.command.private.bg = 'darkslategray'
-c.colors.statusbar.command.private.fg = 'white'
-c.colors.statusbar.insert.bg = 'darkgreen'
-c.colors.statusbar.insert.fg = 'white'
-c.colors.statusbar.normal.bg = 'black'
-c.colors.statusbar.normal.fg = 'white'
-c.colors.statusbar.passthrough.bg = 'darkblue'
-c.colors.statusbar.passthrough.fg = 'white'
-c.colors.statusbar.private.bg = '#666666'
-c.colors.statusbar.private.fg = 'white'
-c.colors.statusbar.progress.bg = 'white'
-c.colors.statusbar.url.error.fg = 'orange'
-c.colors.statusbar.url.fg = 'white'
-c.colors.statusbar.url.hover.fg = 'aqua'
-c.colors.statusbar.url.success.http.fg = 'white'
-c.colors.statusbar.url.success.https.fg = 'lime'
-c.colors.statusbar.url.warn.fg = 'yellow'
 
 
 
-c.colors.tabs.bar.bg = '#555555'
-c.colors.tabs.even.bg = 'darkgrey'
-c.colors.tabs.even.fg = 'white'
-c.colors.tabs.indicator.error = '#ff0000'
-c.colors.tabs.indicator.start = '#0000aa'
-c.colors.tabs.indicator.stop = '#00aa00'
-c.colors.tabs.indicator.system = 'rgb'
-c.colors.tabs.odd.bg = 'grey'
-c.colors.tabs.odd.fg = 'white'
-c.colors.tabs.pinned.even.bg = 'darkseagreen'
-c.colors.tabs.pinned.even.fg = 'white'
-c.colors.tabs.pinned.odd.bg = 'seagreen'
-c.colors.tabs.pinned.odd.fg = 'white'
-c.colors.tabs.pinned.selected.even.bg = 'black'
-c.colors.tabs.pinned.selected.even.fg = 'white'
-c.colors.tabs.pinned.selected.odd.bg = 'black'
-c.colors.tabs.pinned.selected.odd.fg = 'white'
-c.colors.tabs.selected.even.bg = 'black'
-c.colors.tabs.selected.even.fg = 'white'
-c.colors.tabs.selected.odd.bg = 'black'
-c.colors.tabs.selected.odd.fg = 'white'
+
+
 
 
 
@@ -149,15 +153,7 @@ c.colors.tooltip.fg = None
 
 
 
-c.colors.webpage.bg = 'white'
-c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
-c.colors.webpage.darkmode.contrast = 0.0
-c.colors.webpage.darkmode.enabled = False
-c.colors.webpage.darkmode.policy.images = 'smart'
-c.colors.webpage.darkmode.policy.page = 'smart'
-c.colors.webpage.darkmode.threshold.background = 0
-c.colors.webpage.darkmode.threshold.foreground = 256
-c.colors.webpage.preferred_color_scheme = 'auto'
+
 
 
 
