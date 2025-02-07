@@ -356,11 +356,11 @@ c.content.user_stylesheets = []
     c.statusbar.widgets = ['history','text:[','url','text:]', 'progress', 'text:                                                                                                                                                                                                                                                                                                                                                     ', 'search_match' ]
 
         c.url.auto_search = 'naive'
-        c.url.default_page = 'https://start.duckduckgo.com/'
+        c.url.default_page = 'https://www.google.com/'
         c.url.incdec_segments = ['path', 'query']
         c.url.open_base_url = False
-        c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}'}
-        c.url.start_pages = ['https://start.duckduckgo.com']
+        c.url.searchengines = {'DEFAULT': 'https://google.com/?q={}'}
+        c.url.start_pages = ['https://www.google.com']
         c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name']
 
         c.messages.timeout = 3000
