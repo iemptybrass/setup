@@ -10,7 +10,7 @@ c.auto_save.session = False
 
 c.backend = 'webengine'
 
-
+c.confirm_quit = ['never']
 
 c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>', '<Ctrl-6>': '<Ctrl-^>', '<Ctrl-M>': '<Return>', '<Ctrl-J>': '<Return>', '<Ctrl-I>': '<Tab>', '<Shift-Return>': '<Return>', '<Enter>': '<Return>', '<Shift-Enter>': '<Return>', '<Ctrl-Enter>': '<Ctrl-Return>'}
 
@@ -18,6 +18,15 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+
+
+
+
+
+
+    c.fonts.default_family = []
+    c.fonts.default_size = '10pt'
+    c.fonts.debug_console = 'default_size default_family'
 
 
 
@@ -44,6 +53,7 @@ c.changelog_after_upgrade = 'minor'
   c.colors.statusbar.url.success.http.fg = 'white'
   c.colors.statusbar.url.success.https.fg = 'lime'
   c.colors.statusbar.url.warn.fg = 'yellow'
+      c.fonts.statusbar = 'default_size default_family'
 
     c.colors.messages.error.bg = 'red'
     c.colors.messages.error.border = '#bb0000'
@@ -54,6 +64,9 @@ c.changelog_after_upgrade = 'minor'
     c.colors.messages.warning.bg = 'darkorange'
     c.colors.messages.warning.border = '#d47300'
     c.colors.messages.warning.fg = 'black'
+        c.fonts.messages.error = 'default_size default_family'
+        c.fonts.messages.info = 'default_size default_family'
+        c.fonts.messages.warning = 'default_size default_family'
 
     c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
     c.colors.completion.category.border.bottom = 'black'
@@ -70,6 +83,8 @@ c.changelog_after_upgrade = 'minor'
     c.colors.completion.odd.bg = '#444444'
     c.colors.completion.scrollbar.bg = '#333333'
     c.colors.completion.scrollbar.fg = 'white'
+        c.fonts.completion.category = 'bold default_size default_family'
+        c.fonts.completion.entry = 'default_size default_family'
 
     c.colors.downloads.bar.bg = 'black'
     c.colors.downloads.error.bg = 'red'
@@ -80,6 +95,7 @@ c.changelog_after_upgrade = 'minor'
     c.colors.downloads.stop.fg = 'white'
     c.colors.downloads.system.bg = 'rgb'
     c.colors.downloads.system.fg = 'rgb'
+        c.fonts.downloads = 'default_size default_family'
 
 
 
@@ -104,6 +120,11 @@ c.changelog_after_upgrade = 'minor'
   c.colors.tabs.selected.even.fg = 'white'
   c.colors.tabs.selected.odd.bg = 'black'
   c.colors.tabs.selected.odd.fg = 'white'
+      c.fonts.tabs.selected = 'default_size default_family'
+      c.fonts.tabs.unselected = 'default_size default_family'
+
+
+
 
   c.colors.webpage.bg = 'white'
   c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
@@ -114,6 +135,16 @@ c.changelog_after_upgrade = 'minor'
   c.colors.webpage.darkmode.threshold.background = 0
   c.colors.webpage.darkmode.threshold.foreground = 256
   c.colors.webpage.preferred_color_scheme = 'auto'
+      c.fonts.web.family.cursive = ''
+      c.fonts.web.family.fantasy = ''
+      c.fonts.web.family.fixed = ''
+      c.fonts.web.family.sans_serif = ''
+      c.fonts.web.family.serif = ''
+      c.fonts.web.family.standard = ''
+      c.fonts.web.size.default = 16
+      c.fonts.web.size.default_fixed = 13
+      c.fonts.web.size.minimum = 0
+      c.fonts.web.size.minimum_logical = 6
 
     c.colors.contextmenu.disabled.bg = None
     c.colors.contextmenu.disabled.fg = None
@@ -121,25 +152,32 @@ c.changelog_after_upgrade = 'minor'
     c.colors.contextmenu.menu.fg = None
     c.colors.contextmenu.selected.bg = None
     c.colors.contextmenu.selected.fg = None
+        c.fonts.contextmenu = None
 
     c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
     c.colors.hints.fg = 'black'
     c.colors.hints.match.fg = 'green'
+        c.fonts.hints = 'bold default_size default_family'
 
     c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
     c.colors.keyhint.fg = '#FFFFFF'
     c.colors.keyhint.suffix.fg = '#FFFF00'
+        c.fonts.keyhint = 'default_size default_family'
 
 
 
-c.colors.prompts.bg = '#444444'
-c.colors.prompts.border = '1px solid gray'
-c.colors.prompts.fg = 'white'
-c.colors.prompts.selected.bg = 'grey'
-c.colors.prompts.selected.fg = 'white'
+  c.colors.prompts.bg = '#444444'
+  c.colors.prompts.border = '1px solid gray'
+  c.colors.prompts.fg = 'white'
+  c.colors.prompts.selected.bg = 'grey'
+  c.colors.prompts.selected.fg = 'white'
+      c.fonts.prompts = 'default_size sans-serif'
 
 
 
+  c.colors.tooltip.bg = None
+  c.colors.tooltip.fg = None
+      c.fonts.tooltip = None
 
 
 
@@ -148,8 +186,6 @@ c.colors.prompts.selected.fg = 'white'
 
 
 
-c.colors.tooltip.bg = None
-c.colors.tooltip.fg = None
 
 
 
@@ -157,140 +193,156 @@ c.colors.tooltip.fg = None
 
 
 
-c.completion.cmd_history_max_items = 100
-c.completion.delay = 0
-c.completion.favorite_paths = []
-c.completion.height = '50%'
-c.completion.min_chars = 1
-c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
-c.completion.quick = True
-c.completion.scrollbar.padding = 2
-c.completion.scrollbar.width = 12
-c.completion.show = 'always'
-c.completion.shrink = False
-c.completion.timestamp_format = '%Y-%m-%d %H:%M'
-c.completion.use_best_match = False
-c.completion.web_history.exclude = []
-c.completion.web_history.max_items = -1
 
+  c.window.hide_decoration = False
+  c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
+  c.window.transparent = False
 
+    c.statusbar.padding = {'top': 1, 'bottom': 1, 'left': 0, 'right': 0}
+    c.statusbar.position = 'bottom'
+    c.statusbar.show = 'always'
+    c.statusbar.widgets = ['keypress', 'search_match', 'url', 'scroll', 'history', 'tabs', 'progress']
 
-c.confirm_quit = ['never']
+      c.messages.timeout = 3000
 
+      c.completion.cmd_history_max_items = 100
+      c.completion.delay = 0
+      c.completion.favorite_paths = []
+      c.completion.height = '50%'
+      c.completion.min_chars = 1
+      c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
+      c.completion.quick = True
+      c.completion.scrollbar.padding = 2
+      c.completion.scrollbar.width = 12
+      c.completion.show = 'always'
+      c.completion.shrink = False
+      c.completion.timestamp_format = '%Y-%m-%d %H:%M'
+      c.completion.use_best_match = False
+      c.completion.web_history.exclude = []
+      c.completion.web_history.max_items = -1
+
+      c.downloads.location.directory = None
+      c.downloads.location.prompt = True
+      c.downloads.location.remember = True
+      c.downloads.location.suggestion = 'path'
+      c.downloads.open_dispatcher = None
+      c.downloads.position = 'top'
+      c.downloads.prevent_mixed_content = True
+      c.downloads.remove_finished = -1
+
+
+
+    c.tabs.background = True
+    c.tabs.close_mouse_button = 'middle'
+    c.tabs.close_mouse_button_on_bar = 'new-tab'
+    c.tabs.favicons.scale = 1.0
+    c.tabs.favicons.show = 'always'
+    c.tabs.focus_stack_size = 10
+    c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
+    c.tabs.indicator.width = 3
+    c.tabs.last_close = 'ignore'
+    c.tabs.max_width = -1
+    c.tabs.min_width = -1
+    c.tabs.mode_on_change = 'normal'
+    c.tabs.mousewheel_switching = True
+    c.tabs.new_position.related = 'next'
+    c.tabs.new_position.stacking = True
+    c.tabs.new_position.unrelated = 'last'
+    c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+    c.tabs.pinned.frozen = True
+    c.tabs.pinned.shrink = True
+    c.tabs.position = 'top'
+    c.tabs.select_on_remove = 'next'
+    c.tabs.show = 'always'
+    c.tabs.show_switching_delay = 800
+    c.tabs.tabs_are_windows = False
+    c.tabs.title.alignment = 'left'
+    c.tabs.title.elide = 'right'
+    c.tabs.title.format = '{audio}{index}: {current_title}'
+    c.tabs.title.format_pinned = '{index}'
+    c.tabs.tooltips = True
+    c.tabs.undo_stack_size = 100
+    c.tabs.width = '15%'
+    c.tabs.wrap = True
+
+
+
+
+
+
+
+
+  c.content.autoplay = True
+  c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
+  c.content.blocking.enabled = True
+  c.content.blocking.hosts.block_subdomains = True
+  c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
+  c.content.blocking.method = 'auto'
+  c.content.blocking.whitelist = []
+  c.content.cache.appcache = True
+  c.content.cache.maximum_pages = 0
+  c.content.cache.size = None
+  c.content.canvas_reading = True
+  c.content.cookies.accept = 'all'
+  c.content.cookies.store = True
+  c.content.default_encoding = 'iso-8859-1'
+  c.content.desktop_capture = 'ask'
+  c.content.dns_prefetch = True
+  c.content.frame_flattening = False
+  c.content.fullscreen.overlay_timeout = 3000
+  c.content.fullscreen.window = False
+  c.content.geolocation = 'ask'
+  c.content.headers.accept_language = 'en-US,en;q=0.9'
+  c.content.headers.custom = {}
+  c.content.headers.do_not_track = True
+  c.content.headers.referer = 'same-domain'
+  c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}'
+  c.content.hyperlink_auditing = False
+  c.content.images = True
+  c.content.javascript.alert = True
+  c.content.javascript.can_close_tabs = False
+  c.content.javascript.can_open_tabs_automatically = False
+  c.content.javascript.clipboard = 'ask'
+  c.content.javascript.enabled = True
+  c.content.javascript.legacy_touch_events = 'never'
+  c.content.javascript.log = {'unknown': 'debug', 'info': 'debug', 'warning': 'debug', 'error': 'debug'}
+  c.content.javascript.log_message.excludes = {'userscript:_qute_stylesheet': ['*Refused to apply inline style because it violates the following Content Security Policy directive: *']}
+  c.content.javascript.log_message.levels = {'qute:*': ['error'], 'userscript:GM-*': [], 'userscript:*': ['error']}
+  c.content.javascript.modal_dialog = False
+  c.content.javascript.prompt = True
+  c.content.local_content_can_access_file_urls = True
+  c.content.local_content_can_access_remote_urls = False
+  c.content.local_storage = True
+  c.content.media.audio_capture = 'ask'
+  c.content.media.audio_video_capture = 'ask'
+  c.content.media.video_capture = 'ask'
+  c.content.mouse_lock = 'ask'
+  c.content.mute = False
+  c.content.netrc_file = None
+  c.content.notifications.enabled = 'ask'
+  c.content.notifications.presenter = 'auto'
+  c.content.notifications.show_origin = True
+  c.content.pdfjs = False
+  c.content.persistent_storage = 'ask'
+  c.content.plugins = False
+  c.content.prefers_reduced_motion = False
+  c.content.print_element_backgrounds = True
+  c.content.private_browsing = False
+  c.content.proxy = 'system'
+  c.content.proxy_dns_requests = True
+  c.content.register_protocol_handler = 'ask'
+  c.content.site_specific_quirks.enabled = True
+  c.content.site_specific_quirks.skip = []
+  c.content.tls.certificate_errors = 'ask'
+  c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
+  c.content.user_stylesheets = []
+  c.content.webgl = True
+  c.content.webrtc_ip_handling_policy = 'all-interfaces'
+  c.content.xss_auditing = False
 
 
-c.content.autoplay = True
 
-c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
-c.content.blocking.enabled = True
-c.content.blocking.hosts.block_subdomains = True
-c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
-c.content.blocking.method = 'auto'
-c.content.blocking.whitelist = []
 
-c.content.cache.appcache = True
-c.content.cache.maximum_pages = 0
-c.content.cache.size = None
-
-c.content.canvas_reading = True
-
-c.content.cookies.accept = 'all'
-c.content.cookies.store = True
-
-c.content.default_encoding = 'iso-8859-1'
-
-c.content.desktop_capture = 'ask'
-
-c.content.dns_prefetch = True
-
-c.content.frame_flattening = False
-
-c.content.fullscreen.overlay_timeout = 3000
-c.content.fullscreen.window = False
-
-c.content.geolocation = 'ask'
-
-c.content.headers.accept_language = 'en-US,en;q=0.9'
-c.content.headers.custom = {}
-c.content.headers.do_not_track = True
-c.content.headers.referer = 'same-domain'
-c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}'
-
-c.content.hyperlink_auditing = False
-
-c.content.images = True
-
-c.content.javascript.alert = True
-c.content.javascript.can_close_tabs = False
-c.content.javascript.can_open_tabs_automatically = False
-c.content.javascript.clipboard = 'ask'
-c.content.javascript.enabled = True
-c.content.javascript.legacy_touch_events = 'never'
-c.content.javascript.log = {'unknown': 'debug', 'info': 'debug', 'warning': 'debug', 'error': 'debug'}
-c.content.javascript.log_message.excludes = {'userscript:_qute_stylesheet': ['*Refused to apply inline style because it violates the following Content Security Policy directive: *']}
-c.content.javascript.log_message.levels = {'qute:*': ['error'], 'userscript:GM-*': [], 'userscript:*': ['error']}
-c.content.javascript.modal_dialog = False
-c.content.javascript.prompt = True
-
-c.content.local_content_can_access_file_urls = True
-c.content.local_content_can_access_remote_urls = False
-c.content.local_storage = True
-
-c.content.media.audio_capture = 'ask'
-c.content.media.audio_video_capture = 'ask'
-c.content.media.video_capture = 'ask'
-c.content.mouse_lock = 'ask'
-
-c.content.mute = False
-
-c.content.netrc_file = None
-
-c.content.notifications.enabled = 'ask'
-c.content.notifications.presenter = 'auto'
-c.content.notifications.show_origin = True
-
-c.content.pdfjs = False
-
-c.content.persistent_storage = 'ask'
-
-c.content.plugins = False
-
-c.content.prefers_reduced_motion = False
-
-c.content.print_element_backgrounds = True
-
-c.content.private_browsing = False
-
-c.content.proxy = 'system'
-c.content.proxy_dns_requests = True
-
-c.content.register_protocol_handler = 'ask'
-
-c.content.site_specific_quirks.enabled = True
-c.content.site_specific_quirks.skip = []
-
-c.content.tls.certificate_errors = 'ask'
-
-c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
-
-c.content.user_stylesheets = []
-
-c.content.webgl = True
-
-c.content.webrtc_ip_handling_policy = 'all-interfaces'
-
-c.content.xss_auditing = False
-
-
-
-c.downloads.location.directory = None
-c.downloads.location.prompt = True
-c.downloads.location.remember = True
-c.downloads.location.suggestion = 'path'
-c.downloads.open_dispatcher = None
-c.downloads.position = 'top'
-c.downloads.prevent_mixed_content = True
-c.downloads.remove_finished = -1
 
 
 
@@ -307,33 +359,7 @@ c.fileselect.single_file.command = ['xterm', '-e', 'ranger', '--choosefile={}']
 
 
 
-c.fonts.completion.category = 'bold default_size default_family'
-c.fonts.completion.entry = 'default_size default_family'
-c.fonts.contextmenu = None
-c.fonts.debug_console = 'default_size default_family'
-c.fonts.default_family = []
-c.fonts.default_size = '10pt'
-c.fonts.downloads = 'default_size default_family'
-c.fonts.hints = 'bold default_size default_family'
-c.fonts.keyhint = 'default_size default_family'
-c.fonts.messages.error = 'default_size default_family'
-c.fonts.messages.info = 'default_size default_family'
-c.fonts.messages.warning = 'default_size default_family'
-c.fonts.prompts = 'default_size sans-serif'
-c.fonts.statusbar = 'default_size default_family'
-c.fonts.tabs.selected = 'default_size default_family'
-c.fonts.tabs.unselected = 'default_size default_family'
-c.fonts.tooltip = None
-c.fonts.web.family.cursive = ''
-c.fonts.web.family.fantasy = ''
-c.fonts.web.family.fixed = ''
-c.fonts.web.family.sans_serif = ''
-c.fonts.web.family.serif = ''
-c.fonts.web.family.standard = ''
-c.fonts.web.size.default = 16
-c.fonts.web.size.default_fixed = 13
-c.fonts.web.size.minimum = 0
-c.fonts.web.size.minimum_logical = 6
+
 
 
 
@@ -391,7 +417,6 @@ c.logging.level.ram = 'debug'
 
 
 
-c.messages.timeout = 3000
 
 
 
@@ -443,45 +468,11 @@ c.spellcheck.languages = []
 
 
 
-c.statusbar.padding = {'top': 1, 'bottom': 1, 'left': 0, 'right': 0}
-c.statusbar.position = 'bottom'
-c.statusbar.show = 'always'
-c.statusbar.widgets = ['keypress', 'search_match', 'url', 'scroll', 'history', 'tabs', 'progress']
 
 
 
-c.tabs.background = True
-c.tabs.close_mouse_button = 'middle'
-c.tabs.close_mouse_button_on_bar = 'new-tab'
-c.tabs.favicons.scale = 1.0
-c.tabs.favicons.show = 'always'
-c.tabs.focus_stack_size = 10
-c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
-c.tabs.indicator.width = 3
-c.tabs.last_close = 'ignore'
-c.tabs.max_width = -1
-c.tabs.min_width = -1
-c.tabs.mode_on_change = 'normal'
-c.tabs.mousewheel_switching = True
-c.tabs.new_position.related = 'next'
-c.tabs.new_position.stacking = True
-c.tabs.new_position.unrelated = 'last'
-c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
-c.tabs.pinned.frozen = True
-c.tabs.pinned.shrink = True
-c.tabs.position = 'top'
-c.tabs.select_on_remove = 'next'
-c.tabs.show = 'always'
-c.tabs.show_switching_delay = 800
-c.tabs.tabs_are_windows = False
-c.tabs.title.alignment = 'left'
-c.tabs.title.elide = 'right'
-c.tabs.title.format = '{audio}{index}: {current_title}'
-c.tabs.title.format_pinned = '{index}'
-c.tabs.tooltips = True
-c.tabs.undo_stack_size = 100
-c.tabs.width = '15%'
-c.tabs.wrap = True
+
+
 
 
 
@@ -496,9 +487,7 @@ c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaig
 
 
 
-c.window.hide_decoration = False
-c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
-c.window.transparent = False
+
 
 
 
