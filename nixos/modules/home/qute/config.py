@@ -125,7 +125,6 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-
   c.colors.webpage.bg = 'white'
   c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
   c.colors.webpage.darkmode.contrast = 0.0
@@ -267,11 +266,6 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-
-
-
-
-
   c.content.autoplay = True
   c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
   c.content.blocking.enabled = True
@@ -387,21 +381,7 @@ c.history_gap_interval = 30
 
 
 
-c.input.escape_quits_reporter = True
-c.input.forward_unbound_keys = 'auto'
-c.input.insert_mode.auto_enter = True
-c.input.insert_mode.auto_leave = True
-c.input.insert_mode.auto_load = False
-c.input.insert_mode.leave_on_load = True
-c.input.insert_mode.plugins = False
-c.input.links_included_in_focus_chain = True
-c.input.match_counts = True
-c.input.media_keys = True
-c.input.mode_override = None
-c.input.mouse.back_forward_buttons = True
-c.input.mouse.rocker_gestures = False
-c.input.partial_timeout = 0
-c.input.spatial_navigation = False
+
 
 
 
@@ -499,6 +479,30 @@ c.zoom.text_only = False
 
 
 
+
+
+
+
+
+
+
+
+
+c.input.escape_quits_reporter = True
+c.input.forward_unbound_keys = 'auto'
+c.input.insert_mode.auto_enter = True
+c.input.insert_mode.auto_leave = True
+c.input.insert_mode.auto_load = False
+c.input.insert_mode.leave_on_load = True
+c.input.insert_mode.plugins = False
+c.input.links_included_in_focus_chain = True
+c.input.match_counts = True
+c.input.media_keys = True
+c.input.mode_override = None
+c.input.mouse.back_forward_buttons = True
+c.input.mouse.rocker_gestures = False
+c.input.partial_timeout = 0
+c.input.spatial_navigation = False
 
 
 
