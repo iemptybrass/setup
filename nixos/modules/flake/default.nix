@@ -3,8 +3,8 @@
 
 
   imports = [
-      ./discord
-      ./spotify
+        ./discord
+        ./spotify
              ];
 
 
