@@ -59,6 +59,8 @@ config.load_autoconfig(True)
 
 c.content.user_stylesheets = []
 
+
+
   c.window.transparent = False
   c.fonts.default_family = []
   c.fonts.default_size = '10pt'
