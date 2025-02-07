@@ -368,11 +368,7 @@ c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
 
    #
 
-c.statusbar.widgets = [
-'history',
-'text:[','url','text:]',
-'text:                                                                                                                                                                                                                                                                                                                                                     ',
-'search_match'      ]
+c.statusbar.widgets = ['history','text:[','url','text:]', 'progress', 'text:                                                                                                                                                                                                                                                                                                                                                     ', 'search_match'      ]
 
    #
 

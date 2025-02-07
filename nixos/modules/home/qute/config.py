@@ -319,7 +319,7 @@ c.content.user_stylesheets = []
     c.content.xss_auditing = False
 
         c.scrolling.bar = 'overlay'
-        c.scrolling.smooth = False
+        c.scrolling.smooth = True
 
         c.hints.auto_follow = 'unique-match'
         c.hints.auto_follow_timeout = 0
@@ -345,10 +345,10 @@ c.content.user_stylesheets = []
 
 
 
-    c.statusbar.padding = {'top': 1, 'bottom': 1, 'left': 0, 'right': 0}
-    c.statusbar.position = 'bottom'
+    c.statusbar.padding = {'top': 5, 'bottom': 2, 'left': 10, 'right': 10}
+    c.statusbar.position = 'top'
     c.statusbar.show = 'always'
-    c.statusbar.widgets = ['keypress', 'search_match', 'url', 'scroll', 'history', 'tabs', 'progress']
+    c.statusbar.widgets = ['history','text:[','url','text:]', 'progress', 'text:                                                                                                                                                                                                                                                                                                                                                     ', 'search_match' ]
 
         c.url.auto_search = 'naive'
         c.url.default_page = 'https://start.duckduckgo.com/'
@@ -360,21 +360,21 @@ c.content.user_stylesheets = []
 
         c.messages.timeout = 3000
 
-        c.completion.cmd_history_max_items = 100
+        c.completion.cmd_history_max_items = 10
         c.completion.delay = 0
         c.completion.favorite_paths = []
-        c.completion.height = '50%'
+        c.completion.height = '30%'
         c.completion.min_chars = 1
-        c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
-        c.completion.quick = True
-        c.completion.scrollbar.padding = 2
-        c.completion.scrollbar.width = 12
+        c.completion.open_categories = [ 'quickmarks', 'bookmarks', 'history' ]
+        c.completion.quick = False
+        c.completion.scrollbar.padding = 3
+        c.completion.scrollbar.width = 9
         c.completion.show = 'always'
-        c.completion.shrink = False
-        c.completion.timestamp_format = '%Y-%m-%d %H:%M'
+        c.completion.shrink = True
+        c.completion.timestamp_format = '%m-%d-%Y %H:%M'
         c.completion.use_best_match = False
         c.completion.web_history.exclude = []
-        c.completion.web_history.max_items = -1
+        c.completion.web_history.max_items = 500
 
         c.downloads.location.directory = None
         c.downloads.location.prompt = True
@@ -391,12 +391,12 @@ c.content.user_stylesheets = []
         c.search.wrap_messages = True
 
       c.prompt.filebrowser = True
-      c.prompt.radius = 8
+      c.prompt.radius = 9
 
-          c.fileselect.folder.command = ['xterm', '-e', 'ranger', '--choosedir={}']
+          c.fileselect.folder.command = [ ]
           c.fileselect.handler = 'default'
-          c.fileselect.multiple_files.command = ['xterm', '-e', 'ranger', '--choosefiles={}']
-          c.fileselect.single_file.command = ['xterm', '-e', 'ranger', '--choosefile={}']
+          c.fileselect.multiple_files.command = [ ]
+          c.fileselect.single_file.command = [ ]
 
 
 
@@ -407,8 +407,8 @@ c.content.user_stylesheets = []
 
 
   c.zoom.default = '100%'
-  c.zoom.levels = ['25%', '33%', '50%', '67%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%']
-  c.zoom.mouse_divider = 512
+  c.zoom.levels = ['25%', '50%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%']
+  c.zoom.mouse_divider = 0
   c.zoom.text_only = False
 
   c.input.escape_quits_reporter = True
