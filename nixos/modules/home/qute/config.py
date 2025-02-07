@@ -30,6 +30,15 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+  c.colors.prompts.bg = '#444444'
+  c.colors.prompts.border = '1px solid gray'
+  c.colors.prompts.fg = 'white'
+  c.colors.prompts.selected.bg = 'grey'
+  c.colors.prompts.selected.fg = 'white'
+      c.fonts.prompts = 'default_size sans-serif'
+
+
+
   c.colors.statusbar.caret.bg = 'purple'
   c.colors.statusbar.caret.fg = 'white'
   c.colors.statusbar.caret.selection.bg = '#a12dff'
@@ -125,6 +134,12 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+  c.colors.tooltip.bg = None
+  c.colors.tooltip.fg = None
+      c.fonts.tooltip = None
+
+
+
   c.colors.webpage.bg = 'white'
   c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
   c.colors.webpage.darkmode.contrast = 0.0
@@ -162,28 +177,6 @@ c.changelog_after_upgrade = 'minor'
     c.colors.keyhint.fg = '#FFFFFF'
     c.colors.keyhint.suffix.fg = '#FFFF00'
         c.fonts.keyhint = 'default_size default_family'
-
-
-
-  c.colors.prompts.bg = '#444444'
-  c.colors.prompts.border = '1px solid gray'
-  c.colors.prompts.fg = 'white'
-  c.colors.prompts.selected.bg = 'grey'
-  c.colors.prompts.selected.fg = 'white'
-      c.fonts.prompts = 'default_size sans-serif'
-
-
-
-  c.colors.tooltip.bg = None
-  c.colors.tooltip.fg = None
-      c.fonts.tooltip = None
-
-
-
-
-
-
-
 
 
 
@@ -467,125 +460,76 @@ c.input.spatial_navigation = False
 
 
 
-config.bind(';y', 'hint links yank')
-config.bind('<Alt-1>', 'tab-focus 1')
-config.bind('<Alt-2>', 'tab-focus 2')
-config.bind('<Alt-3>', 'tab-focus 3')
-config.bind('<Alt-4>', 'tab-focus 4')
-config.bind('<Alt-5>', 'tab-focus 5')
-config.bind('<Alt-6>', 'tab-focus 6')
-config.bind('<Alt-7>', 'tab-focus 7')
-config.bind('<Alt-8>', 'tab-focus 8')
-config.bind('<Alt-9>', 'tab-focus -1')
-config.bind('<Alt-m>', 'tab-mute')
-config.bind('<Ctrl-A>', 'navigate increment')
-config.bind('<Ctrl-Alt-p>', 'print')
-config.bind('<Ctrl-B>', 'scroll-page 0 -1')
-config.bind('<Ctrl-D>', 'scroll-page 0 0.5')
-config.bind('<Ctrl-F5>', 'reload -f')
-config.bind('<Ctrl-F>', 'scroll-page 0 1')
-config.bind('<Ctrl-N>', 'open -w')
-config.bind('<Ctrl-PgDown>', 'tab-next')
-config.bind('<Ctrl-PgUp>', 'tab-prev')
-config.bind('<Ctrl-Q>', 'quit')
-config.bind('<Ctrl-Return>', 'selection-follow -t')
-config.bind('<Ctrl-Shift-N>', 'open -p')
-config.bind('<Ctrl-Shift-T>', 'undo')
-config.bind('<Ctrl-Shift-Tab>', 'nop')
-config.bind('<Ctrl-Shift-W>', 'close')
-config.bind('<Ctrl-T>', 'open -t')
-config.bind('<Ctrl-Tab>', 'tab-focus last')
-config.bind('<Ctrl-U>', 'scroll-page 0 -0.5')
-config.bind('<Ctrl-V>', 'mode-enter passthrough')
-config.bind('<Ctrl-W>', 'tab-close')
-config.bind('<Ctrl-X>', 'navigate decrement')
-config.bind('<Ctrl-^>', 'tab-focus last')
-config.bind('<Ctrl-h>', 'home')
-config.bind('<Ctrl-p>', 'tab-pin')
-config.bind('<Ctrl-s>', 'stop')
-config.bind('<Escape>', 'clear-keychain ;; search ;; fullscreen --leave')
-config.bind('<F11>', 'fullscreen')
-config.bind('<F5>', 'reload')
+
+c.bindings.default = {} 
+
+config.bind(':', 'cmd-set-text :')
+
+config.bind('<Ctrl-Z>', 'undo')
+
+config.bind('<Escape>', 'clear-keychain ;; fullscreen --leave')
 config.bind('<Return>', 'selection-follow')
-config.bind('<back>', 'back')
-config.bind('<forward>', 'forward')
 
-config.bind('<Alt-B>', 'rl-backward-word', mode='command')
-config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='command')
-config.bind('<Alt-D>', 'rl-kill-word', mode='command')
-config.bind('<Alt-F>', 'rl-forward-word', mode='command')
-config.bind('<Ctrl-?>', 'rl-delete-char', mode='command')
-config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='command')
-config.bind('<Ctrl-B>', 'rl-backward-char', mode='command')
-config.bind('<Ctrl-C>', 'completion-item-yank', mode='command')
-config.bind('<Ctrl-D>', 'completion-item-del', mode='command')
-config.bind('<Ctrl-E>', 'rl-end-of-line', mode='command')
-config.bind('<Ctrl-F>', 'rl-forward-char', mode='command')
-config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='command')
-config.bind('<Ctrl-K>', 'rl-kill-line', mode='command')
-config.bind('<Ctrl-N>', 'command-history-next', mode='command')
-config.bind('<Ctrl-P>', 'command-history-prev', mode='command')
-config.bind('<Ctrl-Return>', 'command-accept --rapid', mode='command')
-config.bind('<Ctrl-Shift-C>', 'completion-item-yank --sel', mode='command')
-config.bind('<Ctrl-Shift-Tab>', 'completion-item-focus prev-category', mode='command')
-config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='command')
-config.bind('<Ctrl-Tab>', 'completion-item-focus next-category', mode='command')
-config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='command')
-config.bind('<Ctrl-W>', 'rl-rubout " "', mode='command')
-config.bind('<Ctrl-Y>', 'rl-yank', mode='command')
-config.bind('<Down>', 'completion-item-focus --history next', mode='command')
-config.bind('<Escape>', 'mode-leave', mode='command')
-config.bind('<PgDown>', 'completion-item-focus next-page', mode='command')
-config.bind('<PgUp>', 'completion-item-focus prev-page', mode='command')
-config.bind('<Return>', 'command-accept', mode='command')
-config.bind('<Shift-Delete>', 'completion-item-del', mode='command')
-config.bind('<Shift-Tab>', 'completion-item-focus prev', mode='command')
-config.bind('<Tab>', 'completion-item-focus next', mode='command')
-config.bind('<Up>', 'completion-item-focus --history prev', mode='command')
+config.bind('<Ctrl-Shift-Return>', 'cmd-set-text -s :open')
 
-config.bind('<Ctrl-B>', 'hint all tab-bg', mode='hint')
-config.bind('<Ctrl-F>', 'hint links', mode='hint')
-config.bind('<Ctrl-R>', 'hint --rapid links tab-bg', mode='hint')
-config.bind('<Escape>', 'mode-leave', mode='hint')
-config.bind('<Return>', 'hint-follow', mode='hint')
+config.bind('<Ctrl-Shift-Right>', 'tab-next')
+config.bind('<Ctrl-shift-Left>', 'tab-prev')
 
-config.bind('<Ctrl-E>', 'edit-text', mode='insert')
-config.bind('<Escape>', 'mode-leave', mode='insert')
-config.bind('<Shift-Escape>', 'fake-key <Escape>', mode='insert')
-config.bind('<Shift-Ins>', 'insert-text -- {primary}', mode='insert')
+config.bind('<Ctrl-Alt-Right>', 'tab-move +')
+config.bind('<Ctrl-Alt-Left>', 'tab-move -')
 
-config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+config.bind('<Alt-X>', 'tab-close')
+config.bind('<Alt-Tab>', 'open -t')
 
-config.bind('<Alt-B>', 'rl-backward-word', mode='prompt')
-config.bind('<Alt-Backspace>', 'rl-backward-kill-word', mode='prompt')
-config.bind('<Alt-D>', 'rl-kill-word', mode='prompt')
-config.bind('<Alt-E>', 'prompt-fileselect-external', mode='prompt')
-config.bind('<Alt-F>', 'rl-forward-word', mode='prompt')
-config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='prompt')
-config.bind('<Alt-Y>', 'prompt-yank', mode='prompt')
-config.bind('<Ctrl-?>', 'rl-delete-char', mode='prompt')
-config.bind('<Ctrl-A>', 'rl-beginning-of-line', mode='prompt')
-config.bind('<Ctrl-B>', 'rl-backward-char', mode='prompt')
-config.bind('<Ctrl-E>', 'rl-end-of-line', mode='prompt')
-config.bind('<Ctrl-F>', 'rl-forward-char', mode='prompt')
-config.bind('<Ctrl-H>', 'rl-backward-delete-char', mode='prompt')
-config.bind('<Ctrl-K>', 'rl-kill-line', mode='prompt')
-config.bind('<Ctrl-P>', 'prompt-open-download --pdfjs', mode='prompt')
-config.bind('<Ctrl-Shift-W>', 'rl-filename-rubout', mode='prompt')
-config.bind('<Ctrl-U>', 'rl-unix-line-discard', mode='prompt')
-config.bind('<Ctrl-W>', 'rl-rubout " "', mode='prompt')
-config.bind('<Ctrl-X>', 'prompt-open-download', mode='prompt')
-config.bind('<Ctrl-Y>', 'rl-yank', mode='prompt')
-config.bind('<Down>', 'prompt-item-focus next', mode='prompt')
+config.bind('<Ctrl-M>', 'tab-mute')
+
+config.bind('<Ctrl-R>', 'reload')
+
+config.bind('<Alt-Left>', 'back')
+config.bind('<Alt-Right>', 'forward')
+
+config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
+config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
 config.bind('<Escape>', 'mode-leave', mode='prompt')
 config.bind('<Return>', 'prompt-accept', mode='prompt')
-config.bind('<Shift-Tab>', 'prompt-item-focus prev', mode='prompt')
-config.bind('<Tab>', 'prompt-item-focus next', mode='prompt')
-config.bind('<Up>', 'prompt-item-focus prev', mode='prompt')
 
-config.bind('<Escape>', 'mode-leave', mode='register')
+config.bind('<Ctrl-Up>', 'scroll-to-perc 0')
+config.bind('<Ctrl-Down>', 'scroll-to-perc 100')
 
-config.bind('<Alt-Shift-Y>', 'prompt-yank --sel', mode='yesno')
-config.bind('<Alt-Y>', 'prompt-yank', mode='yesno')
+config.bind('<Ctrl-F>', 'cmd-set-text -s :search')
+config.bind('<Shift-Right>', 'search-next')
+config.bind('<Shift-Left>', 'search-prev')
+
+config.bind('<Ctrl-0>', 'zoom 100')
+config.bind('<Ctrl-=>', 'zoom-in')
+config.bind('<Ctrl-->', 'zoom-out')
+
+config.bind('<M>', 'quickmark-save')
+
+config.bind('<Alt-S>', 'view-source')
+
+config.bind('<Alt-I>', 'devtools window')
+
+config.bind('<Ctrl-I>', 'mode-enter passthrough')
+config.bind('<Shift-Escape>', 'mode-leave', mode='passthrough')
+
+config.bind('<Escape>', 'mode-leave', mode='insert')
+
 config.bind('<Escape>', 'mode-leave', mode='yesno')
 config.bind('<Return>', 'prompt-accept', mode='yesno')
+config.bind('N', 'prompt-accept --save no', mode='yesno')
+config.bind('Y', 'prompt-accept --save yes', mode='yesno')
+config.bind('n', 'prompt-accept no', mode='yesno')
+config.bind('y', 'prompt-accept yes', mode='yesno')
+
+config.bind('<Escape>', 'mode-leave', mode='command')
+config.bind('<Return>', 'command-accept', mode='command')
+config.bind('<Up>', 'completion-item-focus prev', mode='command')
+config.bind('<Down>', 'completion-item-focus next', mode='command')
+
+config.bind('<Ctrl-Shift-Tab>', 'search')
+config.bind('<Ctrl-Tab>', 'search')
+config.bind('<Ctrl-Right>', 'search')
+config.bind('<Ctrl-X>', 'search')
+config.bind('<Ctrl-T>', 'search')
+config.bind('<U>', 'search')
