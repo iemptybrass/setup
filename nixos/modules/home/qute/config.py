@@ -2,49 +2,44 @@
 
 config.load_autoconfig(True)
 
-c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save'}
 
-  c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
-  c.editor.encoding = 'utf-8'
-  c.editor.remove_file = True
+    c.confirm_quit = ['never']
 
-c.spellcheck.languages = []
+    c.changelog_after_upgrade = 'none'
 
-c.auto_save.interval = 15000
-c.history_gap_interval = 30
+    c.spellcheck.languages = []
+
+    c.auto_save.interval = 15000
+    c.history_gap_interval = 30
 
     c.logging.level.console = 'info'
     c.logging.level.ram = 'debug'
 
-c.new_instance_open_target = 'tab'
-c.new_instance_open_target_window = 'last-focused'
+    c.new_instance_open_target = 'tab'
+    c.new_instance_open_target_window = 'last-focused'
 
-c.auto_save.session = False
+    c.auto_save.session = False
+    c.session.default_name = None
+    c.session.lazy_restore = False
 
-  c.session.default_name = None
-  c.session.lazy_restore = False
 
-c.backend = 'webengine'
-    c.qt.args = []
-    c.qt.chromium.experimental_web_platform_features = 'auto'
-    c.qt.chromium.low_end_device_mode = 'auto'
-    c.qt.chromium.process_model = 'process-per-site-instance'
-    c.qt.chromium.sandboxing = 'enable-all'
-    c.qt.environ = {}
-    c.qt.force_platform = None
-    c.qt.force_platformtheme = None
-    c.qt.force_software_rendering = 'none'
-    c.qt.highdpi = False
-    c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
-    c.qt.workarounds.disable_hangouts_extension = False
-    c.qt.workarounds.locale = False
-    c.qt.workarounds.remove_service_workers = False
 
-c.confirm_quit = ['never']
+  c.backend = 'webengine'
 
-c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>', '<Ctrl-6>': '<Ctrl-^>', '<Ctrl-M>': '<Return>', '<Ctrl-J>': '<Return>', '<Ctrl-I>': '<Tab>', '<Shift-Return>': '<Return>', '<Enter>': '<Return>', '<Shift-Enter>': '<Return>', '<Ctrl-Enter>': '<Ctrl-Return>'}
-
-c.changelog_after_upgrade = 'minor'
+      c.qt.args = []
+      c.qt.chromium.experimental_web_platform_features = 'auto'
+      c.qt.chromium.low_end_device_mode = 'never'
+      c.qt.chromium.process_model = 'process-per-site-instance'
+      c.qt.chromium.sandboxing = 'enable-all'
+      c.qt.environ = {}
+      c.qt.force_platform = None
+      c.qt.force_platformtheme = None
+      c.qt.force_software_rendering = 'none'
+      c.qt.highdpi = False
+      c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
+      c.qt.workarounds.disable_hangouts_extension = True
+      c.qt.workarounds.locale = False
+      c.qt.workarounds.remove_service_workers = False
 
 
 
@@ -398,6 +393,10 @@ c.content.user_stylesheets = []
           c.fileselect.multiple_files.command = [ ]
           c.fileselect.single_file.command = [ ]
 
+          c.editor.command = [ ]
+          c.editor.encoding = 'utf-8'
+          c.editor.remove_file = True
+
 
 
 
@@ -410,6 +409,8 @@ c.content.user_stylesheets = []
   c.zoom.levels = ['25%', '50%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%']
   c.zoom.mouse_divider = 0
   c.zoom.text_only = False
+
+
 
   c.input.escape_quits_reporter = True
   c.input.forward_unbound_keys = 'auto'
@@ -427,6 +428,10 @@ c.content.user_stylesheets = []
   c.input.partial_timeout = 0
   c.input.spatial_navigation = False
 
+
+
+  c.aliases = { }
+  c.bindings.key_mappings = { }
   c.bindings.default = {} 
 
     config.bind(':', 'cmd-set-text :')
