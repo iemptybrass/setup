@@ -4,11 +4,38 @@ config.load_autoconfig(True)
 
 c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save'}
 
+  c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+  c.editor.encoding = 'utf-8'
+  c.editor.remove_file = True
+
+c.spellcheck.languages = []
+
 c.auto_save.interval = 15000
+c.history_gap_interval = 30
+
+c.new_instance_open_target = 'tab'
+c.new_instance_open_target_window = 'last-focused'
 
 c.auto_save.session = False
 
+  c.session.default_name = None
+  c.session.lazy_restore = False
+
 c.backend = 'webengine'
+    c.qt.args = []
+    c.qt.chromium.experimental_web_platform_features = 'auto'
+    c.qt.chromium.low_end_device_mode = 'auto'
+    c.qt.chromium.process_model = 'process-per-site-instance'
+    c.qt.chromium.sandboxing = 'enable-all'
+    c.qt.environ = {}
+    c.qt.force_platform = None
+    c.qt.force_platformtheme = None
+    c.qt.force_software_rendering = 'none'
+    c.qt.highdpi = False
+    c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
+    c.qt.workarounds.disable_hangouts_extension = False
+    c.qt.workarounds.locale = False
+    c.qt.workarounds.remove_service_workers = False
 
 c.confirm_quit = ['never']
 
@@ -136,40 +163,39 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-
-  c.colors.tooltip.bg = None
-  c.colors.tooltip.fg = None
-      c.fonts.tooltip = None
-
+    c.colors.tooltip.bg = None
+    c.colors.tooltip.fg = None
+        c.fonts.tooltip = None
 
 
-  c.colors.webpage.bg = 'white'
-  c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
-  c.colors.webpage.darkmode.contrast = 0.0
-  c.colors.webpage.darkmode.enabled = False
-  c.colors.webpage.darkmode.policy.images = 'smart'
-  c.colors.webpage.darkmode.policy.page = 'smart'
-  c.colors.webpage.darkmode.threshold.background = 0
-  c.colors.webpage.darkmode.threshold.foreground = 256
-  c.colors.webpage.preferred_color_scheme = 'auto'
-      c.fonts.web.family.cursive = ''
-      c.fonts.web.family.fantasy = ''
-      c.fonts.web.family.fixed = ''
-      c.fonts.web.family.sans_serif = ''
-      c.fonts.web.family.serif = ''
-      c.fonts.web.family.standard = ''
-      c.fonts.web.size.default = 16
-      c.fonts.web.size.default_fixed = 13
-      c.fonts.web.size.minimum = 0
-      c.fonts.web.size.minimum_logical = 6
 
-    c.colors.contextmenu.disabled.bg = None
-    c.colors.contextmenu.disabled.fg = None
-    c.colors.contextmenu.menu.bg = None
-    c.colors.contextmenu.menu.fg = None
-    c.colors.contextmenu.selected.bg = None
-    c.colors.contextmenu.selected.fg = None
-        c.fonts.contextmenu = None
+    c.colors.webpage.bg = 'white'
+    c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
+    c.colors.webpage.darkmode.contrast = 0.0
+    c.colors.webpage.darkmode.enabled = False
+    c.colors.webpage.darkmode.policy.images = 'smart'
+    c.colors.webpage.darkmode.policy.page = 'smart'
+    c.colors.webpage.darkmode.threshold.background = 0
+    c.colors.webpage.darkmode.threshold.foreground = 256
+    c.colors.webpage.preferred_color_scheme = 'auto'
+        c.fonts.web.family.cursive = ''
+        c.fonts.web.family.fantasy = ''
+        c.fonts.web.family.fixed = ''
+        c.fonts.web.family.sans_serif = ''
+        c.fonts.web.family.serif = ''
+        c.fonts.web.family.standard = ''
+        c.fonts.web.size.default = 16
+        c.fonts.web.size.default_fixed = 13
+        c.fonts.web.size.minimum = 0
+        c.fonts.web.size.minimum_logical = 6
+
+      c.colors.contextmenu.disabled.bg = None
+      c.colors.contextmenu.disabled.fg = None
+      c.colors.contextmenu.menu.bg = None
+      c.colors.contextmenu.menu.fg = None
+      c.colors.contextmenu.selected.bg = None
+      c.colors.contextmenu.selected.fg = None
+          c.fonts.contextmenu = None
 
 
 
@@ -376,56 +402,43 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
-c.editor.encoding = 'utf-8'
-c.editor.remove_file = True
+      c.prompt.filebrowser = True
+      c.prompt.radius = 8
+
+          c.fileselect.folder.command = ['xterm', '-e', 'ranger', '--choosedir={}']
+          c.fileselect.handler = 'default'
+          c.fileselect.multiple_files.command = ['xterm', '-e', 'ranger', '--choosefiles={}']
+          c.fileselect.single_file.command = ['xterm', '-e', 'ranger', '--choosefile={}']
 
 
 
-c.fileselect.folder.command = ['xterm', '-e', 'ranger', '--choosedir={}']
-c.fileselect.handler = 'default'
-c.fileselect.multiple_files.command = ['xterm', '-e', 'ranger', '--choosefiles={}']
-c.fileselect.single_file.command = ['xterm', '-e', 'ranger', '--choosefile={}']
 
 
 
-c.history_gap_interval = 30
 
 
 
-c.new_instance_open_target = 'tab'
-c.new_instance_open_target_window = 'last-focused'
 
 
 
-c.prompt.filebrowser = True
-c.prompt.radius = 8
 
 
 
-c.qt.args = []
-c.qt.chromium.experimental_web_platform_features = 'auto'
-c.qt.chromium.low_end_device_mode = 'auto'
-c.qt.chromium.process_model = 'process-per-site-instance'
-c.qt.chromium.sandboxing = 'enable-all'
-c.qt.environ = {}
-c.qt.force_platform = None
-c.qt.force_platformtheme = None
-c.qt.force_software_rendering = 'none'
-c.qt.highdpi = False
-c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
-c.qt.workarounds.disable_hangouts_extension = False
-c.qt.workarounds.locale = False
-c.qt.workarounds.remove_service_workers = False
 
 
 
-c.session.default_name = None
-c.session.lazy_restore = False
 
 
 
-c.spellcheck.languages = []
+
+
+
+
+
+
+
+
+
 
 
 
@@ -433,18 +446,6 @@ c.zoom.default = '100%'
 c.zoom.levels = ['25%', '33%', '50%', '67%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%']
 c.zoom.mouse_divider = 512
 c.zoom.text_only = False
-
-
-
-
-
-
-
-
-
-
-
-
 
 c.input.escape_quits_reporter = True
 c.input.forward_unbound_keys = 'auto'
@@ -461,9 +462,6 @@ c.input.mouse.back_forward_buttons = True
 c.input.mouse.rocker_gestures = False
 c.input.partial_timeout = 0
 c.input.spatial_navigation = False
-
-
-
 
 c.bindings.default = {} 
 
