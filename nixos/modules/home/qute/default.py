@@ -1,5 +1,3 @@
-
-
 config.load_autoconfig(True)
 
 
@@ -40,6 +38,16 @@ config.load_autoconfig(True)
       c.qt.workarounds.disable_hangouts_extension = True
       c.qt.workarounds.locale = False
       c.qt.workarounds.remove_service_workers = False
+
+
+
+
+
+
+
+
+
+    bg = '#212121'
 
 
 
