@@ -360,7 +360,7 @@ c.content.user_stylesheets = []
         c.url.incdec_segments = ['path', 'query']
         c.url.open_base_url = False
         c.url.searchengines = {'DEFAULT': 'https://google.com/?q={}'}
-        c.url.start_pages = ['https://www.google.com']
+        c.url.start_pages = ['https://www.google.com/']
         c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name']
 
         c.messages.timeout = 3000
