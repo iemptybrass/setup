@@ -193,6 +193,39 @@ c.changelog_after_upgrade = 'minor'
   c.window.title_format = '{perc}{current_title}{title_sep}qutebrowser'
   c.window.transparent = False
 
+      c.tabs.background = True
+      c.tabs.close_mouse_button = 'middle'
+      c.tabs.close_mouse_button_on_bar = 'new-tab'
+      c.tabs.favicons.scale = 1.0
+      c.tabs.favicons.show = 'always'
+      c.tabs.focus_stack_size = 10
+      c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
+      c.tabs.indicator.width = 3
+      c.tabs.last_close = 'ignore'
+      c.tabs.max_width = -1
+      c.tabs.min_width = -1
+      c.tabs.mode_on_change = 'normal'
+      c.tabs.mousewheel_switching = True
+      c.tabs.new_position.related = 'next'
+      c.tabs.new_position.stacking = True
+      c.tabs.new_position.unrelated = 'last'
+      c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
+      c.tabs.pinned.frozen = True
+      c.tabs.pinned.shrink = True
+      c.tabs.position = 'top'
+      c.tabs.select_on_remove = 'next'
+      c.tabs.show = 'always'
+      c.tabs.show_switching_delay = 800
+      c.tabs.tabs_are_windows = False
+      c.tabs.title.alignment = 'left'
+      c.tabs.title.elide = 'right'
+      c.tabs.title.format = '{audio}{index}: {current_title}'
+      c.tabs.title.format_pinned = '{index}'
+      c.tabs.tooltips = True
+      c.tabs.undo_stack_size = 100
+      c.tabs.width = '15%'
+      c.tabs.wrap = True
+
     c.statusbar.padding = {'top': 1, 'bottom': 1, 'left': 0, 'right': 0}
     c.statusbar.position = 'bottom'
     c.statusbar.show = 'always'
@@ -237,41 +270,6 @@ c.changelog_after_upgrade = 'minor'
         c.search.incremental = True
         c.search.wrap = True
         c.search.wrap_messages = True
-
-
-
-      c.tabs.background = True
-      c.tabs.close_mouse_button = 'middle'
-      c.tabs.close_mouse_button_on_bar = 'new-tab'
-      c.tabs.favicons.scale = 1.0
-      c.tabs.favicons.show = 'always'
-      c.tabs.focus_stack_size = 10
-      c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
-      c.tabs.indicator.width = 3
-      c.tabs.last_close = 'ignore'
-      c.tabs.max_width = -1
-      c.tabs.min_width = -1
-      c.tabs.mode_on_change = 'normal'
-      c.tabs.mousewheel_switching = True
-      c.tabs.new_position.related = 'next'
-      c.tabs.new_position.stacking = True
-      c.tabs.new_position.unrelated = 'last'
-      c.tabs.padding = {'top': 0, 'bottom': 0, 'left': 5, 'right': 5}
-      c.tabs.pinned.frozen = True
-      c.tabs.pinned.shrink = True
-      c.tabs.position = 'top'
-      c.tabs.select_on_remove = 'next'
-      c.tabs.show = 'always'
-      c.tabs.show_switching_delay = 800
-      c.tabs.tabs_are_windows = False
-      c.tabs.title.alignment = 'left'
-      c.tabs.title.elide = 'right'
-      c.tabs.title.format = '{audio}{index}: {current_title}'
-      c.tabs.title.format_pinned = '{index}'
-      c.tabs.tooltips = True
-      c.tabs.undo_stack_size = 100
-      c.tabs.width = '15%'
-      c.tabs.wrap = True
 
 
 
