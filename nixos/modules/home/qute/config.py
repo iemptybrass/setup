@@ -54,6 +54,8 @@ c.changelog_after_upgrade = 'minor'
 
 
 
+c.content.user_stylesheets = []
+
   c.window.transparent = False
   c.fonts.default_family = []
   c.fonts.default_size = '10pt'
@@ -249,12 +251,12 @@ c.changelog_after_upgrade = 'minor'
 
 
 
-    c.content.autoplay = True
+    c.content.autoplay = False
     c.content.blocking.adblock.lists = ['https://easylist.to/easylist/easylist.txt', 'https://easylist.to/easylist/easyprivacy.txt']
     c.content.blocking.enabled = True
     c.content.blocking.hosts.block_subdomains = True
     c.content.blocking.hosts.lists = ['https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts']
-    c.content.blocking.method = 'auto'
+    c.content.blocking.method = 'both'
     c.content.blocking.whitelist = []
     c.content.cache.appcache = True
     c.content.cache.maximum_pages = 0
@@ -294,7 +296,7 @@ c.changelog_after_upgrade = 'minor'
     c.content.media.audio_video_capture = 'ask'
     c.content.media.video_capture = 'ask'
     c.content.mouse_lock = 'ask'
-    c.content.mute = False
+    c.content.mute = True
     c.content.netrc_file = None
     c.content.notifications.enabled = 'ask'
     c.content.notifications.presenter = 'auto'
@@ -303,7 +305,7 @@ c.changelog_after_upgrade = 'minor'
     c.content.persistent_storage = 'ask'
     c.content.plugins = False
     c.content.prefers_reduced_motion = False
-    c.content.print_element_backgrounds = True
+    c.content.print_element_backgrounds = False
     c.content.private_browsing = False
     c.content.proxy = 'system'
     c.content.proxy_dns_requests = True
@@ -312,7 +314,6 @@ c.changelog_after_upgrade = 'minor'
     c.content.site_specific_quirks.skip = []
     c.content.tls.certificate_errors = 'ask'
     c.content.unknown_url_scheme_policy = 'allow-from-user-interaction'
-    c.content.user_stylesheets = []
     c.content.webgl = True
     c.content.webrtc_ip_handling_policy = 'all-interfaces'
     c.content.xss_auditing = False
