@@ -4,15 +4,15 @@
 
   imports = [
         ./fuzzel
-      ./hyprland
-      ./hyprlock
-      ./kitty
+        ./hyprland
+        ./hyprlock
+        ./kitty
         ./micro
-      ./neofetch
+        ./neofetch
       ./qute
-      ./shell
-      ./waybar
-      ./yazi
+        ./shell
+        ./waybar
+        ./yazi
              ];
 
 
