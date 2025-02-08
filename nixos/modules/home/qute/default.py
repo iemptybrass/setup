@@ -7,8 +7,8 @@ c.changelog_after_upgrade = 'never'
 
 c.spellcheck.languages = [ ]
 
-c.auto_save.interval = 15000
-c.history_gap_interval = 30
+c.auto_save.interval = 0
+c.history_gap_interval = 27
 
 c.logging.level.console = 'info'
 c.logging.level.ram = 'debug'
@@ -233,30 +233,30 @@ c.tabs.close_mouse_button_on_bar = 'ignore'
 c.tabs.favicons.scale = 0
 c.tabs.favicons.show = 'never'
 c.tabs.focus_stack_size = 1
-c.tabs.indicator.padding = { 'top': 0, 'bottom': 0, 'left': 0, 'right': 5 }
-c.tabs.indicator.width = 10
+c.tabs.indicator.padding = { 'top': 0, 'bottom': 0, 'left': 0, 'right': 3 }
+c.tabs.indicator.width = 9
 c.tabs.last_close = 'startpage'
-c.tabs.max_width = 200
-c.tabs.min_width = 200
+c.tabs.max_width = 243
+c.tabs.min_width = 243
 c.tabs.mode_on_change = 'normal'
 c.tabs.mousewheel_switching = False
 c.tabs.new_position.related = 'next'
 c.tabs.new_position.stacking = False
 c.tabs.new_position.unrelated = 'last'
-c.tabs.padding = { 'top': 0, 'bottom': 0, 'left': 0, 'right': 5 }
+c.tabs.padding = { 'top': 0, 'bottom': 0, 'left': 0, 'right': 3 }
 c.tabs.pinned.frozen = True
 c.tabs.pinned.shrink = True
 c.tabs.position = 'top'
 c.tabs.select_on_remove = 'prev'
 c.tabs.show = 'always'
-c.tabs.show_switching_delay = 800
+c.tabs.show_switching_delay = 729
 c.tabs.tabs_are_windows = False
 c.tabs.title.alignment = 'center'
 c.tabs.title.elide = 'none'
 c.tabs.title.format = '{audio}{current_url}'
 c.tabs.title.format_pinned = '{index}'
 c.tabs.tooltips = False
-c.tabs.undo_stack_size = 20
+c.tabs.undo_stack_size = 9
 c.tabs.width = '0%'
 c.tabs.wrap = True
 
@@ -279,7 +279,7 @@ c.content.default_encoding = 'iso-8859-1'
 c.content.desktop_capture = 'ask'
 c.content.dns_prefetch = True
 # c.content.frame_flattening = False
-c.content.fullscreen.overlay_timeout = 3000
+c.content.fullscreen.overlay_timeout = 2187
 c.content.fullscreen.window = False
 c.content.geolocation = 'ask'
 c.content.headers.accept_language = 'en-US,en;q=0.9'
@@ -351,8 +351,8 @@ c.hints.selectors = { 'all': ['a', 'area', 'textarea', 'select', 'input:not([typ
 c.hints.uppercase = False
 
 c.keyhint.blacklist = [ ]
-c.keyhint.delay = 500
-c.keyhint.radius = 6
+c.keyhint.delay = 729
+c.keyhint.radius = 9
 
 c.fileselect.folder.command = [ ' ' ]
 c.fileselect.handler = 'default'
@@ -365,7 +365,7 @@ c.editor.remove_file = True
 
 
 
-c.statusbar.padding = { 'top': 5, 'bottom': 2, 'left': 10, 'right': 10 }
+c.statusbar.padding = { 'top': 9, 'bottom': 3, 'left': 9, 'right': 9 }
 c.statusbar.position = 'top'
 c.statusbar.show = 'always'
 c.statusbar.widgets = [ 'history','text:[','url','text:]', 'progress', 'text:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ', 'search_match' ]
@@ -380,7 +380,7 @@ c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campai
 
 c.messages.timeout = 0
 
-c.completion.cmd_history_max_items = 10
+c.completion.cmd_history_max_items = 9
 c.completion.delay = 0
 c.completion.favorite_paths = [ ]
 c.completion.height = '30%'
@@ -394,7 +394,7 @@ c.completion.shrink = True
 c.completion.timestamp_format = '%m-%d-%Y %H:%M'
 c.completion.use_best_match = False
 c.completion.web_history.exclude = [ ]
-c.completion.web_history.max_items = 500
+c.completion.web_history.max_items = 729
 
 c.downloads.location.directory = None
 c.downloads.location.prompt = True
