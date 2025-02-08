@@ -40,6 +40,9 @@
 ││├─ #BAED87 > Green-Yellow
 ││├─ #FED86F > Yellow-Orange
 ││└─ #FF8E54 > Orange-Red
+│├ Other
+│├─ #836953 > Brown
+│└─ #CFCFC4 > Gray
 ├─ Warning > Yellow
 ├─ Urgent > Yellow
 └─ Error > Red
