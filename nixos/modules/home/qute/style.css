@@ -1193,7 +1193,7 @@ th.navbox-group {
   color: #fff !important
 }
 
-.s-topbar {
+.s-topbar, .s-topbar {
   background-color: #000;
 }
 
