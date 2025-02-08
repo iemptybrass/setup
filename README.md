@@ -24,22 +24,22 @@
 │├─ #CCCCCC > Text Alternative
 │├─ #ADADAD > Focused
 │└─ #525252 > Unocused
-├┬ Primary - Secondary
+├┬ Colors
 │├┬ Primary
 ││├─ #FF6961 > Red
 ││├─ #FDFD96 > Yellow
 ││└─ #AEC6CF > Blue
 │├┬ Secondary
-││├─ #FFB347 > Orange
+││├─ #B39EB5 > Purple
 ││├─ #77DD77 > Green
-││└─ #B39EB5 > Purple
+││└─ #FFB347 > Orange
 │├┬ Teriary
-││├─ # > 
-││├─ # > 
-││├─ # > 
-││├─ # > 
-││├─ # > 
-││└─ # > 
+││├─ #D9848B > Red-Purple
+││├─ #B1B2C2 > Purple-Blue
+││├─ #93D2A3 > Blue-Green
+││├─ #BAED87 > Green-Yellow
+││├─ #FED86F > Yellow-Orange
+││└─ #FF8E54 > Orange-Red
 ├─ Warning > Yellow
 ├─ Urgent > Yellow
 └─ Error > Red
