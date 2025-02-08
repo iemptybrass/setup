@@ -3,7 +3,7 @@ config.load_autoconfig(False)
 
 c.confirm_quit = [ 'never' ]
 
-c.changelog_after_upgrade = 'none'
+c.changelog_after_upgrade = 'never'
 
 c.spellcheck.languages = [ ]
 
@@ -185,12 +185,12 @@ c.colors.webpage.darkmode.policy.page = 'smart'
 c.colors.webpage.darkmode.threshold.background = 0
 c.colors.webpage.darkmode.threshold.foreground = 256
 c.colors.webpage.preferred_color_scheme = 'auto'
-c.fonts.web.family.cursive = ''
-c.fonts.web.family.fantasy = ''
-c.fonts.web.family.fixed = ''
-c.fonts.web.family.sans_serif = ''
-c.fonts.web.family.serif = ''
-c.fonts.web.family.standard = ''
+c.fonts.web.family.cursive = ' '
+c.fonts.web.family.fantasy = ' '
+c.fonts.web.family.fixed = ' '
+c.fonts.web.family.sans_serif = ' '
+c.fonts.web.family.serif = ' '
+c.fonts.web.family.standard = ' '
 c.fonts.web.size.default = 16
 c.fonts.web.size.default_fixed = 13
 c.fonts.web.size.minimum = 0
@@ -223,7 +223,7 @@ c.fonts.keyhint = 'default_size default_family'
 
 
 c.window.hide_decoration = False
-c.window.title_format = ''
+c.window.title_format = ' '
 
 
 
@@ -232,7 +232,7 @@ c.tabs.close_mouse_button = 'none'
 c.tabs.close_mouse_button_on_bar = 'ignore'
 c.tabs.favicons.scale = 0
 c.tabs.favicons.show = 'never'
-c.tabs.focus_stack_size = 0
+c.tabs.focus_stack_size = 1
 c.tabs.indicator.padding = { 'top': 0, 'bottom': 0, 'left': 0, 'right': 5 }
 c.tabs.indicator.width = 10
 c.tabs.last_close = 'startpage'
@@ -269,8 +269,8 @@ c.content.blocking.hosts.block_subdomains = True
 c.content.blocking.hosts.lists = [ 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' ]
 c.content.blocking.method = 'both'
 c.content.blocking.whitelist = [ ]
-c.content.cache.appcache = True
-c.content.cache.maximum_pages = 0
+# c.content.cache.appcache = True
+# c.content.cache.maximum_pages = 0
 c.content.cache.size = None
 c.content.canvas_reading = True
 c.content.cookies.accept = 'all'
@@ -278,7 +278,7 @@ c.content.cookies.store = True
 c.content.default_encoding = 'iso-8859-1'
 c.content.desktop_capture = 'ask'
 c.content.dns_prefetch = True
-c.content.frame_flattening = False
+# c.content.frame_flattening = False
 c.content.fullscreen.overlay_timeout = 3000
 c.content.fullscreen.window = False
 c.content.geolocation = 'ask'
@@ -290,7 +290,7 @@ c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_vers
 c.content.hyperlink_auditing = False
 c.content.images = True
 c.content.javascript.alert = True
-c.content.javascript.can_close_tabs = False
+# c.content.javascript.can_close_tabs = False
 c.content.javascript.can_open_tabs_automatically = False
 c.content.javascript.clipboard = 'ask'
 c.content.javascript.enabled = True
@@ -319,7 +319,7 @@ c.content.prefers_reduced_motion = False
 c.content.print_element_backgrounds = False
 c.content.private_browsing = False
 c.content.proxy = 'system'
-c.content.proxy_dns_requests = True
+# c.content.proxy_dns_requests = True
 c.content.register_protocol_handler = 'ask'
 c.content.site_specific_quirks.enabled = True
 c.content.site_specific_quirks.skip = [ ]
@@ -337,7 +337,7 @@ c.hints.auto_follow_timeout = 0
 c.hints.border = '1px solid #E3BE23'
 c.hints.chars = 'asdfghjkl'
 c.hints.dictionary = '/usr/share/dict/words'
-c.hints.find_implementation = 'python'
+# c.hints.find_implementation = 'python'
 c.hints.hide_unmatched_rapid_hints = True
 c.hints.leave_on_load = False
 c.hints.min_chars = 1
@@ -354,12 +354,12 @@ c.keyhint.blacklist = [ ]
 c.keyhint.delay = 500
 c.keyhint.radius = 6
 
-c.fileselect.folder.command = [ ]
+c.fileselect.folder.command = [ ' ' ]
 c.fileselect.handler = 'default'
-c.fileselect.multiple_files.command = [ ]
-c.fileselect.single_file.command = [ ]
+c.fileselect.multiple_files.command = [ ' ' ]
+c.fileselect.single_file.command = [ ' ' ]
 
-c.editor.command = [ ]
+c.editor.command = [ ' ' ]
 c.editor.encoding = 'utf-8'
 c.editor.remove_file = True
 
@@ -378,7 +378,7 @@ c.url.searchengines = { 'DEFAULT': 'https://google.com/?q={}' }
 c.url.start_pages = [ 'https://www.google.com/' ]
 c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name' ]
 
-c.messages.timeout = -1
+c.messages.timeout = 0
 
 c.completion.cmd_history_max_items = 10
 c.completion.delay = 0
@@ -424,7 +424,7 @@ c.prompt.radius = 9
 c.zoom.default = '100%'
 c.zoom.levels = [ '25%', '50%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%' ]
 c.zoom.mouse_divider = 0
-c.zoom.text_only = False
+# c.zoom.text_only = False
 
 
 
