@@ -481,7 +481,7 @@ config.bind('<Alt-Tab>', 'open -t')
 
 config.bind('<Ctrl-M>', 'tab-mute')
 
-config.bind('<Ctrl-R>', 'reload')
+config.bind('<Alt-R>', 'reload')
 
 config.bind('<Alt-Left>', 'back')
 config.bind('<Alt-Right>', 'forward')
@@ -529,5 +529,6 @@ config.bind('<Ctrl-Shift-Tab>', 'search')
 config.bind('<Ctrl-Tab>', 'search')
 config.bind('<Ctrl-Right>', 'search')
 config.bind('<Ctrl-X>', 'search')
+config.bind('<Ctrl-R>', 'search')
 config.bind('<Ctrl-T>', 'search')
 config.bind('<U>', 'search')
