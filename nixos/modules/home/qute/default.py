@@ -48,6 +48,16 @@ c.qt.workarounds.remove_service_workers = False
 
 
 bg = '#212121'
+fg = '#FFFFFF'
+fg_a = '#CCCCCC'
+fo = '#ADADAD'
+unfo = '#525252'
+r = '#FF6961'
+o = '#FFB347'
+g = '#FDFD96'
+y = '#77DD77'
+b = '#AEC6CF'
+p = '#B39EB5'
 
 
 
@@ -68,27 +78,27 @@ c.fonts.debug_console = 'default_size default_family'
 
 
 
-c.colors.tabs.bar.bg = '#555555'
-c.colors.tabs.even.bg = 'darkgrey'
-c.colors.tabs.even.fg = 'white'
-c.colors.tabs.indicator.error = '#ff0000'
-c.colors.tabs.indicator.start = '#0000aa'
-c.colors.tabs.indicator.stop = '#00aa00'
-c.colors.tabs.indicator.system = 'rgb'
-c.colors.tabs.odd.bg = 'grey'
-c.colors.tabs.odd.fg = 'white'
-c.colors.tabs.pinned.even.bg = 'darkseagreen'
-c.colors.tabs.pinned.even.fg = 'white'
-c.colors.tabs.pinned.odd.bg = 'seagreen'
-c.colors.tabs.pinned.odd.fg = 'white'
-c.colors.tabs.pinned.selected.even.bg = 'black'
-c.colors.tabs.pinned.selected.even.fg = 'white'
-c.colors.tabs.pinned.selected.odd.bg = 'black'
-c.colors.tabs.pinned.selected.odd.fg = 'white'
-c.colors.tabs.selected.even.bg = 'black'
-c.colors.tabs.selected.even.fg = 'white'
-c.colors.tabs.selected.odd.bg = 'black'
-c.colors.tabs.selected.odd.fg = 'white'
+c.colors.tabs.bar.bg = bg
+c.colors.tabs.even.bg = unfo
+c.colors.tabs.even.fg = fg_a
+c.colors.tabs.indicator.error = bg
+c.colors.tabs.indicator.start = bg
+c.colors.tabs.indicator.stop = bg
+c.colors.tabs.indicator.system = 'none'
+c.colors.tabs.odd.bg = unfo
+c.colors.tabs.odd.fg = fg_a
+c.colors.tabs.pinned.even.bg = 'red'
+c.colors.tabs.pinned.even.fg = 'red'
+c.colors.tabs.pinned.odd.bg = 'red'
+c.colors.tabs.pinned.odd.fg = 'red'
+c.colors.tabs.pinned.selected.even.bg = 'red'
+c.colors.tabs.pinned.selected.even.fg = 'red'
+c.colors.tabs.pinned.selected.odd.bg = 'red'
+c.colors.tabs.pinned.selected.odd.fg = 'red'
+c.colors.tabs.selected.even.bg = fo
+c.colors.tabs.selected.even.fg = fg
+c.colors.tabs.selected.odd.bg = fo
+c.colors.tabs.selected.odd.fg = fg
 c.fonts.tabs.selected = 'default_size default_family'
 c.fonts.tabs.unselected = 'default_size default_family'
 
@@ -100,29 +110,29 @@ c.fonts.tooltip = None
 
 
 
-c.colors.statusbar.caret.bg = 'purple'
-c.colors.statusbar.caret.fg = 'white'
-c.colors.statusbar.caret.selection.bg = '#a12dff'
-c.colors.statusbar.caret.selection.fg = 'white'
-c.colors.statusbar.command.bg = 'black'
-c.colors.statusbar.command.fg = 'white'
-c.colors.statusbar.command.private.bg = 'darkslategray'
-c.colors.statusbar.command.private.fg = 'white'
-c.colors.statusbar.insert.bg = 'darkgreen'
-c.colors.statusbar.insert.fg = 'white'
-c.colors.statusbar.normal.bg = 'black'
-c.colors.statusbar.normal.fg = 'white'
-c.colors.statusbar.passthrough.bg = 'darkblue'
-c.colors.statusbar.passthrough.fg = 'white'
-c.colors.statusbar.private.bg = '#666666'
-c.colors.statusbar.private.fg = 'white'
-c.colors.statusbar.progress.bg = 'white'
-c.colors.statusbar.url.error.fg = 'orange'
-c.colors.statusbar.url.fg = 'white'
-c.colors.statusbar.url.hover.fg = 'aqua'
-c.colors.statusbar.url.success.http.fg = 'white'
-c.colors.statusbar.url.success.https.fg = 'lime'
-c.colors.statusbar.url.warn.fg = 'yellow'
+c.colors.statusbar.caret.bg = 'red'
+c.colors.statusbar.caret.fg = 'red'
+c.colors.statusbar.caret.selection.bg = 'red'
+c.colors.statusbar.caret.selection.fg = 'red'
+c.colors.statusbar.command.bg = bg
+c.colors.statusbar.command.fg = fg
+c.colors.statusbar.command.private.bg = 'red'
+c.colors.statusbar.command.private.fg = 'red'
+c.colors.statusbar.insert.bg = bg
+c.colors.statusbar.insert.fg = fg
+c.colors.statusbar.normal.bg = bg
+c.colors.statusbar.normal.fg = fg
+c.colors.statusbar.passthrough.bg = bg
+c.colors.statusbar.passthrough.fg = fg
+c.colors.statusbar.private.bg = 'red'
+c.colors.statusbar.private.fg = 'red'
+c.colors.statusbar.progress.bg = bg
+c.colors.statusbar.url.error.fg = fg
+c.colors.statusbar.url.fg = fg
+c.colors.statusbar.url.hover.fg = b
+c.colors.statusbar.url.success.http.fg = fg
+c.colors.statusbar.url.success.https.fg = fg
+c.colors.statusbar.url.warn.fg = y
 c.fonts.statusbar = 'default_size default_family'
 
 c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
