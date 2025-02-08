@@ -18,45 +18,48 @@
 
 ```
 .
-├┬ Main
-│├┬ Text
-││├─ # > Main
-││├─ # > Alternative
-││├─ # > Dark
-││├┬ Code Block
-│││├─ Red > Emphasized
-│││├─  > Added
-│││└─ # > Deleted
-││├─ # >
-││├─ # >
-││└─ # >
-│├─ #212121 > Body
-│├─ #FFFFFF > Text Main
-│├─ #CCCCCC > Text Alternative
-│├─ #ADADAD > Focused
-│└─ #525252 > Unocused
 ├┬ Colors
-│├┬ Primary
-││├─ #FF6961 > Red
-││├─ #FDFD96 > Yellow
-││└─ #AEC6CF > Blue
-│├┬ Secondary
-││├─ #B39EB5 > Purple
-││├─ #77DD77 > Green
-││└─ #FFB347 > Orange
-│├┬ Teriary
-││├─ #D9848B > Red-Purple
-││├─ #B1B2C2 > Purple-Blue
-││├─ #93D2A3 > Blue-Green
-││├─ #BAED87 > Green-Yellow
-││├─ #FED86F > Yellow-Orange
-││└─ #FF8E54 > Orange-Red
-│├ Other
-│├─ #836953 > Brown
-│└─ #CFCFC4 > Gray
-├─ Warning > Yellow
-├─ Urgent > Yellow
-└─ Error > Red
+│├┬ Bright
+││├─ #fb4934
+││├─ #b8bb26
+││├─ #fabd2f
+││├─ #83a598
+││├─ #d3869b
+││└─ #fe8019
+│├┬ Neutral
+││├─ #cc241d
+││├─ #98971a
+││├─ #d79921
+││├─ #458588
+││├─ #b16286
+││└─ #d65d0e
+│└┬ Faded
+│-├─ #9d0006
+│-├─ #79740e
+│-├─ #b57614
+│-├─ #076678
+│-├─ #8f3f71
+│-└─ #af3a03
+├┬ Main
+│├┬ Dark
+││├─ #1d2021
+││├─ #282828
+││├─ #32302f
+││├─ #3c3836
+││├─ #504945
+││├─ #665c54
+││└─ #7c6f64
+│├┬ Gray
+││└─ #928374
+│├┬ Light
+│-├─ #a89984
+│-├─ #bdae93
+│-├─ #d5c4a1
+│-├─ #ebdbb2
+│-├─ #f2e5bc
+│-├─ #fbf1c7
+│-└─ #f9f5d7
+└─ 
 ```
 
 ## To Do 
