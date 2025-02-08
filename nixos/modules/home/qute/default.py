@@ -1,11 +1,11 @@
-config.load_autoconfig(True)
+config.load_autoconfig(False)
 
 
-c.confirm_quit = ['never']
+c.confirm_quit = [ 'never' ]
 
 c.changelog_after_upgrade = 'none'
 
-c.spellcheck.languages = []
+c.spellcheck.languages = [ ]
 
 c.auto_save.interval = 15000
 c.history_gap_interval = 30
@@ -24,7 +24,7 @@ c.session.lazy_restore = False
 
 c.backend = 'webengine'
 
-c.qt.args = []
+c.qt.args = [ ]
 c.qt.chromium.experimental_web_platform_features = 'auto'
 c.qt.chromium.low_end_device_mode = 'never'
 c.qt.chromium.process_model = 'process-per-site-instance'
@@ -448,7 +448,7 @@ c.input.spatial_navigation = False
 
 c.aliases = { }
 c.bindings.key_mappings = { }
-c.bindings.default = {} 
+c.bindings.default = { } 
 
 config.bind(':', 'cmd-set-text :')
 
