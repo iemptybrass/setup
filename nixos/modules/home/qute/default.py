@@ -47,8 +47,8 @@ c.qt.workarounds.remove_service_workers = False
 
 
 
-bg = '#212121'
-fg = '#FFFFFF'
+bg = '#282828'
+fg = '#fbf1c7'
 fg_a = '#CCCCCC'
 fo = '#ADADAD'
 unfo = '#525252'
