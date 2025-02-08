@@ -372,17 +372,17 @@
 
   c.url.auto_search = 'naive'
   c.url.default_page = 'https://www.google.com/'
-  c.url.incdec_segments = ['path', 'query']
+  c.url.incdec_segments = [ 'path', 'query' ]
   c.url.open_base_url = False
-  c.url.searchengines = {'DEFAULT': 'https://google.com/?q={}'}
-  c.url.start_pages = ['https://www.google.com/']
-  c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name']
+  c.url.searchengines = { 'DEFAULT': 'https://google.com/?q={}' }
+  c.url.start_pages = [ 'https://www.google.com/' ]
+  c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name' ]
 
   c.messages.timeout = 3000
 
   c.completion.cmd_history_max_items = 10
   c.completion.delay = 0
-  c.completion.favorite_paths = []
+  c.completion.favorite_paths = [ ]
   c.completion.height = '30%'
   c.completion.min_chars = 1
   c.completion.open_categories = [ 'quickmarks', 'bookmarks', 'history' ]
@@ -393,7 +393,7 @@
   c.completion.shrink = True
   c.completion.timestamp_format = '%m-%d-%Y %H:%M'
   c.completion.use_best_match = False
-  c.completion.web_history.exclude = []
+  c.completion.web_history.exclude = [ ]
   c.completion.web_history.max_items = 500
 
   c.downloads.location.directory = None
@@ -422,7 +422,7 @@
 
 
  c.zoom.default = '100%'
- c.zoom.levels = ['25%', '50%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%']
+ c.zoom.levels = [ '25%', '50%', '75%', '90%', '100%', '110%', '125%', '150%', '175%', '200%', '250%', '300%', '400%', '500%' ]
  c.zoom.mouse_divider = 0
  c.zoom.text_only = False
 
