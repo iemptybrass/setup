@@ -25,12 +25,21 @@
 │├─ #ADADAD > Focused
 │└─ #525252 > Unocused
 ├┬ Primary - Secondary
-│├─ #FF6961 > Red
-│├─ #FFB347 > Orange
-│├─ #FDFD96 > Yellow
-│├─ #77DD77 > Green
-│├─ #AEC6CF > Blue
-│└─ #B39EB5 > Purple
+│├┬ Primary
+││├─ #FF6961 > Red
+││├─ #FDFD96 > Yellow
+││└─ #AEC6CF > Blue
+│├┬ Secondary
+││├─ #FFB347 > Orange
+││├─ #77DD77 > Green
+││└─ #B39EB5 > Purple
+│├┬ Teriary
+││├─ # > 
+││├─ # > 
+││├─ # > 
+││├─ # > 
+││├─ # > 
+││└─ # > 
 ├─ Warning > Yellow
 ├─ Urgent > Yellow
 └─ Error > Red
