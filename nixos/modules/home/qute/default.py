@@ -359,7 +359,7 @@ c.fileselect.handler = 'default'
 c.fileselect.multiple_files.command = [ ' ' ]
 c.fileselect.single_file.command = [ ' ' ]
 
-c.editor.command = [ ' ' ]
+c.editor.command = [ ' {} ' ]
 c.editor.encoding = 'utf-8'
 c.editor.remove_file = True
 
