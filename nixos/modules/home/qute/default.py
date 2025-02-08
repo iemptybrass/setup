@@ -57,12 +57,12 @@ bg = '#212121'
 
 
 
-c.content.user_stylesheets = []
+c.content.user_stylesheets = [ ]
 
 
 
 c.window.transparent = False
-c.fonts.default_family = []
+c.fonts.default_family = [ ]
 c.fonts.default_size = '10pt'
 c.fonts.debug_console = 'default_size default_family'
 
@@ -268,7 +268,7 @@ c.content.blocking.enabled = True
 c.content.blocking.hosts.block_subdomains = True
 c.content.blocking.hosts.lists = [ 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts' ]
 c.content.blocking.method = 'both'
-c.content.blocking.whitelist = []
+c.content.blocking.whitelist = [ ]
 c.content.cache.appcache = True
 c.content.cache.maximum_pages = 0
 c.content.cache.size = None
@@ -378,7 +378,7 @@ c.url.searchengines = { 'DEFAULT': 'https://google.com/?q={}' }
 c.url.start_pages = [ 'https://www.google.com/' ]
 c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name' ]
 
-c.messages.timeout = 3000
+c.messages.timeout = -1
 
 c.completion.cmd_history_max_items = 10
 c.completion.delay = 0
