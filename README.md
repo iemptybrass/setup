@@ -14,7 +14,7 @@
 └─ flake.nix               
 ```
 
-## colors
+## Theme
 
 ```
 .
@@ -51,7 +51,7 @@
 ││└─ #7c6f64
 │├┬ Gray
 ││└─ #928374
-│├┬ Light
+│└┬ Light
 │-├─ #a89984
 │-├─ #bdae93
 │-├─ #d5c4a1
@@ -59,7 +59,11 @@
 │-├─ #f2e5bc
 │-├─ #fbf1c7
 │-└─ #f9f5d7
-└─ 
+└┬ Fonts
+-├─ Arial
+-├─ Times New Roman
+-├─ 0xproto Nerd Font
+-└─ Twimoji
 ```
 
 ## To Do 
