@@ -10,8 +10,6 @@
   xdg = {
     configFile."qutebrowser/config.py" = {
         source = ./default.py;      };
-    configFile."qutebrowser/style.css" = {
-        source = ./style.css;      };
          };
 
 
