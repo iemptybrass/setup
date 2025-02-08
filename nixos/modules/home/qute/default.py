@@ -68,7 +68,13 @@ clear = 'rgba(0, 0, 0, 0)'
 
 
 
-c.content.user_stylesheets = [ ]
+c.content.user_stylesheets = [ ./style.css ]
+
+
+
+
+
+
 
 
 
