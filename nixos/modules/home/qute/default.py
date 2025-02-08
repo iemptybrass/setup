@@ -47,28 +47,28 @@ c.qt.workarounds.remove_service_workers = False
 
 
 
-dark1 = #1d2021
-dark2 = #282828
-dark3 = #32302f
-dark4 = #3c3836
-dark5 = #504945
-dark6 = #665c54
-dark7 = #7c6f64
-gray1 = #928374
-light1 = #a89984
-light2 = #bdae93
-light3 = #d5c4a1
-light4 = #f2e5bc
-light5 = #f2e5bc
-light6 = #fbf1c7
-light7 = #f9f5d7
+dark1 = '#1d2021'
+dark2 = '#282828'
+dark3 = '#32302f'
+dark4 = '#3c3836'
+dark5 = '#504945'
+dark6 = '#665c54'
+dark7 = '#7c6f64'
+gray1 = '#928374'
+light1 = '#a89984'
+light2 = '#bdae93'
+light3 = '#d5c4a1'
+light4 = '#f2e5bc'
+light5 = '#f2e5bc'
+light6 = '#fbf1c7'
+light7 = '#f9f5d7'
 
-red = #9d0006
-green = #79740e
-yellow = #b57614
-blue = #076678
-purple = #8f3f71
-orange = #af3a03
+red = '#9d0006'
+green = '#79740e'
+yellow = '#b57614'
+blue = '#076678'
+purple = '#8f3f71'
+orange = '#af3a03'
 
 clear = 'rgba(0, 0, 0, 0)'
 
