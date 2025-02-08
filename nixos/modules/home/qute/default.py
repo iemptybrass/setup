@@ -62,12 +62,6 @@ clear = 'rgba(0, 0, 0, 0)'
 
 
 
-
-
-
-
-
-
 c.content.user_stylesheets = [ './style.css' ]
 
 
@@ -201,7 +195,7 @@ c.fonts.prompts = 'default_size sans-serif'
 #c.colors.webpage.darkmode.policy.page = 'smart'
 #c.colors.webpage.darkmode.threshold.background = 0
 #c.colors.webpage.darkmode.threshold.foreground = 256
-#c.colors.webpage.preferred_color_scheme = 'auto'
+c.colors.webpage.preferred_color_scheme = 'dark'
 c.fonts.web.family.cursive = ' '
 c.fonts.web.family.fantasy = ' '
 c.fonts.web.family.fixed = ' '
