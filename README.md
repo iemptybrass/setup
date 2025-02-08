@@ -19,7 +19,18 @@
 ```
 .
 ├┬ Main
-│├─ #212121 > Background
+│├┬ Text
+││├─ # > Main
+││├─ # > Alternative
+││├─ # > Dark
+││├┬ Code Block
+│││├─ Red > Emphasized
+│││├─  > Added
+│││└─ # > Deleted
+││├─ # >
+││├─ # >
+││└─ # >
+│├─ #212121 > Body
 │├─ #FFFFFF > Text Main
 │├─ #CCCCCC > Text Alternative
 │├─ #ADADAD > Focused
