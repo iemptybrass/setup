@@ -35,7 +35,7 @@ c.qt.force_platformtheme = None
 c.qt.force_software_rendering = 'none'
 c.qt.highdpi = False
 c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
-c.qt.workarounds.disable_hangouts_extension = True
+c.qt.workarounds.disable_hangouts_extension = False
 c.qt.workarounds.locale = False
 c.qt.workarounds.remove_service_workers = False
 
