@@ -58,6 +58,7 @@ g = '#FDFD96'
 y = '#77DD77'
 b = '#AEC6CF'
 p = '#B39EB5'
+clear = 'rgba(0, 0, 0, 0)'
 
 
 
@@ -104,8 +105,8 @@ c.fonts.tabs.unselected = 'default_size default_family'
 
 
 
-c.colors.tooltip.bg = None
-c.colors.tooltip.fg = None
+c.colors.tooltip.bg = clear
+c.colors.tooltip.fg = clear
 c.fonts.tooltip = None
 
 
@@ -135,53 +136,53 @@ c.colors.statusbar.url.success.https.fg = fg
 c.colors.statusbar.url.warn.fg = y
 c.fonts.statusbar = 'default_size default_family'
 
-c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
+c.colors.completion.category.bg = bg
 c.colors.completion.category.border.bottom = 'black'
 c.colors.completion.category.border.top = 'black'
-c.colors.completion.category.fg = 'white'
-c.colors.completion.even.bg = '#333333'
+c.colors.completion.category.fg = fg
+c.colors.completion.even.bg = bg
 c.colors.completion.fg = [ 'white', 'white', 'white' ]
-c.colors.completion.item.selected.bg = '#e8c000'
+c.colors.completion.item.selected.bg = fo
 c.colors.completion.item.selected.border.bottom = '#bbbb00'
 c.colors.completion.item.selected.border.top = '#bbbb00'
-c.colors.completion.item.selected.fg = 'black'
-c.colors.completion.item.selected.match.fg = '#ff4444'
-c.colors.completion.match.fg = '#ff4444'
-c.colors.completion.odd.bg = '#444444'
+c.colors.completion.item.selected.fg = fg
+c.colors.completion.item.selected.match.fg = o
+c.colors.completion.match.fg = o
+c.colors.completion.odd.bg = bg
 c.colors.completion.scrollbar.bg = '#333333'
 c.colors.completion.scrollbar.fg = 'white'
 c.fonts.completion.category = 'bold default_size default_family'
 c.fonts.completion.entry = 'default_size default_family'
 
 c.colors.downloads.bar.bg = 'black'
-c.colors.downloads.error.bg = 'red'
-c.colors.downloads.error.fg = 'white'
-c.colors.downloads.start.bg = '#0000aa'
-c.colors.downloads.start.fg = 'white'
-c.colors.downloads.stop.bg = '#00aa00'
-c.colors.downloads.stop.fg = 'white'
+c.colors.downloads.error.bg = r
+c.colors.downloads.error.fg = fg
+c.colors.downloads.start.bg = clear
+c.colors.downloads.start.fg = fg_a
+c.colors.downloads.stop.bg = g
+c.colors.downloads.stop.fg = fg
 c.colors.downloads.system.bg = 'rgb'
 c.colors.downloads.system.fg = 'rgb'
 c.fonts.downloads = 'default_size default_family'
 
-c.colors.messages.error.bg = 'red'
-c.colors.messages.error.border = '#bb0000'
-c.colors.messages.error.fg = 'white'
-c.colors.messages.info.bg = 'black'
-c.colors.messages.info.border = '#333333'
-c.colors.messages.info.fg = 'white'
-c.colors.messages.warning.bg = 'darkorange'
-c.colors.messages.warning.border = '#d47300'
-c.colors.messages.warning.fg = 'black'
+c.colors.messages.error.bg = r
+c.colors.messages.error.border = 'black'
+c.colors.messages.error.fg = fg
 c.fonts.messages.error = 'default_size default_family'
+c.colors.messages.info.bg = fo
+c.colors.messages.info.border = 'black'
+c.colors.messages.info.fg = fg
 c.fonts.messages.info = 'default_size default_family'
+c.colors.messages.warning.bg = y
+c.colors.messages.warning.border = 'black'
+c.colors.messages.warning.fg = fg
 c.fonts.messages.warning = 'default_size default_family'
 
-c.colors.prompts.bg = '#444444'
-c.colors.prompts.border = '1px solid gray'
-c.colors.prompts.fg = 'white'
-c.colors.prompts.selected.bg = 'grey'
-c.colors.prompts.selected.fg = 'white'
+c.colors.prompts.bg = unfo
+c.colors.prompts.border = '2px solid white'
+c.colors.prompts.fg = fg
+c.colors.prompts.selected.bg = fo
+c.colors.prompts.selected.fg = fg
 c.fonts.prompts = 'default_size sans-serif'
 
 
@@ -214,14 +215,14 @@ c.colors.contextmenu.selected.bg = None
 c.colors.contextmenu.selected.fg = None
 c.fonts.contextmenu = None
 
-c.colors.hints.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 247, 133, 0.8), stop:1 rgba(255, 197, 66, 0.8))'
-c.colors.hints.fg = 'black'
-c.colors.hints.match.fg = 'green'
+c.colors.hints.bg = 'red'
+c.colors.hints.fg = 'red'
+c.colors.hints.match.fg = 'red'
 c.fonts.hints = 'bold default_size default_family'
 
-c.colors.keyhint.bg = 'rgba(0, 0, 0, 80%)'
-c.colors.keyhint.fg = '#FFFFFF'
-c.colors.keyhint.suffix.fg = '#FFFF00'
+c.colors.keyhint.bg = 'red'
+c.colors.keyhint.fg = 'red'
+c.colors.keyhint.suffix.fg = 'red'
 c.fonts.keyhint = 'default_size default_family'
 
 
@@ -261,7 +262,7 @@ c.tabs.select_on_remove = 'prev'
 c.tabs.show = 'always'
 c.tabs.show_switching_delay = 729
 c.tabs.tabs_are_windows = False
-c.tabs.title.alignment = 'center'
+c.tabs.title.alignment = 'left'
 c.tabs.title.elide = 'none'
 c.tabs.title.format = '{audio}{current_url}'
 c.tabs.title.format_pinned = '{index}'
@@ -320,9 +321,9 @@ c.content.mouse_lock = 'ask'
 c.content.mute = True
 c.content.netrc_file = None
 c.content.notifications.enabled = 'ask'
-c.content.notifications.presenter = 'auto'
+c.content.notifications.presenter = 'messages'
 c.content.notifications.show_origin = True
-c.content.pdfjs = False
+c.content.pdfjs = True
 c.content.persistent_storage = 'ask'
 c.content.plugins = False
 c.content.prefers_reduced_motion = False
@@ -339,7 +340,7 @@ c.content.webgl = True
 c.content.webrtc_ip_handling_policy = 'all-interfaces'
 c.content.xss_auditing = False
 
-c.scrolling.bar = 'overlay'
+c.scrolling.bar = 'always'
 c.scrolling.smooth = True
 
 c.hints.auto_follow = 'unique-match'
@@ -388,7 +389,7 @@ c.url.searchengines = { 'DEFAULT': 'https://google.com/?q={}' }
 c.url.start_pages = [ 'https://www.google.com/' ]
 c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name' ]
 
-c.messages.timeout = 0
+c.messages.timeout = 6561
 
 c.completion.cmd_history_max_items = 9
 c.completion.delay = 0
@@ -413,7 +414,7 @@ c.downloads.location.suggestion = 'path'
 c.downloads.open_dispatcher = None
 c.downloads.position = 'top'
 c.downloads.prevent_mixed_content = True
-c.downloads.remove_finished = -1
+c.downloads.remove_finished = 6561
 
 c.search.ignore_case = 'smart'
 c.search.incremental = True
