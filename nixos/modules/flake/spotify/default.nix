@@ -17,11 +17,11 @@ in
         enable = true;
         theme = x.themes.comfy;
       enabledExtensions = with x.extensions; [
+          formatColors
+          beautifulLyrics
           betterGenres
-          skipOrPlayLikedSongs
           shuffle      ];
       enabledCustomApps = with x.apps; [
-          fullAppDisplay
           marketplace      ];      };
            };
 
