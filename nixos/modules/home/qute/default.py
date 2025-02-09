@@ -146,7 +146,7 @@ c.colors.statusbar.url.fg = light4
 c.colors.statusbar.url.hover.fg = blue
 c.colors.statusbar.url.success.http.fg = light4
 c.colors.statusbar.url.success.https.fg = light4
-c.colors.statusbar.url.warn.fg = yellow2
+c.colors.statusbar.url.warn.fg = yellow
 c.fonts.statusbar = 'default_size default_family'
 
 c.colors.completion.category.bg = dark3
