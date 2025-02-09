@@ -416,7 +416,7 @@ c.completion.shrink = True
 c.completion.timestamp_format = '%m-%d-%Y %H:%M'
 c.completion.use_best_match = False
 c.completion.web_history.exclude = [ ]
-c.completion.web_history.max_items = 729
+c.completion.web_history.max_items = 243
 
 c.downloads.location.directory = None
 c.downloads.location.prompt = True
