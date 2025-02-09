@@ -90,14 +90,14 @@ c.fonts.debug_console = 'default_size default_family'
 
 
 
-c.colors.tabs.bar.bg = dark3
+c.colors.tabs.bar.bg = dark6
 c.colors.tabs.even.bg = dark4
 c.colors.tabs.even.fg = dark1
 c.colors.tabs.odd.bg = dark4
 c.colors.tabs.odd.fg = dark1
-c.colors.tabs.indicator.error = dark3
-c.colors.tabs.indicator.start = dark3
-c.colors.tabs.indicator.stop = dark3
+c.colors.tabs.indicator.error = dark6
+c.colors.tabs.indicator.start = dark6
+c.colors.tabs.indicator.stop = dark6
 c.colors.tabs.indicator.system = 'none'
 c.colors.tabs.pinned.even.bg = 'red'
 c.colors.tabs.pinned.even.fg = 'black'
@@ -218,21 +218,21 @@ c.fonts.web.size.default_fixed = 13
 c.fonts.web.size.minimum = 0
 c.fonts.web.size.minimum_logical = 6
 
-c.colors.contextmenu.disabled.bg = None
-c.colors.contextmenu.disabled.fg = None
-c.colors.contextmenu.menu.bg = None
-c.colors.contextmenu.menu.fg = None
-c.colors.contextmenu.selected.bg = None
-c.colors.contextmenu.selected.fg = None
+c.colors.contextmenu.disabled.bg = dark4
+c.colors.contextmenu.disabled.fg = dark1
+c.colors.contextmenu.menu.bg = dark3
+c.colors.contextmenu.menu.fg = light1
+c.colors.contextmenu.selected.bg = light1
+c.colors.contextmenu.selected.fg = dark6
 c.fonts.contextmenu = None
 
 c.colors.hints.bg = 'red'
-c.colors.hints.fg = 'red'
+c.colors.hints.fg = 'black'
 c.colors.hints.match.fg = 'red'
 c.fonts.hints = 'bold default_size default_family'
 
 c.colors.keyhint.bg = 'red'
-c.colors.keyhint.fg = 'red'
+c.colors.keyhint.fg = 'black'
 c.colors.keyhint.suffix.fg = 'red'
 c.fonts.keyhint = 'default_size default_family'
 
