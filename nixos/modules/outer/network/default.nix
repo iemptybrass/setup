@@ -11,11 +11,11 @@
               EnableIPv6 = true;
               RoutePriorityOffset = 300;      };
           Settings = {
-              AutoConnect = true;      };      };      };
+              AutoConnect = true;      };      };      };      };
       networkmanager = {
           enable = true;
         wifi = {
-            backend = "iwd";};      };      };
+            backend = "iwd";};      };
                 };
 
 
