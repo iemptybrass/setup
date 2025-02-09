@@ -7,7 +7,7 @@
     packages = with pkgs; [
         arkpandora_ttf
         twitter-color-emoji
-        (nerdfonts.override {fonts = [ "_0xproto" ]; } )      ];
+        (nerdfonts.override {fonts = [ "0xproto" ]; } )      ];
            };
                                 
 
