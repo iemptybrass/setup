@@ -22,7 +22,7 @@
           clean = "nix-collect-garbage";
           deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
           switch = "sudo nixos-rebuild --flake /etc/nixos#default switch" ;
-          upgrade = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";      };
+          upgrade = "sudo nix shell upgrade; sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";      };
       historyIgnore = [
             "edit"
             "lf"
