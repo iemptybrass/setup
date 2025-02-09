@@ -189,16 +189,16 @@ c.colors.messages.warning.border = yellow
 c.colors.messages.warning.fg = dark1
 c.fonts.messages.warning = 'default_size default_family'
 
-c.colors.prompts.bg = 'black'
+c.colors.prompts.bg = dark4
+c.colors.prompts.fg = dark1
 c.colors.prompts.border = '2px solid white'
-c.colors.prompts.fg = 'white'
-c.colors.prompts.selected.bg = 'black'
-c.colors.prompts.selected.fg = 'white'
+c.colors.prompts.selected.bg = light1
+c.colors.prompts.selected.fg = dark6
 c.fonts.prompts = 'default_size sans-serif'
 
 
 
-c.colors.webpage.bg = 'black'
+c.colors.webpage.bg = dark4
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 c.colors.webpage.darkmode.contrast = 0.0
 c.colors.webpage.darkmode.enabled = True
