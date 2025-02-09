@@ -17,7 +17,6 @@ in
         enable = true;
         theme = x.themes.dribbblish;
       enabledExtensions = with x.extensions; [
-          formatColors
           beautifulLyrics
           betterGenres
           shuffle      ];      };
