@@ -4,10 +4,12 @@
 
     services.journald.extraConfig = "SystemMaxUse=5M";
 
-    systemd = {
-        network.wait-online.enable = false;
-        enableEmergencyMode = false;
-               };
+  systemd = {
+      enableEmergencyMode = false;
+    network.wait-online = {
+        anyInterface = true;
+        timeout = 0;      };
+             };
 
 
 
