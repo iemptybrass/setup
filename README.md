@@ -43,22 +43,22 @@
 ├┬ Main
 │├┬ Dark
 ││├─ #1d2021 #
-││├─ #282828 * Text Dark
-││├─ #32302f #
-││├─ #3c3836 1
-││├─ #504945
-││├─ #665c54
-││└─ #7c6f64 Text Unselected 1
+││├─ #282828 *
+││├─ #2d3031 #
+││├─ #333536 
+││├─ #454748
+││├─ #636566
+││└─ #777a7b 
 │├┬ Gray
-││└─ #928374 Text Selected
+││└─ #8e9192
 │└┬ Light
-│-├─ #a89984 Text Unselected
-│-├─ #bdae93
-│-├─ #d5c4a1
-│-├─ #ebdbb2 Text
-│-├─ #f2e5bc #
-│-├─ #fbf1c7 *
-│-└─ #f9f5d7 #
+│-├─ #a2a5a7
+│-├─ #babcbd
+│-├─ #d1d3d4
+│-├─ #e7eaeb
+│-├─ #eff1f2 #
+│-├─ #f0f0f0 *
+│-└─ #f7f9fb #
 └┬ Fonts
 -├─ Arial
 -├─ Times New Roman
