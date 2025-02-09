@@ -393,11 +393,11 @@ c.statusbar.show = 'always'
 c.statusbar.widgets = [ 'history','text:[','url','text:]', 'progress', 'text:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ', 'search_match' ]
 
 c.url.auto_search = 'naive'
-c.url.default_page = 'https://www.google.com/'
+c.url.default_page = 'about:blank'
 c.url.incdec_segments = [ 'path', 'query' ]
 c.url.open_base_url = False
 c.url.searchengines = { 'DEFAULT': 'https://google.com/search?q={}' }
-c.url.start_pages = [ 'https://www.google.com/' ]
+c.url.start_pages = [ 'about:blank' ]
 c.url.yank_ignored_parameters = [ 'ref', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_name' ]
 
 c.messages.timeout = 6561
