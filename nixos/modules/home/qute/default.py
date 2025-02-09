@@ -373,8 +373,8 @@ c.hints.selectors = { 'all': ['a', 'area', 'textarea', 'select', 'input:not([typ
 c.hints.uppercase = False
 
 c.keyhint.blacklist = [ ]
-c.keyhint.delay = 729
-c.keyhint.radius = 9
+c.keyhint.delay = 1
+c.keyhint.radius = 1
 
 c.fileselect.folder.command = [ ' ' ]
 c.fileselect.handler = 'default'
