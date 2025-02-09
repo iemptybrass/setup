@@ -63,13 +63,12 @@ light5 = '#eff1f2'
 light6 = '#f0f0f0'
 light7 = '#f7f9fb'
 
-red = '#9d0006'
-green = '#79740e'
-yellow = '#b57614'
-blue3 = '#83a598'
+red = '#cc241d'
+green = '#60d11a'
+blue2 = '#4585cc'
 blue1 = '#076678'
-purple = '#8f3f71'
-orange = '#af3a03'
+yellow = '#d79921'
+orange = '#d65d0e'
 
 clear = 'rgba(0, 0, 0, 0)'
 
