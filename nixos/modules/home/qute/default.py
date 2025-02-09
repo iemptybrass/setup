@@ -65,9 +65,9 @@ light7 = '#f7f9fb'
 
 red = '#9d0006'
 green = '#79740e'
-yellow2 = '#b57614'
-yellow1 = '#fabd2f'
-blue = '#076678'
+yellow = '#b57614'
+blue3 = '#83a598'
+blue1 = '#076678'
 purple = '#8f3f71'
 orange = '#af3a03'
 
@@ -160,8 +160,8 @@ c.colors.completion.item.selected.bg = light1
 c.colors.completion.item.selected.border.bottom = dark1
 c.colors.completion.item.selected.border.top = dark1
 c.colors.completion.item.selected.fg = dark6
-c.colors.completion.item.selected.match.fg = yellow1
-c.colors.completion.match.fg = yellow1
+c.colors.completion.item.selected.match.fg = blue1
+c.colors.completion.match.fg = blue2
 c.colors.completion.scrollbar.bg = clear
 c.colors.completion.scrollbar.fg = clear
 c.fonts.completion.category = 'bold default_size default_family'
