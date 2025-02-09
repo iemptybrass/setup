@@ -7,6 +7,7 @@
       ./local
       ./network
       ./portal
+      ./theme
              ];
 
 
