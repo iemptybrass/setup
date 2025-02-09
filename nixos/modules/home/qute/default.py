@@ -166,12 +166,12 @@ c.fonts.completion.category = 'bold default_size default_family'
 c.fonts.completion.entry = 'default_size default_family'
 
 c.colors.downloads.bar.bg = dark6
-c.colors.downloads.error.bg = red
-c.colors.downloads.error.fg = dark4
+c.colors.downloads.error.bg = clear
+c.colors.downloads.error.fg = clear
 c.colors.downloads.start.bg = clear
-c.colors.downloads.start.fg = light4
-c.colors.downloads.stop.bg = green
-c.colors.downloads.stop.fg = dark4
+c.colors.downloads.start.fg = clear
+c.colors.downloads.stop.bg = clear
+c.colors.downloads.stop.fg = clear
 c.colors.downloads.system.bg = 'rgb'
 c.colors.downloads.system.fg = 'rgb'
 c.fonts.downloads = 'default_size default_family'
@@ -425,7 +425,7 @@ c.downloads.location.suggestion = 'path'
 c.downloads.open_dispatcher = None
 c.downloads.position = 'top'
 c.downloads.prevent_mixed_content = True
-c.downloads.remove_finished = 1
+c.downloads.remove_finished = 0
 
 c.search.ignore_case = 'smart'
 c.search.incremental = True
