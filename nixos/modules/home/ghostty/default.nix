@@ -7,10 +7,10 @@
         enable = true;      };
               };
 
-#  xdg = {
-#    configFile."kitty/kitty.conf" = {
-#        source = ./default.conf;      };
-#         };
+  xdg = {
+    configFile."ghostty/config" = {
+        source = ./config;      };
+         };
 
 
 
