@@ -1,14 +1,8 @@
 { inputs, pkgs, system, ... }:
-let x = 
-{
+let
 
+x = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 
-
-inputs.spicetify-nix.legacyPackages.${pkgs.system};
-
-
-
-};
 in
 {
 
@@ -21,12 +15,12 @@ in
   programs = {
     spicetify = {
         enable = true;
-        theme = x.themes.turntable;
+        theme = x.themes.comfy;
       enabledExtensions = with x.extensions; [
           betterGenres
           skipOrPlayLikedSongs
           shuffle      ];
-      enabledCustomApps= [
+      enabledCustomApps = with x.apps; [
           fullAppDisplay
           marketplace      ];      };
            };
