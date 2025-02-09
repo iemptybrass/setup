@@ -4,7 +4,7 @@
 
   imports = [
         ./discord
-        ./spotify
+      ./spotify
              ];
 
 
