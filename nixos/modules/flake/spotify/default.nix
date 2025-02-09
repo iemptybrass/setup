@@ -21,11 +21,14 @@ in
   programs = {
     spicetify = {
         enable = true;
-        theme = x.themes.text;
+        theme = x.themes.turntable;
       enabledExtensions = with x.extensions; [
           betterGenres
           skipOrPlayLikedSongs
-          shuffle      ];      };
+          shuffle      ];
+      enabledCustomApps= [
+          fullAppDisplay
+          marketplace      ];      };
            };
 
 
