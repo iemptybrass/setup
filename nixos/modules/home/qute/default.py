@@ -91,10 +91,10 @@ c.fonts.debug_console = 'default_size default_family'
 
 
 c.colors.tabs.bar.bg = dark6
-c.colors.tabs.even.bg = dark4
-c.colors.tabs.even.fg = dark1
-c.colors.tabs.odd.bg = dark4
-c.colors.tabs.odd.fg = dark1
+c.colors.tabs.even.bg = dark3
+c.colors.tabs.even.fg = light1
+c.colors.tabs.odd.bg = dark3
+c.colors.tabs.odd.fg = gray1
 c.colors.tabs.indicator.error = dark6
 c.colors.tabs.indicator.start = dark6
 c.colors.tabs.indicator.stop = dark6
