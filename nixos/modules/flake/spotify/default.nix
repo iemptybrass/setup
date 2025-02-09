@@ -15,14 +15,12 @@ in
   programs = {
     spicetify = {
         enable = true;
-        theme = x.themes.comfy;
+        theme = x.themes.dribbblish;
       enabledExtensions = with x.extensions; [
           formatColors
           beautifulLyrics
           betterGenres
-          shuffle      ];
-      enabledCustomApps = with x.apps; [
-          marketplace      ];      };
+          shuffle      ];      };
            };
 
 
