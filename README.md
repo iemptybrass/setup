@@ -80,6 +80,8 @@
 
   - [ ] Find a patchbay for pipewire that i like
 
+  - [ ] Config Start Menu etc
+
   - [ ] Harden
    - https://linux-audit.com/
    - https://github.com/CISOfy/lynis
