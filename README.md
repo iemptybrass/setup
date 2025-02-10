@@ -67,11 +67,13 @@
 ```
 .
 ├┬ Sans-Serif
-│└─ Arial
-├─ Arial
-├─ Times New Roman
-├─ 0xproto Nerd Font
-└─ Twimoji
+│└─ Aerial
+├┬ Serif
+│└─ Tymes
+├┬ Mono
+│└─ 0xproto Nerd Font
+└┬ Emojis
+-└─ Twimoji
 ```
 
 </details>
