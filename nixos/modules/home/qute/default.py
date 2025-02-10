@@ -1,7 +1,8 @@
 config.load_autoconfig(False)
 
 
-c.confirm_quit = [ 'never' ]
+
+c.confirm_quit = [ 'always' ]
 
 c.changelog_after_upgrade = 'never'
 
