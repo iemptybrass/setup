@@ -5,14 +5,15 @@
     <summary> File System </summary>
 
 ```
- ├─ device
- ├┬ modules
- │├─ flake
- │├─ home
- │├─ inner
- │└─ outer
- ├─ configuration.nix
- └─ flake.nix
+.
+├─ device
+├┬ modules
+│├─ flake
+│├─ home
+│├─ inner
+│└─ outer
+├─ configuration.nix
+└─ flake.nix
 ```
 
   </details>
@@ -22,6 +23,7 @@
     <summary> Colors </summary>
 
 ```
+.
 ├┬ Colors
 │└┬ Neutral
 │ ├─ #cc241d
@@ -56,6 +58,7 @@
     <summary> Fonts </summary>
 
 ```
+.
 ├┬ Sans-Serif
 │└─ Aerial
 ├┬ Serif
