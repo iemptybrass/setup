@@ -14,68 +14,56 @@
 └─ flake.nix               
 ```
 
-<details>
 
-- [Walkthough](https://youtu.be/fO-RBHvVEcc)
-
-- [V1-Changes](https://youtu.be/upDl1ns05eg)
-
-- [v2-Changes](https://youtu.be/yaVurRoXc-s)
-</details>
 
 
 ## Theme
 <details>
   <summary> Colors </summary>
-
-
-```
-.
-├┬ Colors
-│└┬ Neutral
-│-├─ #cc241d
-│-├─ #60d11a
-│-├─ #4585cc
-│-├─ #d79921
-│-└─ #d65d0e
-├┬ Main
--├┬ Dark
--│├─ #1d2021 #
--│├─ #282828 *
--│├─ #2d3031 #
--│├─ #333536
--│├─ #454748
--│├─ #636566
--│└─ #777a7b
--├┬ Gray
--│└─ #8e9192
--└┬ Light
---├─ #a2a5a7
---├─ #babcbd
---├─ #d1d3d4
---├─ #e7eaeb
---├─ #eff1f2 #
---├─ #f0f0f0 *
---└─ #f7f9fb #
-```
-
+    <p>
+    .                                 <br>
+    ├┬ Colors                         <br>
+    │└┬ Neutral                       <br>
+    │<i>│</i>├─ #cc241d             <br>
+    │<i>│</i>├─ #60d11a             <br>
+    │<i>│</i>├─ #4585cc             <br>
+    │<i>│</i>├─ #d79921             <br>
+    │<i>│</i>└─ #d65d0e             <br>
+    └┬ Main                           <br>
+    <i>│</i>├┬ Dark                   <br>
+    <i>│</i>│├─ #1d2021 # Hard      <br>
+    <i>│</i>│├─ #282828 *           <br>
+    <i>│</i>│├─ #2d3031 # Soft      <br>
+    <i>│</i>│├─ #333536             <br>
+    <i>│</i>│├─ #454748             <br>
+    <i>│</i>│├─ #636566             <br>
+    <i>│</i>│└─ #777a7b             <br>
+    <i>│</i>├┬ Gray                   <br>
+    <i>│</i>│└─ #8e9192             <br>
+    <i>│</i>└┬ Light                  <br>
+    <i>││</i>├─ #a2a5a7             <br>
+    <i>││</i>├─ #babcbd             <br>
+    <i>││</i>├─ #d1d3d4             <br>
+    <i>││</i>├─ #e7eaeb             <br>
+    <i>││</i>├─ #eff1f2 # Soft      <br>
+    <i>││</i>├─ #f0f0f0 *           <br>
+    <i>││</i>└─ #f7f9fb # Hard      <br>
+    </p>
 </details>
 
 <details>
   <summary> Fonts </summary>
-
-```
-.
-├┬ Sans-Serif
-│└─ Aerial
-├┬ Serif
-│└─ Tymes
-├┬ Mono
-│└─ 0xproto Nerd Font
-└┬ Emojis
--└─ Twimoji
-```
-
+    <p>
+    .                          <br>
+    ├┬ Sans-Serif              <br>
+    │└─ Aerial                 <br>
+    ├┬ Serif                   <br>
+    │└─ Tymes                  <br>
+    ├┬ Mono                    <br>
+    │└─ 0xproto Nerd Font      <br>
+    └┬ Emojis                  <br>
+    <i>│</i>└─ Twimoji         <br>
+    </p>
 </details>
 
 ## To Do 
