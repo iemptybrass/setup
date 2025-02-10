@@ -72,6 +72,8 @@
 
   </details>
 
+  <h2> Plans </h2>
+
   <details>
     <summary> To Do </summary>
 
