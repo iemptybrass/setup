@@ -74,7 +74,7 @@
 
   ## To Do 
 
-  - [] Find a patchbay for pipewire that i like
+  - [ ] Find a patchbay for pipewire that i like
 
   https://linux-audit.com/
 
