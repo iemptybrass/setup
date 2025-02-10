@@ -1,12 +1,4 @@
-<html>
-
-  <head>
-
-  <head>
-
-  <body>
-
-  # About My Configuration
+# About My Configuration
 
   ## Structure
   <details>
@@ -96,6 +88,3 @@
   y_sublevel_spacing: 0.2
   y_sublevels: 100
   ```
-  </body>
-
-</html>
