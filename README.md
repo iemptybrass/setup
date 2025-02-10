@@ -35,9 +35,9 @@
 └┬ Main
  ├┬ Dark
  │├─ #1d2021 # Hard
- │├─ #282828 *
+ │├─ #282828 * Bg Dark
  │├─ #2d3031 # Soft
- │├─ #333536
+ │├─ #333536 ~ Text Dark
  │├─ #454748
  │├─ #636566
  │└─ #777a7b
@@ -47,9 +47,9 @@
   ├─ #a2a5a7
   ├─ #babcbd
   ├─ #d1d3d4
-  ├─ #e7eaeb
+  ├─ #e7eaeb ~ Text Light
   ├─ #eff1f2 # Soft
-  ├─ #f0f0f0 *
+  ├─ #f0f0f0 * Bg Light
   └─ #f7f9fb # Hard  
 ```    
 
