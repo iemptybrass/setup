@@ -2,11 +2,6 @@
 
   <head>
 
-  <style>
-    p { }
-    summary {}
-  </style>
-
   <head>
 
   <body>
