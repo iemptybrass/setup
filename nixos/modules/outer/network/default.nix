@@ -38,8 +38,7 @@
             MaximumPeriodicScanInterval = 300;
             DisableRoamingScan = false;      };
         Settings = {
-            AutoConnect = true;      };      
-};      };
+            AutoConnect = true;      };      };      };
                          };
 
 
