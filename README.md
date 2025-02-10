@@ -18,7 +18,7 @@
 
   </details>
 
-<h1>Theme</h1>
+<h2>Theme</h2>
 
   <details>
     <summary> Colors </summary>
