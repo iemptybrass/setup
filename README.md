@@ -18,8 +18,7 @@
 
   </details>
 
-<details>
-  <summary> <h1>Theme</h1> </summary>
+<h1>Theme</h1>
 
   <details>
     <summary> Colors </summary>
@@ -72,8 +71,6 @@
 ```
 
   </details>
-
-</details>
 
   ## To Do 
 
