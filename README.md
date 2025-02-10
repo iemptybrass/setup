@@ -1,96 +1,107 @@
-# About My Configuration
+<html>
 
-## Structure
+  <head>
 
-```
-.
-├─ device
-├┬ modules
-│├─ flake
-│├─ home
-│├─ inner
-│└─ outer
-├─ configuration.nix        
-└─ flake.nix               
-```
+  <style>
+    b {color:transparent;}
+    p { color:#e7eaeb; margin:0; line-height:17px;}
+    summary {font-size:150%; color:#f7f9fb;}
+  </style>
 
+  <head>
 
+  <body>
 
+  # About My Configuration
 
-## Theme
-<details>
-  <summary> Colors </summary>
-    <p>
-    .                                 <br>
-    ├┬ Colors                         <br>
-    │└┬ Neutral                       <br>
-    │<i>│</i>├─ #cc241d             <br>
-    │<i>│</i>├─ #60d11a             <br>
-    │<i>│</i>├─ #4585cc             <br>
-    │<i>│</i>├─ #d79921             <br>
-    │<i>│</i>└─ #d65d0e             <br>
-    └┬ Main                           <br>
-    <i>│</i>├┬ Dark                   <br>
-    <i>│</i>│├─ #1d2021 # Hard      <br>
-    <i>│</i>│├─ #282828 *           <br>
-    <i>│</i>│├─ #2d3031 # Soft      <br>
-    <i>│</i>│├─ #333536             <br>
-    <i>│</i>│├─ #454748             <br>
-    <i>│</i>│├─ #636566             <br>
-    <i>│</i>│└─ #777a7b             <br>
-    <i>│</i>├┬ Gray                   <br>
-    <i>│</i>│└─ #8e9192             <br>
-    <i>│</i>└┬ Light                  <br>
-    <i>││</i>├─ #a2a5a7             <br>
-    <i>││</i>├─ #babcbd             <br>
-    <i>││</i>├─ #d1d3d4             <br>
-    <i>││</i>├─ #e7eaeb             <br>
-    <i>││</i>├─ #eff1f2 # Soft      <br>
-    <i>││</i>├─ #f0f0f0 *           <br>
-    <i>││</i>└─ #f7f9fb # Hard      <br>
-    </p>
-</details>
+  ## Structure
+  <details>
+    <summary> File System </summary>
+      <p style="word-spacing:5px;"> ├─ device                 </p>
+      <p style="word-spacing:5px;"> ├┬ modules                </p>
+      <p style="word-spacing:5px;"> │├─ flake                 </p>
+      <p style="word-spacing:5px;"> │├─ home                  </p>
+      <p style="word-spacing:5px;"> │├─ inner                 </p>
+      <p style="word-spacing:5px;"> │└─ outer                 </p>
+      <p style="word-spacing:5px;"> ├─ configuration.nix      </p>
+      <p style="word-spacing:5px;"> └─ flake.nix              </p>
+  </details>
 
-<details>
-  <summary> Fonts </summary>
-    <p>
-    .                          <br>
-    ├┬ Sans-Serif              <br>
-    │└─ Aerial                 <br>
-    ├┬ Serif                   <br>
-    │└─ Tymes                  <br>
-    ├┬ Mono                    <br>
-    │└─ 0xproto Nerd Font      <br>
-    └┬ Emojis                  <br>
-    <i>│</i>└─ Twimoji         <br>
-    </p>
-</details>
+  ## Theme
+  <details>
+    <summary> Colors </summary>
+      <p>
+      ├┬ Colors                         <br>
+      │└┬ Neutral                       <br>
+      │ ├─ #cc241d             <br>
+      │ ├─ #60d11a             <br>
+      │ ├─ #4585cc             <br>
+      │ ├─ #d79921             <br>
+      │ └─ #d65d0e             <br>
+      └┬ Main                           <br>
+       ├┬ Dark                   <br>
+       │├─ #1d2021 # Hard      <br>
+       │├─ #282828 *           <br>
+       │├─ #2d3031 # Soft      <br>
+       │├─ #333536             <br>
+       │├─ #454748             <br>
+       │├─ #636566             <br>
+       │└─ #777a7b             <br>
+       ├┬ Gray                   <br>
+       │└─ #8e9192             <br>
+       └┬ Light                  <br>
+        ├─ #a2a5a7             <br>
+        ├─ #babcbd             <br>
+        ├─ #d1d3d4             <br>
+        ├─ #e7eaeb             <br>
+        ├─ #eff1f2 # Soft      <br>
+        ├─ #f0f0f0 *           <br>
+        └─ #f7f9fb # Hard      <br>
+      </p>
+  </details>
 
-## To Do 
+  <details>
+    <summary> Fonts </summary>
+      <p>
+      ├┬ Sans-Serif              <br>
+      │└─ Aerial                 <br>
+      ├┬ Serif                   <br>
+      │└─ Tymes                  <br>
+      ├┬ Mono                    <br>
+      │└─ 0xproto Nerd Font      <br>
+      └┬ Emojis                  <br>
+       └─ Twimoji         <br>
+      </p>
+  </details>
 
-https://linux-audit.com/
+  ## To Do 
 
-https://github.com/CISOfy/lynis
+  https://linux-audit.com/
 
-## notes
+  https://github.com/CISOfy/lynis
 
-sudo nix-visualize /nix/store/<package> -c config.cfg -s nix -o <name>.png
+  ## notes
 
-nix-tree
+  sudo nix-visualize /nix/store/<package> -c config.cfg -s nix -o <name>.png
 
-```
-aspect_ratio: 1
-font_scale: 0.2
-font_color: #000000
-img_y_height_inches: 24
-dpi: 300
-color_map: autumn
-min_node_size: 75
-max_node_size_over_min_node_size: 5.0
-add_size_per_out_link: 50
-repulsive_force_normalization: 50.0
-max_displacement: 10.0
-tmax: 60
-y_sublevel_spacing: 0.2
-y_sublevels: 100
-```
+  nix-tree
+
+  ```
+  aspect_ratio: 1
+  font_scale: 0.2
+  font_color: #000000
+  img_y_height_inches: 24
+  dpi: 300
+  color_map: autumn
+  min_node_size: 75
+  max_node_size_over_min_node_size: 5.0
+  add_size_per_out_link: 50
+  repulsive_force_normalization: 50.0
+  max_displacement: 10.0
+  tmax: 60
+  y_sublevel_spacing: 0.2
+  y_sublevels: 100
+  ```
+  </body>
+
+</html>
