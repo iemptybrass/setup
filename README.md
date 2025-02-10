@@ -3,9 +3,8 @@
   <head>
 
   <style>
-    b {color:transparent;}
-    p { color:#e7eaeb; margin:0; line-height:17px;}
-    summary {font-size:150%; color:#f7f9fb;}
+    p { }
+    summary {}
   </style>
 
   <head>
@@ -16,15 +15,15 @@
 
   ## Structure
   <details>
-    <summary> File System </summary>
-      <p style="word-spacing:5px;"> ├─ device                 </p>
-      <p style="word-spacing:5px;"> ├┬ modules                </p>
-      <p style="word-spacing:5px;"> │├─ flake                 </p>
-      <p style="word-spacing:5px;"> │├─ home                  </p>
-      <p style="word-spacing:5px;"> │├─ inner                 </p>
-      <p style="word-spacing:5px;"> │└─ outer                 </p>
-      <p style="word-spacing:5px;"> ├─ configuration.nix      </p>
-      <p style="word-spacing:5px;"> └─ flake.nix              </p>
+    <summary style="font-size:150%; color:#f7f9fb;"> File System </summary>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> ├─ device                 </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> ├┬ modules                </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> │├─ flake                 </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> │├─ home                  </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> │├─ inner                 </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> │└─ outer                 </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> ├─ configuration.nix      </p>
+      <p style="word-spacing:5px;color:#e7eaeb;margin:0;line-height:17px;"> └─ flake.nix              </p>
   </details>
 
   ## Theme
