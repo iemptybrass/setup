@@ -72,13 +72,17 @@
 
   </details>
 
-  ## To Do 
+  <details>
+    <summary> To Do </summary>
+
 
   - [ ] Find a patchbay for pipewire that i like
 
-  https://linux-audit.com/
+  - [ ] Harden
+   - https://linux-audit.com/
+   - https://github.com/CISOfy/lynis
 
-  https://github.com/CISOfy/lynis
+  </details>
 
   ## notes
 
