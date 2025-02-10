@@ -59,8 +59,7 @@
 
 ```
 .
-├┬ Sans-Serif
-│└─ Aerial
+├┬ Sans-Serif<br>│└─ Aerial
 ├┬ Serif
 │└─ Tymes
 ├┬ Mono
