@@ -56,17 +56,17 @@
 
   <details>
     <summary> Fonts </summary>
-    ```
-    .
-    ├┬ Sans-Serif
-    │└─ Aerial
-    ├┬ Serif
-    │└─ Tymes
-    ├┬ Mono
-    │└─ 0xproto Nerd Font
-    └┬ Emojis
-     └─ Twimoji
-    ```
+```
+.
+├┬ Sans-Serif
+│└─ Aerial
+├┬ Serif
+│└─ Tymes
+├┬ Mono
+│└─ 0xproto Nerd Font
+└┬ Emojis
+ └─ Twimoji
+```
   </details>
 
   ## To Do 
