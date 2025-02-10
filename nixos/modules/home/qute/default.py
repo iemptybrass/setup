@@ -6,7 +6,7 @@ c.confirm_quit = [ 'always' ]
 
 c.changelog_after_upgrade = 'never'
 
-c.spellcheck.languages = [ ]
+c.spellcheck.languages = [ en-US ]
 
 c.auto_save.interval = 0
 c.history_gap_interval = 27
