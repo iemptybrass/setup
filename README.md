@@ -14,7 +14,20 @@
 └─ flake.nix               
 ```
 
+<details>
+
+- [Walkthough](https://youtu.be/fO-RBHvVEcc)
+
+- [V1-Changes](https://youtu.be/upDl1ns05eg)
+
+- [v2-Changes](https://youtu.be/yaVurRoXc-s)
+</details>
+
+
 ## Theme
+<details>
+  <summary> Colors </summary>
+
 
 ```
 .
@@ -26,30 +39,42 @@
 │-├─ #d79921
 │-└─ #d65d0e
 ├┬ Main
-│├┬ Dark
-││├─ #1d2021 #
-││├─ #282828 *
-││├─ #2d3031 #
-││├─ #333536
-││├─ #454748
-││├─ #636566
-││└─ #777a7b
-│├┬ Gray
-││└─ #8e9192
-│└┬ Light
-│-├─ #a2a5a7
-│-├─ #babcbd
-│-├─ #d1d3d4
-│-├─ #e7eaeb
-│-├─ #eff1f2 #
-│-├─ #f0f0f0 *
-│-└─ #f7f9fb #
-└┬ Fonts
--├─ Arial
--├─ Times New Roman
--├─ 0xproto Nerd Font
--└─ Twimoji
+-├┬ Dark
+-│├─ #1d2021 #
+-│├─ #282828 *
+-│├─ #2d3031 #
+-│├─ #333536
+-│├─ #454748
+-│├─ #636566
+-│└─ #777a7b
+-├┬ Gray
+-│└─ #8e9192
+-└┬ Light
+--├─ #a2a5a7
+--├─ #babcbd
+--├─ #d1d3d4
+--├─ #e7eaeb
+--├─ #eff1f2 #
+--├─ #f0f0f0 *
+--└─ #f7f9fb #
 ```
+
+</details>
+
+<details>
+  <summary> Fonts </summary>
+
+```
+.
+├┬ Sans-Serif
+│└─ Arial
+├─ Arial
+├─ Times New Roman
+├─ 0xproto Nerd Font
+└─ Twimoji
+```
+
+</details>
 
 ## To Do 
 
