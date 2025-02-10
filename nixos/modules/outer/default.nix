@@ -4,10 +4,9 @@
 
   imports = [
         ./audio
-        ./local
+      ./font
       ./network
       ./portal
-        ./theme
              ];
 
 
