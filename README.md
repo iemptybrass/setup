@@ -56,6 +56,7 @@
 
   <details>
     <summary> Fonts </summary>
+
 ```
 .
 ├┬ Sans-Serif
@@ -67,6 +68,7 @@
 └┬ Emojis
  └─ Twimoji
 ```
+
   </details>
 
   ## To Do 
