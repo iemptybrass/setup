@@ -6,10 +6,10 @@
         ./fuzzel
         ./hyprland
         ./hyprlock
-        ./kitty
         ./micro
         ./neofetch
       ./qute
+        ./terminal
         ./shell
         ./waybar
         ./yazi
