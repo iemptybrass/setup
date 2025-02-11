@@ -55,7 +55,9 @@ dark4 = '#333536'
 dark3 = '#454748'
 dark2 = '#636566'
 dark1 = '#777a7b'
+
 gray1 = '#8e9192'
+
 light1 = '#a2a5a7'
 light2 = '#babcbd'
 light3 = '#d1d3d4'
@@ -92,28 +94,23 @@ c.fonts.debug_console = 'default_size default_family'
 
 
 c.colors.tabs.bar.bg = dark6
+
 c.colors.tabs.even.bg = dark3
 c.colors.tabs.even.fg = light1
 c.colors.tabs.odd.bg = dark3
 c.colors.tabs.odd.fg = gray1
-c.colors.tabs.indicator.error = dark6
-c.colors.tabs.indicator.start = dark6
-c.colors.tabs.indicator.stop = dark6
-c.colors.tabs.indicator.system = 'none'
-c.colors.tabs.pinned.even.bg = 'red'
-c.colors.tabs.pinned.even.fg = 'black'
-c.colors.tabs.pinned.odd.bg = 'red'
-c.colors.tabs.pinned.odd.fg = 'black'
-c.colors.tabs.pinned.selected.even.bg = 'red'
-c.colors.tabs.pinned.selected.even.fg = 'black'
-c.colors.tabs.pinned.selected.odd.bg = 'red'
-c.colors.tabs.pinned.selected.odd.fg = 'black'
+c.fonts.tabs.unselected = 'default_size default_family'
+
 c.colors.tabs.selected.even.bg = light1
 c.colors.tabs.selected.even.fg = dark6
 c.colors.tabs.selected.odd.bg = light1
 c.colors.tabs.selected.odd.fg = dark6
 c.fonts.tabs.selected = 'default_size default_family'
-c.fonts.tabs.unselected = 'default_size default_family'
+
+c.colors.tabs.indicator.error = dark6
+c.colors.tabs.indicator.start = dark6
+c.colors.tabs.indicator.stop = dark6
+c.colors.tabs.indicator.system = 'none'
 
 
 
@@ -123,22 +120,15 @@ c.fonts.tooltip = None
 
 
 
-c.colors.statusbar.caret.bg = 'red'
-c.colors.statusbar.caret.fg = 'black'
-c.colors.statusbar.caret.selection.bg = 'red'
-c.colors.statusbar.caret.selection.fg = 'black'
-c.colors.statusbar.command.bg = dark6
-c.colors.statusbar.command.fg = light4
-c.colors.statusbar.command.private.bg = 'red'
-c.colors.statusbar.command.private.fg = 'black'
-c.colors.statusbar.insert.bg = dark6
-c.colors.statusbar.insert.fg = light4
 c.colors.statusbar.normal.bg = dark6
 c.colors.statusbar.normal.fg = light4
+c.fonts.statusbar = 'default_size default_family'
+c.colors.statusbar.command.bg = dark6
+c.colors.statusbar.command.fg = light4
+c.colors.statusbar.insert.bg = dark6
+c.colors.statusbar.insert.fg = light4
 c.colors.statusbar.passthrough.bg = dark6
 c.colors.statusbar.passthrough.fg = light4
-c.colors.statusbar.private.bg = 'red'
-c.colors.statusbar.private.fg = 'black'
 c.colors.statusbar.progress.bg = dark6
 c.colors.statusbar.url.error.fg = red
 c.colors.statusbar.url.fg = light4
@@ -146,12 +136,12 @@ c.colors.statusbar.url.hover.fg = blue
 c.colors.statusbar.url.success.http.fg = light4
 c.colors.statusbar.url.success.https.fg = light4
 c.colors.statusbar.url.warn.fg = yellow
-c.fonts.statusbar = 'default_size default_family'
 
 c.colors.completion.category.bg = dark3
 c.colors.completion.category.border.bottom = dark3
 c.colors.completion.category.border.top = dark3
 c.colors.completion.category.fg = light1
+c.fonts.completion.category = 'bold default_size default_family'
 c.colors.completion.even.bg = dark4
 c.colors.completion.odd.bg = dark4
 c.colors.completion.fg = [ dark1, dark1, dark1 ]
@@ -163,10 +153,10 @@ c.colors.completion.item.selected.match.fg = light7
 c.colors.completion.match.fg = light7
 c.colors.completion.scrollbar.bg = clear
 c.colors.completion.scrollbar.fg = clear
-c.fonts.completion.category = 'bold default_size default_family'
 c.fonts.completion.entry = 'default_size default_family'
 
 c.colors.downloads.bar.bg = dark6
+c.fonts.downloads = 'default_size default_family'
 c.colors.downloads.error.bg = clear
 c.colors.downloads.error.fg = clear
 c.colors.downloads.start.bg = clear
@@ -175,7 +165,6 @@ c.colors.downloads.stop.bg = clear
 c.colors.downloads.stop.fg = clear
 c.colors.downloads.system.bg = 'none'
 c.colors.downloads.system.fg = 'none'
-c.fonts.downloads = 'default_size default_family'
 
 c.colors.messages.error.bg = dark3
 c.colors.messages.error.border = red
@@ -193,9 +182,9 @@ c.fonts.messages.warning = 'default_size default_family'
 c.colors.prompts.bg = dark4
 c.colors.prompts.fg = dark1
 c.colors.prompts.border = '2px solid white'
+c.fonts.prompts = 'default_size sans-serif'
 c.colors.prompts.selected.bg = light1
 c.colors.prompts.selected.fg = dark6
-c.fonts.prompts = 'default_size sans-serif'
 
 
 
@@ -226,16 +215,6 @@ c.colors.contextmenu.menu.fg = light1
 c.colors.contextmenu.selected.bg = light1
 c.colors.contextmenu.selected.fg = dark6
 c.fonts.contextmenu = None
-
-c.colors.hints.bg = 'red'
-c.colors.hints.fg = 'black'
-c.colors.hints.match.fg = 'red'
-c.fonts.hints = 'bold default_size default_family'
-
-c.colors.keyhint.bg = 'red'
-c.colors.keyhint.fg = 'black'
-c.colors.keyhint.suffix.fg = 'red'
-c.fonts.keyhint = 'default_size default_family'
 
 
 
@@ -354,28 +333,6 @@ c.content.xss_auditing = False
 
 c.scrolling.bar = 'always'
 c.scrolling.smooth = True
-
-c.hints.auto_follow = 'unique-match'
-c.hints.auto_follow_timeout = 0
-c.hints.border = '1px solid #E3BE23'
-c.hints.chars = 'asdfghjkl'
-c.hints.dictionary = '/usr/share/dict/words'
-# c.hints.find_implementation = 'python'
-c.hints.hide_unmatched_rapid_hints = True
-c.hints.leave_on_load = False
-c.hints.min_chars = 1
-c.hints.mode = 'letter'
-c.hints.next_regexes = [ '\\bnext\\b', '\\bmore\\b', '\\bnewer\\b', '\\b[>→≫]\\b', '\\b(>>|»)\\b', '\\bcontinue\\b' ]
-c.hints.padding = { 'top': 0, 'bottom': 0, 'left': 3, 'right': 3 }
-c.hints.prev_regexes = [ '\\bprev(ious)?\\b', '\\bback\\b', '\\bolder\\b', '\\b[<←≪]\\b', '\\b(<<|«)\\b' ]
-c.hints.radius = 3
-c.hints.scatter = True
-c.hints.selectors = { 'all': ['a', 'area', 'textarea', 'select', 'input:not([type="hidden"])', 'button', 'frame', 'iframe', 'img', 'link', 'summary', '[contenteditable]:not([contenteditable="false"])', '[onclick]', '[onmousedown]', '[role="link"]', '[role="option"]', '[role="button"]', '[role="tab"]', '[role="checkbox"]', '[role="switch"]', '[role="menuitem"]', '[role="menuitemcheckbox"]', '[role="menuitemradio"]', '[role="treeitem"]', '[aria-haspopup]', '[ng-click]', '[ngClick]', '[data-ng-click]', '[x-ng-click]', '[tabindex]:not([tabindex="-1"])'], 'links': ['a[href]', 'area[href]', 'link[href]', '[role="link"][href]'], 'images': ['img'], 'media': ['audio', 'img', 'video'], 'url': ['[src]', '[href]'], 'inputs': ['input[type="text"]', 'input[type="date"]', 'input[type="datetime-local"]', 'input[type="email"]', 'input[type="month"]', 'input[type="number"]', 'input[type="password"]', 'input[type="search"]', 'input[type="tel"]', 'input[type="time"]', 'input[type="url"]', 'input[type="week"]', 'input:not([type])', '[contenteditable]:not([contenteditable="false"])', 'textarea'] }
-c.hints.uppercase = False
-
-c.keyhint.blacklist = [ ]
-c.keyhint.delay = 1
-c.keyhint.radius = 1
 
 c.fileselect.folder.command = [ ' ' ]
 c.fileselect.handler = 'default'
