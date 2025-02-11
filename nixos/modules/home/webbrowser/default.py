@@ -88,7 +88,7 @@ c.content.user_stylesheets = [ ]
 
 
 c.window.transparent = False
-c.fonts.default_family = [ Aerial ]
+c.fonts.default_family = [ 'Aerial' ]
 c.fonts.default_size = '11pt'
 c.fonts.debug_console = 'default_size 0xProtoNerdFontMono'
 
