@@ -3,16 +3,16 @@
 
 
   imports = [
-        ./fuzzel
-        ./hyprland
-        ./hyprlock
-        ./micro
-        ./neofetch
-      ./qute
-        ./terminal
-        ./shell
-        ./waybar
-        ./yazi
+      ./editor
+      ./filemanager
+      ./launcher
+      ./lockscreen
+      ./shell
+      ./systeminfo
+      ./terminal
+      ./webbrowser
+      ./windowbar
+      ./windowmanager
              ];
 
 

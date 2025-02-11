@@ -1,0 +1,11 @@
+[General]
+working_directory = "None"
+
+[window]
+decorations = "None"
+
+[font]
+normal = { family = "<string>", style = "<string>" }
+bold = { family = "<string>", style = "<string>" }
+bold_italic = { family = "<string>", style = "<string>" }
+
