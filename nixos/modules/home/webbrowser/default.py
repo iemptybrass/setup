@@ -47,24 +47,25 @@ c.qt.workarounds.remove_service_workers = False
 
 
 
+dark8 = '#000000'
+dark7 = '#070707'
+dark6 = '#0F0F0F'
+dark5 = '#181818'
+dark4 = '#222222'
+dark3 = '#2F2F2F'
+dark2 = '#404040'
+dark1 = '#585858'
 
-dark7 = '#1d2021'
-dark6 = '#282828'
-dark5 = '#2d3031'
-dark4 = '#333536'
-dark3 = '#454748'
-dark2 = '#636566'
-dark1 = '#777a7b'
+gray1 = '#808080'
 
-gray1 = '#8e9192'
-
-light1 = '#a2a5a7'
-light2 = '#babcbd'
-light3 = '#d1d3d4'
-light4 = '#e7eaeb'
-light5 = '#eff1f2'
-light6 = '#f0f0f0'
-light7 = '#f7f9fb'
+light1 = '#A8A8A8'
+light2 = '#C0C0C0'
+light3 = '#D1D1D1'
+light4 = '#DEDEDE'
+light5 = '#E8E8E8'
+light6 = '#F1F1F1'
+light7 = '#F9F9F9'
+Light8 = '#FFFFFF'
 
 red = '#cc241d'
 green = '#60d11a'
