@@ -7,16 +7,9 @@ print_events = false
 highlight_damage = false
 prefer_egl = true
 
-
-
-
-
-
-
-
-
 [general]
 working_directory = "None"
+live_config_reload = true
 
 [window]
 dimensions = { columns = 0, lines = 0 }
@@ -29,12 +22,9 @@ blur = false
 startup_mode = "Windowed"
 level = "Normal"
 
-
-
 [scrolling]
 history = 10000
 miltiplier = 3
-
 
 [font.normal]
 family = "0xProtoNerdFontMono"
