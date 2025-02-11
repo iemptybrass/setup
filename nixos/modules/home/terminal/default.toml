@@ -19,17 +19,17 @@ bold_italic = { family = "0xProtoNerdFontMono", style = "Italic" }
 size = 11.0
 
 [colors]
-foreground = #DEDEDE
-background = #222222
-dim_foreground = #C0C0C0
-bright_foreground = #F1F1F1
+foreground = "#DEDEDE"
+background = "#222222"
+dim_foreground = "#C0C0C0"
+bright_foreground = "#F1F1F1"
 cursor = { text = "CellBackground", cursor = "CellForeground" }
 vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
 
 [colors.search]
 matches = { foreground = "#181818", background = "#ac4242" }
 focused_match = { foreground = "#181818", background = "#f4bf75" }
-indexed_colors = [{ index = <integer>, color = "<string>" },]
+#indexed_colors = [{ index = <integer>, color = "<string>" },]
 transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
