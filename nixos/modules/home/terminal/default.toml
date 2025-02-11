@@ -1,11 +1,19 @@
-[General]
+[general]
 working_directory = "None"
 
 [window]
 decorations = "None"
+opacity = 1.0
+blur = false
+startup_mode = "Windowed"
+
+[scrolling]
+history = 10000
+miltiplier = 3
 
 [font]
-normal = { family = "<string>", style = "<string>" }
-bold = { family = "<string>", style = "<string>" }
-bold_italic = { family = "<string>", style = "<string>" }
+normal = { family = "0xProtoNerdFontMono", style = "Regular" }
+bold = { family = "0xProtoNerdFontMono", style = "Bold" }
+italic = { family = "0xProtoNerdFontMono", style = "Italic" }
+bold_italic = { family = "0xProtoNerdFontPropo", style = "Italic" }
 
