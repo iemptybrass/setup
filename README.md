@@ -34,23 +34,25 @@
 │ └─ #d65d0e
 └┬ Main
  ├┬ Dark
- │├─ #1d2021 # Hard
- │├─ #282828 * Bg Dark
- │├─ #2d3031 # Soft
- │├─ #333536 ~ Text Dark
- │├─ #454748
- │├─ #636566
- │└─ #777a7b
+ │├─ #000000 <
+ │├─ #070707
+ │├─ #0F0F0F >
+ │├─ #181818
+ │├─ #222222 >
+ │├─ #2F2F2F
+ │├─ #404040
+ │└─ #585858
  ├┬ Gray
- │└─ #8e9192
+ │└─ #808080	<
  └┬ Light
-  ├─ #a2a5a7
-  ├─ #babcbd
-  ├─ #d1d3d4
-  ├─ #e7eaeb ~ Text Light
-  ├─ #eff1f2 # Soft
-  ├─ #f0f0f0 * Bg Light
-  └─ #f7f9fb # Hard  
+  ├─ #A8A8A8
+  ├─ #C0C0C0
+  ├─ #D1D1D1
+  ├─ #DEDEDE >
+  ├─ #E8E8E8
+  ├─ #F1F1F1 >
+  ├─ #F9F9F9
+  └─ #FFFFFF <  
 ```    
 
   </details>
