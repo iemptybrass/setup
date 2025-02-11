@@ -19,10 +19,15 @@ prefer_egl = true
 working_directory = "None"
 
 [window]
+dimensions = { columns = 0, lines = 0 }
+position = "None"
+padding = { x = 0, y = 0 }
+dynamic_padding = false
 decorations = "None"
 opacity = 1.0
 blur = false
 startup_mode = "Windowed"
+level = "Normal"
 
 
 
@@ -31,38 +36,34 @@ history = 10000
 miltiplier = 3
 
 
+[font.normal]
+family = "0xProtoNerdFontMono"
 
 [font]
-normal = { family = "0xProtoNerdFontMono", style = "Regular" }
-bold = { family = "0xProtoNerdFontMono", style = "Bold" }
-italic = { family = "0xProtoNerdFontMono", style = "Italic" }
-bold_italic = { family = "0xProtoNerdFontMono", style = "Italic" }
 size = 11.0
 
 [colors]
-foreground = "#DEDEDE"
 background = "#222222"
-dim_foreground = "#C0C0C0"
-bright_foreground = "#F1F1F1"
-cursor = { text = "CellBackground", cursor = "CellForeground" }
-vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+foreground = "#DEDEDE"
+dim_foreground = "#DEDEDE"
+bright_foreground = "#DEDEDE"
+cursor = { text = "#222222", cursor = "#DEDEDE" }
 
 [colors.search]
 matches = { foreground = "#181818", background = "#ac4242" }
 focused_match = { foreground = "#181818", background = "#f4bf75" }
-#indexed_colors = [{ index = <integer>, color = "<string>" },]
 transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
 [colors.dim]
-black = "#0f0f0f"
-red = "#C02020"
-yellow = "#C0C030"
-green = "#30C030"
-cyan = "#30C0C0"
-blue = "#0060C0"
-magenta = "#C030C0"
-white = "#C0C0C0"
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
 
 [colors.normal]
 black = "#222222"
@@ -75,14 +76,14 @@ magenta = "#E060E0"
 white = "#DEDEDE"
 
 [colors.bright]
-black = "#404040"
-red = "#FF0000"
-yellow = "#FFFF00"
-green = "#00FF00"
-cyan = "#00FFFF"
-blue = "#0000FF"
-magenta = "#FF00FF"
-white = "#F1F1F1"
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
 
 [bell]
 animation = "Linear"
