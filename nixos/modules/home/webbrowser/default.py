@@ -67,11 +67,12 @@ light6 = '#F1F1F1'
 light7 = '#F9F9F9'
 Light8 = '#FFFFFF'
 
-red = '#cc241d'
-green = '#60d11a'
-blue = '#4585cc'
-yellow = '#d79921'
-orange = '#d65d0e'
+r = '#E03030'
+y = '#E0E030'
+g = '#30E030'
+c = '#30E0E0'
+b = '#3030E0'
+p = '#E060E0'
 
 clear = 'rgba(0, 0, 0, 0)'
 
