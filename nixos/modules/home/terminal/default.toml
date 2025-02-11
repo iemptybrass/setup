@@ -19,10 +19,10 @@ bold_italic = { family = "0xProtoNerdFontMono", style = "Italic" }
 size = 11.0
 
 [colors]
-foreground = #
-background = #
-dim_foreground = #
-bright_foreground = #
+foreground = #DEDEDE
+background = #222222
+dim_foreground = #C0C0C0
+bright_foreground = #F1F1F1
 cursor = { text = "CellBackground", cursor = "CellForeground" }
 vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
 
@@ -35,33 +35,33 @@ draw_bold_text_with_bright_colors = false
 
 [colors.dim]
 black = "#0f0f0f"
-red = "#712b2b"
-green = "#5f6f3a"
-yellow = "#a17e4d"
-blue = "#456877"
-magenta = "#704d68"
-cyan = "#4d7770"
-white = "#8e8e8e"
+red = "#C02020"
+yellow = "#C0C030"
+green = "#30C030"
+cyan = "#30C0C0"
+blue = "#0060C0"
+magenta = "#C030C0"
+white = "#C0C0C0"
 
 [colors.normal]
-black = "#181818"
-red = "#ac4242"
-green = "#90a959"
-yellow = "#f4bf75"
-blue = "#6a9fb5"
-magenta = "#aa759f"
-cyan = "#75b5aa"
-white = "#d8d8d8"
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
 
 [colors.bright]
-black = "#6b6b6b"
-red = "#c55555"
-green = "#aac474"
-yellow = "#feca88"
-blue = "#82b8c8"
-magenta = "#c28cb8"
-cyan = "#93d3c3"
-white = "#f8f8f8"
+black = "#404040"
+red = "#FF0000"
+yellow = "#FFFF00"
+green = "#00FF00"
+cyan = "#00FFFF"
+blue = "#0000FF"
+magenta = "#FF00FF"
+white = "#F1F1F1"
 
 [bell]
 animation = "Linear"

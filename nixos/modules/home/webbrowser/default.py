@@ -67,12 +67,12 @@ light6 = '#F1F1F1'
 light7 = '#F9F9F9'
 Light8 = '#FFFFFF'
 
-r = '#E03030'
-y = '#E0E030'
-g = '#30E030'
-c = '#30E0E0'
-b = '#3030E0'
-p = '#E060E0'
+red = '#E03030'
+yellow = '#E0E030'
+green = '#30E030'
+cyan = '#30E0E0'
+blue = '#3030E0'
+purple = '#E060E0'
 
 clear = 'rgba(0, 0, 0, 0)'
 
@@ -95,23 +95,23 @@ c.fonts.debug_console = 'default_size 0xProtoNerdFontMono'
 
 
 
-c.colors.tabs.bar.bg = dark6
+c.colors.tabs.bar.bg = dark3
 
-c.colors.tabs.even.bg = dark3
+c.colors.tabs.even.bg = dark2
 c.colors.tabs.even.fg = light1
-c.colors.tabs.odd.bg = dark3
-c.colors.tabs.odd.fg = gray1
+c.colors.tabs.odd.bg = dark2
+c.colors.tabs.odd.fg = light1
 c.fonts.tabs.unselected = 'default_size default_family'
 
-c.colors.tabs.selected.even.bg = light1
+c.colors.tabs.selected.even.bg = gray1
 c.colors.tabs.selected.even.fg = dark6
-c.colors.tabs.selected.odd.bg = light1
+c.colors.tabs.selected.odd.bg = gray1
 c.colors.tabs.selected.odd.fg = dark6
 c.fonts.tabs.selected = 'default_size default_family'
 
-c.colors.tabs.indicator.error = dark6
-c.colors.tabs.indicator.start = dark6
-c.colors.tabs.indicator.stop = dark6
+c.colors.tabs.indicator.error = dark3
+c.colors.tabs.indicator.start = dark3
+c.colors.tabs.indicator.stop = dark3
 c.colors.tabs.indicator.system = 'none'
 
 
@@ -122,16 +122,16 @@ c.fonts.tooltip = None
 
 
 
-c.colors.statusbar.normal.bg = dark6
+c.colors.statusbar.normal.bg = dark3
 c.colors.statusbar.normal.fg = light4
 c.fonts.statusbar = 'default_size default_family'
-c.colors.statusbar.command.bg = dark6
+c.colors.statusbar.command.bg = dark3
 c.colors.statusbar.command.fg = light4
-c.colors.statusbar.insert.bg = dark6
+c.colors.statusbar.insert.bg = dark3
 c.colors.statusbar.insert.fg = light4
-c.colors.statusbar.passthrough.bg = dark6
+c.colors.statusbar.passthrough.bg = dark3
 c.colors.statusbar.passthrough.fg = light4
-c.colors.statusbar.progress.bg = dark6
+c.colors.statusbar.progress.bg = dark3
 c.colors.statusbar.url.error.fg = red
 c.colors.statusbar.url.fg = light4
 c.colors.statusbar.url.hover.fg = blue
