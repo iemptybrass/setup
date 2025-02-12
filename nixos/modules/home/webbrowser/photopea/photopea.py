@@ -240,8 +240,8 @@ c.editor.remove_file = True
 
 c.statusbar.show = 'never'
 
-c.url.default_page = 'about:blank'
-c.url.start_pages = [ 'about:blank' ]
+c.url.default_page = 'https://www.photopea.com/'
+c.url.start_pages = [ 'https://www.photopea.com/' ]
 
 c.messages.timeout = 0
 
