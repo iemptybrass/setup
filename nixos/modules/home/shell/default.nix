@@ -18,8 +18,8 @@
           modules = "cd /etc/nixos/modules";
           inner = "cd /etc/nixos/modules/inner";
           outer = "cd /etc/nixos/modules/outer";
-          flake = "cd /etc/nixos/modules/outer/flake";
-          home = "cd /etc/nixos/modules/outer/home";
+          flake = "cd /etc/nixos/modules/flake";
+          home = "cd /etc/nixos/modules/home";
 
           clean = "nix-collect-garbage -d";
           deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
