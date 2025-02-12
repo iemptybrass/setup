@@ -2,7 +2,7 @@ config.load_autoconfig(False)
 
 
 
-c.confirm_quit = [ 'always' ]
+c.confirm_quit = [ 'never' ]
 
 c.changelog_after_upgrade = 'never'
 
@@ -226,7 +226,7 @@ c.fonts.contextmenu = None
 
 
 
-c.window.hide_decoration = False
+c.window.hide_decoration = True
 c.window.title_format = ' '
 
 
