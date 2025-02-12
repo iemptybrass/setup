@@ -8,45 +8,58 @@
         historyFileSize = 250;
         historySize = 250;
       shellAliases = {
+
           edit = "sudo micro";
-          lf = "yazi";
+          lsf = "yazi";
+
+          "~" = "cd ~";
           ".." = "cd ..";
           nixos = "cd /etc/nixos";
           modules = "cd /etc/nixos/modules";
           inner = "cd /etc/nixos/modules/inner";
-          middle = "cd /etc/nixos/modules/middle";
           outer = "cd /etc/nixos/modules/outer";
           flake = "cd /etc/nixos/modules/outer/flake";
           home = "cd /etc/nixos/modules/outer/home";
-          "~" = "cd ~";
-          clean = "nix-collect-garbage";
+
+          clean = "nix-collect-garbage -d";
           deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
-          switch = "sudo nixos-rebuild --flake /etc/nixos#default switch" ;
-          upgrade = "sudo nix shell upgrade; sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";      };
+
+          fast = "sudo nixos-rebuild --fast --flake /etc/nixos#default switch" ;
+          build = "sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade" ;
+
+          fetch = "neofetch";
+
+                      };
       historyIgnore = [
+
             "edit"
-            "lf"
+            "lsf"
+
+            "~"
             ".."
             "nixos"
             "modules"
             "inner"
-            "middle"
             "outer"
             "flake"
             "home"
-            "~"
+
             "clean"
             "deep-clean"
-            "switch"
-            "upgrade"
+
+            "fast"
+            "build"
+
+            "fetch"
+
             "cd"
             "ls"
             "pkill"
             "exit"
             "reset"
             "reboot"
-            "nix-shell"
-            "neofetch"      ];      };
+
+                       ];      };
     starship = {
         enable = true;      };
               };
