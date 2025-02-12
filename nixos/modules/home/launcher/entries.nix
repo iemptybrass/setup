@@ -8,8 +8,7 @@
           name = "Micro";
           noDisplay = true;      };
       "org.qutebrowser.qutebrowser" = {
-          name = "Web Browser";
-          exec = "${pkgs.qutebrowser}/bin/qutebrowser";      };
+          name = "Web Browser";      };
       "yazi" = {
           name = "Yazi";
           noDisplay = true;      };      };
