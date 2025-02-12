@@ -7,7 +7,7 @@
         micro = {
         name = "Micro";
         noDisplay = true;      };
-        "com.qutebrowser.qutebrowser" = {
+        "org.qutebrowser.qutebrowser" = {
         name = "Web Browser";
         genericName = "Web Browser";
         exec = "${pkgs.qutebrowser}/bin/qutebrowser";      };
