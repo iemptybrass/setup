@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }:{
 
 
 
@@ -7,7 +7,7 @@
         micro = {
         name = "Micro";
         noDisplay = true;      };
-        qutebrowser = {
+        "com.qutebrowser.qutebrowser" = {
         name = "Web Browser";
         genericName = "Web Browser";
         exec = "${pkgs.qutebrowser}/bin/qutebrowser";      };
