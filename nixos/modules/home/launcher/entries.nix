@@ -4,13 +4,13 @@
 
   xdg = {
     desktopEntries = {
-      micro = {
+      "micro" = {
           name = "Micro";
           noDisplay = true;      };
       "org.qutebrowser.qutebrowser" = {
           name = "Web Browser";
           exec = "${pkgs.qutebrowser}/bin/qutebrowser";      };
-      yazi = {
+      "yazi" = {
           name = "Yazi";
           noDisplay = true;      };      };
          };                     
