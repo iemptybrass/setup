@@ -13,7 +13,6 @@
       ./webbrowser
       ./windowbar
       ./windowmanager
-      ./xdg
              ];
 
 

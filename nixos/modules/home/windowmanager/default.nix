@@ -2,6 +2,8 @@
 
 
 
+    imports = [ ./portal.nix ];
+
   wayland.windowManager = {
       hyprland = {
           enable = true;
