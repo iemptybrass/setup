@@ -30,15 +30,13 @@ in
 
 
 
-    imports = [
-        x
-        ./
-               ];
+    imports = [ x ];
 
   programs = {
     starship = {
-        enable = true;
-        enableBashIntegration = true;      };
+        enableBashIntegration = true;
+        enable = true;      };
+              };
 
   home = {
     packages = with pkgs; [
@@ -50,7 +48,7 @@ in
     configFile."alacritty/alacritty.toml" = {
         source = ./default.toml;      };
     configFile."neofetch/config.conf" = {
-        source = ./default.conf;      };
+        source = ./fetch.conf;      };
     configFile."starship.toml" = {
         source = ./prompt.toml;      };
          };
