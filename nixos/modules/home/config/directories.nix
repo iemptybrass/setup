@@ -8,6 +8,7 @@
         createDirectories = true;
         desktop = null;
         templates = null;
+        public = null;
         documents = "${config.home.homeDirectory}/documents";
         download = "${config.home.homeDirectory}/downloads";
         music = "${config.home.homeDirectory}/media/music";

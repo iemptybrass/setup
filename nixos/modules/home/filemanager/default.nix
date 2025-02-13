@@ -1,11 +1,11 @@
-{
+{ pkgs, ... }:{
 
 
 
-  programs = {
-    yazi = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        yazi      ];
+          };
 
   xdg = {
     configFile."yazi/yazi.toml" = {

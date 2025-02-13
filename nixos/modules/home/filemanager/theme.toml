@@ -163,17 +163,15 @@ rules = [
 
 globs = []
 dirs  = [
-        { name = ".git", text = " " },
-        { name = ".github", text = " " },
-        { name = ".config", text = "󱂀 " },
-        { name = "Documents", text = "󱧷 " },
-        { name = "Downloads", text = "󱧩 " },
-        { name = "Media", text = "󱧻 " },
-        { name = ".local", text = "󱉮 " },
-        { name = ".nix-defexpr", text = " " },
-        { name = ".nix-profile", text = " " },
-        { name = ".pki", text = "󱪨 " },
-        { name = ".cache", text = "󰴌 " },
+        { name = ".config", text = "󱂀" },
+        { name = "documents", text = "󱧷" },
+        { name = "downloads", text = "󱧩" },
+        { name = "media", text = "󱧻" },
+        { name = ".local", text = "󱉮" },
+        { name = ".nix-defexpr", text = "" },
+        { name = ".nix-profile", text = "" },
+        { name = ".pki", text = "󱪨" },
+        { name = ".cache", text = "󰴌" },
 ]
 files = [
         { name = ".bash_profile", text = " ", fg = "#89e051" },
