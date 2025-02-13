@@ -1,6 +1,4 @@
-{ inputs, ... }:
-let x = 
-{
+{ inputs, ... }: let x = {
 
 home.stateVersion = "24.11";
 
@@ -19,9 +17,7 @@ home.stateVersion = "24.11";
 
 
 
-};
-in
-{
+}; in  {
 
 
 
