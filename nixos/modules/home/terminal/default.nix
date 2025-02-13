@@ -2,6 +2,8 @@
 
 
 
+    imports = [ ./prompt.nix ];
+
   home = {
     packages = with pkgs; [
         alacritty      ];
