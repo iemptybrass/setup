@@ -133,59 +133,24 @@ footer  = { fg = "black", bg = "white" }
 [icon]
 dirs = [
 	{ name = "desktop", text = "", fg = "#563d7c" },
-]
-
-[filetype]
-
-rules = [
-	# Images
-	{ mime = "image/*", fg = "yellow" },
-
-	# Media
-	{ mime = "{audio,video}/*", fg = "magenta" },
-
-	# Archives
-	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*} ", fg = "red" },
-
-	# Documents
-	{ mime = "application/{pdf,doc,rtf}", fg = "cyan" },
-
-	# Empty files
-	# { mime = "inode/empty", fg = "red" },
-
-	# Special files
-	{ name = "*", is = "orphan", bg = "red" },
-	{ name = "*", is = "exec"  , fg = "green" },
-
-	# Dummy files
-	{ name = "*", is = "dummy", bg = "red" },
-	{ name = "*/", is = "dummy", bg = "red" },
-
-	# Fallback
-	# { name = "*", fg = "white" },
-	{ name = "*/", fg = "blue" }
-]
-
-globs = []
-dirs  = [
-        { name = ".config", text = "󱂀" },
-        { name = "documents", text = "󱧷" },
-        { name = "downloads", text = "󱧩" },
-        { name = "media", text = "󱧻" },
-        { name = ".local", text = "󱉮" },
-        { name = ".nix-defexpr", text = "" },
-        { name = ".nix-profile", text = "" },
-        { name = ".pki", text = "󱪨" },
-        { name = ".cache", text = "󰴌" },
+  { name = ".config", text = "󱂀" },
+  { name = "documents", text = "󱧷" },
+  { name = "downloads", text = "󱧩" },
+  { name = "media", text = "󱧻" },
+  { name = ".local", text = "󱉮" },
+  { name = ".nix-defexpr", text = "" },
+  { name = ".nix-profile", text = "" },
+  { name = ".pki", text = "󱪨" },
+  { name = ".cache", text = "󰴌" },
 ]
 files = [
-        { name = ".bash_profile", text = " ", fg = "#89e051" },
-        { name = ".bashrc", text = " ", fg = "#89e051" },
-        { name = "config", text = "", fg = "#6d8086" },
-        { name = "hyprland.conf", text = "", fg = "#00aaae" },
-        { name = "hyprlock.conf", text = "", fg = "#00aaae" },
-        { name = "readme", text = "󰂺", fg = "#ededed" },
-        { name = "readme.md", text = "󰂺", fg = "#ededed" },
+  { name = ".bash_profile", text = " ", fg = "#89e051" },
+  { name = ".bashrc", text = " ", fg = "#89e051" },
+  { name = "config", text = "", fg = "#6d8086" },
+  { name = "hyprland.conf", text = "", fg = "#00aaae" },
+  { name = "hyprlock.conf", text = "", fg = "#00aaae" },
+  { name = "readme", text = "󰂺", fg = "#ededed" },
+  { name = "readme.md", text = "󰂺", fg = "#ededed" },
 ]
 exts = [
 	{ name = "3gp", text = " ", fg = "#fd971f" },
@@ -196,7 +161,6 @@ exts = [
 	{ name = "adb", text = " ", fg = "#22ffff" },
 	{ name = "ads", text = " ", fg = "#ffffff" },
 	{ name = "ai", text = " ", fg = "#cbcb41" },
-	{ name = "aif", text = " ", fg = "#00afff" },
 	{ name = "aiff", text = " ", fg = "#00afff" },
 	{ name = "android", text = " ", fg = "#34a853" },
 	{ name = "ape", text = " ", fg = "#00afff" },
@@ -651,6 +615,39 @@ exts = [
 	{ name = "zsh", text = " ", fg = "#89e051" },
 	{ name = "zst", text = " ", fg = "#eca517" },
 ]
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "yellow" },
+
+	# Media
+	{ mime = "{audio,video}/*", fg = "magenta" },
+
+	# Archives
+	{ mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*} ", fg = "red" },
+
+	# Documents
+	{ mime = "application/{pdf,doc,rtf}", fg = "cyan" },
+
+	# Empty files
+	# { mime = "inode/empty", fg = "red" },
+
+	# Special files
+	{ name = "*", is = "orphan", bg = "red" },
+	{ name = "*", is = "exec"  , fg = "green" },
+
+	# Dummy files
+	{ name = "*", is = "dummy", bg = "red" },
+	{ name = "*/", is = "dummy", bg = "red" },
+
+	# Fallback
+	# { name = "*", fg = "white" },
+	{ name = "*/", fg = "blue" }
+]
+
+globs = []
 conds = [
 	# Special files
 	{ if = "orphan", text = "" },
