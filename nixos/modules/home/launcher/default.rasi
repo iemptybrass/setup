@@ -1,71 +1,71 @@
 configuration {
-    modes: "window,drun,run,ssh",
-    modes: "drun,run,ssh",
-    menu_font: "mono 12",
-    show_icons: FALSE,
-#    preview_cmd: NULL,
-#    on_selection_changed: NULL,
-#    on_mode_changed: NULL,
-#    on_entry_accepted: NULL,
-#    on_menu_canceled: NULL,
-#    on_menu_error: NULL,
-#    on_screenshot_taken: NULL,
-    terminal_emulator: "rofi-sensible-terminal",
-    ssh_client: "ssh",
-    ssh_command: "{terminal} -e {ssh-client} {host} [-p {port}]",
-    run_command: "{cmd}",
-    run_list_command: "",
-    run_shell_command: "{terminal} -e {cmd}",
-    window_command: "wmctrl -i -R {window}",
-#    icon_theme: NULL,
-    location: WL_CENTER,
-    y_offset: 0,
-    x_offset: 0,
-    fixed_num_lines: TRUE,
-    disable_history: FALSE,
-    ignored_prefixes: "",
-    sort: FALSE,
-    sorting_method: "normal",
-    case_sensitive: FALSE,
-    case_smart: FALSE,
-    cycle: TRUE,
-    element_height: 1,
-    sidebar_mode: FALSE,
-    auto_select: FALSE,
-    parse_hosts: FALSE,
-    parse_known_hosts: TRUE,
-    combi_modes: "window,run",
-    tokenize: TRUE,
-    matching: "normal",
-    matching_method: MM_NORMAL,
-    drun_match_fields: "name,generic,exec,categories,keywords",
-#    drun_categories: NULL,
-    drun_show_actions: FALSE,
-    drun_display_format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]",
-    drun_url_launcher: "xdg-open",
-    window_match_fields: "all",
-    monitor: "-5",
-#    filter: NULL,
-    dpi: -1,
-    threads: 0,
-    scroll_method: 0,
-    window_format: "{w}    {c}   {t}",
-    click_to_exit: TRUE,
-#    theme: NULL,
-    plugin_path: PLUGIN_PATH,
-    max_history_size: 25,
-    combi_hide_mode_prefix: FALSE,
-    combi_display_format: "{mode} {text}",
-    matching_negate_char: '-',
-#    cache_dir: NULL,
-    window_thumbnail: FALSE,
-    drun_use_desktop_cache: FALSE,
-    drun_reload_desktop_cache: FALSE,
-    benchmark_ui: FALSE,
-    normalize_match: FALSE,
-    steal_focus: FALSE,
-    application_fallback_icon: NULL,
-    refilter_timeout_limit: 300,
-    xserver_i300_workaround: FALSE,
-    completer_mode: "filebrowser",
+    modes: "window, drun, run, ssh";    
+    modes: "drun, run, ssh";    
+    menu_font: "mono 12";    
+    show_icons: FALSE;    
+#    preview_cmd: NULL;    
+#    on_selection_changed: NULL;    
+#    on_mode_changed: NULL;    
+#    on_entry_accepted: NULL;    
+#    on_menu_canceled: NULL;    
+#    on_menu_error: NULL;    
+#    on_screenshot_taken: NULL;    
+    terminal_emulator: "rofi-sensible-terminal";    
+    ssh_client: "ssh";    
+    ssh_command: "{terminal} -e {ssh-client} {host} [-p {port}]";    
+    run_command: "{cmd}";    
+    run_list_command: "";    
+    run_shell_command: "{terminal} -e {cmd}";    
+    window_command: "wmctrl -i -R {window}";    
+#    icon_theme: NULL;    
+    location: WL_CENTER;    
+    y_offset: 0;    
+    x_offset: 0;    
+    fixed_num_lines: TRUE;    
+    disable_history: FALSE;    
+    ignored_prefixes: "";    
+    sort: FALSE;    
+    sorting_method: "normal";    
+    case_sensitive: FALSE;    
+    case_smart: FALSE;    
+    cycle: TRUE;    
+    element_height: 1;    
+    sidebar_mode: FALSE;    
+    auto_select: FALSE;    
+    parse_hosts: FALSE;    
+    parse_known_hosts: TRUE;    
+    combi_modes: "window;    run";    
+    tokenize: TRUE;    
+    matching: "normal";    
+    matching_method: MM_NORMAL;    
+    drun_match_fields: "name;    generic;    exec;    categories;    keywords";    
+#    drun_categories: NULL;    
+    drun_show_actions: FALSE;    
+    drun_display_format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";    
+    drun_url_launcher: "xdg-open";    
+    window_match_fields: "all";    
+    monitor: "-5";    
+#    filter: NULL;    
+    dpi: -1;    
+    threads: 0;    
+    scroll_method: 0;    
+    window_format: "{w}    {c}   {t}";    
+    click_to_exit: TRUE;    
+#    theme: NULL;    
+    plugin_path: PLUGIN_PATH;    
+    max_history_size: 25;    
+    combi_hide_mode_prefix: FALSE;    
+    combi_display_format: "{mode} {text}";    
+    matching_negate_char: '-';    
+#    cache_dir: NULL;    
+    window_thumbnail: FALSE;    
+    drun_use_desktop_cache: FALSE;    
+    drun_reload_desktop_cache: FALSE;    
+    benchmark_ui: FALSE;    
+    normalize_match: FALSE;    
+    steal_focus: FALSE;    
+    application_fallback_icon: NULL;    
+    refilter_timeout_limit: 300;    
+    xserver_i300_workaround: FALSE;    
+    completer_mode: "filebrowser";    
     }
