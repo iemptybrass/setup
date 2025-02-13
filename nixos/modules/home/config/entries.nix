@@ -9,7 +9,7 @@
           exec = "alacritty";      };
       "code" = {
           name = "Visual Studio Code";
-          exec = "code";      };
+          exec = "code --ozone-platform-hint=auto";      };
       "discord" = {
           name = "Discord";
           exec = "discord";      };
