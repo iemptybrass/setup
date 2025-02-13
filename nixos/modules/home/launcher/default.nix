@@ -4,15 +4,15 @@
 
     imports = [ ./entries.nix ];
 
-    home.file.".config/rofi/config.rasi".enable = false;
+    xdg.configFile.".config/rofi/config.rasi".recursive = true;
 
   programs.rofi = {
       enable = true;
                      };
 
   xdg = {
-    configFile."fuzzel/fuzzel.ini" = {
-        source = ./default.ini;      };
+    configFile."rofi/config.rasi" = {
+        source = ./default.rasi;      };
          };
 
 
