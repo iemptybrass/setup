@@ -12,7 +12,6 @@ linemode = "none"
 show_hidden = true
 show_symlink = true
 scrolloff = 200
-title_format = {cwd}
 
 [preview]
 wrap = "no"
