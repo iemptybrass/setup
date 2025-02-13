@@ -4,7 +4,10 @@
 
     imports = [ ./entries.nix ];
 
-    xdg.configFile.".config/rofi/config.rasi".recursive = true;
+  home = {
+    packages = with pkgs; [
+        neofetch      ];
+          };
 
   programs.rofi = {
       enable = true;
