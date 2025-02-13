@@ -1,4 +1,18 @@
 {
+  "editor.accessibilityPageSize": 0,
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingComments": "never",
+  "editor.autoClosingDelete": "never",
+  "editor.autoClosingOvertype": "auto",
+  "editor.autoClosingQuotes": "never",
+  "editor.autoSurround": "never",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeActions.triggerOnFocusChange": false,
+
+
+
   "window.menuBarVisibility": "classic",
   "remoteHub.uncommittedChangesOnEntry": "none",
   "remoteHub.commitDirectlyWarning": "off",
@@ -9,12 +23,7 @@
     "editor.tabSize"
   ],
   "editor.tabSize": 2,
-  "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "never",
-  "editor.autoClosingComments": "never",
-  "editor.autoClosingDelete": "never",
-  "editor.autoClosingQuotes": "never",
-  "editor.autoSurround": "never",
+
   "editor.autoIndent": "none",
   "editor.dragAndDrop": false,
   "editor.dropIntoEditor.enabled": false,
