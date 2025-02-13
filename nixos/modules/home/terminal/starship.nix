@@ -1,3 +1,4 @@
+let x =
 {
 
 
@@ -7,6 +8,7 @@
         enable = true;
         historyFileSize = 250;
         historySize = 250;
+      bashrcExtra = "eval '$(starship init bash)'";
       historyIgnore = [
 
             "sudo"
@@ -62,6 +64,27 @@
 
                       };      };
               };
+
+
+
+}
+in
+{
+
+
+
+    imports = [ x ];
+
+  programs = {
+    starship = {
+        enable = true;
+        enableBashIntegration = true;      };
+              };
+
+  xdg = {
+    configFile."starship.toml" = {
+        source = ./prompt.toml;      };
+         };  
 
 
 
