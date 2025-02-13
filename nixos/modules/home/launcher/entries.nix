@@ -21,7 +21,7 @@
           exec = "qutebrowser";      };
       "spotify" = {
           name = "Spotify";
-          exec = "spotify"};
+          exec = "spotify";      };
       "yazi" = {
           name = "Yazi";
           noDisplay = true;      };      };
