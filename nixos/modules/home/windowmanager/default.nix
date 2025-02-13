@@ -1,17 +1,13 @@
-{
+{ pkgs, ... }:{
 
 
 
     imports = [ ./portal.nix ];
 
-  wayland.windowManager = {
-      hyprland = {
-          enable = true;
-          extraConfig = " ";
-        systemd = {
-            enableXdgAutostart = true;
-            variables = [ "--all" ];      };      };
-                           };
+  home = {
+    packages = with pkgs; [
+        hyprland      ];
+          };
 
   xdg = {
     configFile."hypr/hyprland.conf" = {
