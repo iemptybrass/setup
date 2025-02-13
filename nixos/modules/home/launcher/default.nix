@@ -4,14 +4,14 @@
 
     imports = [ ./entries.nix ];
 
-  programs.fuzzel = {
+  programs.rofi = {
       enable = true;
                      };
 
-  xdg = {
-    configFile."fuzzel/fuzzel.ini" = {
-        source = ./default.ini;      };
-         };
+#  xdg = {
+#    configFile."fuzzel/fuzzel.ini" = {
+#        source = ./default.ini;      };
+#         };
 
 
 
