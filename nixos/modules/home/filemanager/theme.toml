@@ -130,6 +130,11 @@ desc    = {}
 hovered = { reversed = true, bold = true }
 footer  = { fg = "black", bg = "white" }
 
+[icon]
+dirs = [
+	{ name = "desktop", text = "", fg = "#563d7c" },
+]
+
 [filetype]
 
 rules = [
