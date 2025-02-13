@@ -6,6 +6,7 @@
       ./config
       ./editor
       ./filemanager
+      ./ide
       ./launcher
       ./lockscreen
       ./shell
