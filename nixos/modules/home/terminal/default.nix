@@ -2,7 +2,10 @@
 
 
 
-    imports = [ ./prompt.nix ];
+    imports = [
+        ./prompt.nix
+        ./fetch.nix
+               ];
 
   home = {
     packages = with pkgs; [
