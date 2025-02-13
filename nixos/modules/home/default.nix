@@ -3,7 +3,7 @@
 
 
   imports = [
-      ./config.nix
+      ./config
       ./editor
       ./filemanager
       ./launcher
