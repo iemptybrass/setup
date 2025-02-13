@@ -9,57 +9,16 @@ let x =
         historyFileSize = 250;
         historySize = 250;
       historyIgnore = [
-
-            "sudo"
-            "cd"
-            "ls"
-            "pkill"
-            "exit"
-            "reset"
-            "reboot"
-
-          "fast"
-          "build"
-          "upgrade"
-
-            "clean"
-            "deep-clean"
-
-          "fetch"
-          "edit"
-
-            "lsf"
-            "~"
-            ".."
-            "nixos"
-            "modules"
-            "inner"
-            "outer"
-            "flake"
-            "home"
-
-                       ];
+        "sudo" "cd" "ls" "pkill" "exit" "reset" "reboot"
+        "clean" "deep-clean"
+        "fast" "build" "upgrade" 
+        "fetch" "edit"
+        "lsf" "~" ".." "nixos" "modules" "inner" "outer" "flake" "home"      ];
       shellAliases = {
-
-          fast = "sudo nixos-rebuild --fast --flake /etc/nixos#default switch";
-          build = "sudo nixos-rebuild --flake /etc/nixos#default switch";
-          upgrade = "sudo nix flake update; sudo sudo nixos-rebuild --flake /etc/nixos#default switch --upgrade";
-
-            clean = "nix-collect-garbage -d";
-            deep-clean = "sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*; nix-collect-garbage -d";
-
-          fetch = "neofetch";
-          edit = "sudo micro";
-
-            lsf = "yazi";
-            "~" = "cd ~";
-            ".." = "cd ..";
-            nixos = "cd /etc/nixos";
-            modules = "cd /etc/nixos/modules";
-            inner = "cd /etc/nixos/modules/inner";
-            outer = "cd /etc/nixos/modules/outer";
-            flake = "cd /etc/nixos/modules/flake";
-            home = "cd /etc/nixos/modules/home";
+          clean = "nix-collect-garbage -d"; deep-clean = "clean;sudo nix-channel --update; nix-env -u --always; rm /nix/var/nix/gcroots/auto/*"; 
+          build = "sudo nixos-rebuild --flake /etc/nixos#default switch"; fast = "build --fast"; upgrade = "sudo nix flake update; build --upgrade";
+          fetch = "neofetch"; edit = "sudo micro";
+          lsf = "yazi"; "~" = "cd ~"; ".." = "cd .."; nixos = "cd /etc/nixos"; modules = "cd /etc/nixos/modules"; inner = "cd /etc/nixos/modules/inner"; outer = "cd /etc/nixos/modules/outer"; flake = "cd /etc/nixos/modules/flake"; home = "cd /etc/nixos/modules/home";
 
                       };      };
               };
