@@ -6,7 +6,7 @@
     packages = with pkgs; [
         waybar      ];
           };
- 
+
   xdg = {
     configFile."waybar/config" = {
         source = ./default.jsonc;      };
