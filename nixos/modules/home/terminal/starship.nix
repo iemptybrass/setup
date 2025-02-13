@@ -8,7 +8,6 @@ let x =
         enable = true;
         historyFileSize = 250;
         historySize = 250;
-      bashrcExtra = "eval '$(starship init bash)'";
       historyIgnore = [
 
             "sudo"
