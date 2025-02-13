@@ -1,11 +1,11 @@
-{
+{ pkgs, ... }:{
 
 
 
-  programs = {
-    micro = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        micro      ];
+          };
 
 #  xdg = {
 #    configFile."" = {

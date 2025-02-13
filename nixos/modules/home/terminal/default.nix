@@ -1,11 +1,11 @@
-{
+{ pkgs, ... }:{
 
 
 
-  programs = {
-    alacritty = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        alacritty      ];
+          };
 
   xdg = {
     configFile."alacritty/alacritty.toml" = {

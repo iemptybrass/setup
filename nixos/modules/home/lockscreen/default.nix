@@ -1,11 +1,11 @@
-{
+{ pkgs, ... }:{
 
 
 
-  programs = {
-    hyprlock = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        hyprlock      ];
+          };
 
   xdg = {
     configFile."hypr/hyprlock.conf" = {

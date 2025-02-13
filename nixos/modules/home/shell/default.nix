@@ -1,13 +1,13 @@
-{
+{ pkgs, ... }:{
 
 
 
     imports = [ ./bash.nix ];
 
-  programs = {
-    starship = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        starship      ];
+          };
 
   xdg = {
     configFile."starship.toml" = {

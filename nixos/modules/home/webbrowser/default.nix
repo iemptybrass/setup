@@ -1,11 +1,11 @@
-{
+{ pkgs, ... }:{
 
 
 
-  programs = {
-    qutebrowser = {
-        enable = true;      };
-              };
+  home = {
+    packages = with pkgs; [
+        qutebrowser      ];
+          };
 
   xdg = {
     configFile."qutebrowser/config.py" = {
