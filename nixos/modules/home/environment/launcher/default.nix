@@ -1,7 +1,8 @@
-let 
-x = { text = "null"; }
-in
-{
+let x = { 
+
+    text = "null"; 
+
+}; in  {
 
 
 
