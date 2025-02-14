@@ -8,8 +8,6 @@
       ./portal
              ];
 
-    xdg.enable = true; 
-
 
 
 }
