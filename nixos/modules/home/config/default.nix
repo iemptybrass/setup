@@ -3,8 +3,9 @@
 
 
   imports = [
-      ./directories.nix
-      ./entries.nix
+      ./directories
+      ./entries
+      ./portal
              ];
 
     xdg.enable = true; 
