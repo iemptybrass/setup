@@ -5,12 +5,12 @@
   imports = [
       ./config
       ./editor
+      ./fetch
       ./filemanager
       ./ide
       ./launcher
       ./lockscreen
       ./shell
-      ./systeminfo
       ./terminal
       ./webbrowser
       ./windowbar
