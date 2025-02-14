@@ -4,10 +4,7 @@
 
     imports = [ ./portal.nix ];
 
-  home = {
-    packages = with pkgs; [
-        hyprland      ];
-          };
+  wayland.windowManager.enable = true;
 
   xdg = {
     configFile."hypr/hyprland.conf" = {
