@@ -5,8 +5,8 @@ home.stateVersion = "24.11";
 
 
   imports = [ 
-      ./home
       ./flake
+      ./home
              ]; 
 
     programs.home-manager.enable = true; 
