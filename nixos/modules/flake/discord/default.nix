@@ -9,8 +9,6 @@
   programs.nixcord = {
       enable = true;
       quickCss = "some CSS";
-    vencord = {
-        enable = true;      };
     openASAR = {
         enable = true;      };
     config = {
@@ -122,7 +120,6 @@
             messages = "only@Mentions";
             everyone = true;
             role = true;
-            highlight = true;
             events = true;
             showAllChannels = true;      };
         noMosaic = {
