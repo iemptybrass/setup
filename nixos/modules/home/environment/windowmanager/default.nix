@@ -8,7 +8,7 @@
           enable = true;
           extraConfig = " ";
         systemd = {
-            enable = true;      
+            enable = true;
             variables = [ "--all" ];      };
         xwayland = {
             enable = true;      };      };      };
