@@ -13,6 +13,13 @@ window {
     background-color: @background;
     border:           0;
     padding:          30;
+    location: north;
+}
+window {
+    background-color: @background;
+    border:           0;
+    padding:          30;
+    location: center;
 }
 listview {
     lines:                          10;
