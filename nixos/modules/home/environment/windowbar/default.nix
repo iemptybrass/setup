@@ -2,6 +2,11 @@
 
 
 
+  programs = {
+    waybar = {
+        enable = true;      };
+              };
+
   xdg = {
     configFile."waybar/style.css" = {
         source = ./windowbar.css;      };
