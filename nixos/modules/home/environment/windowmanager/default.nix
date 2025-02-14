@@ -11,7 +11,9 @@
             enable = true;      
             variables = [ "--all" ];      };
         xwayland = {
-            enable = true;      };      };      };
+            enable = true;      };
+        plugins = [ 
+            pkgs.hyprlandPlugins.hyprfocus ];      };      };
     systemd = {
         target = "hyprland-session.target";      };
              };
