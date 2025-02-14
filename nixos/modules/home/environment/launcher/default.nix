@@ -9,7 +9,7 @@
   
   xdg = {
     configFile."rofi/config.rasi" = {
-        source = ./launcher.rasi;
+        source = ./default.rasi;
         text = "null";      };
          };
 

@@ -18,7 +18,7 @@
 
   xdg = {
     configFile."hypr/hyprland.conf" = {
-        source = ./windowmanager.conf;      };
+        source = ./default.conf;      };
          };
 
 

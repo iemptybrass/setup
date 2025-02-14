@@ -12,9 +12,9 @@
 
   xdg = {
     configFile."waybar/style.css" = {
-        source = ./windowbar.css;      };
+        source = ./default.css;      };
     configFile."waybar/config" = {
-        source = ./windowbar.jsonc;      };
+        source = ./default.jsonc;      };
          };
 
 
