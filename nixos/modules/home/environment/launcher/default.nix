@@ -1,8 +1,4 @@
-let x = { 
-
-    text = "null"; 
-
-}; in  {
+{
 
 
 
@@ -13,7 +9,8 @@ let x = {
   
   xdg = {
     configFile."rofi/config.rasi" = {
-        source = ./launcher.rasi; x      };
+        source = ./launcher.rasi;
+        text = "null";      };
          };
 
 
