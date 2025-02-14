@@ -7,6 +7,8 @@
       ./entries.nix
              ];
 
+    xdg.enable = true; 
+
 
 
 }
