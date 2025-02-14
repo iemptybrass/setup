@@ -4,7 +4,10 @@
 
   programs = {
     waybar = {
-        enable = true;      };
+        enable = true;
+      systemd = {
+          enable = true;
+          target = "hyprland-session.target";      };      };
               };
 
   xdg = {
