@@ -4,17 +4,13 @@
 
   imports = [
       ./config
-      ./editor
       ./fetch
       ./filemanager
       ./ide
-      ./launcher
-      ./lockscreen
       ./shell
       ./terminal
+      ./texteditor
       ./webbrowser
-      ./windowbar
-      ./windowmanager
              ];
 
 
