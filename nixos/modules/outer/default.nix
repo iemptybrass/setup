@@ -3,7 +3,9 @@
 
 
   imports = [
-      ./portal
+      ./font
+      ./network
+      ./sound
              ];
 
 
