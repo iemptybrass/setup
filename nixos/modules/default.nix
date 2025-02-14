@@ -20,7 +20,6 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./environment
       inputs.home-manager.nixosModules.default
       ./inner
       ./outer
