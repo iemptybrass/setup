@@ -5,7 +5,7 @@
   imports = [
       ./config
       ./environment
-      ./programs
+      ./program
              ];
 
 
