@@ -3,8 +3,9 @@
 
 
   xdg = {
-    configFile."rofi/config.rasi" = {
-        source = ./launcher.rasi;      };
+    configFile."rofi/config.rasi" = 
+        source = ./launcher.rasi;
+        force = true;      };
          };
 
 
