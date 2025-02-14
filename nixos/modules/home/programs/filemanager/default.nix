@@ -9,7 +9,6 @@
 
   xdg = {
     configFile."yazi/yazi.toml" = {
-        force = true;
         source = ./default.toml;      };
     configFile."yazi/keymap.toml" = {
         source = ./keymap.toml;      };
