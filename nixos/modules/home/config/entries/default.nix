@@ -19,6 +19,12 @@
       "org.qutebrowser.qutebrowser" = {
           name = "Safari";
           exec = "qutebrowser";      };
+      "rofi-theme-selector" = {
+          name = "rofi theme selector";
+          noDisplay = true;      };
+      "rofi" = {
+          name = "rofi";
+          noDisplay = true;      };
       "spotify" = {
           name = "Spotify";
           exec = "spotify";      };
