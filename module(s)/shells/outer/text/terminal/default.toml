@@ -1,0 +1,107 @@
+[debug]
+render_timer = false
+persistent_logging = false
+log_level = "off"
+renderer = "None"
+print_events = false
+highlight_damage = false
+prefer_egl = true
+
+[general]
+working_directory = "None"
+live_config_reload = true
+
+[window]
+dimensions = { columns = 0, lines = 0 }
+position = "None"
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+decorations = "None"
+opacity = 1.0
+blur = false
+startup_mode = "Windowed"
+level = "Normal"
+
+[scrolling]
+history = 10000
+miltiplier = 3
+
+[font.normal]
+family = "0xProtoNerdFontMono"
+
+[font]
+size = 11.0
+
+[colors]
+background = "#222222"
+foreground = "#DEDEDE"
+dim_foreground = "#DEDEDE"
+bright_foreground = "#DEDEDE"
+cursor = { text = "#222222", cursor = "#DEDEDE" }
+
+[colors.search]
+matches = { foreground = "#181818", background = "#ac4242" }
+focused_match = { foreground = "#181818", background = "#f4bf75" }
+transparent_background_colors = false
+draw_bold_text_with_bright_colors = false
+
+[colors.dim]
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
+
+[colors.normal]
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
+
+[colors.bright]
+black = "#222222"
+red = "#E03030"
+yellow = "#E0E030"
+green = "#30E030"
+cyan = "#30E0E0"
+blue = "#3030E0"
+magenta = "#E060E0"
+white = "#DEDEDE"
+
+[bell]
+animation = "Linear"
+duration = 0
+#color = "#ffffff"
+#command = "None"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = false
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+vi_mode_style = "None"
+blink_interval = 750
+unfocused_hollow = true
+thickness = 0.15
+
+[terminal]
+shell = "bash"
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = false
+
+[keyboard]
+
+
+[hints]
+alaphabet = "jfkdls;ahgurieowpq"
+
