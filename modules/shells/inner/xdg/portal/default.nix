@@ -6,9 +6,8 @@
     portal = {
         enable = true;
       extraPortals = [
-          pkgs.xdg-desktop-portal-hyprland      ];
-      config.common.default = "hyprland";
-                };
+          pkgs.xdg-desktop-portal-hyprland   ];
+      config.common.default = "hyprland";   };
          };                                
 
 
