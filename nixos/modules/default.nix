@@ -6,6 +6,7 @@ home.stateVersion = "24.11";
 
   imports = [ 
       ./flake
+
              ]; 
 
     programs.home-manager.enable = true; 
@@ -21,7 +22,6 @@ home.stateVersion = "24.11";
 
 
   imports = [
-      ./test.nix
       inputs.home-manager.nixosModules.default
       ./inner
       ./outer
