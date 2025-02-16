@@ -5,7 +5,7 @@
   programs = {
     chromium = {
         enable = true;
-      extraOPts = {
+      extraOpts = {
           "BrowserSignin" = 0;
           "SyncDisabled" = true;
           "PasswordManagerEnabled" = false;
@@ -20,7 +20,6 @@
         packages = with pkgs; [
             chromium      ];      };      };
                   };
-
 
 
 
