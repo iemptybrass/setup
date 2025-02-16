@@ -8,7 +8,6 @@
       ./startup
       ./systemd
       ./upgrade
-      ./5
       ./6
              ];
 
