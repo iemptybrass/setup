@@ -3,11 +3,11 @@
 
 
   imports = [
-      ./clean
-      ./security
-      ./systemd
-      ./upgrade
-      ./5
+      ./network
+      ./nix
+      ./sound
+      ./style
+      ./user
       ./6
              ];
 
