@@ -1,23 +1,18 @@
-{ config, pkgs, ... }:{
+{
 
 
 
-  config = {
+  programs = {
     chromium = {
         enable = true;
-        extraOpts};
-
-  home = {
-    packages = with pkgs; [
-        chromium      ];
-          };
-
-  xdg = {
-    configFile."qutebrowser/config.py" = {
-        source = ./default.py;      };
-    configFile."qutebrowser/bookmarks/urls" = {
-        source = ./urls;      };
-         };
+      extraOPts = {
+          "BrowserSignin" = 0;
+          "SyncDisabled" = true;
+          "PasswordManagerEnabled" = false;
+          "SpellcheckEnabled" = true;
+          "SpellcheckLanguage" = [
+              "en-US"      ];      };      };
+              };
 
 
 
