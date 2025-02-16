@@ -45,10 +45,10 @@ c.qt.workarounds.remove_service_workers = False
 
 
 
-dark9 = '#0d0d0d'
+dark9 = '#0D0D0D'
 dark8 = '#191919'
-dark7 = '#262626'
-dark6 = '#333333'
+dark7 = '#262626' 
+dark6 = '#333333' # webpage bg
 dark5 = '#404040'
 dark4 = '#4D4D4D'
 dark3 = '#595959'
@@ -57,22 +57,23 @@ dark1 = '#737373'
 
 gray1 = '#808080'
 
-light1 = '#8c8c8c'
+light1 = '#8C8C8C'
 light2 = '#999999'
-light3 = '#a6a6a6'
-light4 = '#b3b3b3'
-light5 = '#bfbfbf'
-light6 = '#cccccc'
-light7 = '#d9d9d9'
-Light8 = '#e6e6e6'
-Light9 = '#f2f2f2'
+light3 = '#A6A6A6'
+light4 = '#B3B3B3'
+light5 = '#BFBFBF'
+light6 = '#CCCCCC'
+light7 = '#D9D9D9'
+light8 = '#E6E6E6'
+light9 = '#F2F2F2'
 
-red = '#E03030'
-yellow = '#E0E030'
-green = '#30E030'
-cyan = '#30E0E0'
-blue = '#3030E0'
-purple = '#E060E0'
+red = '#FF8080'
+orange = '#FFA280'
+yellow = '#FFFF80'
+green = '#80FF80'
+cyan = '#80FFFF'
+blue = '#8080FF'
+purple = '#FF80FF'
 
 clear = 'rgba(0, 0, 0, 0)'
 
@@ -95,23 +96,23 @@ c.fonts.debug_console = 'default_size 0xProtoNerdFontMono'
 
 
 
-c.colors.tabs.bar.bg = dark3
+c.colors.tabs.bar.bg = dark7
 
-c.colors.tabs.even.bg = dark2
-c.colors.tabs.even.fg = light1
-c.colors.tabs.odd.bg = dark2
-c.colors.tabs.odd.fg = light1
+c.colors.tabs.even.bg = dark6
+c.colors.tabs.even.fg = dark1
+c.colors.tabs.odd.bg = dark6
+c.colors.tabs.odd.fg = dark1
 c.fonts.tabs.unselected = 'default_size default_family'
 
-c.colors.tabs.selected.even.bg = gray1
-c.colors.tabs.selected.even.fg = dark6
-c.colors.tabs.selected.odd.bg = gray1
-c.colors.tabs.selected.odd.fg = dark6
+c.colors.tabs.selected.even.bg = dark1
+c.colors.tabs.selected.even.fg = light8
+c.colors.tabs.selected.odd.bg = dark1
+c.colors.tabs.selected.odd.fg = light8
 c.fonts.tabs.selected = 'default_size default_family'
 
-c.colors.tabs.indicator.error = dark3
-c.colors.tabs.indicator.start = dark3
-c.colors.tabs.indicator.stop = dark3
+c.colors.tabs.indicator.error = dark7
+c.colors.tabs.indicator.start = dark7
+c.colors.tabs.indicator.stop = dark7
 c.colors.tabs.indicator.system = 'none'
 
 
@@ -122,19 +123,19 @@ c.fonts.tooltip = None
 
 
 
-c.colors.statusbar.normal.bg = dark3
-c.colors.statusbar.normal.fg = light4
+c.colors.statusbar.normal.bg = dark7
+c.colors.statusbar.normal.fg = light9
 c.fonts.statusbar = 'default_size default_family'
-c.colors.statusbar.command.bg = dark3
-c.colors.statusbar.command.fg = light4
-c.colors.statusbar.insert.bg = dark3
-c.colors.statusbar.insert.fg = light4
-c.colors.statusbar.passthrough.bg = dark3
-c.colors.statusbar.passthrough.fg = light4
-c.colors.statusbar.progress.bg = dark3
+c.colors.statusbar.command.bg = dark7
+c.colors.statusbar.command.fg = light9
+c.colors.statusbar.insert.bg = dark7
+c.colors.statusbar.insert.fg = light9
+c.colors.statusbar.passthrough.bg = dark7
+c.colors.statusbar.passthrough.fg = light9
+c.colors.statusbar.progress.bg = dark7
 c.colors.statusbar.url.error.fg = red
-c.colors.statusbar.url.fg = light4
-c.colors.statusbar.url.hover.fg = blue
+c.colors.statusbar.url.fg = light9
+c.colors.statusbar.url.hover.fg = cyan
 c.colors.statusbar.url.success.http.fg = light4
 c.colors.statusbar.url.success.https.fg = light4
 c.colors.statusbar.url.warn.fg = yellow
