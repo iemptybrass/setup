@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }:{
 
 
 
@@ -13,6 +13,13 @@
           "SpellcheckLanguage" = [
               "en-US"      ];      };      };
               };
+
+  home-manager = {
+    users.user = {
+      home = {
+        packages = with pkgs; [
+            chromium      ];      };      };
+                  };
 
 
 
