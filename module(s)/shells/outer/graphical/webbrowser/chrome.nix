@@ -2,10 +2,18 @@
 
 
 
+  home-manager = {
+    users.user = {
+      home = {
+        packages = with pkgs; [
+            chromium      ];      };      };
+                  };
+
   programs = {
     chromium = {
         enable = true;
       extraOpts = {
+          "ShowHomeButton" = true;
           "BrowserSignin" = 0;
           "SyncDisabled" = true;
           "PasswordManagerEnabled" = false;
@@ -13,13 +21,6 @@
           "SpellcheckLanguage" = [
               "en-US"      ];      };      };
               };
-
-  home-manager = {
-    users.user = {
-      home = {
-        packages = with pkgs; [
-            chromium      ];      };      };
-                  };
 
 
 
