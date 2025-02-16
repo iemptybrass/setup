@@ -7,10 +7,12 @@
         enable = true;      };
               };
 
-  xdg = {
-    configFile."hypr/hyprlock.conf" = {
-        source = ./default.conf;      };
-         };
+  home-manager = {
+    users.user = {
+      xdg = {
+        configFile."hypr/hyprlock.conf" = {
+            source = ./default.conf;      }; }; };
+                  };
 
 
 
