@@ -11,7 +11,7 @@
       extraModulePackages = [ ];
     initrd = {
         availableKernelModules = [ "xhci_pci" "nvme" ];
-        kernelModules = [ ];      }; 
+        kernelModules = [ ];   }; 
           };
 
 

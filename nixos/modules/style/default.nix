@@ -4,8 +4,6 @@
 
   imports = [
       ./font
-      ./network
-      ./sound
              ];
 
 
