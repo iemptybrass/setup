@@ -5,7 +5,7 @@
   imports = [
       ./flake
       ./graphical
-      ./kvm
+#      ./kvm
       ./text
              ];
 

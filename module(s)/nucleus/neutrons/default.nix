@@ -9,7 +9,6 @@
       ./startup
       ./systemd
       ./upgrade
-      ./6
              ];
 
 
