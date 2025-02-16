@@ -3,8 +3,8 @@
 
 
   imports = [
-      ./1
-      ./2
+      ./config
+      ./environment
              ];
 
 
