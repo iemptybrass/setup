@@ -2,8 +2,6 @@
 
 home.stateVersion = "24.11";
 
-
-
   imports = [ 
       ./flake
       ./home
@@ -15,11 +13,7 @@ home.stateVersion = "24.11";
 
     xdg.enable = true; 
 
-
-
 }; in  {
-
-
 
   imports = [
       inputs.home-manager.nixosModules.default
@@ -31,7 +25,5 @@ home.stateVersion = "24.11";
       extraSpecialArgs = { inherit inputs; };
     users = { "user" = x; };
                   };
-
-
 
 }
