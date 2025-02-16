@@ -1,5 +1,7 @@
 {
 
+
+
   inputs = {
       nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
@@ -16,6 +18,8 @@
           inputs.nixpkgs.follows = "nixpkgs";   };
               };
 
+
+
   outputs = { self, nixpkgs, ... } @inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -23,5 +27,7 @@
           inputs.home-manager.nixosModules.default
           ./configuration.nix   ]; };
                                              };
+
+
 
 }
