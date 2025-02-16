@@ -3,8 +3,8 @@
 
 
   imports = [
-      ./config
       ./environment
+      ./xdg
              ];
 
 
