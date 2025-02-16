@@ -1,4 +1,4 @@
-{ pkgs, ... }: let x = {
+{
 
 
 
@@ -19,25 +19,6 @@
           fetch = "neofetch"; edit = "sudo micro";
           lsf = "yazi"; "~" = "cd ~"; ".." = "cd .."; nixos = "cd /etc/nixos"; modules = "cd /etc/nixos/modules"; home = "cd /etc/nixos/modules/home";      };      };
               };
-
-
-
-}; in  {
-
-
-
-    imports = [ x ];
-
-  programs = {
-    starship = {
-        enableBashIntegration = true;
-        enable = true;      };
-              };
-
-  xdg = {
-    configFile."starship.toml" = {
-        source = ./default.toml;      };
-         };
 
 
 

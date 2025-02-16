@@ -5,7 +5,7 @@
   imports = [
       ./network
       ./nix
-      ./shell
+      ./script
       ./sound
       ./style
       ./user
