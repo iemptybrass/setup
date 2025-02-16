@@ -11,7 +11,6 @@
         timeout = 0;      };
              };
 
-    security.rtkit.enable = true;
 
   systemd.services = {
 
