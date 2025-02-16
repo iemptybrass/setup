@@ -6,14 +6,14 @@
 
 ```
 .
-├─ device
-├┬ modules
-│├─ flake
-│├─ home
-│├─ inner
-│└─ outer
-├─ configuration.nix
-└─ flake.nix
+├─ device/
+├─┬ modules/
+│ ├── flake/
+│ ├── home/
+│ ├── style/
+│ └── system/
+├── configuration.nix
+└── flake.nix
 ```
 
   </details>
