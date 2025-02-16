@@ -2,24 +2,22 @@
 
 
 
-  wayland = {
-    windowManager = {
-      hyprland = {
-          enable = true;
-          extraConfig = " ";
-        systemd = {
-            enable = true;
-            variables = [ "--all" ];      };
-        xwayland = {
-            enable = true;      };      };      };
-    systemd = {
-        target = "hyprland-session.target";      };
-             };
+  programs = {
+    hyprland = {
+        enable = true;
+        withUWSM = true;
+      systemd = {
+          setPath.enable = true;   };
+      xwayland = {
+          enable = true;   }; };
+              };
 
-  xdg = {
-    configFile."hypr/hyprland.conf" = {
-        source = ./default.conf;      };
-         };
+  home-manager = {
+    users.user = {
+      xdg = {
+        configFile."hypr/hyprland.conf" = {
+            source = ./default.conf;   }; }; };
+                  };
 
 
 

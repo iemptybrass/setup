@@ -1,0 +1,12 @@
+{
+
+
+
+  programs = {
+    uwsm = {
+        enable = true;   };
+              };
+
+
+
+}
