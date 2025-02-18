@@ -9,6 +9,8 @@
   programs.nixcord = {
       enable = true;
       quickCss = "some CSS";
+    vesktop = {
+        enable = true;   };
     openASAR = {
         enable = true;      };
     config = {
