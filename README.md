@@ -60,7 +60,7 @@
   ├─ #999999
   ├─ #A6A6A6
   ├─ #B3B3B3
-  ├─ #BFBFC9
+  ├─ #BFBFBF
   ├─ #CCCCCC
   ├─ #D9D9D9
   ├─ #E6E6E6

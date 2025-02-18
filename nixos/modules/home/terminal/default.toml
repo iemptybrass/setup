@@ -33,11 +33,11 @@ family = "0xProtoNerdFontMono"
 size = 11.0
 
 [colors]
-background = "#222222"
-foreground = "#DEDEDE"
-dim_foreground = "#DEDEDE"
-bright_foreground = "#DEDEDE"
-cursor = { text = "#222222", cursor = "#DEDEDE" }
+background = "#262626"
+foreground = "#D9D9D9"
+dim_foreground = "#8C8C8C"
+bright_foreground = "#F2F2F2"
+cursor = { text = "#262626", cursor = "#D9D9D9" }
 
 [colors.search]
 matches = { foreground = "#181818", background = "#ac4242" }
@@ -46,34 +46,34 @@ transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
 [colors.dim]
-black = "#222222"
-red = "#E03030"
-yellow = "#E0E030"
-green = "#30E030"
-cyan = "#30E0E0"
-blue = "#3030E0"
-magenta = "#E060E0"
-white = "#DEDEDE"
+black = "#262626"
+red = "#CC6666"
+yellow = "#CCCC66"
+green = "#66CC66"
+cyan = "#66CCCC"
+blue = "#6666CC"
+magenta = "#CC66CC"
+white = "#999999"
 
 [colors.normal]
-black = "#222222"
-red = "#E03030"
-yellow = "#E0E030"
-green = "#30E030"
-cyan = "#30E0E0"
-blue = "#3030E0"
-magenta = "#E060E0"
-white = "#DEDEDE"
+black = "#262626"
+red = "#FF8080"
+yellow = "#FFFF80"
+green = "#80FF80"
+cyan = "#80FFFF"
+blue = "#8080FF"
+magenta = "#FF80FF"
+white = "#BFBFBF"
 
 [colors.bright]
-black = "#222222"
-red = "#E03030"
-yellow = "#E0E030"
-green = "#30E030"
-cyan = "#30E0E0"
-blue = "#3030E0"
-magenta = "#E060E0"
-white = "#DEDEDE"
+black = "#262626"
+red = "#FF8080"
+yellow = "#FFFF80"
+green = "#80FF80"
+cyan = "#80FFFF"
+blue = "#8080FF"
+magenta = "#FF80FF"
+white = "#E6E6E6"
 
 [bell]
 animation = "Linear"
