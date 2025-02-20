@@ -13,7 +13,7 @@
   programs = {
     spicetify = {
         enable = true;
-        theme = x.themes.dribbblish;
+        theme.src = "./default.css";
       enabledExtensions = with x.extensions; [
           beautifulLyrics
           betterGenres
