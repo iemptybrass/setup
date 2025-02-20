@@ -1,8 +1,9 @@
-{ inputs, pkgs, system, ... }: let x = {
+{ inputs, pkgs, system, ... }: 
+let 
 
-    inputs.spicetify-nix.legacyPackages.${pkgs.system};
+x = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 
-}; in  {
+in  {
 
 
 
