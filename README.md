@@ -106,6 +106,8 @@
 
   sudo nix-visualize /nix/store/<package> -c config.cfg -s nix -o <name>.png
 
+  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
+
   nix-tree
 
   ```
