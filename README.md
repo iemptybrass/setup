@@ -106,7 +106,8 @@
 
   sudo nix-visualize /nix/store/<package> -c config.cfg -s nix -o <name>.png
 
-  nix-tree=
+
+  nix-tree
 
   ```
   aspect_ratio: 1
