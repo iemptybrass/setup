@@ -39,6 +39,7 @@
     "OKLAB",
     "OKLCH"
   ],
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "vs-minimal"
 }
 
