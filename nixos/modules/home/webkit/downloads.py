@@ -1,0 +1,19 @@
+c.colors.downloads.bar.bg = dark6
+c.fonts.downloads = 'default_size default_family'
+c.colors.downloads.error.bg = clear
+c.colors.downloads.error.fg = clear
+c.colors.downloads.start.bg = clear
+c.colors.downloads.start.fg = clear
+c.colors.downloads.stop.bg = clear
+c.colors.downloads.stop.fg = clear
+c.colors.downloads.system.bg = 'none'
+c.colors.downloads.system.fg = 'none'
+
+c.downloads.location.directory = None
+c.downloads.location.prompt = True
+c.downloads.location.remember = True
+c.downloads.location.suggestion = 'path'
+c.downloads.open_dispatcher = None
+c.downloads.position = 'top'
+c.downloads.prevent_mixed_content = True
+c.downloads.remove_finished = 0
