@@ -93,9 +93,8 @@
   "Hide most of the status elements but URL and modes."
   ((style (str:concat
            %slot-value%
-           (theme:themed-css (theme *browser*)
 	     `("#controls,#tabs"
-	       :display none !important))))))
+	       :display none !important)))))
 
 (defmethod format-status-load-status ((status status-buffer))
   "A fancier load status."
@@ -123,7 +122,7 @@
             ;;       :style "background-color:rgb(21,21,21);background-color:rgb(49,49,49)" "")
             (:div :id "modes"
 		  :title (nyxt::modes-string buffer)
-		  "--")))))
+		  "--"))
 
 (define-configuration window 
   ((status-formatter #'my-format-status)))
