@@ -8,13 +8,11 @@
 
   programs.nixcord = {
       enable = true;
-      quickCss = "some CSS";
     vesktop = {
         enable = true;   };
     openASAR = {
         enable = true;      };
     config = {
-        useQuickCss = true;
         frameless = true;
         disableMinSize = true;
       plugins = {
