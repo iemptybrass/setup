@@ -4,7 +4,6 @@
 
   inputs = {
       nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-      sops-nix.url = "github:Mic92/sops-nix";
     home-manager = {
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";   };
@@ -21,13 +20,18 @@
 
 
 
-  outputs = { self, nixpkgs, ... } @inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
-      modules = [
-          inputs.home-manager.nixosModules.default
-          ./configuration.nix   ]; };
-                                             };
+  outputs = { self, nixpkgs, ... } @ inputs: 
+    let
+    system = "x86_64-linux";
+    pkgs = import inputs.nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+  in
+  {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+inherit pkgs;
+      modules = [ ./configuration.nix ]; }; };
 
 
 
