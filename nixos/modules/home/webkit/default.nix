@@ -4,14 +4,12 @@
 
   home = {
     packages = with pkgs; [
-        qutebrowser      ];
+        nyxt      ];
           };
 
   xdg = {
-    configFile."qutebrowser/config.py" = {
-        source = ./default.py;      };
-    configFile."qutebrowser/bookmarks/urls" = {
-        source = ./urls;      };
+    configFile."nyxt/config.lisp" = {
+        source = ./default.lisp;      };
          };
 
 
