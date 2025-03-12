@@ -13,26 +13,43 @@
       spicetify-nix = {
           url = "github:Gerg-L/spicetify-nix";
           inputs.nixpkgs.follows = "nixpkgs";   };
-      nixcord = {
-          url = "github:kaylorben/nixcord";
-          inputs.nixpkgs.follows = "nixpkgs";   };
               };
 
 
 
-  outputs = { self, nixpkgs, ... } @ inputs: 
-    let
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs: 
+
+let
+
     system = "x86_64-linux";
-    pkgs = import inputs.nixpkgs {
+    pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
     };
-  in
+
+in
+
   {
+  nixosModules.default = {};
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit pkgs;
+        inherit system pkgs;
         specialArgs = { inherit inputs; };
-      modules = [ ./configuration.nix ]; }; };
+      modules = 
+
+let config = {
+system.stateVersion = "24.11";
+        imports = [
+            ./hardware
+            ./modules
+                   ];
+};
+
+in
+
+      [
+            self.nixosModules.default
+       ({config})
+      home-manager.nixosModules.home-manager { home-manager.useGlobalPkgs = true; } ]; }; };
 
 
 
