@@ -10,45 +10,34 @@
             };
 
     inputs = {
-      spicetify-nix = {
-          url = "github:Gerg-L/spicetify-nix";
-          inputs.nixpkgs.follows = "nixpkgs";   };
+      overlay = {
+    url = "path:./overlay.nix"; # If local, or use a GitHub URL if external
+    flake = false; };
               };
 
 
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: 
 
-let
-
+let # configuration.nix
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
       config.allowUnfree = true;
     };
-
 in
-
   {
-  nixosModules.default = {};
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system pkgs;
-        specialArgs = { inherit inputs; };
-      modules = 
-
-let config = {
+=        specialArgs = { inherit inputs; };
+      modules = [
+{
 system.stateVersion = "24.11";
         imports = [
             ./hardware
             ./modules
                    ];
-};
-
-in
-
-      [
-            self.nixosModules.default
-       ({config})
+nixpkgs.config.allowUnfree = true;
+}
       home-manager.nixosModules.home-manager { home-manager.useGlobalPkgs = true; } ]; }; };
 
 
