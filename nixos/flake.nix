@@ -28,7 +28,7 @@ let # configuration.nix
 in
   {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-=        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; };
       modules = [
 {
 system.stateVersion = "24.11";
