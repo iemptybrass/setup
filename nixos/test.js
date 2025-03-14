@@ -1,7 +1,6 @@
 const fs = require("fs");
 const os = require("os");
 const path = require("path");
-const msg = require("./messages").messages;
 const uuid = require("uuid");
 const fetch = require("node-fetch");
 const Url = require("url");
