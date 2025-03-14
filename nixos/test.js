@@ -70,21 +70,6 @@ function activate(context) {
 		const ext = path.extname(parsed.pathname);
 	}
 
-	function reloadWindow() {
-		// reload vscode-window
-		vscode.commands.executeCommand("workbench.action.reloadWindow");
-	}
-	function enabledRestart() {
-			// if close button is clicked btn is undefined, so no reload window
-			if (btn === msg.restartIde) {
-				reloadWindow();
-			}
-	}
-	function disabledRestart() {
-			if (btn === msg.restartIde) {
-				reloadWindow();
-			}
-	}
 
 	const installCustomCSS = vscode.commands.registerCommand(
 		"extension.installCustomCSS",
