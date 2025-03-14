@@ -1,6 +1,6 @@
 const fs = require("fs");
 const os = require("os");
-const msg = require("./messages").messages;
+const path = require("path");
 const uuid = require("uuid");
 const fetch = require("node-fetch");
 const Url = require("url");
@@ -21,7 +21,6 @@ function activate(context) {
 	async function performPatch(uuidSession) {
 		const config = vscode.workspace.getConfiguration("vscode_custom_css");
 		if (!patchIsProperlyConfigured(config)) {
-			return vscode.window.showInformationMessage(msg.notConfigured);
 		}
 
 
