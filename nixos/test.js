@@ -68,21 +68,6 @@ function activate(context) {
 		// Copy the resource to a staging directory inside the extension dir
 		let parsed = new Url.URL(url);
 		const ext = path.extname(parsed.pathname);
-
-		try {
-			parsed = parsedUrl(url);
-			const fetched = await getContent(parsed);
-			if (ext === ".css") {
-				return `<style>${fetched}</style>`;
-			} else if (ext === ".js") {
-				return `<script>${fetched}</script>`;
-			}
-			throw new Error(`Unsupported extension type: ${ext}`);
-		} catch (e) {
-			console.error(e);
-			vscode.window.showWarningMessage(msg.cannotLoad(parsed.toString()));
-			return "";
-		}
 	}
 
 	function reloadWindow() {
