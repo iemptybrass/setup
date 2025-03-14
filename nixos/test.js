@@ -40,14 +40,6 @@ function activate(context) {
 				injectHTML +
 				"<!-- !! VSCODE-CUSTOM-CSS-END !! -->\n</html>"
 		);
-		try {
-			await fs.promises.writeFile(htmlFile, html, "utf-8");
-		} catch (e) {
-			vscode.window.showInformationMessage(msg.admin);
-			disabledRestart();
-			return;
-		}
-		enabledRestart();
 	}
 	function clearExistingPatches(html) {
 		html = html.replace(
