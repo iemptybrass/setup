@@ -37,14 +37,13 @@
 			sed -i '80,145 d' ${out}/extension.js
 			sed -i '75,76 d' ${out}/extension.js
 			sed -i '14,71 d' ${out}/extension.js
-			sed -i '7d' ${out}/extension.js
-			sed -i '5d' ${out}/extension.js
-			sed -i '3d' ${out}/extension.js
-			sed -i '2d' ${out}/extension.js
-			sed -i '1d' ${out}/extension.js
+			sed -i '5,7 d' ${out}/extension.js
+			sed -i '1,3 d' ${out}/extension.js
 
 
-          echo "Sed files finished removing stuff..."
+          echo "Sed files finished removing stuff...Moving on to uuid"
+
+			sed -i -e '12s/uuidSession//g' -e '18s/uuidSession//g' ${out}/extension.js
 
           ls -la ${out} > log
 
