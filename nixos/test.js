@@ -1,8 +1,5 @@
-const fs = require("fs");
-const os = require("os");
 const path = require("path");
 const uuid = require("uuid");
-const fetch = require("node-fetch");
 const Url = require("url");
 
 function activate(context) {
