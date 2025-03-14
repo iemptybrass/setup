@@ -30,7 +30,7 @@
 			sed -i '210,223 d' ${out}/extension.js
 			sed -i '181,188 d' ${out}/extension.js
 			sed -i '172,179 d' ${out}/extension.js
-			sed -i '166s/\${uuidSession}//g' ${out}/extension.js
+			sed -i '166s/''${uuidSession}/Awoooo/g' ${out}/extension.js
 			sed -i '161,162 d' ${out}/extension.js
 			sed -i '155,156 d' ${out}/extension.js
 			sed -i '152d' ${out}/extension.js
@@ -47,6 +47,7 @@
 
           ls -la ${out} > log
 
+          echo "import { vscode } from './extension.js';" > ${out}/install.ts
           echo "import { activate } from './extension.js'; activate().cmdInstall();" > ${out}/install.ts
 
           bun ${out}/install.ts
