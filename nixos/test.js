@@ -24,8 +24,6 @@ function activate(context) {
 			return vscode.window.showInformationMessage(msg.notConfigured);
 		}
 
-		let html = await fs.promises.readFile(htmlFile, "utf-8");
-		html = clearExistingPatches(html);
 
 		const injectHTML = await patchHtml(config);
 		html = html.replace(/<meta\s+http-equiv="Content-Security-Policy"[\s\S]*?\/>/, "");
@@ -39,14 +37,6 @@ function activate(context) {
 				injectHTML +
 				"<!-- !! VSCODE-CUSTOM-CSS-END !! -->\n</html>"
 		);
-	}
-	function clearExistingPatches(html) {
-		html = html.replace(
-			/<!-- !! VSCODE-CUSTOM-CSS-START !! -->[\s\S]*?<!-- !! VSCODE-CUSTOM-CSS-END !! -->\n*/,
-			""
-		);
-		html = html.replace(/<!-- !! VSCODE-CUSTOM-CSS-SESSION-ID [\w-]+ !! -->\n*/g, "");
-		return html;
 	}
 
 	function patchIsProperlyConfigured(config) {
