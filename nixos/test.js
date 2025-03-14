@@ -1,6 +1,6 @@
 const fs = require("fs");
 const os = require("os");
-const path = require("path");
+const msg = require("./messages").messages;
 const uuid = require("uuid");
 const fetch = require("node-fetch");
 const Url = require("url");
@@ -68,8 +68,8 @@ function activate(context) {
 		// Copy the resource to a staging directory inside the extension dir
 		let parsed = new Url.URL(url);
 		const ext = path.extname(parsed.pathname);
-	}
 
+	}
 
 	const installCustomCSS = vscode.commands.registerCommand(
 		"extension.installCustomCSS",
@@ -77,3 +77,9 @@ function activate(context) {
 	);
 
 	context.subscriptions.push(installCustomCSS);
+}
+exports.activate = activate;
+
+// this method is called when your extension is deactivated
+function deactivate() {}
+exports.deactivate = deactivate;
