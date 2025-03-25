@@ -1,12 +1,12 @@
-{
+{pkgs, ...}:{
 
 
-
-    nixpkgs.config.allowUnfree = true;
 
     documentation.nixos.enable = false;
 
-    environment.defaultPackages = [];
+    environment= {
+        systemPackages = [(pkgs.writeShellScriptBin "nix-env" '' '')];
+        defaultPackages = []; };
 
 
 

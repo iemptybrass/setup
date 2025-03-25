@@ -1,151 +1,24 @@
+{ lib, config, ... }:
+
 {
+  services.timesyncd.enable = false;
 
+  services.resolved.enable = false;
 
+  systemd.network.enable = false;
 
-    security.rtkit.enable = true;
+  services.nscd.enable = false;
+  system.nssModules = lib.mkForce [];
 
-  systemd.services = {
+  systemd.targets.nss-user-lookup.enable = false;
 
- ##################################################
+  systemd.targets.network-pre.enable = false;
 
-#dbus
+  systemd.services.network-setup.enable = false;
 
- ##################################################
+  systemd.services.resolvconf.enable = false;
 
-    "getty@tty1" = {
-      serviceConfig = {
-          IPAddressDeny = "any";
-          LockPersonality= true; 
-          MemoryDenyWriteExecute = true;
-          NoNewPrivileges = true;
-          PrivateDevices = true;
-          PrivateIPC = true;
-          PrivateMounts = true;
-          PrivateTmp = true;
-          PrivateUsers = true;
-          ProcSubset = "pid";
-          ProtectClock = true; 
-          ProtectControlGroups = true;
-          ProtectHome = true;
-          ProtectHostname = true;
-          ProtectKernelLogs = true;
-          ProtectKernelModules = true;
-          ProtectKernelTunables = true;
-          ProtectProc = "invisible";
-          ProtectSystem = "strict";
-          RestrictNamespaces = true;
-          RestrictRealtime = true;
-          RestrictSUIDSGID = true;
-          SystemCallArchitectures = "native";
-          UMask = "0077";
-        RestrictAddressFamilies = [
-            "AF_INET"      ];
-        SystemCallFilter = [
-            "access"
-            "arch_prctl"
-            "brk"
-            "close"
-            "execve" 
-            "fstat"
-            "getrandom"
-            "getuid"
-            "ioctl"
-            "lseek"
-            "mmap"
-            "mprotect"
-            "munmap"
-            "nanosleep"
-            "openat"
-            "pread64"
-            "prlimit64"
-            "read"
-            "rt_sigaction"
-            "rt_sigprocmask"
-            "select"
-            "set_robust_list"
-            "set_tid_address"
-            "write"      ];      };      };
+  boot.loader.systemd-boot.enable = false;
 
- ##################################################
-
-#greetd
-
- ##################################################
-
-#iwd
-
- ##################################################
-
-#nix-daemon
-
- ##################################################
-
-#nix-optimise
-
- ##################################################
-
-#ncsd
-
- ##################################################
-
-#polkit
-
- ##################################################
-
-#reload
-
- ##################################################
-
-#rescue
-
- ##################################################
-
-#rtkit
-
- ##################################################
-
-#pswrd-console
-
- ##################################################
-
-#pswrd-wall
-
- ##################################################
-
-#hostnamed
-
- ##################################################
-
-#journald
-
- ##################################################
-
-#logind
-
- ##################################################
-
-#oomd
-
- ##################################################
-
-#rfkill
-
- ##################################################
-
-#timesyncd
-
- ##################################################
-
-#udevd
-
- ##################################################
-
-#user
-
- ##################################################
-
-                      };
-
-
-
+  systemd.targets.remote-fs.enable = false;
 }

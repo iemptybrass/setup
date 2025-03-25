@@ -7,8 +7,7 @@
       ./login
       ./silent
       ./systemd
-      ./trash
-      ./upgrade
+      ./timers
              ];
 
 

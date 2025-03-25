@@ -4,11 +4,9 @@
 
   imports = [
       ./local
-        ./network
-        ./optional
-        ./settings
-        ./sound
-        ./users
+      ./optional
+      ./settings
+      ./users
              ];
 
 
