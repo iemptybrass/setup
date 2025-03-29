@@ -1,17 +1,12 @@
-{ pkgs, ... }:{
-
-
-
+{pkgs, ...}: {
   home = {
     packages = with pkgs; [
-        micro      ];
-          };
+      micro
+    ];
+  };
 
-#  xdg = {
-#    configFile."" = {
-#        source = ./default.;      };
-#         };
-
-
-
+  #  xdg = {
+  #    configFile."" = {
+  #        source = ./default.;      };
+  #         };
 }

@@ -1,16 +1,12 @@
 {
-
-
-
   nix = {
     settings = {
-        allowed-users = [ "@wheel" ];
+      allowed-users = ["@wheel"];
       experimental-features = [
-          "nix-command" 
-          "pipe-operator"
-          "flakes" ];      };
-         };
-
-
-
+        "nix-command"
+        "pipe-operator"
+        "flakes"
+      ];
+    };
+  };
 }

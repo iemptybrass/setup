@@ -1,13 +1,7 @@
 {
-
-
-
   imports = [
-      ./shell
-      ./windowbar
-      ./windowmanager
-             ];
-
-
-
+    ./shell
+    ./windowbar
+    ./windowmanager
+  ];
 }

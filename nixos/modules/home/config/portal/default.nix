@@ -1,16 +1,11 @@
-{ pkgs, ... }:{
-
-
-
+{pkgs, ...}: {
   xdg = {
     portal = {
-        enable = true;
+      enable = true;
       extraPortals = [
-          pkgs.xdg-desktop-portal-hyprland      ];
+        pkgs.xdg-desktop-portal-hyprland
+      ];
       config.common.default = "hyprland";
-                };
-         };                                
-
-
-
+    };
+  };
 }

@@ -1,13 +1,8 @@
-{pkgs, ...}:{
+{pkgs, ...}: {
+  documentation.nixos.enable = false;
 
-
-
-    documentation.nixos.enable = false;
-
-    environment= {
-        systemPackages = [(pkgs.writeShellScriptBin "nix-env" '' '')];
-        defaultPackages = []; };
-
-
-
+  environment = {
+    systemPackages = [(pkgs.writeShellScriptBin "nix-env" '''')];
+    defaultPackages = [];
+  };
 }

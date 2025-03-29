@@ -1,17 +1,13 @@
-{ pkgs, ... }:{
-
-
-
+{pkgs, ...}: {
   home = {
     packages = with pkgs; [
-        alacritty      ];
-          };
+      alacritty
+    ];
+  };
 
   xdg = {
     configFile."alacritty/alacritty.toml" = {
-        source = ./default.toml;      };
-         };
-
-
-
+      source = ./default.toml;
+    };
+  };
 }

@@ -1,31 +1,32 @@
 {
   system.autoUpgrade = {
     enable = false;
-    flake = "//#default";  
+    flake = "//#default";
     flags = [
-      "--update-input" "nixpkgs"  
-      "--commit-lock-file"        
+      "--update-input"
+      "nixpkgs"
+      "--commit-lock-file"
     ];
-    dates = "daily";  
+    dates = "daily";
   };
 
   nix = {
-    settings.auto-optimise-store = true;  
+    settings.auto-optimise-store = true;
 
     gc = {
-      automatic = true;  
-      dates = "weekly";  
-      options = "--delete-older-than 7d";  
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
     };
 
     optimise = {
-      automatic = true;  
-      dates = ["weekly"];  
+      automatic = true;
+      dates = ["weekly"];
     };
   };
 
-#  systemd.tmpfiles.rules = [
-#    "d /tmp 1777 root root 7d"  
-#    "d /var/tmp 1777 root root 14d"  
-#  ];
+  #  systemd.tmpfiles.rules = [
+  #    "d /tmp 1777 root root 7d"
+  #    "d /var/tmp 1777 root root 14d"
+  #  ];
 }

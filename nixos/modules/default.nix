@@ -1,13 +1,7 @@
 {
-
-
-
   imports = [
-      ./style
-      ./system
-      ./home
-             ];
-
-
-
+    ./style
+    ./system
+    ./home
+  ];
 }

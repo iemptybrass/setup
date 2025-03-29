@@ -1,15 +1,15 @@
-{ pkgs, ... }:{
+{pkgs, ...}: {
   # Enable Hyprland as the Wayland compositor
-imports = [ ./default.conf];
+  imports = [./default.conf];
 
   programs.hyprland = {
     enable = true;
-    package = pkgs.hyprland;  # Ensure using a specific package if needed
-    xwayland.enable = true;   # Enable Xwayland support
-    systemd.setPath.enable = true;  # Set PATH for Hyprland under systemd
-    withUWSM = true;  # Enable integration with UWSM (Universal Wayland Session Manager)
+    package = pkgs.hyprland; # Ensure using a specific package if needed
+    xwayland.enable = true; # Enable Xwayland support
+    systemd.setPath.enable = true; # Set PATH for Hyprland under systemd
+    withUWSM = true; # Enable integration with UWSM (Universal Wayland Session Manager)
   };
-  
+
   services.hypridle.enable = true;
 
   programs.hyprlock.enable = true;

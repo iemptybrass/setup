@@ -1,14 +1,8 @@
 {
-
-
-
   imports = [
-      ./local
-      ./optional
-      ./settings
-      ./users
-             ];
-
-
-
+    ./local
+    ./optional
+    ./settings
+    ./users
+  ];
 }

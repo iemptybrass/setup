@@ -1,9 +1,3 @@
-{ lib, ... }:{
-
-
-
-    networking.useDHCP = lib.mkDefault true;
-
-
-
+{lib, ...}: {
+  networking.useDHCP = lib.mkDefault true;
 }

@@ -1,15 +1,9 @@
 {
-
-
-
   imports = [
-      ./grub
-      ./login
-      ./silent
-      ./systemd
-      ./timers
-             ];
-
-
-
+    ./grub
+    ./login
+    ./silent
+    ./systemd
+    ./timers
+  ];
 }

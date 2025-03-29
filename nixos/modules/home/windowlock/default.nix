@@ -1,17 +1,13 @@
 {
-
-
-
   programs = {
     hyprlock = {
-        enable = true;      };
-              };
+      enable = true;
+    };
+  };
 
   xdg = {
     configFile."hypr/hyprlock.conf" = {
-        source = ./default.conf;      };
-         };
-
-
-
+      source = ./default.conf;
+    };
+  };
 }

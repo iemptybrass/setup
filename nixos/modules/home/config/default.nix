@@ -1,13 +1,7 @@
 {
-
-
-
   imports = [
-      ./directories
-      ./entries
-      ./portal
-             ];
-
-
-
+    ./directories
+    ./entries
+    ./portal
+  ];
 }

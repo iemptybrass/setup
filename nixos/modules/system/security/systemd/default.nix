@@ -1,6 +1,8 @@
-{ lib, config, ... }:
-
 {
+  lib,
+  config,
+  ...
+}: {
   services.timesyncd.enable = false;
 
   services.resolved.enable = false;

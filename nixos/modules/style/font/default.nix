@@ -1,16 +1,10 @@
-{ pkgs, ... }:{
-
-
-
+{pkgs, ...}: {
   fonts = {
-      enableDefaultPackages = true;
+    enableDefaultPackages = true;
     packages = with pkgs; [
-        arkpandora_ttf
-        twitter-color-emoji
-        nerd-fonts._0xproto      ];
-           };
-                                
-
-
-
+      arkpandora_ttf
+      twitter-color-emoji
+      nerd-fonts._0xproto
+    ];
+  };
 }

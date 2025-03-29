@@ -1,18 +1,14 @@
 {
-
-
-
   programs = {
     rofi = {
-        enable = true;      };
-              };
-  
+      enable = true;
+    };
+  };
+
   xdg = {
     configFile."rofi/config.rasi" = {
-        source = ./default.rasi;
-        text = "null";      };
-         };
-
-
-
+      source = ./default.rasi;
+      text = "null";
+    };
+  };
 }
