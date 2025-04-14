@@ -1,2 +1,192 @@
 #!/usr/bin/env bash
-echo "hello" 
+set -euo pipefail
+
+# --- Helper: prompt input from /dev/tty ---
+prompt() {
+    local input
+    printf "%s" "$1" > /dev/tty
+    IFS= read -r input < /dev/tty
+    printf "%s" "$input"
+}
+
+# --- Generate a host ID for ZFS ---
+HOST_ID=$(head -c4 /dev/urandom | od -An -tx4 | tr -d ' ')  # e.g. "26341dc4"
+
+echo "### NixOS ZFS Disk Formatter + Config Generator ###" > /dev/tty
+
+# --- Confirm destructive action ---
+echo "" > /dev/tty
+yn=$(prompt "This will irreversibly format the selected disk. Are you sure? [y/n] ")
+case $yn in
+    [Yy]* ) echo "Proceeding with format..." > /dev/tty ;;
+    [Nn]* ) echo "Aborted." > /dev/tty; exit 0 ;;
+    * ) echo "Please answer y or n." > /dev/tty; exit 1 ;;
+esac
+
+# --- Disk selection ---
+echo "Listing available disks:" > /dev/tty
+lsblk
+mapfile -t disks < <(lsblk -ndo NAME,SIZE,MODEL)
+echo -e "\nAvailable disks:\n" > /dev/tty
+for i in "${!disks[@]}"; do
+    printf "%d) %s\n" $((i+1)) "${disks[i]}" > /dev/tty
+done
+
+while true; do
+    selection=$(prompt "Enter the number of the disk to install to: ")
+    if [[ "$selection" =~ ^[0-9]+$ ]] && (( selection >= 1 && selection <= ${#disks[@]} )); then
+        break
+    else
+        echo "Invalid selection. Please try again." > /dev/tty
+    fi
+done
+
+# Determine disk device from selection.
+DISK="/dev/$(echo "${disks[$((selection-1))]}" | awk '{print $1}')"
+
+# --- Determine partition naming (nvme vs others) ---
+if [[ "$DISK" =~ nvme ]]; then
+    BOOTDISK="${DISK}p3"
+    SWAPDISK="${DISK}p2"
+    ZFSDISK="${DISK}p1"
+else
+    BOOTDISK="${DISK}3"
+    SWAPDISK="${DISK}2"
+    ZFSDISK="${DISK}1"
+fi
+
+{
+  echo ""
+  echo "Selected disk: $DISK"
+  echo "Boot Partition will be: $BOOTDISK"
+  echo "Swap Partition will be: $SWAPDISK"
+  echo "ZFS Partition will be: $ZFSDISK"
+} > /dev/tty
+
+# --- Wipe and partition the disk ---
+wipefs -a "$DISK"
+sgdisk --zap-all "$DISK"
+sgdisk --clear "$DISK"
+
+# Create partitions:
+# Partition 3: Boot partition (1GB, EFI System Partition)
+sgdisk -n3:1M:+1G -t3:EF00 "$DISK"
+# Partition 2: Swap partition (24GB, Linux swap type 8200)
+sgdisk -n2:0:+24G -t2:8200 "$DISK"
+# Partition 1: Remainder for ZFS (type BF01)
+sgdisk -n1:0:0 -t1:BF01 "$DISK"
+sgdisk -p "$DISK" > /dev/null
+
+# --- Update kernel partition table and wait for partitions to appear ---
+partprobe "$DISK"
+# Wait up to 10 seconds for the ZFS partition to show up
+for i in {1..10}; do
+    if [ -b "$ZFSDISK" ]; then
+        break
+    else
+        echo "Waiting for $ZFSDISK to become available..." > /dev/tty
+        sleep 1
+    fi
+done
+
+if [ ! -b "$ZFSDISK" ]; then
+    echo "Error: $ZFSDISK not found after waiting." > /dev/tty
+    exit 1
+fi
+
+# --- Setup Swap ---
+mkswap "$SWAPDISK" --label SWAP
+swapon "$SWAPDISK"
+
+# --- Setup Boot Filesystem ---
+mkfs.fat -F32 "$BOOTDISK" -n BOOT
+
+# --- Create ZFS Pool "vault" ---
+modprobe zfs
+zpool create -f \
+  -o ashift=12 \
+  -o autotrim=on \
+  -O compression=lz4 \
+  -O acltype=posixacl \
+  -O atime=off \
+  -O xattr=sa \
+  -O normalization=formD \
+  -O mountpoint=none \
+  vault "$ZFSDISK"
+
+# --- Create ZFS Datasets ---
+# Root: uses default compression (lz4)
+zfs create -o mountpoint=legacy vault/root
+# /nix: override compression to zstd
+zfs create -o mountpoint=legacy -o compression=zstd vault/nix
+# /home: uses default pool settings (lz4)
+zfs create -o mountpoint=legacy vault/home
+
+# --- Mount ZFS and Boot Filesystem ---
+mount -t zfs vault/root /mnt
+mkdir -p /mnt/{nix,home,boot,etc/nixos}
+mount -t zfs vault/nix /mnt/nix
+mount -t zfs vault/home /mnt/home
+mount "$BOOTDISK" /mnt/boot
+
+# --- Write the host ID for ZFS ---
+printf "\x%s\x%s\x%s\x%s" "${HOST_ID:0:2}" "${HOST_ID:2:2}" "${HOST_ID:4:2}" "${HOST_ID:6:2}" > /mnt/etc/hostid
+
+# --- Generate NixOS configuration files ---
+
+# /mnt/etc/nixos/zfs.nix: ZFS-related settings (snapshots disabled for performance)
+cat > /mnt/etc/nixos/zfs.nix <<EOF
+{config, lib, pkgs, ...}:{
+  services.zfs = {
+    autoSnapshot.enable = false;
+    trim.enable = true;
+  };
+  fileSystems."/" = { device = "vault/root"; fsType = "zfs"; neededForBoot = true; };
+  fileSystems."/nix" = { device = "vault/nix"; fsType = "zfs"; };
+  fileSystems."/home" = { device = "vault/home"; fsType = "zfs"; };
+  fileSystems."/boot" = { device = "/dev/disk/by-label/BOOT"; fsType = "vfat"; };
+
+  swapDevices = [ { device = "${SWAPDISK}"; } ];
+  
+  boot.kernelModules = [ "zfs" ];
+}
+EOF
+
+# /mnt/etc/nixos/configuration.nix: Main NixOS configuration importing ZFS and hardware config.
+cat > /mnt/etc/nixos/configuration.nix <<EOF
+{ config, pkgs, ... }:
+
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./zfs.nix
+  ];
+
+  system.stateVersion = "24.11";
+
+  networking.hostId = "${HOST_ID}";
+
+  boot.loader.grub.enable = true;
+  boot.loader.grub.efiSupport = true;
+  boot.loader.grub.devices = [ "nodev" ];
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.devNodes = "/dev/disk/by-uuid";
+  boot.zfs.forceImportRoot = true;
+
+  services.openssh.enable = true;
+
+  environment.systemPackages = with pkgs; [ linux-firmware ];
+
+  networking.wireless.iwd.enable = true;
+
+  users.users.root = {
+    isNormalUser = false;
+    initialPassword = "nixos";
+  };
+}
+EOF
+
+echo "✅ Disk formatted, ZFS pool 'vault' created, and NixOS configuration files generated in /mnt/etc/nixos." > /dev/tty
+echo "Now run: nixos-install --root /mnt" > /dev/tty
+nixos-install --root /mnt
