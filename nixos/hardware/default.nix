@@ -1,7 +1,6 @@
 {
 
   imports = [
-      ./filesystem
       ./kernel
       ./network
       ./platform
