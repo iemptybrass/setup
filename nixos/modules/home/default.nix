@@ -1,7 +1,8 @@
 {
+
   imports = [
     ./shell
     ./windowbar
-    ./windowmanager
-  ];
+    ./windowmanager ];
+
 }
